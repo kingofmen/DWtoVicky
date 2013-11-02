@@ -1,0 +1,270 @@
+\documentclass[12pt]{article}
+\begin{document}
+
+\section{Buildings and population}
+
+The main effect of buildings is to give a bonus to population. This
+happens in one of two ways. The base weight of a province is given by
+$M+P$, manpower plus production, both integrated over time, where
+\begin{eqnarray*}
+M &=& 0.125*m*b \\
+P &=& b*p \\
+b &=& 0.05*t + \min(2.0, 0.99+(c/101000))
+\end{eqnarray*}
+where $p$ is the price of the trade good in the province, $m$ is
+the `manpower' number listed in the save, $t$ is the basetax, and $c$
+is the city size. Buildings that affect manpower or production thus
+give additional weight just by giving bonuses to these
+numbers. Buildings that don't, instead give a percentage bonus
+proportional to $\sqrt{0.001*cost}$. This quantity is multiplied by
+the time the building the time the building it has existed, divided by
+the time it \emph{could} have existed; so a building invented in 1399
+and built in 1599 gives half its maximum bonus to a conversion in
+1799. 
+
+The integration over time also strives to take historical slider
+positions, decisions, and triggered modifiers into account, but does
+not do so perfectly. Slider changes, for example, are not stored in
+the save, only the initial and final positions, so I use a heuristic
+that most of the changes occur early in the history, and
+interpolate. This also means that if you start, say, at 0, are at 5
+for much of your history, and end at 3, the converter will think you
+were between 0 and 3 for the whole game. Can't be helped! 
+
+There are some other minor modifiers to population:
+\begin{itemize}
+\item Capitalists only go where there is a stock exchange. 
+\item Craftsmen and clerks only go where there are factories, and
+  vice-versa. 
+\item Nations with the abolish slavery decision get no slaves. 
+\item Some trade goods attract or repel some pop types, as shown in
+  config.txt. For example, tobacco, slaves, sugar and cotton all
+  attract slaves. 
+\item Slider positions and national ideas have a small effect in
+  attracting some pop types; again this is shown in config.txt. For
+  example, Free Subjects is attractive to labourers and farmers, while
+  Plutocracy attracts capitalists. 
+\item Occupations and low religious tolerance reduce population
+  weight, integrated over time. A province which was occupied by
+  someone other than its owner for the whole of EU3 would only get
+  10\% of the population it would otherwise have. A province which was
+  consistently at -3 tolerance would get 50\% of its population. 
+\end{itemize}
+
+Additionally, some buildings affect literacy. In particular, each
+building has a literacy weight (which defaults to zero) in
+buildings.txt. The literacy weight of a province is calculated thus:
+For each province in the world, add up the literacy weight of its
+buildings and divide by the distance (plus 1) between the two
+provinces. Integrate this quantity over time. Then redistribute the
+vanilla literacy according to this literacy weight. 
+
+\section{Sliders}
+
+Sliders affect population as outlined in the previous section; trade
+power, which affects technology as discussed below; literacy, and
+politics. Each pop type has a `literacy' section in config.txt,
+showing the effect of sliders. Notice that these are percentage
+bonuses to the literacy weight, not direct modifiers to the literacy;
+note also that they are not integrated over time. 
+
+Sliders also affect the customisation of parties. Each party type in
+the ideologies field of config.txt has an entry for each attitude, and
+each such entry (for example, for jingoism) has a sliders section. The
+numbers are to be read as percentage modifiers to the base weight
+that the party in question will have that attitude. Thus, for example,
+consider the entry for conservatives:
+
+\begin{verbatim}
+conservative = {
+  start_date = 1830.1.1 
+  jingoism = {
+    ideas = {
+      national_conscripts = 1.25  
+      battlefield_commissions = 1.25
+      military_drill = 1.25
+      deus_vult = 1.1
+    }
+    sliders = {
+      land_naval = -0.03 
+    }
+  }
+}
+\end{verbatim}
+
+There is some base weight for conservatives to be jingoist, which is
+equal to the fraction of vanilla conservative parties that are
+jingoist. It is modified by slider positions; in this case, each click
+towards naval decreases the base weight by 3\%. 
+The \emph{probability} that they are jingoist is equal to this modified
+weight, divided by the sum of the modified weights for jingoism, pacifism,
+anti-military, and pro-military. 
+
+In addition to the effect on parties, sliders can affect reforms. 
+Government forms which require some voting to exist get the landed
+voting reform; others get nothing. For the other political reform
+types (social reforms are all at the lowest possible upon conversion),
+nations earn points as shown in config.txt. For example, consider the
+slavery entry:
+\begin{verbatim}
+slavery={
+  base=no_slavery
+  provinces={
+    cotton = 2
+    slaves = 2
+    tobacco = 1.5
+    sugar = 2
+  }
+  modifier = {
+    mod = the_abolish_slavery_act
+    mult = 0
+  }
+  slider = {
+    which = serfdom_freesubjects
+    value = -0.03
+    max = 0 
+  }
+  threshold = {
+    value = 0.15
+    rhs = yes_slavery 
+  }
+}
+\end{verbatim}
+This says that the base position is ``No Slavery''. The 'threshold'
+entry says that if the nation has more than 0.15 points, the value
+instead becomes ``Slavery Allowed''; for other reforms there can be
+more than one threshold. The slider entry indicates that each click
+towards serfdom gives 0.03 points, but clicks towards freedom do not
+give additional points (``max $=$ 0''). The provinces entry
+says that provinces having the goods indicated give an amount of
+points equal to their percentage of the weighted sum of total national
+basetax, where the weights are equal to the numbers given, or 1. (That
+is to say, consider a nation with two provinces, one with slaves and
+basetax 2, the other with gold and basetax 3. The total weight is
+$(2*2 + 1*3)=7$, and the slave province will therefore give
+$4/7\approx 0.57$ points towards the slavery reform. Finally, the
+'mod' field indicates that if the nation has the national modifier in
+question, the points value is multiplied by 'mult' - in other words,
+nations which have abolished slavery do not get the ``Slavery
+Allowed'' political reform, however far they are towards serfdom or
+however many cotton, slave, tobacco and sugar provinces they have. 
+
+
+Sliders also affect national values as shown in natvalues.txt. The
+numbers here are to be read as weights which each click along the
+slider gives to the value in question; the highest weight wins. 
+
+\section{National ideas}
+
+These affect literacy, political parties, reforms, and national values
+basically in the same way as sliders. 
+
+\section{Technology}
+
+Affects starting research points and civilised status. Nations which
+have at least four of the five tech areas within one level of
+up-to-date will convert civilised. Additionally, each tech area gives
+$30000*(N/80)^2$ research points where $N$ is the EU3 tech
+level. Finally, the most advanced tech level decides which research
+institution the nation gets. 
+
+In addition, trade power, which is calculated as a nation's share of
+the total trade income of the world (approximately - the calculation
+doesn't catch every possible modifier to trade income), with a
+time-integrated bonus from customs houses, is applied as a percentage
+bonus to RPs. 
+
+\section{Customisation}
+
+Parties and national stockpiles may be customised. Additionally, for
+AHD, the initial techs are customisable. 
+
+Initially parties are generated randomly as outlined in the section on
+sliders. However, they may then be customised. Each country gets a
+number of customisation points, calculated as follows. Government
+buildings have a 'moddingPoints' entry; the total modding points of
+a nation, divided by its provinces, is its modding fraction; 
+customisation points are distributed in proportion to the modding
+fractions. Example: England has 1 temple giving a single modding
+point, and two provinces; its modding fraction is 0.5. Germany has two
+temples and three provinces, giving a modding fraction of
+0.66. England will get $0.5/(0.5+0.66)=43\%$ of the total
+customisation points. 
+
+The customisation points are calculated thus: Every time a political
+party is randomly generated, there was some probability that it would
+end up as it did, based on the frequencies of the vanilla parties. For
+example, suppose that 80\% of vanilla conservatives are jingoist, and
+the rest are pro-military; then a pro-military conservative party has
+a 20\% probability, multiplied by the similar probabilities from the
+other fields. The negative log of this probability is that party's contribution
+to the customisation pool. 
+
+Now, players may customise their nations, in this format:
+\begin{verbatim}
+KHA = {
+  liberal = {
+    area = trade_policy
+    position = free_trade 
+  }
+  resource = {
+    which = iron
+    amount = 2
+  } 
+  research = {
+    tech = late_enlightenment_philosophy
+    tech = freedom_of_trade
+    tech = private_banks
+    tech = water_wheel_power
+  }
+}
+\end{verbatim}
+This says that the Khanate wants liberals who are in favour of Free
+Trade. (If it wanted to specify liberal positions on other points, it
+should make another 'liberals' entry.) Each country will attempt to
+buy the listed customisations in the order given; if it can't afford
+one, that entry is skipped. The cost of a customisation is equal to
+the negative log of its probability ratio, times the number of
+previously successful bids plus one. For example, suppose I want
+pro-military conservatives, probability 20\%, but I got
+randomly-generated jingoists, probability 80\%. (If they were randomly
+generated as pro-military, obviously, the customisation is skipped.)
+Then the cost of the customisation is $-\log(0.2/0.8)=1.38$, times
+however many previous bids I had. The minimum cost is the number of
+prior successful bids, plus one; customisations that ``go with the
+flow'', ie in the direction of higher probability, will generally have
+the minimum cost. On the other hand, laissez-faire communists are
+going to be highly expensive. 
+
+An `unless' clause may be added to a bid, in which case the bid will
+only be used if the party in question has a position other than the
+one indicated by the unless. 
+
+The 'resource' bid says that the nation would like its stockpile
+increased by 20 iron. Only resources which exist in some nation's
+stockpile at game start can be bid on in this way. The cost is equal
+to the negative logarithm of that resource's fraction of the world
+stockpile, times the number of units, times the number of previous
+successful bids plus one. 
+
+The research entry is not a bid, but just a list of the order in which
+the nation would like to use its research points to buy initial
+techs. 
+
+\section{Miscellanea} 
+
+\begin{itemize}
+\item Armies and navies convert proportionally, that is, if you have
+  one-tenth of the EU3 infantry you will get (approximately) one-tenth
+  of the vanilla Vicky infantry. Note that this only applies to quite
+  advanced EU3 units; low-tech armies convert to irregulars (still on
+  the proportional system) and low-tech ships don't convert at all. 
+\item Infamy converts one-for-one. 
+\item Inflation converts to debt.
+\item High-level forts and ports convert to Vicky forts and naval
+  bases.  
+\item Government types convert as shown in config.txt. 
+\item Army and navy tradition convert to leadership. 
+\end{itemize}
+
+\end{document} 

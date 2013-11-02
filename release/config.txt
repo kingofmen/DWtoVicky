@@ -1,0 +1,1054 @@
+debug = yes  
+popdebug = yes   
+moddir = .\AHD\  
+mapWidth = 5616 
+redistPops = yes 
+hugePops = no 
+debugProvSize = no 
+tradeResearchBonus = 0.75
+randseed = 42 
+rgoSizeModifier = 1.0 
+modPointMultiplier = 0.1 
+extraGoods = {
+  
+} 
+
+extraInterest = {
+  # List of countries that are interesting for statistics even though
+  # not human.
+  extra = TIB
+}
+do_pop_stats = no
+do_trade_stats = no
+do_building_stats = no
+do_battle_state = yes 
+
+rgoRedist = continent 
+civLevel = 72 
+rp_per_area = 30000
+rp_exponent = 2
+rp_denominator = 80 
+calculatePrices = historical 
+getPopWeights = calculate 
+writeCache = yes 
+debugPop = -1
+debugLiteracy = 1224
+debugColony = 234
+histPopFraction = 0.05 
+provgroup = {
+  trade_goods = fish
+  trade_goods = grain
+  trade_goods = wool
+  trade_goods = cloth
+  trade_goods = wine
+
+  trade_goods = coffee
+  trade_goods = cotton
+  trade_goods = sugar
+  trade_goods = tobacco
+  trade_goods = slaves
+
+  trade_goods = tea
+  trade_goods = chinaware
+  trade_goods = spices
+  trade_goods = gold
+  trade_goods = ivory
+
+  trade_goods = iron
+  trade_goods = copper
+  trade_goods = naval_supplies
+  trade_goods = fur
+  trade_goods = salt
+}
+poptypes = {
+  artisans = {
+    money = 2.5    
+    literacy = {
+      church_attendance_duty = 0.1
+      smithian_economics = 0.1
+      national_trade_policy = 0.1
+    }
+  }
+  aristocrats = { 
+    aristocracy_plutocracy = -0.05 
+    money = 100 
+    literacy = {
+      aristocracy_plutocracy = -0.01
+      centralization_decentralization = -0.01
+      naval_glory = 0.1
+      glorious_arms = 0.1
+      vice_roys = 0.1
+      patron_of_art = 0.1
+      cabinet = 0.1
+      battlefield_commisions = 0.1
+    }
+  }
+  bureaucrats = { 
+    innovative_narrowminded = 0.05
+    mercantilism_freetrade = -0.05  
+    money = 25
+    literacy = {
+      bureaucracy = 0.1
+      vetting = 0.05 
+      national_conscripts = 0.05
+      naval_provisioning = 0.05
+      improved_foraging = 0.05
+      national_bank = 0.1
+      centralization_decentralization = -0.02
+    }
+  }
+  capitalists = { 
+    aristocracy_plutocracy = 0.05 
+    mercantilism_freetrade = 0.05 
+    money = 200
+    literacy = {
+      centralization_decentralization = -0.01
+      aristocracy_plutocracy = 0.01
+      mercantilism_freetrade = 0.01
+      shrewd_commerce_practice = 0.1
+      national_trade_policy = 0.1
+      smithian_economics = 0.2
+      merchant_adventures = 0.1 
+    }
+  }
+  clergymen = { 
+    innovative_narrowminded = -0.05 
+    money = 20
+    literacy = {
+      centralization_decentralization = -0.01
+      innovative_narrowminded = 0.02
+      deus_vult = 0.1
+      scientific_revolution = -0.1
+      church_attendance_duty = 0.05
+      ecumenism = 0.1
+      humanist_tolerance = 0.1
+      divine_supremacy = 0.1
+    }
+  }
+  clerks = { 
+    money = 25
+    literacy = {
+      centralization_decentralization = -0.01
+      innovative_narrowminded = -0.02
+      serfdom_freesubjects = 0.02
+      scientific_revolution = 0.1
+      liberty_egalite_fraternity = 0.1
+      smithian_economics = 0.1
+      national_bank = 0.1
+      national_conscripts = 0.05
+      engineer_corps = 0.05
+      vetting = 0.05
+      bill_of_rights = 0.05
+    }
+  }
+  craftsmen = { 
+    money = 10
+    literacy = {
+      centralization_decentralization = -0.02
+      innovative_narrowminded = -0.02
+      serfdom_freesubjects = 0.02
+      scientific_revolution = 0.05
+      liberty_egalite_fraternity = 0.1
+      smithian_economics = 0.05
+      national_conscripts = 0.1
+      bill_of_rights = 0.1
+    }
+  }
+  farmers = { 
+    serfdom_freesubjects = 0.01 
+    money = 1
+    literacy = {
+      innovative_narrowminded = -0.01
+      serfdom_freesubjects = 0.02
+      quality_quantity = -0.01
+      liberty_egalite_fraternity = 0.05
+      national_conscripts = 0.1
+      bill_of_rights = 0.05
+      church_attendance_duty = 0.1
+      bureaucracy = 0.025
+      grand_army = -0.025
+      press_gangs = -0.025
+    }
+  }
+  labourers = { 
+    serfdom_freesubjects = 0.01 
+    money = 1
+    literacy = {
+      innovative_narrowminded = -0.01
+      serfdom_freesubjects = 0.02
+      quality_quantity = -0.01
+      liberty_egalite_fraternity = 0.05
+      church_attendance_duty = 0.05
+      grand_army = -0.025
+      press_gangs = -0.025
+    }
+  }
+  officers = { 
+    quality_quantity = -0.05
+    money = 50
+    literacy = {
+      centralization_decentralization = -0.02
+      quality_quantity = -0.02
+      aristocracy_plutocracy = -0.02
+      mercantilism_freetrade = -0.01
+      battlefield_commisions = 0.05
+      patron_of_art = 0.1
+      vice_roys = 0.05
+      napoleonic_warfare = 0.1
+      regimental_system = 0.1 
+    }
+  }
+  slaves = {
+    serfdom_freesubjects = -0.05 
+    money = 0 
+    literacy = {
+      serfdom_freesubjects = 0.02
+    }
+    cotton = 2
+    tobacco = 2
+    slaves = 2
+    sugar = 2 
+  }
+  soldiers = { 
+    quality_quantity = 0.05
+    money = 1 
+    literacy = {
+      serfdom_freesubjects = 0.01
+      quality_quantity = -0.02
+      liberty_egalite_fraternity = 0.05
+      national_conscripts = 0.05
+      grand_army = 0.025
+      press_gangs = 0.025
+    }
+  }
+}
+
+plurality = {
+  base = 1.0
+  liberty_egalite_fraternity = 1
+  serfdom_freesubjects = 0.2
+  bill_of_rights = 1  
+  humanist_tolerance = 1
+}
+
+base_values = {
+  tolerance_own = 3
+  tolerance_heathen = -3
+  tolerance_heretic = -2
+}
+
+units = {
+  eastern_skirmisher = infantry
+  eastern_uhlan = cavalry
+  ottoman_lancer = cavalry
+  reformed_manchu_rifle = infantry
+  tipu_sultan_rocket = infantry 
+  french_cuirassier = cavalry
+  durrani_dragoon = cavalry
+  french_carabinier = infantry 
+  prussian_uhlan = cavalry
+  british_hussar = cavalry
+  flying_battery = artillery
+  french_impulse = infantry
+  british_square = infantry
+  prussian_drill = infantry 
+  austrian_jaeger = infantry  
+  russian_mass = infantry 
+  mixed_order_infantry = infantry
+  open_order_cavalry = cavalry 
+  napoleonic_lancers = cavalry
+  napoleonic_square = infantry
+
+  threedecker = manowar
+  twodecker = manowar
+  heavy_frigate = frigate 
+  frigate = frigate
+  eastindiaman = clipper_transport
+  merchantman = clipper_transport 
+}
+
+govforms = {
+  steppe_horde = absolute_monarchy 
+  celestial_empire = absolute_monarchy 
+  despotic_monarchy = absolute_monarchy 
+  feudal_monarchy = prussian_constitutionalism 
+  merchant_republic = democracy 
+  imperial_government = absolute_monarchy 
+  noble_republic = democracy 
+  administrative_monarchy = hms_government 
+  administrative_republic = democracy 
+  absolute_monarchy = absolute_monarchy 
+  republican_dictatorship = presidential_dictatorship 
+  constitutional_monarchy = hms_government 
+  enlightened_despotism = prussian_constitutionalism 
+  constitutional_republic = democracy 
+  bureaucratic_despotism = bourgeois_dictatorship 
+  theocratic_government = absolute_monarchy 
+  papal_government = absolute_monarchy 
+  tribal_despotism = absolute_monarchy 
+  tribal_federation = democracy 
+  tribal_democracy = democracy 
+  revolutionary_republic = bourgeois_dictatorship 
+  revolutionary_empire = presidential_dictatorship 
+
+  reforms = {
+    absolute_monarchy = {
+      vote_franschise=none_voting
+    }
+    prussian_constitutionalism = {
+      vote_franschise=landed_voting
+    }
+    democracy = {
+      vote_franschise=landed_voting
+    }
+    presidential_dictatorship = {
+      vote_franschise=none_voting
+    }   
+    hms_government = {
+      vote_franschise=landed_voting
+    }
+    bourgeois_dictatorship = {
+      vote_franschise=none_voting
+    }
+    other = {
+      slavery={
+        base=no_slavery
+        provinces={
+          cotton = 2
+          slaves = 2
+          tobacco = 1.5
+          sugar = 2
+        }
+        modifier = {
+          mod = the_abolish_slavery_act
+          mult = 0
+        }
+        slider = {
+          which = serfdom_freesubjects
+          value = -0.03
+          max = 0 
+        }
+        idea = {
+          which = liberty_egalite_fraternity
+          mult = 0.1 
+        }
+        threshold = {
+          value = 0.15
+          rhs = yes_slavery 
+        }
+      }
+      upper_house_composition={
+        base = appointed
+        slider = {
+          which = aristocracy_plutocracy
+          value = 1
+        }
+        threshold = {
+          value = 0.1
+          rhs = state_equal_weight
+        }
+        threshold = {
+          value = 4.1
+          rhs = population_equal_weight
+        }
+      }
+      voting_system={
+        base = first_past_the_post
+        slider = { 
+          which = innovative_narrowminded
+          value = -1
+        }
+        threshold = {
+          value = 2.9
+          rhs = jefferson_method 
+        }
+      }
+      public_meetings = {
+        base = no_meeting
+        slider = {
+          which = serfdom_freesubjects
+          value = 1
+        }
+        threshold = {
+          value = 2.9
+          rhs = yes_meeting
+        }
+      }
+      press_rights = {
+        base = state_press
+        slider = {
+          which = serfdom_freesubjects
+          value = 1
+        }
+        idea = {
+          which = bill_of_rights
+          value = 3
+        }
+        idea = {
+          which = liberty_egalite_fraternity
+          value = 3
+        }
+        idea = {
+          which = divine_supremacy
+          value = -1
+        }
+        idea = {
+          which = church_attendance_duty
+          value = -1
+        }
+        threshold = {
+          value = 4.1
+          rhs = censored_press
+        }
+        threshold = {
+          value = 7.1
+          rhs = free_press
+        }
+      }
+      trade_unions = {
+        base = no_trade_unions
+        slider = {
+          which = aristocracy_plutocracy
+          value = -1
+        }
+        idea = {
+          which = smithian_economics
+          value = -2
+        }
+        idea = {
+          which = national_trade_policy
+          value = 1
+        }
+        idea = {
+          which = shrewd_commerce_practise
+          value = 2
+        }
+        threshold = {
+          value = 3.1
+          rhs = non_socialist
+        }
+      }
+      political_parties = {
+        base = underground_parties 
+        slider = {
+          which = serfdom_freesubjects
+          value = 1
+        }
+        idea = {
+          which = cabinet
+          value = 3
+        }
+        idea = {
+          which = humanist_tolerance
+          value = 1
+        }
+        idea = {
+          which = revolution_and_counter
+          value = 1
+        }
+        idea = {
+          which = bureaucracy
+          value = 1
+        }
+        threshold = {
+          value = 5.1
+          rhs = non_secret_ballots
+        }
+        threshold = {
+          value = 9.1
+          rhs = gerrymandering
+        }              
+      }
+    }
+  }
+}
+
+#extraEvents = {
+#  CAT = {
+#    1610.3.5 = {
+#      capital = 778 
+#    }
+#  }
+#  ENG = {
+#    1680.3.5 = {
+#      capital = 965 
+#    }
+#  }
+#}
+
+ideologies = {
+  conservative = {
+    start_date = 1830.1.1 
+    start_ruling = yes 
+    jingoism = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    protectionism = {
+      ideas = {
+        merchant_adventures = 1.05  
+        quest_for_the_new_world = 1.15
+        shrewd_commerce_practise = 1.10
+        vice_roys = 1.15
+        national_trade_policy = 1.20
+        
+      }
+      sliders = {
+        mercantilism_freetrade = -0.05 
+        aristocracy_plutocracy = -0.05 
+      }
+    }
+    interventionism = {
+      ideas = {
+        national_bank = 1.25
+        smithian_economics = 1.25
+        
+      }
+      sliders = {
+        mercantilism_freetrade = -0.05 
+        aristocracy_plutocracy = 0.02 
+      }
+    }
+    state_capitalism = {
+      ideas = {
+        bureaucracy = 1.30
+        espionage = 1.05
+        vetting = 1.05
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.05 
+        centralization_decentralization = -0.05 
+      }
+    }
+    moralism = {
+      ideas = {
+        church_attendance_duty = 1.05  
+        divine_supremacy = 1.15
+        deus_vult = 1.10
+        
+      }
+      sliders = {
+        innovative_narrowminded = 0.05 
+      }
+    }
+    pluralism = {
+      ideas = {
+        bill_of_rights = 1.10  
+        patron_of_art = 1.05
+        humanist_tolerance = 1.20
+        ecumenism = 1.25
+        liberty_egalite_fraternity = 1.20
+        scientific_revolution = 1.20
+        
+      }
+      sliders = {
+        innovative_narrowminded = -0.05 
+      }
+    }
+    full_citizenship = {
+      ideas = {
+        liberty_egalite_fraternity = 1.25  
+        bill_of_rights = 1.25
+        land_of_opportunity = 1.20
+        colonial_ventures = 1.10
+        
+      }
+      sliders = {
+        serfdom_freesubjects = 0.05
+      }
+    }
+  }
+  liberal = { 
+    start_date = 1830.1.1 
+    jingoism = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.05
+        grand_army = 1.05
+        military_drill = 1.05
+        engineer_corps = 1.05
+        battlefield_commisions = 1.05
+        glorious_arms = 1.05
+        regimental_system = 1.05
+        napoleonic_warfare = 1.10
+        improved_foraging = 1.05
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.05
+        grand_army = 1.10
+        military_drill = 1.05
+        engineer_corps = 1.05
+        battlefield_commisions = 1.05
+        glorious_arms = 1.05
+        regimental_system = 1.05
+        napoleonic_warfare = 1.10
+        improved_foraging = 1.10
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    secularized = {
+      ideas = {
+        bill_of_rights = 1.10  
+        patron_of_art = 1.05
+        humanist_tolerance = 1.20
+        ecumenism = 1.25
+        liberty_egalite_fraternity = 1.20
+        scientific_revolution = 1.20
+        
+      }
+      sliders = {
+        innovative_narrowminded = -0.05 
+      }
+    }
+    full_citizenship = {
+      ideas = {
+        liberty_egalite_fraternity = 1.25  
+        bill_of_rights = 1.25
+        land_of_opportunity = 1.20
+        colonial_ventures = 1.10
+        
+      }
+      sliders = {
+        serfdom_freesubjects = 0.05
+      }
+    }
+    limited_citizenship = {
+      ideas = {
+        vetting = 1.25  
+        espionage = 1.25
+        
+      }
+      sliders = {
+        centralization_decentralization = -0.03
+      }
+    }
+  }
+  socialist = {
+    start_date = 1848.1.1
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.05
+        grand_army = 1.10
+        military_drill = 1.05
+        engineer_corps = 1.05
+        battlefield_commisions = 1.05
+        glorious_arms = 1.05
+        regimental_system = 1.05
+        napoleonic_warfare = 1.10
+        improved_foraging = 1.10
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_atheism = {
+      ideas = {
+        bill_of_rights = 1.10  
+        patron_of_art = 1.05
+        humanist_tolerance = 1.20
+        ecumenism = 1.25
+        liberty_egalite_fraternity = 1.20
+        scientific_revolution = 1.20
+        
+      }
+      sliders = {
+        innovative_narrowminded = -0.05 
+      }
+    }
+    full_citizenship = {
+      ideas = {
+        liberty_egalite_fraternity = 1.25  
+        bill_of_rights = 1.25
+        land_of_opportunity = 1.20
+        colonial_ventures = 1.10
+        
+      }
+      sliders = {
+        serfdom_freesubjects = 0.05
+      }
+    }
+    limited_citizenship = {
+      ideas = {
+        vetting = 1.25  
+        espionage = 1.25
+        
+      }
+      sliders = {
+        centralization_decentralization = -0.03
+      }
+    }
+  }
+  reactionary = {
+    start_date = 1830.1.1 
+    jingoism = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+  }
+  anarcho_liberal = { 
+    start_date = 1830.1.1 
+    jingoism = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+  }
+  communist = {
+    start_date = 1848.1.1
+    jingoism = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+  }
+  fascist = {
+    start_date = 1900.1.1 
+    jingoism = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        quality_quantity = -0.03 
+      }
+    }
+    pro_military = {
+      ideas = {
+        national_conscripts = 1.05  
+        battlefield_commissions = 1.25
+        grand_army = 1.20
+        military_drill = 1.20
+        engineer_corps = 1.10
+        battlefield_commisions = 1.15
+        glorious_arms = 1.05
+        regimental_system = 1.15
+        napoleonic_warfare = 1.30
+        press_gangs = 1.10
+        grand_navy = 1.10
+        sea_hawks = 1.10
+        superior_seamanship = 1.10
+        naval_glory = 1.05  
+        excellent_shipwrights = 1.25
+        naval_fighting_instruction = 1.10
+        naval_provisioning = 1.05  
+        quest_for_the_new_world = 1.05
+        deus_vult = 1.05
+        revolution_and_counter = 1.05
+        improved_foraging = 1.25
+        cabinet = 1.10
+        
+      }
+      sliders = {
+        aristocracy_plutocracy = -0.03 
+        offensive_defensive = 0.03 
+        quality_quantity = -0.03 
+      }
+    }
+  } 
+}
+
+
+provdirs = { 
+  dir = "africa"
+  dir = "asia"
+  dir = "australia"
+  dir = "austria"
+  dir = "balkan"
+  dir = "canada"
+  dir = "carribean"
+  dir = "central asia"
+  dir = "china"
+  dir = "france"
+  dir = "germany"
+  dir = "india"
+  dir = "indonesia"
+  dir = "italy"
+  dir = "japan"
+  dir = "low countries"
+  dir = "mexico"
+  dir = "pacific island"
+  dir = "portugal"
+  dir = "scandinavia"
+  dir = "south america"
+  dir = "soviet"
+  dir = "spain"
+  dir = "united kingdom"
+  dir = "usa"
+}

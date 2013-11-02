@@ -1,0 +1,2764 @@
+#tech_power
+water_wheel_power = {
+	area = tech_power
+	year = 1836
+	cost = 3600
+
+	activate_building =  fabric_factory
+	mine_rgo_eff = 0.05
+	farm_rgo_eff = 0.15
+	farm_rgo_size = -0.01
+	factory_throughput = 0.025
+}
+practical_steam_engine = {
+	area = tech_power
+	year = 1836
+	cost = 7200
+
+	mine_rgo_eff = 0.4
+	farm_rgo_eff = 0.5
+	farm_rgo_size = -0.01
+	factory_throughput = 0.025
+}
+high_n_low_pressure_steam_engines = {
+	area = tech_power
+	year = 1836
+	cost = 10800
+
+	mine_rgo_eff = 0.4
+	farm_rgo_eff = 0.5
+	farm_rgo_size = -0.01
+	factory_throughput = 0.025
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 40
+			is_greater_power = yes
+		}
+	}
+}
+steam_turbine = {
+	area = tech_power
+	year = 1850
+	cost = 14400
+
+	mine_rgo_eff = 0.4
+	farm_rgo_eff = 0.5
+	farm_rgo_size = -0.01
+	factory_throughput = 0.025
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 40
+			is_greater_power = yes
+		}
+	}
+}
+combustion_engine = {
+	area = tech_power
+	year = 1880
+	cost = 18000
+
+	mine_rgo_eff = 0.4
+	farm_rgo_eff = 0.5
+	farm_rgo_size = -0.01
+	factory_throughput = 0.025
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 40
+			is_greater_power = yes
+		}
+	}
+}
+electrical_power_generation = {
+	area = tech_power
+	year = 1900
+	cost = 21600
+
+	mine_rgo_eff = 0.4
+	farm_rgo_eff = 0.5
+	farm_rgo_size = -0.01
+	factory_throughput = 0.25
+}
+
+
+#mechanization
+publishing_industry = {
+	area = mechanization
+	year = 1836
+	cost = 3600
+
+	activate_building = regular_clothes_factory 
+
+}
+mechanical_production = {
+	area = mechanization
+	year = 1836
+	cost = 7200
+
+	factory_throughput = 0.1 
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			civilized = yes
+		}
+	}
+}
+interchangeable_parts = {
+	area = mechanization
+	year = 1836
+	cost = 10800
+
+	factory_throughput = 0.1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			civilized = yes
+		}
+	}
+}
+semi_automatization = {
+	area = mechanization
+	year = 1850
+	cost = 14400
+
+	factory_cost = -0.1 
+}
+assembly_line = {
+	area = mechanization
+	year = 1870
+	cost = 18000
+
+	factory_cost = -0.1 
+}
+shift_work = {
+	area = mechanization
+	year = 1900
+	cost = 21600
+
+	
+	rgo_output = 0.05
+	factory_throughput = 0.05 
+}
+
+
+#metallurgy
+mechanized_mining = {
+	area = metallurgy
+	year = 1836
+	cost = 3600
+	activate_building = steel_factory 
+}
+clean_coal = {
+	area = metallurgy
+	year = 1836
+	cost = 7200
+	
+	rgo_goods_output = {
+		coal = 0.75
+	}
+	rgo_size = {
+		coal = 0.2
+	}
+	rgo_goods_output = {
+		sulphur = 0.1
+	}
+	rgo_size = {
+		sulphur = 0.2
+	}
+	rgo_goods_output = {
+		iron = 0.65
+	}
+	rgo_size = {
+		iron = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			OR = {
+				big_producer = coal
+				big_producer = iron
+			}
+		}
+	}
+}
+cheap_iron = {
+	area = metallurgy
+	year = 1836
+	cost = 10800
+	rgo_goods_output = {
+		precious_metal = 0.1
+	}
+	rgo_size = {
+		precious_metal = 0.2
+	}
+	rgo_goods_output = {
+		iron = 0.1
+	}
+	rgo_size = {
+		iron = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			big_producer = iron
+		}
+	}
+}
+cheap_steel = {
+	area = metallurgy
+	year = 1850
+	cost = 14400
+	rgo_goods_output = {
+		precious_metal = 0.1
+	}
+	rgo_size = {
+		precious_metal = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			big_producer = steel
+		}
+	}
+}
+advanced_metallurgy = {
+	area = metallurgy
+	year = 1870
+	cost = 18000
+
+	rgo_goods_output = {
+		sulphur = 0.2
+	}
+	rgo_size = {
+		sulphur = 0.2
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			big_producer = sulphur
+		}
+	}
+}
+electric_furnace = {
+	area = metallurgy
+	year = 1900
+	cost = 21600
+
+	factory_goods_output = {
+		steel = 0.05 
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			big_producer = steel
+			civilized = yes
+		}
+	}
+}
+
+
+#tech_infrastructure
+experimental_railroad = {
+	area = tech_infrastructure
+	year = 1836
+	cost = 3600
+
+	activate_building = railroad
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			civilized = yes
+		}
+		modifier = {
+			factor = 2
+			civilized = no
+		}
+	}
+}
+early_railroad = {
+	area = tech_infrastructure
+	year = 1840
+	cost = 7200
+
+	max_railroad = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			civilized = yes
+		}
+	}
+}
+iron_railroad = {
+	area = tech_infrastructure
+	year = 1850
+	cost = 10800
+
+	max_railroad = 1 
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			civilized = yes
+		}
+	}
+}
+steel_railroad = {
+	area = tech_infrastructure
+	year = 1870
+	cost = 14400
+
+	max_railroad = 1 
+}
+integral_rail_system = {
+	area = tech_infrastructure
+	year = 1898
+	cost = 18000
+
+	max_railroad = 1
+}
+limited_access_roads = {
+	area = tech_infrastructure
+	year = 1919
+	cost = 21600
+
+	max_railroad = 1
+}
+
+
+#chemistry_and_electricity
+basic_chemistry = {
+	area = chemistry_and_electricity
+	year = 1836
+	cost = 3600
+
+	activate_building = fertilizer_factory 
+}
+medicine = {
+	area = chemistry_and_electricity
+	year = 1836
+	cost = 7200
+
+	supply_limit = 0.25
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 50
+			civilized = yes
+		}
+	}
+}
+inorganic_chemistry = {
+	area = chemistry_and_electricity
+	year = 1850
+	cost = 10800
+
+	supply_limit = 0.25
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 40
+			is_greater_power = yes
+		}
+	}
+}
+organic_chemistry = {
+	area = chemistry_and_electricity
+	year = 1870
+	cost = 14400
+
+	supply_limit = 0.25
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 40
+			is_greater_power = yes
+		}
+	}
+}
+electricity = {
+	area = chemistry_and_electricity
+	year = 1880
+	cost = 18000
+	
+	supply_limit = 0.50
+	factory_goods_output = {
+			fertilizer = 0.05
+		}
+
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			is_greater_power = yes
+		}
+	}
+
+}
+synthetic_polymers = {
+	area = chemistry_and_electricity
+	year = 1919
+	cost = 21600
+
+	supply_limit = 0.50
+}
+
+#army_doctrine
+post_napoleonic_thought = {
+	area = army_doctrine
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+
+	activate_building = fort	
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.20
+	}
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			civilized = no
+		}
+	}
+}
+
+strategic_mobility = {
+	area = army_doctrine
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	
+	army_base = {
+		reconnaissance = 0.5
+		supply_consumption = 0.20
+	}
+	max_fort = 1
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+
+point_defense_system = {
+	area = army_doctrine
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+
+	army_base = {
+		defence = 1
+		supply_consumption = 0.20
+	} 
+	max_fort = 1
+	dig_in_cap = 1
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+
+}
+deep_defense_system = {
+	area = army_doctrine
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	
+	army_base = {
+		defence = 1
+		supply_consumption = 0.20
+	} 
+	max_fort = 1
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+infiltration = {
+	area = army_doctrine
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	activate_building = barrel_factory 
+	
+	army_base = {
+		attack = 1
+		supply_consumption = 0.20
+	} 
+	max_fort = 1
+	dig_in_cap = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+
+}
+modern_army_doctrine = {
+	area = army_doctrine
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	
+	army_base = {
+		attack = 1
+		supply_consumption = 0.20
+	} 
+	max_fort = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+
+
+#light_armament
+flintlock_rifles = {
+	area = light_armament
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	
+	activate_unit = infantry
+	army_base = {
+		attack = 1
+		supply_consumption = 0.20
+	}
+	combat_width = -1
+
+	ai_chance = {
+		factor = 50
+	}
+}
+muzzle_loaded_rifles = {
+	area = light_armament
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	activate_unit = engineer
+	
+	army_base = {
+		attack = 1
+		supply_consumption = 0.20
+	}
+	combat_width = -2
+
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}
+}
+breech_loaded_rifles = {
+	area = light_armament
+	year = 1850
+	cost = 10800
+
+	activate_unit = guard
+	unciv_military = yes
+	
+	army_base = {
+		attack = 1
+		supply_consumption = 0.20
+	}
+	combat_width = -2
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}
+}
+machine_guns = {
+	area = light_armament
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	
+	army_base = {
+		defence = 5
+		supply_consumption = 0.20
+	} 
+	combat_width = -5
+	colonial_life_rating = -10 
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}
+	
+}
+bolt_action_rifles = {
+	area = light_armament
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	unit = 1
+	
+	army_base = {
+		attack = 5
+		supply_consumption = 0.20
+	}
+	combat_width = -5
+	
+	ai_chance = {
+		factor = 2
+	}
+}
+modern_divisional_structure = {
+	area = light_armament
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+
+	unit = 2
+	army_base = {
+		attack = 5
+		supply_consumption = 0.20
+	}
+	combat_width = -5
+}
+
+
+#heavy_armament
+bronze_muzzle_loaded_artillery = {
+	area = heavy_armament
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	activate_unit = artillery
+	
+	ai_chance = {
+		factor = 50
+	}
+}
+iron_muzzle_loaded_artillery = {
+	area = heavy_armament
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	artillery = {
+		attack = 2
+		defence = 2
+		supply_consumption = 0.1
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+iron_breech_loaded_artillery = {
+	area = heavy_armament
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	artillery = {
+		attack = 2
+		defence = 2
+		supply_consumption = 0.1
+	}
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+steel_breech_loaded_artillery = {
+	area = heavy_armament
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	artillery = {
+		attack = 2
+		defence = 2
+		supply_consumption = 0.1
+	} 
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+indirect_artillery_fire = {
+	area = heavy_armament
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	artillery = {
+		attack = 4
+		defence = 4
+		supply_consumption = 0.1
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+heavy_armament_dunno = {
+	area = heavy_armament
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	artillery = {
+		attack = 4
+		defence = 4
+		supply_consumption = 0.1
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+
+
+#military_science
+military_staff_system = {
+	area = military_science
+	year = 1836
+	cost = 3600
+	unciv_military = yes	
+	activate_unit = cavalry
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+military_plans = {
+	area = military_science
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	
+	activate_unit = dragoon
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+military_statistics = {
+	area = military_science
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	
+	activate_unit = cuirassier
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+military_logistics = {
+	area = military_science
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	
+	activate_unit = hussar 
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.20
+	}
+	mobilisation_size = 0.05
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+military_directionism = {
+	area = military_science
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	
+	army_base = {
+		default_organisation = 5
+		supply_consumption = 0.20
+	}
+	ai_chance = {
+		factor = 5 # beware the gas
+		
+		modifier = {
+			factor = 100
+			is_greater_power = yes
+		}
+	}	
+}
+aeronautics = {
+	area = military_science
+	year = 1914
+	cost = 21600
+		army_base = {
+		supply_consumption = 0.20
+	}
+	activate_unit = plane
+	unciv_military = yes
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}
+}
+
+
+#army_leadership
+army_command_principle = {
+	area = army_leadership
+	year = 1836
+	cost = 3600
+
+	morale = 0.05
+	unciv_military = yes
+	military_tactics = 1
+
+	army_base = {
+		supply_consumption = 0.20
+	}
+
+	ai_chance = {
+		factor = 50
+	}
+}
+army_professionalism = {
+	area = army_leadership
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	morale = 0.05
+
+	military_tactics = 1
+	
+	army_base = {
+	supply_consumption = 0.20
+	}
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+army_decision_making = {
+	area = army_leadership
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	morale = 0.05
+
+	military_tactics = 1
+
+	army_base = {
+	supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+army_risk_management = {
+	area = army_leadership
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	morale = 0.05
+
+	military_tactics = 1
+
+	army_base = {
+		supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+army_nco_training = {
+	area = army_leadership
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	morale = 0.05
+	
+
+	military_tactics = 1
+
+	army_base = {
+		supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+great_war_experience = {
+	area = army_leadership
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	morale = 0.05
+
+	military_tactics = 1
+
+	army_base = {
+		supply_consumption = 0.20
+	}
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 2
+			civilized = yes
+			any_neighbor_country = {
+				civilized = yes
+				NOT = { is_greater_power = yes }
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+			any_neighbor_country = {
+				is_greater_power = yes
+				military_score = THIS
+			}
+		}
+		modifier = {
+			factor = 10
+			is_greater_power = yes
+		}
+	}
+}
+
+
+#naval_doctrine
+post_nelsonian_thought = {
+	area = naval_doctrine
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	activate_building = naval_base
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+	}
+}
+battleship_column_doctrine = {
+	area = naval_doctrine
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	max_naval_base = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+	}
+}
+raider_group_doctrine = {
+	area = naval_doctrine
+	year = 1860
+	cost = 10800
+	unciv_military = yes
+	max_naval_base = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+	}
+}
+blue_and_brown_water_schools = {
+	area = naval_doctrine
+	year = 1880
+	cost = 14400
+	unciv_military = yes
+	max_naval_base = 1
+}
+high_sea_battle_fleet = {
+	area = naval_doctrine
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	max_naval_base = 1
+}
+modern_naval_doctrine = {
+	area = naval_doctrine
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	max_naval_base = 1
+}
+
+
+#ship_construction
+clipper_design = {
+	area = ship_construction
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	activate_building = clipper_shipyard 
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 5
+			is_greater_power = yes
+		}
+	}
+}
+steamers = {
+	area = ship_construction
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	activate_building = steamer_shipyard 
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_num_of_ports = 9
+		}
+		modifier = {
+			factor = 3
+			big_producer = fish
+		}
+		modifier = {
+			factor = 100
+			total_num_of_ports = 9
+			is_greater_power = yes
+			year = 1850
+		}		
+	}
+}
+iron_steamers = {
+	area = ship_construction
+	year = 1860
+	cost = 10800
+	unciv_military = yes
+	navy_base = { maximum_speed = 2 }
+	
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			total_num_of_ports = 9
+			is_greater_power = yes
+			year = 1860
+		}		
+	}	
+}
+steel_steamers = {
+	area = ship_construction
+	year = 1880
+	cost = 14400
+	unciv_military = yes
+	navy_base = { maximum_speed = 2 } 
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			total_num_of_ports = 9
+			is_greater_power = yes
+			year = 1880
+		}		
+	}	
+}
+steam_turbine_ships = {
+	area = ship_construction
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	navy_base = { maximum_speed = 2 } 
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 100
+			total_num_of_ports = 9
+			is_greater_power = yes
+			year = 1900
+		}		
+	}
+}
+oil_driven_ships = {
+	area = ship_construction
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	navy_base = { maximum_speed = 2 } 
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 100
+			total_num_of_ports = 9
+			is_greater_power = yes
+			year = 1919
+		}		
+	}
+}
+
+
+#naval_engineering
+naval_design_bureaus = {
+	area = naval_engineering
+	year = 1836
+	cost = 3600
+	navy_base = { build_time = -10 }
+	unciv_military = yes
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 50
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+fire_control_systems = {
+	area = naval_engineering
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	navy_base = { build_time = -10 }
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			total_num_of_ports = 9
+			is_greater_power = yes 
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}
+	}
+}
+
+weapon_platforms = {
+	area = naval_engineering
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	navy_base = { build_time = -10 }
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 50
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+main_armament = {
+	area = naval_engineering
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	navy_base = { build_time = -10 }
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 50
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+advanced_naval_design = {
+	area = naval_engineering
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	navy_base = { build_time = -10 }
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 50
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+modern_naval_design = {
+	area = naval_engineering
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	navy_base = { build_time = -10 }
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 50
+			total_num_of_ports = 9
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+
+
+#naval_science
+alphabetic_flag_signaling = {
+	area = naval_science
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	supply_range = 0.10
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { rank = 18 }
+		}
+		modifier = {
+			factor = 50
+			rank = 16
+		}
+	}
+}
+naval_plans = {
+	area = naval_science
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	supply_range = 0.10
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { rank = 18 }
+		}
+		modifier = {
+			factor = 50
+			rank = 16
+		}
+	}
+}
+naval_statistics = {
+	area = naval_science
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	supply_range = 0.10
+}
+naval_logistics = {
+	area = naval_science
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	supply_range = 0.10
+}
+naval_directionism = {
+	area = naval_science
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	supply_range = 0.10
+}
+naval_integration = {
+	area = naval_science
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	supply_range = 0.10
+}
+
+
+#naval_leadership
+the_command_principle = {
+	area = naval_leadership
+	year = 1836
+	cost = 3600
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 10
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+naval_professionalism = {
+	area = naval_leadership
+	year = 1836
+	cost = 7200
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+naval_decision_making = {
+	area = naval_leadership
+	year = 1850
+	cost = 10800
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+naval_risk_management = {
+	area = naval_leadership
+	year = 1870
+	cost = 14400
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+naval_nco_training = {
+	area = naval_leadership
+	year = 1900
+	cost = 18000
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+modern_naval_training = {
+	area = naval_leadership
+	year = 1919
+	cost = 21600
+	unciv_military = yes
+	navy_base = {
+		default_organisation = 5
+	}
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { total_num_of_ports = 1 }
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 50
+		}
+		modifier = {
+			factor = 2
+			total_amount_of_ships = 100
+		}	
+	}
+}
+
+
+#aesthetics
+classicism_n_early_romanticism = {
+	area = aesthetics
+	year = 1836
+	cost = 3600
+
+	prestige = 0.05
+}
+
+romanticism = {
+	area = aesthetics
+	year = 1836
+	cost = 7200
+	
+	prestige = 0.05
+
+
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			is_greater_power = yes
+			continent = north_america
+		}
+	}
+}
+
+realism = {
+	area = aesthetics
+	year = 1836
+	cost = 10800
+
+	prestige = 0.05
+}
+impressionism = {
+	area = aesthetics
+	year = 1850
+	cost = 14400
+
+	prestige = 0.05
+}
+expressionism = {
+	area = aesthetics
+	year = 1870
+	cost = 18000
+
+	prestige = 0.05
+}
+mass_culture_n_the_avant_garde = {
+	area = aesthetics
+	year = 1900
+	cost = 21600
+
+	prestige = 0.05
+}
+
+
+#philosophy
+late_enlightenment_philosophy = {
+	area = philosophy
+	year = 1836
+	cost = 3600
+
+
+	increase_research = 0.50
+	
+	ai_chance = {
+		factor = 100
+	}
+}
+idealism = {
+	area = philosophy
+	year = 1840
+	cost = 7200
+
+	increase_research = 0.50
+	ai_chance = {
+		factor = 100
+	}
+	
+
+}
+empiricism = {
+	area = philosophy
+	year = 1860
+	cost = 10800
+	
+	increase_research = 0.50
+	ai_chance = {
+		factor = 100
+	}
+}
+analytic_philosophy = {
+	area = philosophy
+	year = 1870
+	cost = 14400
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 100
+	}
+}
+phenomenology_n_hermeneutic = {
+	area = philosophy
+	year = 1880
+	cost = 18000
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 100
+	}
+}
+anti__rationalism = {
+	area = philosophy
+	year = 1900
+	cost = 21600
+
+	increase_research = 1.0
+	ai_chance = {
+		factor = 100
+	}
+}
+
+
+#social_thought
+malthusian_thought = {
+	area = social_thought
+	year = 1836
+	cost = 3600
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { rank = 16 }
+		}
+	}
+}
+positivism = {
+	area = social_thought
+	year = 1836
+	cost = 7200
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+
+}
+functionalism = {
+	area = social_thought
+	year = 1836
+	cost = 10800
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+
+}
+biologism = {
+	area = social_thought
+	year = 1850
+	cost = 14400
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+
+}
+social_science = {
+	area = social_thought
+	year = 1870
+	cost = 18000
+
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+
+}
+social_alienation = {
+	area = social_thought
+	year = 1900
+	cost = 21600
+	
+	colonial_migration = 0.05
+	education_efficiency = 0.1
+
+}
+
+
+#political_thought
+enlightenment_thought = {
+	area = political_thought
+	year = 1836
+	cost = 3600
+
+	max_national_focus = 1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 100
+			civilized = no
+		}
+	}
+}
+ideological_thought = {
+	area = political_thought
+	year = 1836
+	cost = 7200
+
+	max_national_focus = 1 
+		
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			total_pops = 1000000
+		}
+		
+	}
+}
+state_n_government = {
+	area = political_thought
+	year = 1840
+	cost = 10800
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			total_pops = 2000000
+		}
+		
+	}	
+}
+nationalism_n_imperialism = {
+	area = political_thought
+	year = 1850
+	cost = 14400
+
+	max_national_focus = 1
+	colonial_life_rating = -10 
+	cb_creation_speed = 0.1
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			total_pops = 3000000
+		}
+		
+	}	
+}
+revolution_n_counterrevolution = {
+	area = political_thought
+	year = 1870
+	cost = 18000
+
+	max_national_focus = 1
+	diplomatic_points = 0.25
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			total_pops = 4000000
+		}
+		
+	}	
+}
+mass_politics = {
+	area = political_thought
+	year = 1900
+	cost = 21600
+
+	max_national_focus = 1 
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+		modifier = {
+			factor = 3
+			total_pops = 5000000
+		}
+		
+	}	
+}
+
+
+#psychology
+introspectionism = {
+	area = psychology
+	year = 1836
+	cost = 3600
+
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+
+}
+associationism = {
+	area = psychology
+	year = 1836
+	cost = 7200
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+phenomenalism = {
+	area = psychology
+	year = 1836
+	cost = 10800
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+experimental_psychology = {
+	area = psychology
+	year = 1850
+	cost = 14400
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+psychoanalysis = {
+	area = psychology
+	year = 1870
+	cost = 18000
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+
+}
+behaviorism = {
+	area = psychology
+	year = 1900
+	cost = 21600
+
+	regular_experience_level = 5
+	reinforce_rate = 0.05
+	
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+
+
+#financial_institutions
+private_banks = {
+	area = financial_institutions
+	year = 1836
+	cost = 3600
+
+	activate_building = cement_factory 
+	tax_eff = 3
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+stock_exchange = {
+	area = financial_institutions
+	year = 1836
+	cost = 7200
+
+	tax_eff = 5
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+business_banks = {
+	area = financial_institutions
+	year = 1850
+	cost = 10800
+
+	tax_eff = 5
+	
+	ai_chance = {
+		factor = 2
+		modifier = {
+			factor = 25
+			is_greater_power = yes
+		}
+	}
+}
+investment_banks = {
+	area = financial_institutions
+	year = 1870
+	cost = 14400
+
+	tax_eff = 5
+}
+bank_inspection_board = {
+	area = financial_institutions
+	year = 1900
+	cost = 18000
+
+	tax_eff = 5
+}
+mutual_funds = {
+	area = financial_institutions
+	year = 1919
+	cost = 21600
+
+	tax_eff = 5
+}
+
+
+#monetary_system
+no_standard = {
+	area = monetary_system
+	year = 1836
+	cost = 3600
+
+	administrative_efficiency = 0.05
+}
+ad_hoc_money_bill_printing = {
+	area = monetary_system
+	year = 1836
+	cost = 7200
+
+	administrative_efficiency = 0.05
+}  
+private_bank_money_bill_printing = {
+	area = monetary_system
+	year = 1836
+	cost = 10800
+
+	administrative_efficiency = 0.05
+}
+central_bank_money_bill_printing = {
+	area = monetary_system
+	year = 1850
+	cost = 14400
+
+	administrative_efficiency = 0.05
+}
+modern_central_bank_system = {
+	area = monetary_system
+	year = 1870
+	cost = 18000
+
+	administrative_efficiency = 0.05
+}
+market_determined_exchange_rates = {
+	area = monetary_system
+	year = 1900
+	cost = 21600
+
+
+	administrative_efficiency = 0.05
+}
+
+
+#economic_thought_and_critique
+early_classical_theory_and_critique = {
+	area = economic_thought_and_critique
+	year = 1836
+	cost = 3600
+	
+	activate_building = lumber_mill
+	factory_input = -0.01
+}
+late_classical_theory = {
+	area = economic_thought_and_critique
+	year = 1836
+	cost = 7200
+
+	factory_input = -0.01
+}
+collectivist_theory = {
+	area = economic_thought_and_critique
+	year = 1836
+	cost = 10800
+
+	factory_input = -0.01
+}
+the_historical_theory = {
+	area = economic_thought_and_critique
+	year = 1850
+	cost = 14400
+
+	factory_input = -0.01
+}
+neoclassical_theory = {
+	area = economic_thought_and_critique
+	year = 1870
+	cost = 18000
+
+	factory_input = -0.01
+}
+keynesian_economics = {
+	area = economic_thought_and_critique
+	year = 1900
+	cost = 21600
+
+	factory_input = -0.01
+}
+
+
+#market_functionality
+freedom_of_trade = {
+	area = market_functionality
+	year = 1836
+	cost = 3600
+
+
+	activate_building = luxury_clothes_factory  
+
+	influence = 0.1
+	farm_rgo_size = -0.02
+	mine_rgo_size = -0.02
+	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.2
+	
+	ai_chance = {
+		factor = 100
+	}
+}
+market_structure = {
+	area = market_functionality
+	year = 1836
+	cost = 7200
+
+	influence = 0.1
+	farm_rgo_size = -0.02
+	mine_rgo_size = -0.02
+	farm_rgo_eff = 0.2
+	mine_rgo_eff = 0.2
+	
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+	}	
+
+}
+business_regulations = {
+	area = market_functionality
+	year = 1836
+	cost = 10800
+
+	influence = 0.2
+	farm_rgo_size = -0.01
+	mine_rgo_size = -0.01
+	farm_rgo_eff = 0.1
+	mine_rgo_eff = 0.1
+	ai_chance = {
+		factor = 50
+		modifier = {
+			factor = 2
+			is_greater_power = yes
+		}
+	}	
+	
+}
+market_regulations = {
+	area = market_functionality
+	year = 1850
+	cost = 14400
+
+	influence = 0.2
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}	
+	
+}
+economic_responsibility = {
+	area = market_functionality
+	year = 1870
+	cost = 18000
+
+	influence = 0.2
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}	
+	
+}
+government_interventionism = {
+	area = market_functionality
+	year = 1900
+	cost = 21600
+
+	influence = 0.2
+	ai_chance = {
+		factor = 1
+		modifier = {
+			factor = 50
+			is_greater_power = yes
+		}
+	}	
+	
+}
+
+
+#tech_organization
+guild_based_production = {
+	area = tech_organization
+	year = 1836
+	cost = 3600
+	activate_building = canned_food_factory 
+	factory_output = 0.01
+}
+organized_factories = {
+	area = tech_organization
+	year = 1836
+	cost = 7200
+
+	factory_output = 0.01
+	ai_chance = {
+		factor = 20
+	}	
+}
+scientific_management = {
+	area = tech_organization
+	year = 1836
+	cost = 10800
+
+	factory_output = 0.02
+}
+time_saving_measures = {
+	area = tech_organization
+	year = 1850
+	cost = 14400
+
+	factory_output = 0.02
+}
+management_strategy = {
+	area = tech_organization
+	year = 1870
+	cost = 18000
+
+	factory_output = 0.03
+}
+organizational_development = {
+	area = tech_organization
+	year = 1900
+	cost = 21600
+
+	factory_output = 0.03
+}
+
+
+schools ={
+  tech_power = industry_tech_research_bonus
+  mechanization = industry_tech_research_bonus
+  metallurgy = industry_tech_research_bonus
+  tech_infrastructure = industry_tech_research_bonus
+  chemistry_and_electricity = industry_tech_research_bonus
+  army_doctrine = army_tech_research_bonus
+  light_armament = army_tech_research_bonus
+  heavy_armament = army_tech_research_bonus
+  military_science = army_tech_research_bonus
+  army_leadership = army_tech_research_bonus
+  naval_doctrine = navy_tech_research_bonus
+  ship_construction = navy_tech_research_bonus
+  naval_engineering = navy_tech_research_bonus
+  naval_science = navy_tech_research_bonus
+  naval_leadership = navy_tech_research_bonus
+  aesthetics = culture_tech_research_bonus
+  philosophy = culture_tech_research_bonus
+  social_thought = culture_tech_research_bonus
+  political_thought = culture_tech_research_bonus
+  psychology = culture_tech_research_bonus
+  financial_institutions = commerce_tech_research_bonus
+  monetary_system = commerce_tech_research_bonus
+  economic_thought_and_critique = commerce_tech_research_bonus
+  market_functionality = commerce_tech_research_bonus
+  tech_organization = commerce_tech_research_bonus
+
+
+  traditional_academic = {
+    army_tech_research_bonus = 0
+    commerce_tech_research_bonus = 0
+    culture_tech_research_bonus = 0
+    industry_tech_research_bonus = 0
+    navy_tech_research_bonus = 0
+  }
+  
+  army_tech_school = {
+    army_tech_research_bonus = 0.15
+    commerce_tech_research_bonus = 0
+    culture_tech_research_bonus = -0.1
+    industry_tech_research_bonus = 0.1
+    navy_tech_research_bonus = -0.05
+    unciv_economic_modifier = -0.05
+    unciv_military_modifier = -0.15
+  }
+  
+  naval_tech_school = {
+    army_tech_research_bonus = -0.05
+    commerce_tech_research_bonus = 0.1
+    culture_tech_research_bonus = -0.1
+    industry_tech_research_bonus = 0
+    navy_tech_research_bonus = 0.15
+    unciv_economic_modifier = -0.05
+    unciv_military_modifier = -0.15
+  }
+  
+  industrial_tech_school = {
+    army_tech_research_bonus = -0.05
+    commerce_tech_research_bonus = 0.05
+    culture_tech_research_bonus = 0
+    industry_tech_research_bonus = 0.15
+    navy_tech_research_bonus = -0.1
+    unciv_economic_modifier = -0.05
+  }
+  
+  culture_tech_school = {
+    army_tech_research_bonus = 0
+    commerce_tech_research_bonus = 0.05
+    culture_tech_research_bonus = 0.10
+    industry_tech_research_bonus = -0.05
+    navy_tech_research_bonus = -0.20
+    unciv_economic_modifier = -0.10
+    unciv_military_modifier = -0.05
+  }
+  
+  commerce_tech_school = {
+    army_tech_research_bonus = -0.1
+    commerce_tech_research_bonus = 0.1
+    culture_tech_research_bonus = 0.1
+    industry_tech_research_bonus = 0.05
+    navy_tech_research_bonus = -0.1
+    unciv_economic_modifier = -0.25
+    unciv_military_modifier = -0.05
+  }
+  
+  prussian_tech_school = {
+    army_tech_research_bonus = 0.15
+    commerce_tech_research_bonus = 0
+    culture_tech_research_bonus = 0.05
+    industry_tech_research_bonus = 0.15
+    navy_tech_research_bonus = -0.15
+    unciv_economic_modifier = -0.05
+    unciv_military_modifier = -0.15
+  }
+}

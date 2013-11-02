@@ -1,0 +1,166 @@
+DUMMY = {
+  
+}
+
+KHA = {
+  liberal = {
+    area = trade_policy
+    position = free_trade 
+  }
+}
+
+CAT = {
+  conservative = {
+    area = war_policy
+    position = jingoism 
+  }
+}
+
+USA = {
+  conservative = {
+    area = trade_policy
+    position = protectionism
+  }
+  conservative = {
+    area = economic_policy
+    position = state_capitalism
+  }
+  conservative = {
+    area = citizenship_policy
+    position = full_citizenship
+  }
+  conservative = {
+    area = religious_policy
+    position = moralism
+  }
+  conservative = {
+    area = war_policy
+    position = pro_military
+  }
+
+  liberal = {
+    area = trade_policy
+    position = protectionism
+  }
+  liberal = {
+    area = economic_policy
+    position = interventionism
+  }
+  liberal = {
+    area = citizenship_policy
+    position = full_citizenship
+  }
+  liberal = {
+    area = religious_policy
+    position = pluralism
+  }
+  liberal = {
+    area = war_policy
+    position = pro_military
+  }
+
+  reactionary = {
+    area = trade_policy
+    position = protectionism
+  }
+  reactionary = {
+    area = economic_policy
+    position = state_capitalism
+  }
+  reactionary = {
+    area = citizenship_policy
+    position = full_citizenship
+  }
+  reactionary = {
+    area = religious_policy
+    position = moralism
+  }
+  reactionary = {
+    area = war_policy
+    position = pro_military
+  }
+
+  socialist = {
+    area = trade_policy
+    position = protectionism
+  }
+  socialist = {
+    area = economic_policy
+    position = state_capitalism
+  }
+  socialist = {
+    area = citizenship_policy
+    position = full_citizenship
+  }
+  socialist = {
+    area = religious_policy
+    position = secularized
+  }
+  socialist = {
+    area = war_policy
+    position = anti_military
+  }
+
+  anarcho_liberal = {
+    area = trade_policy
+    position = free_trade
+  }
+  anarcho_liberal = {
+    area = economic_policy
+    position = laissez_faire
+  }
+  anarcho_liberal = {
+    area = citizenship_policy
+    position = full_citizenship
+  }
+  anarcho_liberal = {
+    area = religious_policy
+    position = secularized
+  }
+  anarcho_liberal = {
+    area = war_policy
+    position = pro_military
+  }
+
+  communist = {
+    area = trade_policy
+    position = protectionism
+  }
+  communist = {
+    area = economic_policy
+    position = planned_economy
+  }
+  communist = {
+    area = citizenship_policy
+    position = full_citizenship
+  }
+  communist = {
+    area = religious_policy
+    position = pro_atheism
+  }
+  communist = {
+    area = war_policy
+    position = pro_military
+  }
+
+  fascist = {
+    area = trade_policy
+    position = protectionism
+  }
+  fascist = {
+    area = economic_policy
+    position = state_capitalism
+  }
+  fascist = {
+    area = citizenship_policy
+    position = residency
+  }
+  fascist = {
+    area = religious_policy
+    position = moralism
+  }
+  fascist = {
+    area = war_policy
+    position = jingoism
+  }
+}

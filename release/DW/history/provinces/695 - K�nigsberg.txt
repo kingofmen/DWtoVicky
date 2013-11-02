@@ -1,0 +1,12 @@
+owner = PRU
+controller = PRU
+add_core = PRU
+add_core = GER
+trade_goods = cattle
+life_rating = 35
+fort = 1
+#state_building = {
+#	level = 1
+#	building = lumber_mill
+#	upgrade = yes
+#}

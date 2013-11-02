@@ -11,3 +11,14 @@
 *.lai
 *.la
 *.a
+
+# LaTeX stuff
+*.aux
+*.log
+
+# Local-use stuff
+*.ps1
+debug/
+*.pro
+*.eu3
+release/moc*

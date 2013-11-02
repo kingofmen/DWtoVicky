@@ -1,0 +1,14 @@
+owner = USA
+controller = USA
+add_core = USA
+trade_goods = fruit
+life_rating = 25
+colony = yes
+is_slave = yes
+naval_base = 1
+1861.1.1 = {
+	colony = no
+	controller = CSA
+	owner = CSA
+	add_core = CSA
+}
