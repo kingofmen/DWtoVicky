@@ -280,7 +280,7 @@ private:
   objvec goods;
   objvec continents;
   objvec historicalPrices;
-  vector<pair<string, Object*> > tagToPartiesMap; 
+  map<string, Object*> tagToPartiesMap; 
   map<string, Object*> trigMods; 
   map<string, Object*> nameToDecisionMap; 
   map<string, Object*> nameToModifierMap; 

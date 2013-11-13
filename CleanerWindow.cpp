@@ -16,6 +16,8 @@
 #include "StructUtils.hh" 
 #include "boost/tokenizer.hpp"
 
+#include <Windows.h>
+
 bool fullPopWeightDebug = false; 
 Object* debugObject = 0; 
 
@@ -1656,12 +1658,8 @@ void WorkerThread::configure () {
 
   for (objiter tag = taglist.begin(); tag != taglist.end(); ++tag) {
     string currPartyFile = targetVersion + remQuotes((*tag)->getLeaf());
-    tagToPartiesMap.push_back(pair<string, Object*>((*tag)->getKey(), loadTextFile(currPartyFile))); 
+    tagToPartiesMap[(*tag)->getKey()] = loadTextFile(currPartyFile); 
   }
-  //for (map<string, Object*>::iterator test = tagToPartiesMap.begin(); test != tagToPartiesMap.end(); ++test) {
-  //Logger::logStream(Logger::Debug) << "Party object for tag " << (*test).first << " : " << (int) (*test).second << "\n";
-  //}
-
 
   Object* pinfoObj = loadTextFile(targetVersion + "positions.txt");
   objvec pinfos = pinfoObj->getLeaves();
@@ -1796,7 +1794,7 @@ void WorkerThread::createProvinceMappings () {
       if (vicContinent == "none") {
 	Logger::logStream(Logger::Warning) << "Warning: Could not find continent for Vic province "
 					   << nameAndNumber(vicprov)
-					   <<", assuming Europe.\n";
+					   << ", assuming Europe.\n";
 	vicContinent = "europe";
       }
       vicprov->resetLeaf("continent", vicContinent);
@@ -3653,6 +3651,13 @@ void WorkerThread::interpolateInHistory (objvec& history, string keyword, int in
   }
 }
 
+Object* getEu3ProvinceByTag (Object* eu3Game, string tag) {
+  static map<string, Object*> provmap;
+  if (provmap[tag]) return provmap[tag];
+  provmap[tag] = eu3Game->safeGetObject(tag);
+  return provmap[tag]; 
+}
+
 void WorkerThread::initialise () {
   vicGame->unsetValue("rebel_faction"); 
   objvec allVicObjects = vicGame->getLeaves();
@@ -3685,8 +3690,8 @@ void WorkerThread::initialise () {
   gameDays = days(gamedate);
   gameStartDays = days(startdate);
   Logger::logStream(Logger::Debug) << "Start and end dates: "
-    				   << startdate << "(" << gameStartDays << ") "
-				   << gamedate << "(" << gameDays << ") "
+    				   << startdate << " (" << gameStartDays << ") "
+				   << gamedate << " (" << gameDays << ") "
 				   << (gameDays - gameStartDays) << ".\n";
   
   objvec allEu3Objects = eu3Game->getLeaves();
@@ -4022,6 +4027,17 @@ void WorkerThread::initialise () {
   }
 
   Logger::logStream(Logger::Game) << "Done with national histories. Starting province histories. (This will take several minutes.) \n"; 
+
+  double prevtime = GetTickCount();
+  double currtime = 0;
+  double times[10]; 
+  for (int i = 0; i < 10; ++i) times[i] = 0; 
+
+#ifdef DEBUG
+#define TIMER(n) currtime = GetTickCount(); times[n] += (currtime - prevtime); prevtime = currtime; 
+#else
+#define TIMER(n)
+#endif
   
   for (objiter eu3prov = eu3Provinces.begin(); eu3prov != eu3Provinces.end(); ++eu3prov) {
     Object* hist = (*eu3prov)->safeGetObject("history");
@@ -4081,6 +4097,22 @@ void WorkerThread::initialise () {
     objvec events = hist->getLeaves();
     objvec allEvents;
     int ownerChange = gameStartDays;
+    if (0 == atoi((*eu3prov)->getKey().c_str()) % 10) {
+#ifdef DEBUG
+      Logger::logStream(Logger::Game) << "Province "
+				      << nameAndNumber(*eu3prov) << " "
+				      << times[0] << " " << times[1] << " " << times[2] << " " << times[3] << " " << times[4] << " "
+				      << times[5] << " " << times[6] << " " << times[7] << " " << times[8] << " " << times[9] << " " 
+				      << "\n";
+#else
+      currtime = GetTickCount();      
+      Logger::logStream(Logger::Game) << "Province "
+				      << nameAndNumber(*eu3prov) << " "
+				      << (currtime - prevtime)*0.001
+				      << "\n";
+      prevtime = currtime;
+#endif
+    }
     if (debugProvince) Logger::logStream(Logger::Debug) << "Starting debug history run on "
 							<< nameAndNumber(*eu3prov)
 							<< ". Initial owner "
@@ -4088,7 +4120,8 @@ void WorkerThread::initialise () {
 							<< "\n";
     double provinceDays = 0;
     double warDays = 0;
-  
+    TIMER(0);
+    
     for (objiter event = events.begin(); event != events.end(); ++event) {
       int eventDays = days((*event)->getKey());
       if (0 > eventDays) continue;
@@ -4113,7 +4146,8 @@ void WorkerThread::initialise () {
 	  allEvents.push_back(*n); 
 	}
       }
-      
+
+      TIMER(1);
       currOwnerTag = (*event)->safeGetString("owner", "NONE");
       currOwner    = findEu3CountryByTag(currOwnerTag);
       if (!currOwner) continue; 
@@ -4157,7 +4191,7 @@ void WorkerThread::initialise () {
       }
     }
     // End adding national events. 
-
+    TIMER(2);
     
     static DateAscendingSorter dateSorter;
     stable_sort(allEvents.begin(), allEvents.end(), dateSorter); 
@@ -4197,7 +4231,7 @@ void WorkerThread::initialise () {
 	currModifiers.push_back(*i); 
       }
     }
-    
+    TIMER(3);
     int previousEventDays = gameStartDays;
     int numWars = 0; 
     for (objiter event = allEvents.begin(); event != allEvents.end(); ++event) {
@@ -4218,8 +4252,9 @@ void WorkerThread::initialise () {
       for (objiter t = tmods.begin(); t != tmods.end(); ++t) eventGainTrigMod.push_back((*t)->getLeaf());
       tmods = (*event)->getValue("lose_trig_mod_candidate");
       for (objiter t = tmods.begin(); t != tmods.end(); ++t) eventLoseTrigMod.push_back((*t)->getLeaf());
-      
-      int eventProdTech           = (*event)->safeGetInt("production_tech");
+
+      TIMER(4);      
+      int eventProdTech      = (*event)->safeGetInt("production_tech");
       string eventOwner      = (*event)->safeGetString("owner",       "NONE");
       string eventController = (*event)->safeGetString("controller",  "NONE");
       string eventReligion   = (*event)->safeGetString("religion",    "NONE");
@@ -4294,7 +4329,6 @@ void WorkerThread::initialise () {
       for (vector<string>::iterator i = sliders.begin(); i != sliders.end(); ++i) {
 	currHistory->sliders[*i] = currSliders[*i];
       }
-
       for (vector<string>::iterator tm = currTrigModCandidates.begin(); tm != currTrigModCandidates.end(); ++tm) {
 	Object* trigMod = trigMods[*tm];
 	if (!trigMod) continue;
@@ -4312,7 +4346,6 @@ void WorkerThread::initialise () {
 	if (!satisfy) continue; 
 	currHistory->triggerMods.push_back(trigMod); 
       }
-      
       for (vector<string>::iterator c = eventGainTrigMod.begin(); c != eventGainTrigMod.end(); ++c) {
 	currTrigModCandidates.push_back(*c);
       }
@@ -4334,9 +4367,12 @@ void WorkerThread::initialise () {
       for (objiter cmod = currModifiers.begin(); cmod != currModifiers.end(); ++cmod) {
 	currHistory->modifiers.push_back(*cmod); 
       }
-      
-      currHistory->capital = eu3Game->safeGetObject(currCap);
-      currHistory->date = (*event)->getKey(); 
+      TIMER(5);      
+      //currHistory->capital = (currCap == "noCap" ? 0 : eu3Game->safeGetObject(currCap)); 
+      currHistory->capital = (currCap == "noCap" ? 0 : getEu3ProvinceByTag(eu3Game, currCap)); 
+      TIMER(6);                  
+      currHistory->date = (*event)->getKey();
+      TIMER(7);                  
       if (currHistory->ownerAtWar) {
 	if (debugProvince) Logger::logStream(Logger::Debug) << "Adding " << currHistory->numDays
 							    << " war days from event "
@@ -4346,8 +4382,10 @@ void WorkerThread::initialise () {
 	warDays += currHistory->numDays;
       }
       provinceDays += currHistory->numDays;
+      TIMER(8);       
       eu3ProvinceToHistoryMap[*eu3prov].push_back(currHistory);
-      
+
+      TIMER(9);                  
       if (eventOwner != "NONE") {
 	if (0 == currCores.count(eventOwner)) {
 	  for (objiter building = buildingTypes.begin(); building != buildingTypes.end(); ++building) {
@@ -4365,7 +4403,7 @@ void WorkerThread::initialise () {
       if (eventCulture    != "NONE") currCulture    = eventCulture;
       if (0 <= eventCitySize)        currCitySize   = eventCitySize;
       if (0 <= eventBaseTax)         currBaseTax    = eventBaseTax;
-      if (0 <= eventManpower)        currManpower   = eventManpower; 
+      if (0 <= eventManpower)        currManpower   = eventManpower;
       for (objiter building = buildingTypes.begin(); building != buildingTypes.end(); ++building) {
 	if ((*event)->safeGetString((*building)->getKey(), "ARGH") != "ARGH")
 	  hasBuildings[(*building)->getKey()] = ((*event)->safeGetString((*building)->getKey()) == "yes"); 
@@ -4406,7 +4444,6 @@ void WorkerThread::initialise () {
     for (vector<string>::iterator i = sliders.begin(); i != sliders.end(); ++i) {
       currSliders[*i] = currOwner->safeGetInt(*i);
     }    
-
     int finalProdTech   = 3;    
     Object* finalTechObject = currOwner->safeGetObject("technology");
     if (finalTechObject) {
@@ -4437,7 +4474,6 @@ void WorkerThread::initialise () {
       currHistory->modifiers.push_back(*i); 
     }
 
-    
     if (debugProvince) Logger::logStream(Logger::Debug) << "War days: " << warDays
 							<< " / " << provinceDays
 							<< " = " << (warDays / provinceDays)
@@ -5806,7 +5842,6 @@ double WorkerThread::partyModifier (string party, string area, string stance,
 }
 
 void WorkerThread::createParties () {
-  
   ofstream writer;
   
   Object* ideologies = configObject->safeGetObject("ideologies");
@@ -5814,6 +5849,97 @@ void WorkerThread::createParties () {
     Logger::logStream(Logger::Error) << "Error: Could not find ideology list in config.txt. Aborting party creation.\n";
     return; 
   }
+
+  objvec tagdefs = ideologies->getLeaves(); // Objects defining resemblances for purposes of choosing which vanilla party-package to use. 
+  map<string, Object*> referenceParties;
+  for (objiter tag = tagdefs.begin(); tag != tagdefs.end(); ++tag) {
+    if (!tagToPartiesMap[(*tag)->getKey()]) {
+      Logger::logStream(Logger::Debug) << "Could not find vanilla parties for " << (*tag)->getKey() << ".\n";
+      continue;
+    }
+    referenceParties[(*tag)->getKey()] = new Object(tagToPartiesMap[(*tag)->getKey()]); 
+  }
+
+  map<Object*, Object*> countryToFileMap; 
+  int partyId = 1;
+  for (map<string, Object*>::iterator v = tagToPartiesMap.begin(); v != tagToPartiesMap.end(); ++v) {
+    string vtag = (*v).first;
+    if (vtag == "REB") continue; 
+    Object* vicCountry = findVicCountryByTag(vtag);
+    Object* partyList = (*v).second;
+    if (!partyList) {
+      Logger::logStream(Logger::Debug) << "Did not find parties for " << vtag << "\n"; 
+      continue;
+    }
+
+    if (0 == vicCountryToEu3CountriesMap[vicCountry].size()) {
+      partyId += partyList->getValue("party").size();
+      continue; 
+    }
+    
+    Object* eu3Country = vicCountryToEu3CountriesMap[vicCountry][0];
+    string fileName("countries/");
+    
+    fileName += vtag; 
+    fileName += ".txt";
+    countryPointers->resetLeaf(vicCountry->getKey(), addQuotes(fileName));
+    vicCountry->unsetValue("active_party");
+    vicCountry->unsetValue("ruling_party"); 
+    
+    Object* currCountryObject = new Object("someCountry");
+    countryToFileMap[eu3Country] = currCountryObject; 
+    Object* colours = partyList->safeGetObject("color");
+    if (!colours) {
+      colours = new Object("color");
+      colours->setObjList(true);
+      colours->addToList("111");
+      colours->addToList("88");
+      colours->addToList("87");
+    }
+    currCountryObject->setValue(colours);
+    string graphs = partyList->safeGetString("graphical_culture", "EuropeanGC");
+    currCountryObject->setLeaf("graphical_culture", graphs); 
+
+    string bestTag = ""; 
+    double bestScore = 0;
+    Logger::logStream(Logger::Debug) << "Party points for " << vicCountry->getKey() << " (" << eu3Country->getKey() << ") : "; 
+    for (map<string, Object*>::iterator ref = referenceParties.begin(); ref != referenceParties.end(); ++ref) {
+      double currScore = 0;
+      Object* comparisonObject = ideologies->safeGetObject((*ref).first);
+      Object* ideaList = comparisonObject->getNeededObject("ideas");
+      objvec ideas = ideaList->getLeaves();
+      for (objiter idea = ideas.begin(); idea != ideas.end(); ++idea) {
+	if (eu3Country->safeGetString((*idea)->getKey(), "no") != "yes") continue;
+	currScore += atof((*idea)->getLeaf().c_str()); 
+      }
+      Object* sliderList = comparisonObject->getNeededObject("sliders");
+      objvec sliders = sliderList->getLeaves();
+      for (objiter slider = sliders.begin(); slider != sliders.end(); ++slider) {
+	currScore += eu3Country->safeGetFloat((*slider)->getKey()) * atof((*slider)->getLeaf().c_str());
+      }
+
+      Logger::logStream(Logger::Debug) << (*ref).first << " " << currScore << ", "; 
+      
+      if ((bestTag != "") && (bestScore > currScore)) continue;
+      bestTag = (*ref).first; 
+      bestScore = currScore;
+    }
+    Logger::logStream(Logger::Debug) << " select " << bestTag << ".\n";
+    if (bestTag == "") continue; // This should never happen. 
+
+    objvec bestPartyList = referenceParties[bestTag]->getValue("party");
+    for (objiter p = bestPartyList.begin(); p != bestPartyList.end(); ++p) {
+      Object* party = new Object(*p);
+      currCountryObject->setValue(party);
+      if (days(party->safeGetString("start_date")) <= days(remQuotes(vicGame->safeGetString("start_date", "\"1836.1.1\"")))) {
+	if (vicCountry->safeGetString("ruling_party", "none") == "none") vicCountry->setLeaf("ruling_party", partyId);
+	vicCountry->setLeaf("active_party", partyId);	
+      }
+      partyId++; // Not actually listed in party object! Derived from position in file. 
+    }    
+  }
+
+#ifdef BLAH
   objvec ideas = ideologies->getLeaves(); 
   vector<string> areas;
   areas.push_back("economic_policy");
@@ -6271,7 +6397,9 @@ void WorkerThread::createParties () {
       }
     }
   }
-  
+
+#endif
+	 
   for (map<Object*, objvec>::iterator v = vicCountryToEu3CountriesMap.begin(); v != vicCountryToEu3CountriesMap.end(); ++v) {
     Object* vicCountry = (*v).first;
     if (0 == (*v).second.size()) continue;
