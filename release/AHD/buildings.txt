@@ -11,6 +11,7 @@ weapons = {
   }
   onmap = yes  
   category = 7
+  customPoints = 1
 }
 
 
@@ -22,7 +23,7 @@ temple = {
   }
   destroy_on_conquest = yes
   category = 1
-  moddingPoints = 1
+  customPoints = 1
 }
 
 courthouse = {
@@ -34,7 +35,7 @@ courthouse = {
   }
   destroy_on_conquest = yes
   literacy = 1
-  moddingPoints = 1
+  customPoints = 1
 }
 
 spy_agency = {
@@ -45,7 +46,7 @@ spy_agency = {
     local_spy_defence = 0.25
   }
   destroy_on_conquest = yes
-  moddingPoints = 1
+  customPoints = 1
 }
 
 town_hall = {
@@ -59,7 +60,7 @@ town_hall = {
   destroy_on_conquest = yes
   literacy = 1
   bureaucrats = 0.05
-  moddingPoints = 1
+  customPoints = 1
 }
 
 college = {
@@ -72,7 +73,7 @@ college = {
   }
   destroy_on_conquest = yes
   literacy = 1
-  moddingPoints = 1
+  customPoints = 1
 }
 
 cathedral = {
@@ -88,7 +89,7 @@ cathedral = {
   category = 1
   bureaucrats = 0.50 
   clergymen = 0.05 
-  moddingPoints = 2 
+  customPoints = 2 
 }
 
 armory = {
@@ -580,6 +581,7 @@ refinery = {
   }
   onmap = yes
   category = 7
+  customPoints = 1
 }
 
 wharf = {
@@ -594,6 +596,7 @@ wharf = {
   }
   onmap = yes
   category = 7
+  customPoints = 1
 }
 
 textile = {
@@ -609,6 +612,7 @@ textile = {
   }
   onmap = yes
   category = 7
+  customPoints = 1
 }
 
 fine_arts_academy = {
@@ -624,6 +628,7 @@ fine_arts_academy = {
   onmap = yes
   category = 7
   literacy = 2
+  customPoints = 1
 }
 
 university = {
