@@ -22,3 +22,7 @@ debug/
 *.pro
 *.eu3
 release/moc*
+
+EU3toV2Converter/
+release/Output/
+release/flags/
