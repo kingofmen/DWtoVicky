@@ -21,6 +21,8 @@ template <typename T, typename C> struct dereferrer {
   C cmp;
 };
 
+
+
 // syntactic sugar
 template <typename T, typename M> member_lt_type<T,M, std::less<M> > member_lt( M T::*ptr ) {
   return member_lt_type<T,M, std::less<M> >(ptr, std::less<M>() );
@@ -29,6 +31,18 @@ template <typename T, typename M> member_lt_type<T,M, std::less<M> > member_lt( 
 template <typename T, typename M, typename C> member_lt_type<T,M,C> member_lt( M T::*ptr, C cmp ) {
   return member_lt_type<T,M,C>( ptr, cmp );
 }
+
+
+// Greater than for descending order.
+// Note use of lt_type - member_lt_type doesn't actually care
+// whether the suppled 'cmp' is a less-than! 
+template <typename T, typename M> member_lt_type<T,M, std::greater<M> > member_gt( M T::*ptr ) {
+  return member_lt_type<T,M, std::greater<M> >(ptr, std::greater<M>() );
+}
+template <typename T, typename M, typename C> member_lt_type<T,M,C> member_gt( M T::*ptr, C cmp ) {
+  return member_lt_type<T,M,C>( ptr, cmp );
+}
+
 
 template <typename T, typename C> dereferrer<T,C> deref( C cmp ) {
   return dereferrer<T,C>( cmp );

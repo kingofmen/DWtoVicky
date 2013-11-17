@@ -251,6 +251,7 @@ private:
   void createCountryMappings (); 
 
   // Conversion processes
+  void calculateCustomPoints ();
   void calculateTradePower ();
   void convertArmies ();
   void convertCores ();

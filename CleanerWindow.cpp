@@ -4789,10 +4789,44 @@ int WorkerThread::getTechLevel (Object* eu3country, string techtype) {
   return atoi(eu3Group->getToken(0).c_str());
 }
 
+void WorkerThread::calculateCustomPoints () {
+  for (objiter prov = eu3Provinces.begin(); prov != eu3Provinces.end(); ++prov) {
+    Object* owner = findEu3CountryByTag((*prov)->safeGetString("owner"));
+    if (!owner) continue;
+    for (objiter b = buildingTypes.begin(); b != buildingTypes.end(); ++b) {
+      int customPoints = (*b)->safeGetInt("customPoints");
+      if (0 == customPoints) continue;
+      if (!hasBuildingOrBetter((*b)->getKey(), (*prov))) continue;
+      owner->resetLeaf("customPoints", owner->safeGetInt("customPoints") + customPoints);
+    }
+  }
+
+  for (objiter eu3 = eu3Countries.begin(); eu3 != eu3Countries.end(); ++eu3) {
+    double cpoints = (*eu3)->safeGetFloat("customPoints");
+    Logger::logStream(Logger::Game) << (*eu3)->getKey() << " custom points: " << cpoints << "\n"; 
+    
+    Object* currCustom = customObject->safeGetObject((*eu3)->getKey());
+    if (!currCustom) continue;
+    objvec bids = currCustom->getLeaves();
+    double total = 0;
+    for (objiter bid = bids.begin(); bid != bids.end(); ++bid) {
+      if (!(*bid)->isLeaf()) continue;
+      double curr = atof((*bid)->getLeaf().c_str());
+      if (0 > curr) Logger::logStream(Logger::Game) << "  Negative bid for " << (*bid)->getKey() << " by " << (*eu3)->getKey() << " disregarded.\n";
+      else total += curr;
+    }
+    if (fabs(total - 1) < 0.0001) continue;
+    if (total < 0.0001) continue;
+    Logger::logStream(Logger::Game) << "  Total bids " << total << " not allowed, adjusting custom points to " << (cpoints / total) << "\n";
+    (*eu3)->resetLeaf("customPoints", (cpoints / total));
+  }
+}
+
 void WorkerThread::techLevels () {
   // Civilised status from having four groups at level 72,
   // or at date level. 
   // Tech points from EU3 techs, maximum of 150k, end-weighted.
+  // Bonus from custom points and trade level. 
   // Establishment from most-advanced group. 
 
   for (map<Object*, objvec>::iterator i = vicCountryToEu3CountriesMap.begin(); i != vicCountryToEu3CountriesMap.end(); ++i) {
@@ -4846,13 +4880,17 @@ void WorkerThread::techLevels () {
       }
     }
     if (upToDate >= 4) vicCountry->resetLeaf("civilized", "yes");
+    Object* currCustom = customObject->safeGetObject(eu3Country->getKey());
+    if (!currCustom) currCustom = customObject->getNeededObject("DUMMY"); 
     Logger::logStream(Logger::Game) << eu3Country->getKey()
-				    << " RPs (base, trade bonus) : "
+				    << " RPs (base, trade bonus, custom) : "
 				    << techPoints << " "
 				    << techPoints*eu3Country->safeGetFloat("totalTrade") * configObject->safeGetFloat("tradeResearchBonus")
+				    << eu3Country->safeGetFloat("customPoints") * currCustom->safeGetFloat("rp") * configObject->safeGetFloat("rpPerCustom", 10)
 				    << ".\n"; 
     
-    techPoints *= (1 + eu3Country->safeGetFloat("totalTrade") * configObject->safeGetFloat("tradeResearchBonus")); 
+    techPoints *= (1 + eu3Country->safeGetFloat("totalTrade") * configObject->safeGetFloat("tradeResearchBonus"));
+    techPoints += eu3Country->safeGetFloat("customPoints") * currCustom->safeGetFloat("rp") * configObject->safeGetFloat("rpPerCustom", 10); 
     vicCountry->resetLeaf("research_points", techPoints);
     string school = "\"traditional_academic\""; 
     if ((highestTech) && (highestLevels.first > highestLevels.second)) {
@@ -5452,9 +5490,8 @@ void WorkerThread::convertArmies () {
     }
 
     Object* vicNavy = new Object("navy");
-    //vicCountry->setValue(vicNavy); 
     vicNavy->setLeaf("location", fleetLocation->getKey());
-    Logger::logStream(Logger::Debug) << "Navy location: " << fleetLocation->getKey() << " " << vicCountry->getKey() << "\n"; 
+    Logger::logStream(Logger::Debug) << "Navy location: " << nameAndNumber(fleetLocation) << " for " << vicCountry->getKey() << "\n"; 
     //vicNavy->setLeaf("location", "2723"); 
     for (double i = 0; i < menowar.size(); i += regimentRatio["manowar"]) {
       unsigned int mowIdx = (unsigned int) floor(i + 0.5);
@@ -5841,6 +5878,12 @@ double WorkerThread::partyModifier (string party, string area, string stance,
   return ret;
 }
 
+struct PartyAssignment {
+  double score;
+  Object* eu3Country;
+  string vicTag; 
+};
+
 void WorkerThread::createParties () {
   ofstream writer;
   
@@ -5850,18 +5893,18 @@ void WorkerThread::createParties () {
     return; 
   }
 
+  double humanBonus = ideologies->safeGetFloat("humanBonus"); 
+  
   objvec tagdefs = ideologies->getLeaves(); // Objects defining resemblances for purposes of choosing which vanilla party-package to use. 
   map<string, Object*> referenceParties;
-  for (objiter tag = tagdefs.begin(); tag != tagdefs.end(); ++tag) {
-    if (!tagToPartiesMap[(*tag)->getKey()]) {
-      Logger::logStream(Logger::Debug) << "Could not find vanilla parties for " << (*tag)->getKey() << ".\n";
-      continue;
-    }
-    referenceParties[(*tag)->getKey()] = new Object(tagToPartiesMap[(*tag)->getKey()]); 
+  for (map<string, Object*>::iterator p = tagToPartiesMap.begin(); p != tagToPartiesMap.end(); ++p) {
+    if ((*p).first == "REB") continue; 
+    referenceParties[(*p).first] = new Object((*p).second); 
   }
 
   map<Object*, Object*> countryToFileMap; 
   int partyId = 1;
+  vector<PartyAssignment*> scores; 
   for (map<string, Object*>::iterator v = tagToPartiesMap.begin(); v != tagToPartiesMap.end(); ++v) {
     string vtag = (*v).first;
     if (vtag == "REB") continue; 
@@ -5879,6 +5922,7 @@ void WorkerThread::createParties () {
     
     Object* eu3Country = vicCountryToEu3CountriesMap[vicCountry][0];
     string fileName("countries/");
+    Object* currCustom = customObject->safeGetObject(eu3Country->getKey());
     
     fileName += vtag; 
     fileName += ".txt";
@@ -5899,45 +5943,82 @@ void WorkerThread::createParties () {
     currCountryObject->setValue(colours);
     string graphs = partyList->safeGetString("graphical_culture", "EuropeanGC");
     currCountryObject->setLeaf("graphical_culture", graphs); 
+  
+    for (map<string, Object*>::iterator v2 = tagToPartiesMap.begin(); v2 != tagToPartiesMap.end(); ++v2) {
+      if ((*v2).first == "REB") continue; 
+      PartyAssignment* currScore = new PartyAssignment();
+      scores.push_back(currScore);
+      currScore->score = (eu3Country->safeGetString("human", "no") == "yes") ? humanBonus : 0; 
+      currScore->eu3Country = eu3Country;
+      currScore->vicTag = (*v2).first;
 
-    string bestTag = ""; 
-    double bestScore = 0;
-    Logger::logStream(Logger::Debug) << "Party points for " << vicCountry->getKey() << " (" << eu3Country->getKey() << ") : "; 
-    for (map<string, Object*>::iterator ref = referenceParties.begin(); ref != referenceParties.end(); ++ref) {
-      double currScore = 0;
-      Object* comparisonObject = ideologies->safeGetObject((*ref).first);
+      double bid = 0; 
+      if (currCustom) {
+	bid = currCustom->safeGetFloat(currScore->vicTag);
+	bid *= eu3Country->safeGetFloat("customPoints");
+	bid *= ideologies->safeGetFloat("partyPointsPerCustom", 0.01); 
+      }
+      currScore->score += bid; 
+      
+      Object* comparisonObject = ideologies->safeGetObject(currScore->vicTag);
+      if (!comparisonObject) continue;
+	
       Object* ideaList = comparisonObject->getNeededObject("ideas");
       objvec ideas = ideaList->getLeaves();
       for (objiter idea = ideas.begin(); idea != ideas.end(); ++idea) {
 	if (eu3Country->safeGetString((*idea)->getKey(), "no") != "yes") continue;
-	currScore += atof((*idea)->getLeaf().c_str()); 
+	currScore->score += atof((*idea)->getLeaf().c_str()); 
       }
       Object* sliderList = comparisonObject->getNeededObject("sliders");
       objvec sliders = sliderList->getLeaves();
       for (objiter slider = sliders.begin(); slider != sliders.end(); ++slider) {
-	currScore += eu3Country->safeGetFloat((*slider)->getKey()) * atof((*slider)->getLeaf().c_str());
+	currScore->score += eu3Country->safeGetFloat((*slider)->getKey()) * atof((*slider)->getLeaf().c_str());
       }
-
-      Logger::logStream(Logger::Debug) << (*ref).first << " " << currScore << ", "; 
-      
-      if ((bestTag != "") && (bestScore > currScore)) continue;
-      bestTag = (*ref).first; 
-      bestScore = currScore;
+      Object* modList = comparisonObject->getNeededObject("modifiers");
+      objvec mods = modList->getLeaves();
+      objvec cMods = eu3Country->getValue("modifier");
+      map<string, bool> countryMods;
+      for (objiter mod = cMods.begin(); mod != cMods.end(); ++mod) countryMods[remQuotes((*mod)->safeGetString("modifier"))] = true; 
+      for (objiter mod = mods.begin(); mod != mods.end(); ++mod) {
+	if (!countryMods[(*mod)->getKey()]) continue;
+	currScore->score += atof((*mod)->getLeaf().c_str()); 
+      }
+      scores.push_back(currScore);
     }
-    Logger::logStream(Logger::Debug) << " select " << bestTag << ".\n";
-    if (bestTag == "") continue; // This should never happen. 
+  }
 
-    objvec bestPartyList = referenceParties[bestTag]->getValue("party");
+  sort(scores.begin(), scores.end(), deref<PartyAssignment>(member_gt(&PartyAssignment::score))); 
+  map<string, bool> assignedVic;
+  map<Object*, bool> assignedEu3; 
+  for (vector<PartyAssignment*>::iterator pa = scores.begin(); pa != scores.end(); ++pa) {
+    if (assignedVic[(*pa)->vicTag]) continue;
+    if (assignedEu3[(*pa)->eu3Country]) continue;
+    if (!referenceParties[(*pa)->vicTag]) continue;
+    if ((*pa)->vicTag == "REB") continue; 
+    assignedVic[(*pa)->vicTag] = true;
+    assignedEu3[(*pa)->eu3Country] = true;
+    
+    Object* currCountryObject = countryToFileMap[(*pa)->eu3Country]; 
+    Object* vicCountry = findVicCountryByEu3Country((*pa)->eu3Country);
+
+    Logger::logStream(Logger::Debug) << (*pa)->eu3Country->getKey() << " has "
+				     << (*pa)->score << " points for "
+				     << (*pa)->vicTag << ", assigning parties.\n"; 
+    
+    objvec bestPartyList = referenceParties[(*pa)->vicTag]->getValue("party");
     for (objiter p = bestPartyList.begin(); p != bestPartyList.end(); ++p) {
       Object* party = new Object(*p);
       currCountryObject->setValue(party);
+      //sprintf(strbuffer, "\"Party number %i\"", partyId); 
+      //party->resetLeaf("name", strbuffer); 
       if (days(party->safeGetString("start_date")) <= days(remQuotes(vicGame->safeGetString("start_date", "\"1836.1.1\"")))) {
-	if (vicCountry->safeGetString("ruling_party", "none") == "none") vicCountry->setLeaf("ruling_party", partyId);
+	if (vicCountry->safeGetString("ruling_party", "none") == "none") vicCountry->resetLeaf("ruling_party", partyId);
 	vicCountry->setLeaf("active_party", partyId);	
       }
       partyId++; // Not actually listed in party object! Derived from position in file. 
     }    
   }
+
 
 #ifdef BLAH
   objvec ideas = ideologies->getLeaves(); 
@@ -6097,13 +6178,12 @@ void WorkerThread::createParties () {
       if (!owner) continue;
       owner->resetLeaf("provsForModding", 1 + owner->safeGetInt("provsForModding")); 
       for (objiter b = buildingTypes.begin(); b != buildingTypes.end(); ++b) {
-	int moddingPoints = (*b)->safeGetInt("moddingPoints");
-	if (0 == moddingPoints) continue;
+	int customPoints = (*b)->safeGetInt("customPoints");
+	if (0 == customPoints) continue;
 	if (!hasBuildingOrBetter((*b)->getKey(), (*prov))) continue;
-	owner->resetLeaf("moddingPoints", owner->safeGetInt("moddingPoints") + moddingPoints);
+	owner->resetLeaf("customPoints", owner->safeGetInt("customPoints") + customPoints);
       }
     }
-
 
     objvec customs = customObject->getLeaves();
     objvec bidders;
@@ -6114,7 +6194,7 @@ void WorkerThread::createParties () {
       if (!eu3Country) continue;
       if (((*custom)->getLeaves().size() == 1) && ((*custom)->safeGetObject("research"))) continue; 
       bidders.push_back(eu3Country);
-      double currFrac = eu3Country->safeGetFloat("moddingPoints") / max(1, eu3Country->safeGetInt("provsForModding"));
+      double currFrac = eu3Country->safeGetFloat("customPoints") / max(1, eu3Country->safeGetInt("provsForModding"));
       eu3Country->resetLeaf("moddingFraction", currFrac);
       totalBidderPoints += currFrac; 
     }
@@ -6122,15 +6202,15 @@ void WorkerThread::createParties () {
     totalModPoints *= configObject->safeGetFloat("modPointMultiplier", 1); 
     
     for (objiter b = bidders.begin(); b != bidders.end(); ++b) {
-      (*b)->resetLeaf("moddingPoints", (totalModPoints / totalBidderPoints) * (*b)->safeGetFloat("moddingFraction")); 
+      (*b)->resetLeaf("customPoints", (totalModPoints / totalBidderPoints) * (*b)->safeGetFloat("moddingFraction")); 
       Logger::logStream(Logger::Game) << "EU3 nation "
 				      << (*b)->getKey()
 				      << " entering party bidding with "
-				      << (*b)->safeGetString("moddingPoints")
+				      << (*b)->safeGetString("customPoints")
 				      << " points.\n"; 
     }
     
-    ObjectAscendingSorter pointSorter("moddingPoints"); 
+    ObjectAscendingSorter pointSorter("customPoints"); 
     while (0 < bidders.size()) {
       sort(bidders.begin(), bidders.end(), pointSorter);
       Object* highestBidder = bidders.back();
@@ -6152,7 +6232,7 @@ void WorkerThread::createParties () {
 	pMap[id] = (*p); 
       }
       
-      double modPoints = highestBidder->safeGetFloat("moddingPoints");
+      double modPoints = highestBidder->safeGetFloat("customPoints");
       Object* bidObject = customObject->safeGetObject(highestBidder->getKey());
       assert(bidObject); 
       objvec bids = bidObject->getLeaves();
@@ -6209,7 +6289,7 @@ void WorkerThread::createParties () {
 	    }
 	  }
 	  modPoints -= cost; 
-	  highestBidder->resetLeaf("moddingPoints", modPoints);				   
+	  highestBidder->resetLeaf("customPoints", modPoints);				   
 	  highestBidder->resetLeaf("numSuccessfulBids", priorBids);	  
 	  Logger::logStream(Logger::Game) << "EU3 nation "
 					  << highestBidder->getKey()
@@ -6265,7 +6345,7 @@ void WorkerThread::createParties () {
 					  << ".\n";
 	  
 	  modPoints -= cost; 
-	  highestBidder->resetLeaf("moddingPoints", modPoints);				   
+	  highestBidder->resetLeaf("customPoints", modPoints);				   
 	  highestBidder->resetLeaf("numSuccessfulBids", priorBids);
 	  vicCountry->resetLeaf("nationalvalue", addQuotes((*bid)->getLeaf()));
 	  break; 
@@ -6380,7 +6460,7 @@ void WorkerThread::createParties () {
 	  continue; 
 	}
 	modPoints -= cost;
-	highestBidder->resetLeaf("moddingPoints", modPoints);
+	highestBidder->resetLeaf("customPoints", modPoints);
 	partyToChange->resetLeaf(area, position);
 	Logger::logStream(Logger::Game) << "Party " << idToChange
 					<< " for nation "
@@ -6390,7 +6470,7 @@ void WorkerThread::createParties () {
 					<< " at cost "
 					<< cost
 					<< " leaving reserve "
-					<< highestBidder->safeGetString("moddingPoints")
+					<< highestBidder->safeGetString("customPoints")
 					<< ".\n";
 	highestBidder->resetLeaf("numSuccessfulBids", priorBids);
 	break; 
@@ -6462,12 +6542,13 @@ void WorkerThread::convert () {
   clearVicOwners(); 
   createProvinceMappings();
   moveCapitals();
+  calculateCustomPoints(); 
   reassignProvinces();
-  convertCores();
+  convertCores();  
   moveRgos(); 
   moveFactories(); 
   movePops();
-  mergePops(); 
+  mergePops();
   convertArmies();
   diplomacy();
   calculateTradePower(); 
@@ -6609,7 +6690,9 @@ void WorkerThread::convert () {
       }
     }
     
-    effectiveEu3Money *= 5; 
+    effectiveEu3Money *= 5;
+    Object* currCustom = customObject->safeGetObject(eu3->getKey(), customObject->getNeededObject("DUMMY"));
+    effectiveEu3Money += eu3->safeGetFloat("customPoints")*currCustom->safeGetFloat("money")*configObject->safeGetFloat("", 100); 
     if (effectiveEu3Money < 0) {
       Object* loan = new Object("creditor");
       loan->setLeaf("country", "\"---\"");
