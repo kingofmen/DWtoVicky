@@ -508,7 +508,7 @@ ideologies = {
     }
     modifiers = {
       the_abolish_slavery_act = 0.5
-      britanna_rules_the_waves = 1
+      britanna_rules_the_waves = 1 # Not my typo
     }
   }
   PRU = {
