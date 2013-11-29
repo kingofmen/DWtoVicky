@@ -1,0 +1,6 @@
+owner = CRO
+controller = CRO
+add_core = TUR
+add_core = BUL
+trade_goods = cotton
+life_rating = 35

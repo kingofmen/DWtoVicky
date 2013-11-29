@@ -1,0 +1,6 @@
+owner = PER
+controller = PER
+add_core = TUR
+add_core = GRE
+trade_goods = sulphur
+life_rating = 35

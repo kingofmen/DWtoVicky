@@ -1,0 +1,5 @@
+owner = JAP
+controller = JAP
+trade_goods = timber
+life_rating = 30
+colonial = yes

@@ -1,0 +1,5 @@
+owner = CAL
+controller = CAL
+add_core = MEX
+trade_goods = wool
+life_rating = 35

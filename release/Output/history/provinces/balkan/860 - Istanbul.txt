@@ -1,0 +1,14 @@
+owner = CRO
+controller = CRO
+add_core = TUR
+trade_goods = fruit
+life_rating = 35
+naval_base = 1
+fort = 1
+1861.1.1 = { 
+  state_building = { 
+    level = 2
+    building = fabric_factory
+    upgrade = yes
+  } 
+} 

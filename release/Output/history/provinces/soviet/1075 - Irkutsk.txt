@@ -1,0 +1,5 @@
+owner = MGL
+controller = MGL
+add_core = RUS
+trade_goods = coal
+life_rating = 35

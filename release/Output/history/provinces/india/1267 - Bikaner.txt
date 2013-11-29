@@ -1,0 +1,6 @@
+owner = CNG
+controller = CNG
+add_core = BIK
+add_core = HND
+trade_goods = wool
+life_rating = 35

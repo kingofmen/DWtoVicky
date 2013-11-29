@@ -1,0 +1,5 @@
+owner = PER
+controller = PER
+add_core = TUR
+trade_goods = opium
+life_rating = 35

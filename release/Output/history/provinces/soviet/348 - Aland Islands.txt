@@ -1,0 +1,9 @@
+owner = NOR
+controller = NOR
+add_core = RUS
+add_core = FIN
+add_core = SWE
+trade_goods = fish
+life_rating = 35
+naval_base = 1
+fort = 1

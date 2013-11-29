@@ -1,0 +1,5 @@
+owner = NGF
+controller = NGF
+add_core = AUS
+trade_goods = coal
+life_rating = 35

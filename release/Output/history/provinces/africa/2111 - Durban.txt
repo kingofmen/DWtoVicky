@@ -1,0 +1,7 @@
+owner = ETH
+controller = ETH
+add_core = ZUL
+add_core = NAL
+add_core = SAF
+trade_goods = wool
+life_rating = 35

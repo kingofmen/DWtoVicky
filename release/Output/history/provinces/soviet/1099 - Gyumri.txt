@@ -1,0 +1,6 @@
+owner = PER
+controller = PER
+add_core = RUS
+add_core = ARM
+trade_goods = wool
+life_rating = 35

@@ -1,0 +1,5 @@
+owner = MGL
+controller = MGL
+add_core = CHI
+trade_goods = timber
+life_rating = 35

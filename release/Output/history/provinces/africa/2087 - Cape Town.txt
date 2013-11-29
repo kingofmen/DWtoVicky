@@ -1,0 +1,9 @@
+owner = ETH
+controller = ETH
+add_core = SAF
+trade_goods = fruit
+life_rating = 35
+colonial = yes
+1861.1.1 = { 
+  railroad = 1
+} 

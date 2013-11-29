@@ -1,0 +1,10 @@
+owner = CRO
+controller = CRO
+add_core = AUS
+add_core = HUN
+trade_goods = cattle
+life_rating = 35
+fort = 1
+1861.1.1 = { 
+  railroad = 3
+} 

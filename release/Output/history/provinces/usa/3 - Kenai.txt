@@ -1,0 +1,6 @@
+owner = CAL
+controller = CAL
+add_core = RUS
+trade_goods = fish
+life_rating = 20
+colonial = yes

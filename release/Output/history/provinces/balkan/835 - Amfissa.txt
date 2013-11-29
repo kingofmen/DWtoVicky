@@ -1,0 +1,5 @@
+owner = CRO
+controller = CRO
+add_core = GRE
+trade_goods = cotton
+life_rating = 35

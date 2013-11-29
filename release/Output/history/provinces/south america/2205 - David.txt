@@ -1,0 +1,6 @@
+owner = CAT
+controller = CAT
+add_core = CLM
+add_core = PNM
+trade_goods = coffee
+life_rating = 30

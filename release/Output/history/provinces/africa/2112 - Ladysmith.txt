@@ -1,0 +1,6 @@
+owner = ETH
+controller = ETH
+add_core = ZUL
+add_core = SAF
+trade_goods = grain
+life_rating = 35

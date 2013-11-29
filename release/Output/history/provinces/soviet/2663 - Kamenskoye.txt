@@ -1,0 +1,5 @@
+owner = MGL
+controller = MGL
+add_core = RUS
+trade_goods = grain
+life_rating = 20

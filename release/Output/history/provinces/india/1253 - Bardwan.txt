@@ -1,0 +1,9 @@
+owner = CAM
+controller = CAM
+add_core = HND
+trade_goods = dye
+life_rating = 35
+colonial = yes
+1861.1.1 = { 
+  railroad = 3
+} 

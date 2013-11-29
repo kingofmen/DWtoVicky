@@ -1,0 +1,4 @@
+trade_goods = tobacco
+life_rating = 15
+owner = ETH
+controller = ETH

@@ -24,5 +24,4 @@ debug/
 release/moc*
 
 EU3toV2Converter/
-release/Output/
 release/flags/

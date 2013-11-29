@@ -1,0 +1,6 @@
+owner = RUS
+controller = RUS
+add_core = TUR
+add_core = GEO
+trade_goods = tea
+life_rating = 35

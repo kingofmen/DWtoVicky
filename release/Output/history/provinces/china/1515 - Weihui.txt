@@ -1,0 +1,5 @@
+owner = SXI
+controller = SXI
+add_core = CHI
+trade_goods = iron
+life_rating = 35

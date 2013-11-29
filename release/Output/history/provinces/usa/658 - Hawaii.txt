@@ -1,0 +1,5 @@
+owner = CAL
+controller = CAL
+add_core = HAW
+trade_goods = fish
+life_rating = 35

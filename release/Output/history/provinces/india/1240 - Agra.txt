@@ -1,0 +1,8 @@
+owner = CNG
+controller = CNG
+add_core = MUG
+add_core = HND
+trade_goods = grain
+life_rating = 35
+colonial = yes
+fort = 1

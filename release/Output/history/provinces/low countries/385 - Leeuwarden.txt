@@ -1,0 +1,5 @@
+owner = NGF
+controller = NGF
+add_core = NET
+trade_goods = cattle
+life_rating = 35

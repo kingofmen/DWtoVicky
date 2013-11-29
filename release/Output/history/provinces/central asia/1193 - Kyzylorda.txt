@@ -1,0 +1,5 @@
+owner = PAN
+controller = PAN
+add_core = KOK
+trade_goods = coal
+life_rating = 35

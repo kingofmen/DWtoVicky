@@ -1,0 +1,5 @@
+owner = JAP
+controller = JAP
+add_core = BAL
+trade_goods = fish
+life_rating = 30

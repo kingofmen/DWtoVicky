@@ -1,0 +1,6 @@
+owner = ETH
+controller = ETH
+add_core = AST
+trade_goods = coal
+life_rating = 30
+colonial = yes

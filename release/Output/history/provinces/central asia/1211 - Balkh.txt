@@ -1,0 +1,5 @@
+owner = PAN
+controller = PAN
+add_core = BUK
+trade_goods = grain
+life_rating = 35

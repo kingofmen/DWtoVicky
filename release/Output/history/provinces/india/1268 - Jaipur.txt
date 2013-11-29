@@ -1,0 +1,6 @@
+owner = CNG
+controller = CNG
+add_core = JAI
+add_core = HND
+trade_goods = timber
+life_rating = 35

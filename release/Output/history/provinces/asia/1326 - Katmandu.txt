@@ -1,0 +1,5 @@
+owner = CAM
+controller = CAM
+add_core = NEP
+trade_goods = tea
+life_rating = 25

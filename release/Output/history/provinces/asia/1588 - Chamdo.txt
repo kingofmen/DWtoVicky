@@ -1,0 +1,5 @@
+owner = CAM
+controller = CAM
+add_core = TIB
+trade_goods = cattle
+life_rating = 30

@@ -1,0 +1,7 @@
+owner = NGF
+controller = NGF
+add_core = MYS
+add_core = HND
+trade_goods = fruit
+life_rating = 35
+colonial = yes

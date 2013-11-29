@@ -1,0 +1,6 @@
+owner = CAT
+controller = CAT
+add_core = BOL
+add_core = ARG
+trade_goods = iron
+life_rating = 35

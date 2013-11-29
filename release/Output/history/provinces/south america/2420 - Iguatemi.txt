@@ -1,0 +1,6 @@
+owner = CAT
+controller = CAT
+add_core = PRG
+add_core = BRZ
+trade_goods = sulphur
+life_rating = 25
