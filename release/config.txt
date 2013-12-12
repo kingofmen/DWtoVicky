@@ -1,6 +1,7 @@
 debug = yes  
 popdebug = yes   
-moddir = .\AHD\  
+# Acceptable values: AHD, HoD. 
+moddir = .\HoD\
 mapWidth = 5616 
 redistPops = yes 
 hugePops = no 
@@ -23,7 +24,8 @@ do_trade_stats = no
 do_building_stats = no
 do_battle_state = yes 
 
-rgoRedist = continent 
+# Allowed option are continent, list, none.
+rgoRedist = list 
 civLevel = 72 
 rp_per_area = 30000
 rp_exponent = 2

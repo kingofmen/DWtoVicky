@@ -1,0 +1,11891 @@
+643 = {
+	plains = 553
+	climate = tropical
+	jungle = 921
+	totalpixels = 1474
+}
+592 = {
+	plains = 1
+	climate = tropical
+	hills = 715
+	totalpixels = 743
+	jungle = 27
+}
+344 = {
+	plains = 161
+	climate = tropical
+	desert = 1271
+	totalpixels = 1799
+	mountain = 367
+}
+345 = {
+	plains = 712
+	desert = 447
+	totalpixels = 1362
+	mountain = 203
+}
+346 = {
+	climate = tropical
+	desert = 2587
+	totalpixels = 2587
+}
+347 = {
+	plains = 72
+	desert = 2371
+	totalpixels = 2443
+}
+340 = {
+	plains = 459
+	desert = 2
+	totalpixels = 1564
+	mountain = 1103
+}
+341 = {
+	mountain = 100
+	totalpixels = 2025
+	plains = 1925
+}
+342 = {
+	plains = 595
+	totalpixels = 977
+	mountain = 382
+}
+343 = {
+	mountain = 1533
+	climate = tropical
+	hills = 53
+	plains = 290
+	totalpixels = 2758
+	desert = 882
+}
+348 = {
+	plains = 6
+	climate = tropical
+	desert = 2487
+	totalpixels = 2493
+}
+349 = {
+	plains = 79
+	climate = tropical
+	desert = 3580
+	totalpixels = 3671
+	mountain = 12
+}
+594 = {
+	plains = 747
+	climate = tropical
+	hills = 13
+	totalpixels = 762
+	jungle = 2
+}
+298 = {
+	climate = severe_winter
+	totalpixels = 1987
+	plains = 1658
+	woods = 205
+	forest = 124
+	riverpixels = 59
+}
+299 = {
+	climate = severe_winter
+	totalpixels = 3084
+	plains = 334
+	woods = 224
+	forest = 1049
+	riverpixels = 135
+	steppe = 1477
+}
+296 = {
+	riverpixels = 5
+	plains = 815
+	climate = severe_winter
+	forest = 48
+	totalpixels = 863
+}
+297 = {
+	riverpixels = 37
+	plains = 118
+	climate = severe_winter
+	forest = 1360
+	totalpixels = 1478
+}
+294 = {
+	riverpixels = 51
+	plains = 4
+	climate = severe_winter
+	forest = 1099
+	totalpixels = 1103
+}
+295 = {
+	riverpixels = 50
+	plains = 6
+	climate = severe_winter
+	forest = 1382
+	totalpixels = 1388
+}
+292 = {
+	riverpixels = 66
+	plains = 1564
+	climate = normal_winter
+	forest = 57
+	totalpixels = 1621
+}
+293 = {
+	plains = 1217
+	climate = severe_winter
+	riverpixels = 49
+	totalpixels = 1229
+	forest = 12
+}
+290 = {
+	climate = normal_winter
+	totalpixels = 1863
+	plains = 1590
+	woods = 177
+	forest = 96
+	riverpixels = 59
+}
+291 = {
+	climate = normal_winter
+	totalpixels = 1818
+	plains = 1267
+	woods = 220
+	steppe = 1
+	riverpixels = 62
+	farmlands = 330
+}
+270 = {
+	plains = 656
+	climate = normal_winter
+	woods = 9
+	riverpixels = 62
+	totalpixels = 665
+}
+271 = {
+	climate = normal_winter
+	totalpixels = 1245
+	plains = 707
+	woods = 167
+	forest = 3
+	riverpixels = 23
+	farmlands = 368
+}
+272 = {
+	climate = normal_winter
+	totalpixels = 1949
+	plains = 128
+	woods = 1720
+	forest = 94
+	riverpixels = 59
+	farmlands = 7
+}
+273 = {
+	climate = normal_winter
+	totalpixels = 757
+	plains = 679
+	woods = 34
+	marsh = 23
+	forest = 21
+	riverpixels = 53
+}
+274 = {
+	climate = normal_winter
+	totalpixels = 1130
+	plains = 26
+	woods = 937
+	marsh = 11
+	forest = 156
+	riverpixels = 49
+}
+275 = {
+	climate = normal_winter
+	totalpixels = 1368
+	plains = 22
+	woods = 9
+	forest = 1337
+	riverpixels = 83
+}
+276 = {
+	climate = normal_winter
+	totalpixels = 1729
+	plains = 1696
+	woods = 11
+	forest = 22
+	riverpixels = 77
+}
+277 = {
+	plains = 1410
+	climate = normal_winter
+	woods = 41
+	riverpixels = 73
+	totalpixels = 1451
+}
+278 = {
+	climate = normal_winter
+	totalpixels = 2176
+	plains = 200
+	woods = 757
+	marsh = 716
+	forest = 304
+	riverpixels = 119
+	farmlands = 199
+}
+279 = {
+	climate = normal_winter
+	totalpixels = 1952
+	plains = 76
+	woods = 1289
+	marsh = 204
+	riverpixels = 50
+	farmlands = 383
+}
+642 = {
+	plains = 440
+	climate = tropical
+	jungle = 734
+	totalpixels = 1174
+}
+1781 = {
+	climate = impassable
+	totalpixels = 89624
+	arctic = 61199
+	plains = 6065
+	forest = 22360
+	riverpixels = 450
+}
+108 = {
+	mountain = 6
+	climate = mild_winter
+	totalpixels = 394
+	plains = 15
+	riverpixels = 27
+	farmlands = 367
+	hills = 6
+}
+109 = {
+	woods = 1
+	farmlands = 10
+	hills = 162
+	totalpixels = 173
+}
+102 = {
+	plains = 37
+	farmlands = 141
+	totalpixels = 178
+}
+103 = {
+	mountain = 138
+	climate = mild_winter
+	farmlands = 274
+	riverpixels = 16
+	totalpixels = 412
+}
+100 = {
+	climate = mild_winter
+	plains = 53
+	woods = 4
+	marsh = 337
+	totalpixels = 406
+	farmlands = 12
+}
+101 = {
+	woods = 2
+	plains = 143
+	farmlands = 255
+	hills = 7
+	totalpixels = 407
+}
+106 = {
+	plains = 3
+	farmlands = 6
+	hills = 378
+	totalpixels = 396
+	mountain = 1
+}
+107 = {
+	mountain = 63
+	climate = mild_winter
+	hills = 319
+	totalpixels = 394
+	riverpixels = 23
+	farmlands = 12
+}
+104 = {
+	mountain = 185
+	climate = mild_winter
+	totalpixels = 601
+	woods = 1
+	riverpixels = 25
+	farmlands = 379
+	hills = 36
+}
+105 = {
+	plains = 86
+	farmlands = 196
+	hills = 13
+	totalpixels = 295
+}
+2046 = {
+	totalpixels = 0
+}
+2047 = {
+	totalpixels = 0
+}
+2044 = {
+	totalpixels = 0
+}
+2045 = {
+	totalpixels = 0
+}
+2042 = {
+	totalpixels = 0
+}
+2043 = {
+	totalpixels = 0
+}
+2040 = {
+	totalpixels = 0
+}
+2041 = {
+	totalpixels = 0
+}
+1212 = {
+	mountain = 1199
+	climate = tropical
+	hills = 61
+	totalpixels = 1292
+	plains = 32
+}
+1213 = {
+	mountain = 1725
+	climate = tropical
+	hills = 7
+	totalpixels = 1733
+	plains = 1
+}
+99 = {
+	woods = 18
+	plains = 95
+	climate = mild_winter
+	farmlands = 321
+	totalpixels = 434
+}
+98 = {
+	climate = mild_winter
+	plains = 2
+	woods = 3
+	marsh = 4
+	totalpixels = 118
+	farmlands = 109
+}
+91 = {
+	woods = 13
+	plains = 12
+	climate = mild_winter
+	farmlands = 262
+	totalpixels = 287
+}
+90 = {
+	woods = 1
+	plains = 12
+	climate = mild_winter
+	farmlands = 373
+	totalpixels = 386
+}
+93 = {
+	climate = mild_winter
+	totalpixels = 202
+	plains = 6
+	woods = 9
+	riverpixels = 13
+	farmlands = 187
+}
+92 = {
+	climate = mild_winter
+	totalpixels = 301
+	plains = 265
+	woods = 14
+	riverpixels = 28
+	farmlands = 22
+}
+95 = {
+	climate = mild_winter
+	woods = 300
+	riverpixels = 27
+	totalpixels = 313
+	farmlands = 13
+}
+94 = {
+	climate = mild_winter
+	totalpixels = 288
+	plains = 84
+	woods = 104
+	riverpixels = 13
+	farmlands = 100
+}
+97 = {
+	climate = mild_winter
+	plains = 34
+	woods = 13
+	marsh = 285
+	totalpixels = 334
+	farmlands = 2
+}
+96 = {
+	climate = mild_winter
+	totalpixels = 230
+	plains = 196
+	woods = 29
+	marsh = 3
+	riverpixels = 25
+	farmlands = 2
+}
+1623 = {
+	totalpixels = 22878
+}
+1990 = {
+	totalpixels = 0
+}
+1993 = {
+	totalpixels = 0
+}
+1620 = {
+	totalpixels = 21656
+}
+1627 = {
+	totalpixels = 20594
+}
+1994 = {
+	totalpixels = 0
+}
+1625 = {
+	totalpixels = 28575
+}
+1996 = {
+	totalpixels = 0
+}
+1999 = {
+	totalpixels = 0
+}
+1998 = {
+	totalpixels = 0
+}
+1629 = {
+	totalpixels = 25238
+}
+1628 = {
+	totalpixels = 34182
+}
+559 = {
+	mountain = 60
+	climate = tropical
+	totalpixels = 1132
+	plains = 992
+	jungle = 80
+	riverpixels = 54
+}
+558 = {
+	mountain = 1562
+	climate = mild_winter
+	hills = 13
+	plains = 26
+	jungle = 6
+	totalpixels = 1607
+}
+1217 = {
+	mountain = 13
+	climate = tropical
+	totalpixels = 2591
+	plains = 2550
+	steppe = 28
+	riverpixels = 11
+}
+555 = {
+	plains = 73
+	climate = mild_winter
+	hills = 12
+	totalpixels = 2347
+	mountain = 2262
+}
+554 = {
+	mountain = 1435
+	climate = severe_winter
+	riverpixels = 16
+	totalpixels = 1662
+	hills = 227
+}
+557 = {
+	mountain = 176
+	climate = severe_winter
+	hills = 1137
+	totalpixels = 1313
+}
+556 = {
+	mountain = 106
+	climate = tropical
+	hills = 508
+	totalpixels = 1749
+	plains = 978
+	woods = 157
+	riverpixels = 49
+}
+551 = {
+	mountain = 9
+	climate = tropical
+	hills = 585
+	totalpixels = 2035
+	plains = 1086
+	woods = 355
+	riverpixels = 49
+}
+550 = {
+	mountain = 6
+	climate = tropical
+	hills = 26
+	totalpixels = 1584
+	plains = 1523
+	woods = 29
+	riverpixels = 39
+}
+553 = {
+	plains = 1205
+	totalpixels = 1205
+}
+552 = {
+	plains = 490
+	climate = tropical
+	woods = 18
+	hills = 611
+	totalpixels = 1119
+}
+1199 = {
+	mountain = 32
+	climate = tropical
+	hills = 1159
+	plains = 189
+	jungle = 2
+	totalpixels = 1382
+}
+1198 = {
+	mountain = 1277
+	climate = tropical
+	hills = 952
+	plains = 93
+	jungle = 1143
+	totalpixels = 3465
+}
+1191 = {
+	mountain = 12
+	climate = tropical
+	hills = 24
+	plains = 1522
+	totalpixels = 1563
+	farmlands = 5
+}
+1190 = {
+	riverpixels = 29
+	plains = 26
+	climate = tropical
+	hills = 1339
+	totalpixels = 1365
+}
+1193 = {
+	plains = 710
+	climate = tropical
+	hills = 4463
+	totalpixels = 5699
+	mountain = 521
+}
+1192 = {
+	plains = 1547
+	climate = tropical
+	farmlands = 7
+	totalpixels = 1554
+}
+1195 = {
+	plains = 2602
+	climate = tropical
+	farmlands = 2
+	hills = 57
+	totalpixels = 2663
+}
+1194 = {
+	mountain = 420
+	climate = tropical
+	hills = 78
+	plains = 4639
+	jungle = 8
+	totalpixels = 5145
+}
+1197 = {
+	mountain = 106
+	climate = tropical
+	hills = 1355
+	plains = 353
+	woods = 133
+	steppe = 120
+	totalpixels = 2776
+	jungle = 709
+}
+1196 = {
+	mountain = 33
+	climate = tropical
+	hills = 11
+	plains = 1195
+	jungle = 40
+	totalpixels = 1279
+}
+1759 = {
+	plains = 46
+	climate = normal_winter
+	farmlands = 275
+	totalpixels = 321
+}
+1758 = {
+	plains = 17
+	climate = normal_winter
+	farmlands = 381
+	riverpixels = 22
+	totalpixels = 398
+}
+1757 = {
+	plains = 5
+	climate = normal_winter
+	farmlands = 366
+	hills = 15
+	totalpixels = 386
+}
+1756 = {
+	climate = normal_winter
+	totalpixels = 940
+	plains = 710
+	woods = 122
+	marsh = 108
+	riverpixels = 65
+}
+1755 = {
+	riverpixels = 262
+	climate = severe_winter
+	arctic = 7132
+	forest = 1559
+	totalpixels = 8691
+}
+1754 = {
+	riverpixels = 55
+	plains = 29
+	climate = severe_winter
+	forest = 948
+	totalpixels = 977
+}
+1753 = {
+	riverpixels = 45
+	climate = severe_winter
+	forest = 2051
+	totalpixels = 2051
+}
+1752 = {
+	riverpixels = 61
+	plains = 3
+	climate = severe_winter
+	forest = 1505
+	totalpixels = 1508
+}
+1751 = {
+	plains = 87
+	hills = 96
+	totalpixels = 193
+	mountain = 10
+}
+1750 = {
+	plains = 134
+	hills = 318
+	totalpixels = 452
+}
+1177 = {
+	plains = 551
+	hills = 2404
+	totalpixels = 2983
+	mountain = 28
+}
+1176 = {
+	plains = 4701
+	hills = 6
+	riverpixels = 73
+	totalpixels = 4739
+	mountain = 32
+}
+1175 = {
+	mountain = 2196
+	climate = tropical
+	hills = 327
+	totalpixels = 2863
+	plains = 334
+	riverpixels = 49
+}
+1174 = {
+	plains = 36
+	climate = tropical
+	hills = 3535
+	totalpixels = 3571
+}
+1173 = {
+	plains = 21
+	climate = tropical
+	hills = 2732
+	totalpixels = 2753
+}
+1172 = {
+	plains = 2756
+	climate = tropical
+	riverpixels = 97
+	totalpixels = 2774
+	hills = 18
+}
+1171 = {
+	climate = tropical
+	totalpixels = 2262
+	plains = 428
+	jungle = 1829
+	riverpixels = 60
+	hills = 5
+}
+1170 = {
+	riverpixels = 48
+	plains = 1654
+	climate = tropical
+	jungle = 75
+	totalpixels = 1729
+}
+1179 = {
+	mountain = 2141
+	hills = 155
+	totalpixels = 2861
+	plains = 565
+}
+1178 = {
+	riverpixels = 171
+	plains = 3577
+	hills = 2
+	totalpixels = 4654
+	mountain = 1075
+}
+511 = {
+	mountain = 889
+	climate = mild_winter
+	hills = 29
+	totalpixels = 978
+	plains = 60
+	riverpixels = 6
+}
+510 = {
+	mountain = 1707
+	climate = mild_winter
+	riverpixels = 24
+	totalpixels = 1707
+}
+513 = {
+	mountain = 2
+	climate = tropical
+	hills = 14
+	plains = 1099
+	woods = 27
+	totalpixels = 1142
+}
+644 = {
+	plains = 381
+	climate = tropical
+	jungle = 235
+	totalpixels = 616
+}
+1285 = {
+	riverpixels = 3
+	totalpixels = 1841
+}
+1284 = {
+	totalpixels = 1669
+}
+1287 = {
+	riverpixels = 1
+	totalpixels = 2942
+}
+512 = {
+	climate = tropical
+	hills = 14
+	totalpixels = 836
+	plains = 806
+	woods = 16
+	riverpixels = 46
+}
+1281 = {
+	totalpixels = 11512
+}
+1280 = {
+	totalpixels = 3171
+}
+1283 = {
+	totalpixels = 2294
+}
+1282 = {
+	totalpixels = 3957
+}
+1003 = {
+	mountain = 5
+	climate = severe_winter
+	totalpixels = 3992
+	plains = 1541
+	forest = 2445
+	riverpixels = 70
+}
+879 = {
+	climate = normal_winter
+	totalpixels = 2972
+	plains = 70
+	woods = 4
+	steppe = 2871
+	riverpixels = 55
+	desert = 25
+}
+1289 = {
+	totalpixels = 6690
+}
+1288 = {
+	totalpixels = 2040
+}
+514 = {
+	plains = 1111
+	climate = tropical
+	hills = 12
+	totalpixels = 1123
+}
+1579 = {
+	totalpixels = 45222
+}
+1578 = {
+	totalpixels = 30720
+}
+689 = {
+	climate = normal_winter
+	hills = 51
+	totalpixels = 2189
+	plains = 2130
+	woods = 8
+	riverpixels = 31
+}
+688 = {
+	plains = 40
+	climate = mild_winter
+	woods = 1357
+	riverpixels = 54
+	totalpixels = 1397
+}
+685 = {
+	plains = 1633
+	woods = 100
+	riverpixels = 9
+	totalpixels = 1733
+}
+684 = {
+	plains = 870
+	woods = 38
+	riverpixels = 40
+	totalpixels = 908
+}
+687 = {
+	plains = 801
+	woods = 23
+	totalpixels = 824
+}
+686 = {
+	plains = 116
+	woods = 1494
+	totalpixels = 1610
+}
+681 = {
+	climate = mild_winter
+	totalpixels = 1976
+	plains = 106
+	woods = 17
+	riverpixels = 33
+	hills = 1853
+}
+680 = {
+	climate = normal_winter
+	hills = 79
+	totalpixels = 2532
+	plains = 2452
+	jungle = 1
+	riverpixels = 103
+}
+683 = {
+	plains = 1366
+	woods = 14
+	riverpixels = 57
+	totalpixels = 1444
+	hills = 64
+}
+682 = {
+	climate = mild_winter
+	hills = 38
+	totalpixels = 1771
+	plains = 1659
+	woods = 58
+	jungle = 16
+	riverpixels = 32
+}
+623 = {
+	plains = 268
+	climate = tropical
+	jungle = 548
+	totalpixels = 816
+}
+622 = {
+	plains = 693
+	climate = tropical
+	jungle = 1461
+	totalpixels = 2154
+}
+621 = {
+	plains = 353
+	climate = tropical
+	jungle = 1031
+	totalpixels = 1384
+}
+1224 = {
+	mountain = 1457
+	climate = tropical
+	hills = 73
+	totalpixels = 1737
+	plains = 207
+	riverpixels = 68
+}
+1223 = {
+	plains = 2321
+	climate = tropical
+	riverpixels = 124
+	totalpixels = 2374
+	mountain = 53
+}
+1222 = {
+	plains = 1106
+	climate = tropical
+	riverpixels = 28
+	totalpixels = 1106
+}
+1221 = {
+	riverpixels = 94
+	plains = 1502
+	climate = tropical
+	desert = 1315
+	totalpixels = 2817
+}
+1243 = {
+	plains = 94
+	climate = tropical
+	totalpixels = 94
+}
+624 = {
+	plains = 94
+	climate = tropical
+	jungle = 181
+	totalpixels = 276
+}
+407 = {
+	riverpixels = 48
+	plains = 2323
+	desert = 23
+	totalpixels = 2398
+	hills = 52
+}
+406 = {
+	riverpixels = 49
+	plains = 21
+	desert = 6628
+	totalpixels = 6649
+}
+405 = {
+	desert = 4467
+	totalpixels = 4467
+}
+404 = {
+	plains = 7
+	climate = tropical
+	desert = 1033
+	totalpixels = 1040
+}
+1375 = {
+	riverpixels = 4
+	totalpixels = 4841
+}
+1374 = {
+	totalpixels = 4152
+}
+1377 = {
+	totalpixels = 4273
+}
+400 = {
+	mountain = 1092
+	desert = 2
+	totalpixels = 1496
+	plains = 401
+}
+1379 = {
+	totalpixels = 6267
+}
+1378 = {
+	totalpixels = 5129
+}
+1342 = {
+	riverpixels = 1
+	totalpixels = 6104
+}
+409 = {
+	riverpixels = 27
+	plains = 82
+	desert = 2223
+	totalpixels = 2305
+}
+408 = {
+	plains = 1089
+	marsh = 1
+	riverpixels = 25
+	totalpixels = 1090
+}
+1343 = {
+	riverpixels = 3
+	totalpixels = 4090
+}
+1344 = {
+	riverpixels = 2
+	totalpixels = 4424
+}
+1345 = {
+	totalpixels = 5352
+}
+456 = {
+	climate = mild_winter
+	hills = 669
+	plains = 1
+	woods = 1354
+	steppe = 1239
+	totalpixels = 3263
+}
+1347 = {
+	totalpixels = 5563
+}
+379 = {
+	plains = 674
+	desert = 104
+	totalpixels = 781
+}
+378 = {
+	plains = 444
+	hills = 102
+	totalpixels = 550
+}
+647 = {
+	plains = 287
+	climate = tropical
+	jungle = 227
+	totalpixels = 515
+}
+371 = {
+	mountain = 4
+	climate = severe_winter
+	hills = 1
+	arctic = 2082
+	plains = 2320
+	forest = 1
+	totalpixels = 4408
+}
+370 = {
+	climate = severe_winter
+	hills = 402
+	arctic = 759
+	plains = 1919
+	forest = 260
+	totalpixels = 3340
+}
+373 = {
+	climate = normal_winter
+	hills = 5
+	totalpixels = 634
+	plains = 96
+	riverpixels = 6
+	farmlands = 533
+}
+372 = {
+	climate = normal_winter
+	hills = 2
+	totalpixels = 864
+	plains = 831
+	woods = 11
+	riverpixels = 2
+	farmlands = 19
+}
+375 = {
+	climate = normal_winter
+	hills = 669
+	totalpixels = 723
+	plains = 26
+	woods = 28
+	riverpixels = 19
+}
+374 = {
+	climate = normal_winter
+	hills = 28
+	totalpixels = 648
+	plains = 579
+	woods = 26
+	riverpixels = 15
+	farmlands = 15
+}
+377 = {
+	plains = 703
+	hills = 1
+	totalpixels = 705
+}
+376 = {
+	climate = normal_winter
+	hills = 50
+	totalpixels = 857
+	plains = 17
+	woods = 785
+	riverpixels = 11
+	farmlands = 5
+}
+1244 = {
+	plains = 151
+	climate = tropical
+	totalpixels = 151
+}
+393 = {
+	plains = 19
+	climate = tropical
+	desert = 7291
+	totalpixels = 7310
+}
+392 = {
+	plains = 12
+	climate = tropical
+	desert = 8717
+	totalpixels = 8729
+}
+391 = {
+	plains = 169
+	climate = tropical
+	desert = 2744
+	totalpixels = 2913
+}
+390 = {
+	plains = 1184
+	climate = tropical
+	desert = 10
+	totalpixels = 1194
+}
+397 = {
+	desert = 974
+	totalpixels = 974
+}
+396 = {
+	plains = 1
+	desert = 44
+	totalpixels = 45
+}
+395 = {
+	desert = 666
+	totalpixels = 666
+}
+394 = {
+	plains = 21
+	desert = 4329
+	totalpixels = 4350
+}
+399 = {
+	plains = 32
+	desert = 731
+	totalpixels = 798
+	mountain = 35
+}
+398 = {
+	desert = 575
+	totalpixels = 575
+}
+1246 = {
+	mountain = 3407
+	woods = 673
+	totalpixels = 6352
+	plains = 2272
+}
+245 = {
+	climate = mild_winter
+	hills = 6
+	riverpixels = 5
+	plains = 90
+	woods = 10
+	totalpixels = 695
+	farmlands = 589
+}
+244 = {
+	climate = mild_winter
+	hills = 2
+	totalpixels = 321
+	plains = 19
+	riverpixels = 1
+	farmlands = 300
+}
+247 = {
+	plains = 386
+	climate = normal_winter
+	farmlands = 3
+	hills = 2
+	totalpixels = 391
+}
+246 = {
+	plains = 434
+	climate = normal_winter
+	woods = 11
+	totalpixels = 451
+	farmlands = 4
+}
+241 = {
+	climate = mild_winter
+	hills = 202
+	plains = 91
+	woods = 103
+	totalpixels = 406
+	farmlands = 10
+}
+240 = {
+	climate = mild_winter
+	hills = 3
+	totalpixels = 576
+	woods = 18
+	riverpixels = 22
+	farmlands = 555
+}
+243 = {
+	climate = mild_winter
+	hills = 369
+	totalpixels = 466
+	plains = 17
+	woods = 68
+	riverpixels = 23
+	farmlands = 12
+}
+242 = {
+	climate = mild_winter
+	hills = 221
+	plains = 105
+	woods = 251
+	totalpixels = 589
+	farmlands = 11
+}
+249 = {
+	plains = 67
+	climate = normal_winter
+	woods = 1
+	hills = 564
+	totalpixels = 632
+}
+248 = {
+	plains = 312
+	climate = normal_winter
+	woods = 2
+	hills = 27
+	totalpixels = 341
+}
+179 = {
+	climate = mild_winter
+	hills = 1
+	totalpixels = 620
+	plains = 51
+	woods = 567
+	riverpixels = 29
+	farmlands = 1
+}
+178 = {
+	climate = mild_winter
+	hills = 3
+	totalpixels = 614
+	plains = 18
+	woods = 590
+	riverpixels = 37
+	farmlands = 3
+}
+177 = {
+	plains = 472
+	climate = mild_winter
+	woods = 8
+	hills = 13
+	totalpixels = 493
+}
+176 = {
+	riverpixels = 10
+	mountain = 693
+	climate = mild_winter
+	hills = 43
+	totalpixels = 736
+}
+175 = {
+	mountain = 93
+	climate = mild_winter
+	hills = 99
+	totalpixels = 492
+	plains = 299
+	riverpixels = 28
+	farmlands = 1
+}
+174 = {
+	plains = 106
+	climate = mild_winter
+	farmlands = 239
+	riverpixels = 23
+	totalpixels = 345
+}
+173 = {
+	plains = 9
+	climate = mild_winter
+	farmlands = 197
+	totalpixels = 270
+	mountain = 64
+}
+172 = {
+	climate = mild_winter
+	totalpixels = 433
+	plains = 399
+	woods = 18
+	riverpixels = 23
+	farmlands = 16
+}
+171 = {
+	climate = mild_winter
+	hills = 11
+	plains = 45
+	woods = 31
+	totalpixels = 399
+	farmlands = 312
+}
+170 = {
+	climate = mild_winter
+	hills = 5
+	plains = 684
+	woods = 2
+	totalpixels = 699
+	farmlands = 8
+}
+656 = {
+	plains = 1158
+	jungle = 19
+	totalpixels = 1177
+}
+657 = {
+	plains = 220
+	jungle = 883
+	totalpixels = 1103
+}
+654 = {
+	plains = 1298
+	jungle = 8
+	totalpixels = 1309
+}
+655 = {
+	plains = 311
+	jungle = 23
+	totalpixels = 334
+}
+652 = {
+	plains = 385
+	jungle = 454
+	totalpixels = 839
+}
+653 = {
+	plains = 673
+	jungle = 730
+	totalpixels = 1404
+}
+650 = {
+	plains = 69
+	climate = tropical
+	jungle = 5
+	totalpixels = 74
+}
+651 = {
+	plains = 48
+	totalpixels = 48
+}
+1364 = {
+	totalpixels = 6240
+}
+1977 = {
+	totalpixels = 0
+}
+1976 = {
+	totalpixels = 0
+}
+1975 = {
+	totalpixels = 0
+}
+1365 = {
+	totalpixels = 4189
+}
+1974 = {
+	totalpixels = 0
+}
+1973 = {
+	totalpixels = 0
+}
+1972 = {
+	totalpixels = 0
+}
+1971 = {
+	totalpixels = 0
+}
+1970 = {
+	totalpixels = 0
+}
+1362 = {
+	totalpixels = 4180
+}
+1968 = {
+	totalpixels = 0
+}
+1969 = {
+	totalpixels = 0
+}
+1618 = {
+	totalpixels = 19998
+}
+1619 = {
+	totalpixels = 16829
+}
+1616 = {
+	totalpixels = 12841
+}
+1617 = {
+	totalpixels = 16577
+}
+1614 = {
+	totalpixels = 9818
+}
+1615 = {
+	totalpixels = 8247
+}
+1960 = {
+	totalpixels = 0
+}
+1613 = {
+	totalpixels = 7415
+}
+1610 = {
+	totalpixels = 41123
+}
+1611 = {
+	totalpixels = 6643
+}
+1363 = {
+	totalpixels = 7363
+}
+1768 = {
+	mountain = 323
+	climate = severe_winter
+	woods = 14
+	hills = 5
+	totalpixels = 342
+}
+1769 = {
+	mountain = 2
+	climate = mild_winter
+	hills = 290
+	totalpixels = 343
+	plains = 7
+	woods = 44
+	riverpixels = 28
+}
+1762 = {
+	climate = normal_winter
+	totalpixels = 244
+	plains = 8
+	woods = 231
+	riverpixels = 12
+	farmlands = 5
+}
+1763 = {
+	plains = 323
+	climate = normal_winter
+	woods = 37
+	riverpixels = 14
+	totalpixels = 360
+}
+1760 = {
+	plains = 8
+	climate = normal_winter
+	farmlands = 261
+	riverpixels = 26
+	totalpixels = 269
+}
+1761 = {
+	climate = normal_winter
+	totalpixels = 295
+	plains = 9
+	woods = 2
+	riverpixels = 12
+	farmlands = 284
+}
+1766 = {
+	riverpixels = 28
+	plains = 445
+	climate = mild_winter
+	hills = 92
+	totalpixels = 537
+}
+1767 = {
+	climate = normal_winter
+	hills = 624
+	totalpixels = 748
+	plains = 20
+	woods = 95
+	steppe = 9
+	riverpixels = 68
+}
+1764 = {
+	riverpixels = 4
+	plains = 632
+	climate = mild_winter
+	hills = 5
+	totalpixels = 638
+}
+1765 = {
+	riverpixels = 1
+	plains = 76
+	climate = mild_winter
+	hills = 729
+	totalpixels = 805
+}
+1142 = {
+	plains = 2562
+	climate = tropical
+	desert = 191
+	totalpixels = 2753
+}
+1143 = {
+	plains = 1116
+	climate = tropical
+	riverpixels = 10
+	totalpixels = 1116
+}
+1140 = {
+	climate = tropical
+	hills = 1
+	totalpixels = 1895
+	plains = 1282
+	jungle = 584
+	riverpixels = 29
+	steppe = 28
+}
+1141 = {
+	plains = 1005
+	climate = tropical
+	jungle = 313
+	totalpixels = 1381
+	hills = 63
+}
+1146 = {
+	climate = tropical
+	hills = 170
+	totalpixels = 1081
+	plains = 540
+	jungle = 371
+	riverpixels = 43
+}
+1147 = {
+	riverpixels = 19
+	climate = tropical
+	hills = 48
+	totalpixels = 934
+	jungle = 886
+}
+1144 = {
+	climate = tropical
+	hills = 59
+	totalpixels = 1350
+	plains = 976
+	jungle = 315
+	riverpixels = 81
+}
+1145 = {
+	plains = 1636
+	climate = tropical
+	jungle = 83
+	totalpixels = 1739
+	hills = 20
+}
+1148 = {
+	plains = 1632
+	climate = tropical
+	desert = 4
+	totalpixels = 1636
+}
+1149 = {
+	plains = 1045
+	climate = tropical
+	totalpixels = 1045
+}
+769 = {
+	plains = 65
+	farmlands = 1188
+	hills = 55
+	totalpixels = 1308
+}
+692 = {
+	plains = 676
+	climate = mild_winter
+	woods = 110
+	hills = 251
+	totalpixels = 1037
+}
+693 = {
+	climate = mild_winter
+	hills = 14
+	totalpixels = 1230
+	plains = 442
+	woods = 774
+	riverpixels = 37
+}
+1544 = {
+	totalpixels = 8995
+}
+1545 = {
+	totalpixels = 11601
+}
+696 = {
+	plains = 739
+	climate = mild_winter
+	woods = 187
+	totalpixels = 926
+}
+697 = {
+	climate = mild_winter
+	hills = 9
+	totalpixels = 718
+	plains = 625
+	woods = 84
+	riverpixels = 35
+}
+694 = {
+	climate = mild_winter
+	hills = 1441
+	totalpixels = 1565
+	plains = 63
+	woods = 61
+	riverpixels = 41
+}
+695 = {
+	plains = 1377
+	climate = mild_winter
+	woods = 15
+	totalpixels = 1392
+}
+698 = {
+	mountain = 21
+	climate = normal_winter
+	hills = 64
+	totalpixels = 1685
+	plains = 1600
+	riverpixels = 56
+}
+699 = {
+	riverpixels = 120
+	plains = 81
+	climate = normal_winter
+	hills = 2247
+	totalpixels = 2328
+}
+1548 = {
+	totalpixels = 4015
+}
+1549 = {
+	totalpixels = 7896
+}
+542 = {
+	riverpixels = 62
+	plains = 1672
+	woods = 14
+	hills = 14
+	totalpixels = 1700
+}
+543 = {
+	climate = tropical
+	hills = 30
+	totalpixels = 2499
+	plains = 480
+	woods = 1989
+	riverpixels = 53
+}
+540 = {
+	riverpixels = 51
+	plains = 1277
+	climate = tropical
+	hills = 11
+	totalpixels = 1288
+}
+541 = {
+	plains = 1862
+	woods = 10
+	riverpixels = 62
+	totalpixels = 1872
+}
+546 = {
+	mountain = 9
+	climate = tropical
+	hills = 41
+	totalpixels = 2183
+	plains = 1952
+	woods = 181
+	riverpixels = 76
+}
+547 = {
+	plains = 559
+	climate = tropical
+	woods = 1
+	hills = 959
+	totalpixels = 1519
+}
+544 = {
+	climate = tropical
+	totalpixels = 2233
+	plains = 273
+	woods = 1959
+	riverpixels = 77
+	hills = 1
+}
+545 = {
+	climate = tropical
+	hills = 1
+	totalpixels = 2095
+	plains = 1983
+	woods = 111
+	riverpixels = 6
+}
+548 = {
+	plains = 1092
+	climate = tropical
+	woods = 5
+	hills = 14
+	totalpixels = 1111
+}
+549 = {
+	plains = 1116
+	totalpixels = 1116
+}
+760 = {
+	plains = 1007
+	hills = 94
+	totalpixels = 1101
+}
+761 = {
+	plains = 678
+	hills = 7
+	totalpixels = 686
+	jungle = 1
+}
+766 = {
+	plains = 50
+	farmlands = 26
+	hills = 1864
+	totalpixels = 1940
+}
+767 = {
+	riverpixels = 45
+	plains = 158
+	jungle = 4484
+	totalpixels = 4666
+	hills = 24
+}
+764 = {
+	plains = 24
+	farmlands = 15
+	hills = 1387
+	totalpixels = 1426
+}
+765 = {
+	totalpixels = 3697
+	plains = 114
+	jungle = 9
+	riverpixels = 58
+	farmlands = 11
+	hills = 3563
+}
+414 = {
+	mountain = 1090
+	climate = mild_winter
+	hills = 138
+	totalpixels = 1430
+	plains = 198
+	woods = 4
+	riverpixels = 3
+}
+415 = {
+	mountain = 9
+	climate = mild_winter
+	hills = 34
+	plains = 1615
+	woods = 7
+	totalpixels = 1665
+}
+416 = {
+	mountain = 8
+	climate = mild_winter
+	hills = 2618
+	plains = 18
+	woods = 5
+	totalpixels = 2649
+}
+417 = {
+	plains = 38
+	climate = mild_winter
+	hills = 34
+	totalpixels = 596
+	mountain = 524
+}
+410 = {
+	totalpixels = 2612
+	plains = 2422
+	marsh = 1
+	riverpixels = 140
+	desert = 186
+	hills = 3
+}
+411 = {
+	plains = 2507
+	hills = 7
+	riverpixels = 161
+	totalpixels = 2547
+	desert = 33
+}
+412 = {
+	mountain = 6
+	totalpixels = 2277
+	plains = 2255
+	marsh = 1
+	riverpixels = 3
+	hills = 15
+}
+413 = {
+	mountain = 383
+	climate = mild_winter
+	hills = 1283
+	totalpixels = 1724
+	plains = 58
+	riverpixels = 27
+}
+1384 = {
+	totalpixels = 10124
+}
+1385 = {
+	totalpixels = 9586
+}
+1386 = {
+	totalpixels = 5623
+}
+1387 = {
+	totalpixels = 2115
+}
+418 = {
+	mountain = 35
+	climate = mild_winter
+	hills = 48
+	totalpixels = 1519
+	plains = 1434
+	woods = 2
+	riverpixels = 60
+}
+419 = {
+	mountain = 4
+	climate = mild_winter
+	hills = 1805
+	plains = 11
+	woods = 7
+	totalpixels = 1827
+}
+1382 = {
+	forest = 2
+	totalpixels = 6418
+}
+1383 = {
+	totalpixels = 8683
+}
+1254 = {
+	riverpixels = 2
+	totalpixels = 907
+}
+368 = {
+	desert = 37
+	totalpixels = 37
+}
+369 = {
+	plains = 57
+	climate = severe_winter
+	totalpixels = 57
+}
+366 = {
+	desert = 157
+	totalpixels = 157
+}
+367 = {
+	plains = 90
+	totalpixels = 90
+}
+364 = {
+	plains = 413
+	farmlands = 5
+	desert = 12
+	totalpixels = 430
+}
+365 = {
+	plains = 11
+	farmlands = 16
+	desert = 1125
+	totalpixels = 1152
+}
+362 = {
+	plains = 248
+	farmlands = 18
+	riverpixels = 15
+	totalpixels = 266
+}
+363 = {
+	plains = 15
+	farmlands = 490
+	riverpixels = 1
+	totalpixels = 510
+	desert = 3
+}
+360 = {
+	mountain = 813
+	climate = tropical
+	totalpixels = 1878
+	plains = 1051
+	riverpixels = 52
+	farmlands = 14
+}
+361 = {
+	plains = 27
+	farmlands = 901
+	riverpixels = 28
+	totalpixels = 928
+}
+380 = {
+	desert = 1234
+	totalpixels = 1234
+}
+381 = {
+	plains = 58
+	desert = 1215
+	totalpixels = 1273
+}
+382 = {
+	riverpixels = 30
+	plains = 75
+	desert = 1932
+	totalpixels = 2007
+}
+383 = {
+	plains = 740
+	desert = 969
+	totalpixels = 3799
+	mountain = 2087
+}
+384 = {
+	plains = 254
+	desert = 2993
+	totalpixels = 3521
+	mountain = 248
+}
+385 = {
+	mountain = 2115
+	desert = 473
+	totalpixels = 3557
+	plains = 969
+}
+386 = {
+	plains = 1819
+	desert = 165
+	totalpixels = 2270
+	mountain = 286
+}
+387 = {
+	plains = 299
+	totalpixels = 993
+	mountain = 682
+}
+388 = {
+	mountain = 790
+	desert = 24
+	totalpixels = 1111
+	plains = 280
+}
+389 = {
+	plains = 7
+	desert = 2714
+	totalpixels = 2721
+}
+1253 = {
+	riverpixels = 1
+	totalpixels = 2493
+}
+258 = {
+	climate = normal_winter
+	totalpixels = 1199
+	plains = 847
+	woods = 328
+	riverpixels = 42
+	farmlands = 24
+}
+259 = {
+	climate = normal_winter
+	totalpixels = 1083
+	plains = 935
+	woods = 142
+	riverpixels = 22
+	farmlands = 5
+	hills = 1
+}
+252 = {
+	plains = 576
+	climate = normal_winter
+	hills = 34
+	totalpixels = 1830
+	mountain = 1220
+}
+253 = {
+	plains = 278
+	climate = normal_winter
+	totalpixels = 292
+	mountain = 14
+}
+250 = {
+	mountain = 28
+	climate = normal_winter
+	hills = 419
+	totalpixels = 481
+	plains = 34
+}
+251 = {
+	plains = 152
+	climate = normal_winter
+	hills = 444
+	totalpixels = 597
+	mountain = 1
+}
+256 = {
+	woods = 2
+	plains = 10
+	climate = normal_winter
+	farmlands = 272
+	totalpixels = 284
+}
+257 = {
+	climate = normal_winter
+	totalpixels = 842
+	plains = 58
+	woods = 33
+	forest = 1
+	riverpixels = 44
+	farmlands = 750
+}
+254 = {
+	plains = 566
+	climate = normal_winter
+	woods = 61
+	totalpixels = 627
+}
+255 = {
+	climate = normal_winter
+	totalpixels = 550
+	plains = 377
+	woods = 15
+	riverpixels = 31
+	farmlands = 158
+}
+1849 = {
+	riverpixels = 40
+	plains = 1260
+	hills = 69
+	totalpixels = 1330
+	desert = 1
+}
+1848 = {
+	mountain = 638
+	climate = mild_winter
+	hills = 14
+	totalpixels = 669
+	plains = 17
+	riverpixels = 56
+}
+168 = {
+	riverpixels = 16
+	plains = 699
+	climate = mild_winter
+	hills = 7
+	totalpixels = 706
+}
+169 = {
+	climate = mild_winter
+	hills = 634
+	plains = 21
+	woods = 5
+	totalpixels = 667
+	farmlands = 7
+}
+164 = {
+	plains = 49
+	totalpixels = 59
+	mountain = 10
+}
+165 = {
+	mountain = 655
+	climate = severe_winter
+	woods = 18
+	riverpixels = 14
+	totalpixels = 673
+}
+166 = {
+	mountain = 377
+	climate = severe_winter
+	totalpixels = 377
+}
+167 = {
+	plains = 502
+	climate = mild_winter
+	farmlands = 16
+	riverpixels = 7
+	totalpixels = 518
+}
+160 = {
+	climate = normal_winter
+	hills = 41
+	totalpixels = 961
+	plains = 113
+	woods = 807
+	riverpixels = 45
+}
+161 = {
+	climate = normal_winter
+	hills = 53
+	totalpixels = 980
+	plains = 770
+	woods = 3
+	marsh = 125
+	riverpixels = 44
+	farmlands = 29
+}
+162 = {
+	mountain = 322
+	climate = normal_winter
+	totalpixels = 1519
+	plains = 51
+	woods = 1146
+	riverpixels = 26
+}
+163 = {
+	plains = 321
+	totalpixels = 321
+}
+1841 = {
+	mountain = 23
+	plains = 39
+	woods = 52
+	forest = 72
+	totalpixels = 273
+	farmlands = 87
+}
+909 = {
+	climate = severe_winter
+	hills = 2438
+	totalpixels = 3231
+	plains = 32
+	forest = 747
+	riverpixels = 31
+	steppe = 14
+}
+1090 = {
+	plains = 544
+	woods = 761
+	hills = 1695
+	totalpixels = 3000
+}
+1091 = {
+	plains = 5914
+	woods = 935
+	riverpixels = 180
+	totalpixels = 7045
+	farmlands = 196
+}
+1814 = {
+	mountain = 15760
+	climate = impassable
+	hills = 130
+	arctic = 475
+	plains = 8233
+	forest = 19702
+	totalpixels = 44316
+	steppe = 15
+}
+1815 = {
+	woods = 86
+	plains = 86
+	farmlands = 105
+	totalpixels = 278
+}
+1816 = {
+	plains = 278
+	climate = mild_winter
+	woods = 41
+	totalpixels = 319
+}
+1817 = {
+	plains = 29
+	climate = mild_winter
+	woods = 108
+	totalpixels = 189
+	farmlands = 52
+}
+1810 = {
+	plains = 12131
+	arctic = 34425
+	climate = impassable
+	totalpixels = 46557
+}
+1811 = {
+	plains = 18880
+	arctic = 24563
+	climate = impassable
+	totalpixels = 43445
+}
+1812 = {
+	mountain = 16
+	climate = impassable
+	arctic = 59251
+	plains = 8298
+	forest = 16366
+	totalpixels = 83931
+}
+1813 = {
+	mountain = 2324
+	climate = impassable
+	hills = 96
+	riverpixels = 12
+	arctic = 760
+	plains = 2180
+	steppe = 1514
+	totalpixels = 47089
+	forest = 40215
+}
+1818 = {
+	plains = 110
+	climate = mild_winter
+	woods = 9
+	totalpixels = 119
+}
+1819 = {
+	plains = 126
+	woods = 54
+	totalpixels = 180
+}
+1098 = {
+	plains = 125
+	totalpixels = 125
+}
+1099 = {
+	plains = 236
+	totalpixels = 236
+}
+1609 = {
+	totalpixels = 32074
+}
+1608 = {
+	totalpixels = 39693
+}
+1979 = {
+	totalpixels = 0
+}
+1978 = {
+	totalpixels = 0
+}
+1601 = {
+	totalpixels = 29700
+}
+1600 = {
+	totalpixels = 41005
+}
+1603 = {
+	totalpixels = 51066
+}
+1602 = {
+	totalpixels = 37728
+}
+1605 = {
+	totalpixels = 32320
+}
+1604 = {
+	totalpixels = 39610
+}
+1607 = {
+	totalpixels = 30049
+}
+1606 = {
+	totalpixels = 32673
+}
+809 = {
+	mountain = 372
+	hills = 848
+	totalpixels = 1220
+}
+808 = {
+	mountain = 1527
+	riverpixels = 44
+	totalpixels = 1580
+	jungle = 53
+}
+803 = {
+	riverpixels = 51
+	mountain = 373
+	jungle = 1832
+	totalpixels = 2755
+	plains = 550
+}
+802 = {
+	mountain = 1457
+	jungle = 44
+	hills = 9
+	totalpixels = 1599
+	plains = 89
+}
+801 = {
+	riverpixels = 74
+	mountain = 161
+	jungle = 2794
+	totalpixels = 3141
+	plains = 186
+}
+800 = {
+	plains = 1358
+	jungle = 2808
+	totalpixels = 4166
+}
+807 = {
+	riverpixels = 76
+	mountain = 1336
+	hills = 16
+	totalpixels = 1372
+	plains = 20
+}
+806 = {
+	mountain = 26
+	hills = 532
+	totalpixels = 558
+}
+805 = {
+	plains = 909
+	hills = 15
+	totalpixels = 935
+	mountain = 10
+}
+804 = {
+	mountain = 1476
+	hills = 3
+	totalpixels = 1830
+	plains = 320
+	jungle = 31
+	riverpixels = 53
+}
+1775 = {
+	plains = 177
+	climate = mild_winter
+	woods = 22
+	totalpixels = 304
+	farmlands = 105
+}
+1774 = {
+	mountain = 141
+	hills = 96
+	plains = 28
+	woods = 4
+	totalpixels = 270
+	farmlands = 1
+}
+1777 = {
+	plains = 3235
+	arctic = 5466
+	climate = severe_winter
+	totalpixels = 8701
+}
+1776 = {
+	plains = 224
+	arctic = 3066
+	forest = 115
+	totalpixels = 3405
+	climate = severe_winter
+}
+1771 = {
+	climate = normal_winter
+	hills = 158
+	totalpixels = 453
+	woods = 85
+	riverpixels = 21
+	farmlands = 210
+}
+1770 = {
+	climate = normal_winter
+	woods = 13
+	hills = 350
+	totalpixels = 449
+	farmlands = 86
+}
+1773 = {
+	plains = 157
+	hills = 252
+	totalpixels = 418
+	mountain = 3
+}
+1772 = {
+	climate = normal_winter
+	hills = 548
+	plains = 12
+	woods = 40
+	totalpixels = 709
+	farmlands = 109
+}
+1779 = {
+	plains = 81
+	climate = impassable
+	desert = 9099
+	totalpixels = 9180
+}
+1778 = {
+	riverpixels = 51
+	climate = severe_winter
+	forest = 1025
+	totalpixels = 1025
+}
+608 = {
+	riverpixels = 42
+	climate = tropical
+	hills = 1062
+	totalpixels = 1089
+	jungle = 27
+}
+1159 = {
+	climate = tropical
+	totalpixels = 3348
+	plains = 2913
+	jungle = 125
+	riverpixels = 73
+	desert = 2
+	steppe = 308
+}
+1158 = {
+	plains = 2291
+	climate = tropical
+	desert = 15
+	totalpixels = 2306
+}
+1155 = {
+	plains = 1165
+	climate = tropical
+	hills = 1
+	totalpixels = 1166
+}
+1154 = {
+	plains = 1027
+	climate = tropical
+	hills = 71
+	totalpixels = 1098
+}
+1157 = {
+	plains = 2830
+	climate = tropical
+	desert = 7
+	totalpixels = 2837
+}
+1156 = {
+	plains = 2282
+	climate = tropical
+	desert = 36
+	totalpixels = 2318
+}
+1151 = {
+	mountain = 1
+	climate = tropical
+	hills = 122
+	plains = 783
+	jungle = 35
+	totalpixels = 941
+}
+1150 = {
+	plains = 979
+	climate = tropical
+	hills = 2
+	totalpixels = 981
+}
+1153 = {
+	plains = 385
+	climate = tropical
+	riverpixels = 66
+	totalpixels = 967
+	hills = 582
+}
+1152 = {
+	plains = 682
+	climate = tropical
+	hills = 63
+	totalpixels = 763
+	jungle = 18
+}
+1555 = {
+	totalpixels = 13041
+}
+1554 = {
+	totalpixels = 16450
+}
+1551 = {
+	riverpixels = 2
+	totalpixels = 9856
+}
+1550 = {
+	totalpixels = 8696
+}
+1553 = {
+	riverpixels = 2
+	totalpixels = 5300
+}
+1552 = {
+	riverpixels = 1
+	totalpixels = 12462
+}
+59 = {
+	woods = 132
+	plains = 19
+	climate = normal_winter
+	farmlands = 264
+	totalpixels = 415
+}
+58 = {
+	climate = normal_winter
+	totalpixels = 377
+	plains = 34
+	woods = 2
+	riverpixels = 24
+	farmlands = 341
+}
+1557 = {
+	totalpixels = 10363
+}
+1556 = {
+	totalpixels = 8062
+}
+1559 = {
+	totalpixels = 13148
+}
+54 = {
+	plains = 338
+	climate = mild_winter
+	woods = 2
+	totalpixels = 340
+}
+57 = {
+	climate = normal_winter
+	totalpixels = 624
+	plains = 37
+	woods = 10
+	riverpixels = 24
+	farmlands = 577
+}
+56 = {
+	plains = 440
+	climate = normal_winter
+	woods = 9
+	totalpixels = 459
+	farmlands = 10
+}
+51 = {
+	plains = 3
+	climate = normal_winter
+	woods = 10
+	totalpixels = 451
+	farmlands = 438
+}
+50 = {
+	climate = normal_winter
+	totalpixels = 541
+	plains = 170
+	woods = 17
+	riverpixels = 17
+	farmlands = 354
+}
+53 = {
+	climate = normal_winter
+	totalpixels = 417
+	plains = 388
+	woods = 23
+	riverpixels = 38
+	farmlands = 6
+}
+52 = {
+	climate = normal_winter
+	totalpixels = 389
+	plains = 310
+	woods = 41
+	riverpixels = 24
+	farmlands = 38
+}
+537 = {
+	plains = 134
+	hills = 991
+	totalpixels = 1125
+}
+55 = {
+	plains = 299
+	climate = mild_winter
+	farmlands = 2
+	totalpixels = 301
+}
+535 = {
+	plains = 113
+	hills = 1075
+	totalpixels = 1188
+}
+534 = {
+	plains = 13
+	hills = 889
+	totalpixels = 902
+}
+533 = {
+	riverpixels = 34
+	plains = 120
+	woods = 49
+	hills = 1427
+	totalpixels = 1596
+}
+532 = {
+	plains = 1572
+	woods = 4
+	hills = 4
+	totalpixels = 1580
+}
+531 = {
+	plains = 130
+	hills = 266
+	totalpixels = 396
+}
+530 = {
+	plains = 999
+	hills = 38
+	totalpixels = 1037
+}
+539 = {
+	plains = 581
+	hills = 12
+	totalpixels = 593
+}
+538 = {
+	plains = 945
+	climate = tropical
+	woods = 269
+	hills = 137
+	totalpixels = 1351
+}
+1558 = {
+	riverpixels = 3
+	totalpixels = 9754
+}
+536 = {
+	plains = 899
+	totalpixels = 899
+}
+429 = {
+	plains = 2151
+	woods = 31
+	hills = 18
+	totalpixels = 3966
+	mountain = 1766
+}
+428 = {
+	mountain = 1022
+	climate = mild_winter
+	hills = 2420
+	totalpixels = 3581
+	plains = 139
+}
+1399 = {
+	totalpixels = 10669
+}
+1398 = {
+	totalpixels = 7907
+}
+1397 = {
+	totalpixels = 5662
+}
+1396 = {
+	totalpixels = 8891
+}
+1395 = {
+	totalpixels = 4930
+}
+1394 = {
+	totalpixels = 9603
+}
+1393 = {
+	plains = 9
+	totalpixels = 7538
+}
+1392 = {
+	totalpixels = 8584
+}
+1391 = {
+	totalpixels = 8092
+}
+1390 = {
+	plains = 1
+	totalpixels = 2993
+}
+1443 = {
+	totalpixels = 38325
+}
+229 = {
+	totalpixels = 1228
+	plains = 1118
+	woods = 5
+	riverpixels = 55
+	farmlands = 93
+	hills = 12
+}
+228 = {
+	riverpixels = 48
+	plains = 35
+	woods = 178
+	hills = 587
+	totalpixels = 800
+}
+227 = {
+	plains = 218
+	farmlands = 127
+	riverpixels = 3
+	totalpixels = 345
+}
+226 = {
+	plains = 19
+	totalpixels = 67
+	mountain = 42
+}
+225 = {
+	plains = 563
+	woods = 7
+	riverpixels = 20
+	totalpixels = 599
+	mountain = 29
+}
+224 = {
+	mountain = 57
+	hills = 2
+	totalpixels = 713
+	plains = 649
+	woods = 5
+	riverpixels = 30
+}
+223 = {
+	mountain = 498
+	woods = 35
+	riverpixels = 6
+	totalpixels = 783
+	plains = 214
+}
+222 = {
+	mountain = 285
+	totalpixels = 349
+	plains = 39
+}
+221 = {
+	mountain = 29
+	hills = 465
+	totalpixels = 722
+	plains = 222
+	woods = 1
+	riverpixels = 6
+}
+220 = {
+	mountain = 1
+	hills = 31
+	riverpixels = 12
+	plains = 96
+	woods = 15
+	totalpixels = 827
+	farmlands = 684
+}
+151 = {
+	plains = 238
+	hills = 4
+	totalpixels = 247
+}
+150 = {
+	climate = mild_winter
+	hills = 16
+	totalpixels = 1354
+	plains = 1327
+	woods = 11
+	riverpixels = 66
+}
+153 = {
+	climate = normal_winter
+	hills = 387
+	totalpixels = 962
+	plains = 379
+	woods = 8
+	steppe = 26
+	riverpixels = 72
+	farmlands = 162
+}
+152 = {
+	riverpixels = 12
+	plains = 17
+	climate = mild_winter
+	hills = 613
+	totalpixels = 630
+}
+155 = {
+	climate = normal_winter
+	hills = 4
+	totalpixels = 1545
+	plains = 29
+	woods = 2
+	steppe = 1510
+	riverpixels = 78
+}
+154 = {
+	mountain = 195
+	climate = normal_winter
+	hills = 827
+	totalpixels = 1230
+	plains = 3
+	woods = 197
+	riverpixels = 22
+	farmlands = 8
+}
+157 = {
+	mountain = 492
+	climate = normal_winter
+	hills = 21
+	totalpixels = 1474
+	plains = 896
+	woods = 40
+	steppe = 25
+	riverpixels = 42
+}
+156 = {
+	climate = normal_winter
+	hills = 31
+	totalpixels = 1809
+	plains = 1720
+	woods = 34
+	steppe = 24
+	riverpixels = 163
+}
+159 = {
+	plains = 408
+	climate = mild_winter
+	totalpixels = 408
+}
+158 = {
+	mountain = 344
+	climate = normal_winter
+	hills = 989
+	totalpixels = 2482
+	plains = 278
+	woods = 826
+	marsh = 44
+	steppe = 1
+	riverpixels = 60
+}
+1293 = {
+	riverpixels = 1
+	totalpixels = 1457
+}
+1162 = {
+	mountain = 167
+	climate = tropical
+	hills = 123
+	plains = 748
+	steppe = 23
+	totalpixels = 1061
+}
+1807 = {
+	plains = 25326
+	arctic = 2003
+	climate = impassable
+	totalpixels = 27340
+	mountain = 7
+}
+1806 = {
+	climate = impassable
+	totalpixels = 13303
+	arctic = 413
+	plains = 539
+	forest = 12351
+	riverpixels = 181
+}
+1805 = {
+	climate = impassable
+	totalpixels = 33142
+	arctic = 4220
+	plains = 1934
+	forest = 26640
+	riverpixels = 356
+	hills = 320
+}
+1804 = {
+	climate = impassable
+	hills = 45
+	arctic = 568
+	plains = 37387
+	woods = 27
+	totalpixels = 38027
+}
+1803 = {
+	climate = impassable
+	totalpixels = 44859
+	plains = 2177
+	jungle = 42547
+	riverpixels = 1084
+	hills = 135
+}
+1802 = {
+	mountain = 56
+	climate = impassable
+	hills = 677
+	totalpixels = 47540
+	plains = 2889
+	jungle = 43918
+	riverpixels = 1351
+}
+1801 = {
+	mountain = 7593
+	climate = impassable
+	hills = 3340
+	totalpixels = 48639
+	plains = 37431
+	jungle = 271
+	riverpixels = 754
+	farmlands = 4
+}
+1800 = {
+	mountain = 12
+	climate = impassable
+	hills = 5438
+	totalpixels = 48718
+	plains = 31994
+	woods = 158
+	jungle = 11116
+	riverpixels = 926
+}
+1809 = {
+	mountain = 3827
+	climate = impassable
+	hills = 2975
+	riverpixels = 1
+	plains = 78
+	woods = 3772
+	steppe = 14794
+	totalpixels = 30570
+	forest = 5124
+}
+1808 = {
+	mountain = 24913
+	climate = impassable
+	hills = 4957
+	riverpixels = 8
+	plains = 3448
+	woods = 250
+	forest = 3664
+	totalpixels = 51375
+	desert = 8123
+	steppe = 6018
+}
+1256 = {
+	riverpixels = 7
+	totalpixels = 1828
+}
+1948 = {
+	totalpixels = 0
+}
+1949 = {
+	totalpixels = 0
+}
+1257 = {
+	riverpixels = 7
+	totalpixels = 2963
+}
+1942 = {
+	totalpixels = 0
+}
+1943 = {
+	totalpixels = 0
+}
+1940 = {
+	totalpixels = 0
+}
+1941 = {
+	totalpixels = 0
+}
+1946 = {
+	totalpixels = 0
+}
+1947 = {
+	totalpixels = 0
+}
+1944 = {
+	totalpixels = 0
+}
+1945 = {
+	totalpixels = 0
+}
+818 = {
+	mountain = 190
+	jungle = 2552
+	totalpixels = 2799
+	plains = 57
+}
+819 = {
+	plains = 724
+	totalpixels = 735
+	mountain = 11
+}
+1255 = {
+	totalpixels = 2109
+}
+810 = {
+	riverpixels = 42
+	mountain = 1430
+	hills = 73
+	totalpixels = 1553
+	jungle = 50
+}
+811 = {
+	mountain = 1659
+	riverpixels = 52
+	totalpixels = 1790
+	jungle = 131
+}
+812 = {
+	plains = 13
+	desert = 1
+	hills = 890
+	totalpixels = 1001
+	mountain = 97
+}
+813 = {
+	mountain = 1329
+	hills = 198
+	totalpixels = 1527
+}
+814 = {
+	mountain = 1633
+	riverpixels = 83
+	totalpixels = 1824
+	jungle = 191
+}
+815 = {
+	riverpixels = 41
+	mountain = 603
+	jungle = 974
+	totalpixels = 1603
+	plains = 26
+}
+816 = {
+	plains = 871
+	hills = 9
+	totalpixels = 1352
+	mountain = 472
+}
+817 = {
+	mountain = 1428
+	jungle = 245
+	totalpixels = 1698
+	plains = 25
+}
+1991 = {
+	totalpixels = 0
+}
+1250 = {
+	totalpixels = 280
+}
+1622 = {
+	totalpixels = 28059
+}
+1251 = {
+	totalpixels = 127
+}
+1621 = {
+	totalpixels = 25794
+}
+1490 = {
+	hills = 1
+	totalpixels = 3547
+}
+421 = {
+	plains = 1590
+	climate = mild_winter
+	hills = 22
+	totalpixels = 1614
+	mountain = 2
+}
+1492 = {
+	totalpixels = 3622
+}
+1493 = {
+	totalpixels = 4443
+}
+1494 = {
+	totalpixels = 7320
+}
+1495 = {
+	totalpixels = 10300
+}
+1496 = {
+	totalpixels = 24481
+}
+1497 = {
+	totalpixels = 31921
+}
+1498 = {
+	totalpixels = 22774
+}
+1499 = {
+	totalpixels = 2801
+}
+423 = {
+	climate = severe_winter
+	hills = 1208
+	totalpixels = 1208
+}
+1626 = {
+	totalpixels = 33137
+}
+1700 = {
+	totalpixels = 21682
+}
+1701 = {
+	totalpixels = 28563
+}
+1702 = {
+	totalpixels = 21157
+}
+1703 = {
+	totalpixels = 19748
+}
+1704 = {
+	totalpixels = 29627
+}
+1705 = {
+	totalpixels = 33093
+}
+1706 = {
+	totalpixels = 18686
+}
+1707 = {
+	totalpixels = 23204
+}
+1708 = {
+	totalpixels = 34748
+}
+1709 = {
+	totalpixels = 31071
+}
+1624 = {
+	totalpixels = 19115
+}
+424 = {
+	mountain = 13
+	climate = mild_winter
+	hills = 1257
+	totalpixels = 1272
+	plains = 2
+}
+427 = {
+	mountain = 8
+	climate = mild_winter
+	hills = 670
+	totalpixels = 678
+}
+426 = {
+	mountain = 1005
+	climate = mild_winter
+	hills = 107
+	totalpixels = 1116
+	plains = 4
+}
+1128 = {
+	climate = tropical
+	desert = 6016
+	totalpixels = 6016
+}
+1129 = {
+	riverpixels = 41
+	plains = 123
+	climate = tropical
+	desert = 3749
+	totalpixels = 3872
+}
+1120 = {
+	riverpixels = 54
+	plains = 11
+	climate = tropical
+	steppe = 1718
+	totalpixels = 1729
+}
+1121 = {
+	plains = 9
+	climate = tropical
+	steppe = 1320
+	totalpixels = 1329
+}
+1122 = {
+	climate = tropical
+	hills = 2730
+	plains = 23
+	steppe = 54
+	totalpixels = 2912
+	farmlands = 4
+	jungle = 101
+}
+1123 = {
+	climate = tropical
+	totalpixels = 2373
+	plains = 2049
+	steppe = 157
+	riverpixels = 76
+	desert = 167
+}
+1124 = {
+	plains = 28
+	climate = tropical
+	steppe = 2388
+	totalpixels = 2416
+}
+1125 = {
+	climate = tropical
+	hills = 59
+	totalpixels = 2790
+	plains = 2680
+	steppe = 10
+	riverpixels = 38
+	farmlands = 41
+}
+1126 = {
+	plains = 1
+	climate = tropical
+	farmlands = 1418
+	hills = 173
+	totalpixels = 1592
+}
+1127 = {
+	climate = tropical
+	desert = 8936
+	totalpixels = 8936
+}
+524 = {
+	climate = tropical
+	hills = 12
+	totalpixels = 1893
+	plains = 1593
+	woods = 288
+	riverpixels = 30
+}
+525 = {
+	plains = 52
+	climate = tropical
+	hills = 1215
+	totalpixels = 1267
+}
+526 = {
+	mountain = 12
+	climate = tropical
+	hills = 1353
+	totalpixels = 1432
+	plains = 67
+	riverpixels = 9
+}
+527 = {
+	mountain = 1
+	climate = tropical
+	hills = 303
+	totalpixels = 1142
+	plains = 832
+	woods = 6
+	riverpixels = 71
+}
+520 = {
+	plains = 1037
+	climate = tropical
+	woods = 147
+	hills = 32
+	totalpixels = 1216
+}
+521 = {
+	mountain = 1151
+	climate = mild_winter
+	riverpixels = 59
+	totalpixels = 1216
+	plains = 65
+}
+522 = {
+	mountain = 2151
+	climate = tropical
+	totalpixels = 2414
+	plains = 250
+	woods = 13
+	riverpixels = 40
+}
+523 = {
+	mountain = 2266
+	climate = mild_winter
+	totalpixels = 2399
+	plains = 130
+	riverpixels = 139
+	farmlands = 3
+}
+1014 = {
+	plains = 184
+	woods = 22
+	totalpixels = 213
+	farmlands = 7
+}
+1015 = {
+	plains = 159
+	totalpixels = 159
+}
+1016 = {
+	plains = 174
+	woods = 2
+	totalpixels = 176
+}
+1017 = {
+	plains = 170
+	climate = mild_winter
+	totalpixels = 170
+}
+528 = {
+	plains = 885
+	riverpixels = 28
+	totalpixels = 888
+	hills = 3
+}
+529 = {
+	plains = 853
+	totalpixels = 853
+}
+1012 = {
+	plains = 105
+	climate = mild_winter
+	farmlands = 28
+	totalpixels = 133
+}
+1013 = {
+	plains = 139
+	climate = mild_winter
+	woods = 26
+	totalpixels = 165
+}
+1234 = {
+	riverpixels = 106
+	plains = 53
+	climate = tropical
+	desert = 2215
+	totalpixels = 2268
+}
+1235 = {
+	plains = 156
+	climate = tropical
+	jungle = 143
+	totalpixels = 299
+}
+1236 = {
+	plains = 2365
+	climate = tropical
+	jungle = 672
+	totalpixels = 3045
+}
+1237 = {
+	plains = 2918
+	climate = tropical
+	jungle = 513
+	totalpixels = 4043
+	mountain = 612
+}
+1230 = {
+	mountain = 273
+	climate = tropical
+	hills = 48
+	plains = 2083
+	totalpixels = 2908
+	desert = 504
+}
+1231 = {
+	plains = 1040
+	climate = tropical
+	desert = 956
+	totalpixels = 2079
+	mountain = 83
+}
+1232 = {
+	mountain = 2297
+	climate = tropical
+	desert = 280
+	totalpixels = 2878
+	plains = 293
+}
+1233 = {
+	riverpixels = 31
+	plains = 87
+	climate = tropical
+	desert = 1390
+	totalpixels = 1477
+}
+1238 = {
+	plains = 945
+	climate = tropical
+	jungle = 3
+	totalpixels = 948
+}
+1239 = {
+	plains = 875
+	climate = tropical
+	jungle = 218
+	totalpixels = 1105
+}
+438 = {
+	mountain = 130
+	climate = mild_winter
+	plains = 1969
+	woods = 2131
+	steppe = 1298
+	totalpixels = 5530
+	desert = 2
+}
+439 = {
+	climate = mild_winter
+	plains = 779
+	woods = 157
+	steppe = 4350
+	totalpixels = 5305
+	desert = 19
+}
+436 = {
+	mountain = 136
+	climate = mild_winter
+	hills = 1632
+	plains = 117
+	totalpixels = 6463
+	desert = 4578
+}
+437 = {
+	mountain = 1581
+	climate = mild_winter
+	hills = 211
+	plains = 280
+	woods = 93
+	steppe = 52
+	totalpixels = 2218
+	desert = 1
+}
+434 = {
+	plains = 328
+	hills = 11
+	desert = 2260
+	totalpixels = 3694
+	mountain = 1095
+}
+435 = {
+	plains = 25
+	climate = mild_winter
+	desert = 2386
+	totalpixels = 2476
+	hills = 65
+}
+432 = {
+	mountain = 2154
+	climate = mild_winter
+	hills = 1207
+	plains = 585
+	woods = 22
+	totalpixels = 3971
+	desert = 3
+}
+433 = {
+	mountain = 312
+	climate = mild_winter
+	hills = 3130
+	plains = 651
+	totalpixels = 4251
+	desert = 158
+}
+430 = {
+	plains = 2029
+	woods = 58
+	totalpixels = 2128
+	mountain = 41
+}
+431 = {
+	plains = 790
+	totalpixels = 794
+	mountain = 4
+}
+1630 = {
+	totalpixels = 22794
+}
+1961 = {
+	totalpixels = 0
+}
+238 = {
+	climate = mild_winter
+	hills = 271
+	plains = 31
+	woods = 1
+	totalpixels = 313
+	farmlands = 10
+}
+239 = {
+	climate = mild_winter
+	totalpixels = 346
+	plains = 14
+	woods = 313
+	riverpixels = 35
+	farmlands = 15
+	hills = 4
+}
+234 = {
+	climate = mild_winter
+	hills = 13
+	plains = 70
+	woods = 9
+	totalpixels = 285
+	farmlands = 193
+}
+235 = {
+	woods = 22
+	plains = 143
+	climate = mild_winter
+	farmlands = 188
+	totalpixels = 353
+}
+236 = {
+	climate = mild_winter
+	totalpixels = 214
+	plains = 13
+	woods = 18
+	riverpixels = 19
+	farmlands = 182
+	hills = 1
+}
+237 = {
+	climate = mild_winter
+	totalpixels = 495
+	woods = 70
+	riverpixels = 11
+	farmlands = 424
+	hills = 1
+}
+230 = {
+	plains = 60
+	woods = 17
+	hills = 430
+	totalpixels = 507
+}
+231 = {
+	plains = 13
+	woods = 173
+	hills = 532
+	totalpixels = 718
+}
+232 = {
+	riverpixels = 21
+	plains = 18
+	hills = 471
+	totalpixels = 489
+}
+233 = {
+	climate = mild_winter
+	hills = 397
+	totalpixels = 573
+	plains = 164
+	woods = 12
+	riverpixels = 1
+}
+1 = {
+	plains = 925
+	climate = normal_winter
+	farmlands = 13
+	forest = 7
+	totalpixels = 945
+}
+146 = {
+	plains = 214
+	hills = 207
+	totalpixels = 432
+	mountain = 7
+}
+147 = {
+	mountain = 374
+	hills = 8
+	totalpixels = 436
+	plains = 29
+}
+144 = {
+	plains = 115
+	hills = 14
+	totalpixels = 550
+	mountain = 389
+}
+145 = {
+	plains = 107
+	hills = 137
+	totalpixels = 244
+}
+142 = {
+	plains = 24
+	woods = 2
+	totalpixels = 26
+}
+143 = {
+	plains = 118
+	woods = 45
+	hills = 529
+	totalpixels = 693
+	mountain = 1
+}
+140 = {
+	riverpixels = 37
+	climate = mild_winter
+	woods = 1185
+	hills = 31
+	totalpixels = 1216
+}
+141 = {
+	climate = mild_winter
+	hills = 1272
+	totalpixels = 1507
+	plains = 14
+	woods = 221
+	riverpixels = 71
+}
+148 = {
+	riverpixels = 49
+	plains = 406
+	hills = 429
+	totalpixels = 843
+	mountain = 7
+}
+149 = {
+	riverpixels = 50
+	plains = 314
+	woods = 1
+	hills = 668
+	totalpixels = 993
+}
+123 = {
+	woods = 10
+	plains = 689
+	farmlands = 1
+	hills = 319
+	totalpixels = 1019
+}
+1832 = {
+	woods = 3
+	plains = 60
+	farmlands = 24
+	totalpixels = 87
+}
+1833 = {
+	riverpixels = 32
+	plains = 116
+	jungle = 37
+	totalpixels = 600
+	hills = 447
+}
+1830 = {
+	plains = 41
+	climate = mild_winter
+	woods = 38
+	totalpixels = 87
+	farmlands = 8
+}
+1831 = {
+	woods = 36
+	plains = 26
+	climate = mild_winter
+	farmlands = 17
+	totalpixels = 79
+}
+1836 = {
+	climate = mild_winter
+	hills = 15
+	totalpixels = 1191
+	plains = 40
+	woods = 1136
+	riverpixels = 34
+}
+1837 = {
+	mountain = 16
+	climate = mild_winter
+	plains = 183
+	woods = 10
+	forest = 18
+	totalpixels = 227
+}
+1834 = {
+	woods = 19
+	mountain = 47
+	farmlands = 30
+	forest = 6
+	totalpixels = 102
+}
+1835 = {
+	mountain = 214
+	woods = 12
+	totalpixels = 226
+}
+1838 = {
+	plains = 43
+	woods = 1359
+	totalpixels = 1402
+}
+1839 = {
+	mountain = 10
+	farmlands = 85
+	forest = 10
+	totalpixels = 223
+	plains = 118
+}
+939 = {
+	mountain = 2
+	climate = mild_winter
+	totalpixels = 1414
+	plains = 145
+	woods = 1267
+	riverpixels = 84
+}
+938 = {
+	plains = 1136
+	hills = 26
+	totalpixels = 1165
+}
+933 = {
+	riverpixels = 12
+	plains = 12
+	hills = 1220
+	totalpixels = 1232
+}
+932 = {
+	riverpixels = 19
+	plains = 1306
+	hills = 58
+	totalpixels = 1364
+}
+931 = {
+	riverpixels = 31
+	plains = 32
+	hills = 817
+	totalpixels = 859
+	mountain = 10
+}
+930 = {
+	plains = 1350
+	riverpixels = 68
+	totalpixels = 1359
+	hills = 9
+}
+937 = {
+	riverpixels = 47
+	plains = 30
+	climate = mild_winter
+	hills = 1649
+	totalpixels = 1679
+}
+936 = {
+	mountain = 853
+	climate = mild_winter
+	hills = 200
+	totalpixels = 1103
+	plains = 50
+	riverpixels = 4
+}
+935 = {
+	mountain = 979
+	climate = mild_winter
+	hills = 16
+	totalpixels = 1039
+	plains = 4
+	woods = 40
+	riverpixels = 72
+}
+934 = {
+	mountain = 9
+	climate = mild_winter
+	totalpixels = 1677
+	plains = 77
+	woods = 1552
+	riverpixels = 57
+	hills = 39
+}
+1955 = {
+	totalpixels = 0
+}
+1954 = {
+	totalpixels = 0
+}
+1957 = {
+	totalpixels = 0
+}
+1956 = {
+	totalpixels = 0
+}
+1951 = {
+	totalpixels = 0
+}
+1950 = {
+	totalpixels = 0
+}
+1953 = {
+	totalpixels = 0
+}
+1952 = {
+	totalpixels = 0
+}
+1959 = {
+	totalpixels = 0
+}
+1958 = {
+	totalpixels = 0
+}
+829 = {
+	plains = 932
+	totalpixels = 941
+	mountain = 9
+}
+828 = {
+	plains = 772
+	hills = 10
+	totalpixels = 904
+	mountain = 122
+}
+825 = {
+	riverpixels = 5
+	mountain = 264
+	jungle = 1751
+	totalpixels = 2015
+}
+824 = {
+	mountain = 738
+	totalpixels = 746
+	plains = 8
+}
+827 = {
+	plains = 154
+	jungle = 8
+	hills = 9
+	totalpixels = 991
+	mountain = 820
+}
+826 = {
+	plains = 682
+	farmlands = 9
+	hills = 5
+	totalpixels = 696
+}
+821 = {
+	riverpixels = 100
+	mountain = 211
+	jungle = 2735
+	totalpixels = 3106
+	plains = 160
+}
+820 = {
+	plains = 191
+	totalpixels = 994
+	mountain = 803
+}
+823 = {
+	mountain = 82
+	totalpixels = 848
+	plains = 766
+}
+822 = {
+	riverpixels = 77
+	plains = 9
+	jungle = 1704
+	totalpixels = 2055
+	mountain = 342
+}
+1483 = {
+	riverpixels = 1
+	totalpixels = 23298
+}
+1482 = {
+	totalpixels = 20077
+}
+1481 = {
+	totalpixels = 26361
+}
+1480 = {
+	totalpixels = 18242
+}
+1487 = {
+	riverpixels = 8
+	totalpixels = 17987
+}
+1486 = {
+	riverpixels = 8
+	totalpixels = 11506
+}
+1485 = {
+	riverpixels = 3
+	totalpixels = 15699
+}
+1484 = {
+	totalpixels = 43211
+}
+1489 = {
+	totalpixels = 12907
+}
+1488 = {
+	totalpixels = 12588
+}
+797 = {
+	mountain = 120
+	desert = 1402
+	hills = 72
+	totalpixels = 1703
+	plains = 109
+}
+796 = {
+	plains = 33
+	hills = 992
+	totalpixels = 1034
+	mountain = 9
+}
+795 = {
+	mountain = 1142
+	hills = 120
+	totalpixels = 2582
+	plains = 569
+	jungle = 4
+	riverpixels = 70
+	desert = 747
+}
+794 = {
+	mountain = 1672
+	hills = 1
+	totalpixels = 2745
+	plains = 172
+	jungle = 153
+	riverpixels = 33
+	desert = 747
+}
+793 = {
+	mountain = 4
+	desert = 10
+	hills = 1820
+	totalpixels = 1845
+	plains = 11
+}
+792 = {
+	plains = 16
+	woods = 1
+	hills = 1023
+	totalpixels = 1041
+	desert = 1
+}
+791 = {
+	mountain = 3292
+	hills = 143
+	plains = 673
+	woods = 10
+	totalpixels = 4248
+	desert = 130
+}
+790 = {
+	mountain = 573
+	hills = 188
+	plains = 5379
+	woods = 101
+	jungle = 1463
+	totalpixels = 7705
+	farmlands = 1
+}
+1719 = {
+	totalpixels = 36586
+}
+1718 = {
+	totalpixels = 32726
+}
+799 = {
+	riverpixels = 105
+	plains = 5550
+	jungle = 291
+	totalpixels = 5904
+	mountain = 63
+}
+798 = {
+	riverpixels = 22
+	mountain = 273
+	jungle = 598
+	totalpixels = 2981
+	plains = 2110
+}
+612 = {
+	climate = tropical
+	totalpixels = 2512
+	plains = 14
+	jungle = 2409
+	riverpixels = 31
+	hills = 89
+}
+613 = {
+	plains = 1486
+	climate = tropical
+	totalpixels = 1494
+	mountain = 8
+}
+610 = {
+	mountain = 1041
+	climate = tropical
+	hills = 5
+	totalpixels = 1142
+	plains = 87
+	jungle = 9
+	riverpixels = 20
+}
+1139 = {
+	climate = tropical
+	hills = 174
+	totalpixels = 2278
+	plains = 3
+	jungle = 2101
+	riverpixels = 44
+}
+1138 = {
+	climate = tropical
+	totalpixels = 3101
+	hills = 165
+	plains = 2906
+	steppe = 28
+	riverpixels = 51
+	jungle = 2
+}
+1133 = {
+	plains = 1419
+	climate = tropical
+	riverpixels = 5
+	totalpixels = 1631
+	desert = 212
+}
+1132 = {
+	riverpixels = 88
+	plains = 1600
+	climate = tropical
+	desert = 623
+	totalpixels = 2223
+}
+1131 = {
+	climate = tropical
+	totalpixels = 1959
+	plains = 1691
+	steppe = 46
+	riverpixels = 83
+	desert = 222
+}
+1130 = {
+	plains = 31
+	climate = tropical
+	desert = 5711
+	totalpixels = 5742
+}
+1137 = {
+	climate = tropical
+	totalpixels = 2887
+	plains = 13
+	steppe = 2869
+	riverpixels = 39
+	jungle = 5
+}
+1136 = {
+	riverpixels = 85
+	plains = 1566
+	climate = tropical
+	steppe = 24
+	totalpixels = 1590
+}
+1135 = {
+	riverpixels = 30
+	plains = 1908
+	climate = tropical
+	steppe = 128
+	totalpixels = 2036
+}
+1134 = {
+	riverpixels = 126
+	plains = 49
+	climate = tropical
+	steppe = 2282
+	totalpixels = 2331
+}
+614 = {
+	mountain = 568
+	climate = tropical
+	hills = 101
+	totalpixels = 688
+	plains = 12
+	jungle = 7
+	riverpixels = 29
+}
+1277 = {
+	totalpixels = 2358
+}
+519 = {
+	plains = 1766
+	climate = tropical
+	woods = 135
+	hills = 401
+	totalpixels = 2302
+}
+518 = {
+	mountain = 116
+	climate = tropical
+	hills = 96
+	plains = 998
+	totalpixels = 1213
+	farmlands = 3
+}
+1009 = {
+	mountain = 9
+	climate = severe_winter
+	totalpixels = 2598
+	arctic = 906
+	plains = 289
+	forest = 1394
+	riverpixels = 23
+}
+1008 = {
+	plains = 494
+	climate = severe_winter
+	forest = 2081
+	totalpixels = 2575
+}
+1007 = {
+	plains = 379
+	climate = severe_winter
+	forest = 3045
+	totalpixels = 3424
+}
+1006 = {
+	climate = severe_winter
+	totalpixels = 6455
+	arctic = 5572
+	plains = 858
+	forest = 25
+	riverpixels = 119
+}
+1005 = {
+	climate = severe_winter
+	totalpixels = 6162
+	arctic = 4963
+	plains = 384
+	forest = 815
+	riverpixels = 159
+}
+1004 = {
+	riverpixels = 74
+	plains = 640
+	climate = severe_winter
+	forest = 5241
+	totalpixels = 5882
+}
+515 = {
+	plains = 1618
+	totalpixels = 1619
+}
+1002 = {
+	riverpixels = 63
+	plains = 434
+	climate = severe_winter
+	forest = 4622
+	totalpixels = 5056
+}
+1001 = {
+	plains = 6441
+	climate = severe_winter
+	forest = 323
+	totalpixels = 6764
+}
+1000 = {
+	riverpixels = 94
+	plains = 1224
+	climate = severe_winter
+	forest = 3590
+	totalpixels = 4818
+}
+1227 = {
+	plains = 52
+	climate = tropical
+	hills = 1619
+	totalpixels = 1672
+	mountain = 1
+}
+1226 = {
+	mountain = 1
+	climate = tropical
+	hills = 9
+	plains = 1913
+	totalpixels = 1928
+	desert = 5
+}
+1225 = {
+	plains = 1874
+	climate = tropical
+	riverpixels = 58
+	totalpixels = 1973
+	desert = 99
+}
+620 = {
+	plains = 563
+	climate = tropical
+	jungle = 939
+	totalpixels = 1502
+}
+627 = {
+	plains = 470
+	climate = tropical
+	jungle = 195
+	totalpixels = 665
+}
+626 = {
+	plains = 154
+	climate = tropical
+	jungle = 301
+	totalpixels = 458
+}
+625 = {
+	plains = 121
+	climate = tropical
+	jungle = 287
+	totalpixels = 409
+}
+1220 = {
+	riverpixels = 83
+	plains = 139
+	climate = tropical
+	desert = 3193
+	totalpixels = 3332
+}
+629 = {
+	plains = 177
+	climate = tropical
+	jungle = 172
+	totalpixels = 349
+}
+628 = {
+	plains = 93
+	climate = tropical
+	jungle = 275
+	totalpixels = 368
+}
+1229 = {
+	riverpixels = 24
+	plains = 144
+	climate = tropical
+	desert = 1876
+	totalpixels = 2020
+}
+1228 = {
+	riverpixels = 112
+	climate = tropical
+	desert = 2510
+	totalpixels = 2510
+}
+2 = {
+	plains = 82
+	climate = normal_winter
+	farmlands = 738
+	forest = 12
+	totalpixels = 832
+}
+1286 = {
+	totalpixels = 2339
+}
+11 = {
+	climate = severe_winter
+	totalpixels = 3524
+	arctic = 722
+	plains = 331
+	forest = 2469
+	riverpixels = 76
+}
+10 = {
+	mountain = 824
+	climate = severe_winter
+	totalpixels = 1729
+	plains = 25
+	forest = 880
+	riverpixels = 3
+}
+13 = {
+	climate = mild_winter
+	plains = 263
+	woods = 59
+	forest = 9
+	totalpixels = 379
+	farmlands = 48
+}
+12 = {
+	plains = 283
+	climate = mild_winter
+	woods = 21
+	totalpixels = 304
+}
+15 = {
+	woods = 151
+	plains = 802
+	climate = mild_winter
+	farmlands = 132
+	totalpixels = 1086
+}
+14 = {
+	woods = 9
+	plains = 172
+	climate = mild_winter
+	farmlands = 3
+	totalpixels = 184
+}
+17 = {
+	mountain = 353
+	climate = normal_winter
+	hills = 559
+	totalpixels = 1092
+	plains = 27
+	forest = 117
+	riverpixels = 39
+}
+16 = {
+	climate = normal_winter
+	hills = 331
+	plains = 15
+	woods = 4
+	forest = 23
+	totalpixels = 420
+	farmlands = 8
+}
+19 = {
+	climate = severe_winter
+	totalpixels = 3463
+	arctic = 358
+	plains = 542
+	forest = 2563
+	riverpixels = 39
+}
+18 = {
+	mountain = 68
+	climate = severe_winter
+	totalpixels = 4398
+	arctic = 3244
+	plains = 490
+	forest = 596
+	riverpixels = 88
+}
+201 = {
+	woods = 100
+	plains = 116
+	farmlands = 885
+	riverpixels = 3
+	totalpixels = 1102
+}
+200 = {
+	hills = 45
+	totalpixels = 957
+	plains = 890
+	woods = 20
+	riverpixels = 14
+	farmlands = 2
+}
+203 = {
+	climate = mild_winter
+	hills = 433
+	totalpixels = 451
+	plains = 6
+	woods = 4
+	riverpixels = 50
+	farmlands = 8
+}
+202 = {
+	woods = 6
+	plains = 7
+	farmlands = 171
+	riverpixels = 29
+	totalpixels = 184
+}
+205 = {
+	mountain = 386
+	climate = severe_winter
+	hills = 3
+	riverpixels = 4
+	plains = 22
+	woods = 37
+	totalpixels = 483
+	farmlands = 35
+}
+204 = {
+	mountain = 2
+	climate = mild_winter
+	hills = 5
+	totalpixels = 461
+	woods = 443
+	riverpixels = 7
+	farmlands = 11
+}
+207 = {
+	plains = 105
+	climate = mild_winter
+	woods = 334
+	hills = 71
+	totalpixels = 510
+}
+206 = {
+	plains = 369
+	climate = mild_winter
+	woods = 202
+	hills = 1054
+	totalpixels = 1625
+}
+209 = {
+	mountain = 134
+	climate = mild_winter
+	hills = 254
+	plains = 18
+	woods = 21
+	totalpixels = 427
+}
+208 = {
+	riverpixels = 4
+	plains = 687
+	woods = 7
+	hills = 516
+	totalpixels = 1210
+}
+1573 = {
+	totalpixels = 18956
+}
+1572 = {
+	totalpixels = 10039
+}
+1571 = {
+	totalpixels = 14763
+}
+1570 = {
+	totalpixels = 14846
+}
+1577 = {
+	totalpixels = 30886
+}
+1576 = {
+	totalpixels = 22630
+}
+1575 = {
+	totalpixels = 21199
+}
+1574 = {
+	totalpixels = 12575
+}
+1829 = {
+	plains = 13
+	hills = 1072
+	totalpixels = 1128
+}
+1828 = {
+	woods = 42
+	plains = 34
+	farmlands = 24
+	totalpixels = 100
+}
+1825 = {
+	plains = 59
+	farmlands = 50
+	totalpixels = 109
+}
+1824 = {
+	riverpixels = 34
+	plains = 1124
+	hills = 45
+	totalpixels = 1173
+}
+1827 = {
+	plains = 59
+	woods = 15
+	forest = 6
+	totalpixels = 108
+	farmlands = 28
+}
+1826 = {
+	climate = mild_winter
+	plains = 3
+	woods = 57
+	forest = 3
+	totalpixels = 74
+	farmlands = 11
+}
+1821 = {
+	plains = 1160
+	woods = 39
+	totalpixels = 1199
+}
+1820 = {
+	plains = 168
+	totalpixels = 168
+}
+1823 = {
+	plains = 40
+	climate = mild_winter
+	farmlands = 93
+	totalpixels = 133
+}
+1822 = {
+	plains = 307
+	totalpixels = 307
+}
+928 = {
+	plains = 47
+	farmlands = 10
+	marsh = 777
+	riverpixels = 23
+	totalpixels = 834
+}
+929 = {
+	plains = 1344
+	riverpixels = 11
+	totalpixels = 1418
+	hills = 74
+}
+920 = {
+	hills = 11
+	plains = 69
+	woods = 1250
+	marsh = 9
+	totalpixels = 1351
+	farmlands = 12
+}
+921 = {
+	plains = 35
+	woods = 12
+	marsh = 368
+	riverpixels = 18
+	totalpixels = 415
+}
+922 = {
+	plains = 44
+	woods = 13
+	marsh = 591
+	totalpixels = 652
+	farmlands = 4
+}
+923 = {
+	plains = 1018
+	farmlands = 8
+	marsh = 17
+	totalpixels = 1043
+}
+924 = {
+	plains = 1379
+	hills = 42
+	totalpixels = 1421
+}
+925 = {
+	mountain = 1
+	hills = 1935
+	totalpixels = 1963
+	plains = 17
+	woods = 9
+	marsh = 1
+	riverpixels = 33
+}
+926 = {
+	plains = 30
+	marsh = 2065
+	totalpixels = 2097
+}
+927 = {
+	plains = 868
+	marsh = 13
+	totalpixels = 881
+}
+1920 = {
+	totalpixels = 0
+}
+1921 = {
+	totalpixels = 0
+}
+1922 = {
+	totalpixels = 0
+}
+1923 = {
+	totalpixels = 0
+}
+1924 = {
+	totalpixels = 0
+}
+1925 = {
+	totalpixels = 0
+}
+1926 = {
+	totalpixels = 0
+}
+1927 = {
+	totalpixels = 0
+}
+1928 = {
+	totalpixels = 0
+}
+1929 = {
+	totalpixels = 0
+}
+832 = {
+	mountain = 1209
+	jungle = 107
+	totalpixels = 1328
+	plains = 12
+}
+833 = {
+	mountain = 56
+	jungle = 1393
+	totalpixels = 1518
+	plains = 69
+}
+830 = {
+	plains = 473
+	farmlands = 4
+	totalpixels = 1926
+	mountain = 1449
+}
+831 = {
+	plains = 3076
+	farmlands = 9
+	hills = 6
+	totalpixels = 3091
+}
+836 = {
+	plains = 892
+	farmlands = 4
+	hills = 18
+	totalpixels = 925
+	mountain = 6
+}
+837 = {
+	riverpixels = 52
+	mountain = 1672
+	hills = 61
+	totalpixels = 1768
+	plains = 35
+}
+834 = {
+	mountain = 1
+	hills = 38
+	riverpixels = 23
+	plains = 2036
+	jungle = 161
+	totalpixels = 2238
+	farmlands = 2
+}
+835 = {
+	plains = 4
+	farmlands = 11
+	hills = 744
+	totalpixels = 759
+}
+838 = {
+	mountain = 6
+	climate = tropical
+	hills = 942
+	totalpixels = 970
+	plains = 13
+	jungle = 2
+	riverpixels = 20
+	farmlands = 7
+}
+839 = {
+	mountain = 18
+	hills = 670
+	totalpixels = 699
+	plains = 11
+}
+3 = {
+	plains = 260
+	climate = normal_winter
+	farmlands = 22
+	forest = 857
+	totalpixels = 1140
+}
+784 = {
+	mountain = 3776
+	hills = 259
+	totalpixels = 4557
+	plains = 516
+	woods = 4
+	riverpixels = 11
+}
+785 = {
+	mountain = 13
+	hills = 6693
+	totalpixels = 6739
+	plains = 23
+	woods = 10
+	riverpixels = 127
+}
+786 = {
+	hills = 297
+	totalpixels = 3533
+	plains = 3170
+	woods = 65
+	riverpixels = 19
+	farmlands = 1
+}
+787 = {
+	plains = 424
+	hills = 438
+	totalpixels = 3623
+	mountain = 2761
+}
+780 = {
+	riverpixels = 215
+	plains = 155
+	woods = 6
+	hills = 7412
+	totalpixels = 7573
+}
+781 = {
+	mountain = 13
+	woods = 1
+	hills = 96
+	totalpixels = 8502
+	plains = 8392
+}
+782 = {
+	plains = 2315
+	totalpixels = 2316
+	mountain = 1
+}
+783 = {
+	riverpixels = 4
+	plains = 2534
+	hills = 86
+	totalpixels = 5266
+	mountain = 2645
+}
+1726 = {
+	totalpixels = 53269
+}
+1727 = {
+	totalpixels = 48951
+}
+1724 = {
+	totalpixels = 43285
+}
+1725 = {
+	totalpixels = 32706
+}
+788 = {
+	mountain = 3847
+	hills = 1527
+	totalpixels = 5442
+	plains = 68
+}
+789 = {
+	plains = 128
+	woods = 31
+	hills = 5234
+	totalpixels = 5424
+	farmlands = 31
+}
+1720 = {
+	totalpixels = 47026
+}
+1721 = {
+	totalpixels = 43929
+}
+60 = {
+	plains = 7
+	climate = normal_winter
+	woods = 379
+	hills = 12
+	totalpixels = 398
+}
+61 = {
+	climate = normal_winter
+	hills = 226
+	totalpixels = 663
+	plains = 38
+	woods = 399
+	riverpixels = 15
+}
+62 = {
+	climate = normal_winter
+	totalpixels = 363
+	plains = 307
+	woods = 45
+	riverpixels = 30
+	farmlands = 11
+}
+63 = {
+	climate = normal_winter
+	totalpixels = 481
+	plains = 420
+	woods = 54
+	riverpixels = 4
+	farmlands = 7
+}
+64 = {
+	climate = normal_winter
+	hills = 33
+	totalpixels = 317
+	woods = 30
+	riverpixels = 13
+	farmlands = 254
+}
+65 = {
+	mountain = 130
+	climate = normal_winter
+	hills = 152
+	totalpixels = 282
+}
+66 = {
+	climate = normal_winter
+	totalpixels = 413
+	plains = 379
+	woods = 27
+	riverpixels = 10
+	farmlands = 7
+}
+67 = {
+	climate = normal_winter
+	hills = 8
+	totalpixels = 507
+	plains = 468
+	woods = 3
+	riverpixels = 50
+	farmlands = 28
+}
+68 = {
+	mountain = 64
+	climate = normal_winter
+	hills = 305
+	totalpixels = 370
+	riverpixels = 21
+	farmlands = 1
+}
+69 = {
+	mountain = 167
+	climate = normal_winter
+	hills = 7
+	totalpixels = 607
+	plains = 426
+	woods = 7
+	riverpixels = 19
+}
+1371 = {
+	totalpixels = 7269
+}
+1588 = {
+	totalpixels = 22733
+}
+1589 = {
+	totalpixels = 19665
+}
+1370 = {
+	totalpixels = 5426
+}
+1582 = {
+	totalpixels = 22250
+}
+1583 = {
+	totalpixels = 28271
+}
+1580 = {
+	totalpixels = 32217
+}
+1581 = {
+	totalpixels = 33155
+}
+1586 = {
+	totalpixels = 34619
+}
+1373 = {
+	riverpixels = 3
+	totalpixels = 5042
+}
+1584 = {
+	totalpixels = 29276
+}
+1585 = {
+	totalpixels = 33492
+}
+1038 = {
+	arctic = 6100
+	climate = severe_winter
+	totalpixels = 6100
+}
+1372 = {
+	totalpixels = 5041
+}
+508 = {
+	mountain = 958
+	climate = severe_winter
+	riverpixels = 38
+	totalpixels = 981
+	plains = 23
+}
+509 = {
+	mountain = 1033
+	climate = severe_winter
+	totalpixels = 2140
+	plains = 486
+	riverpixels = 17
+	desert = 621
+}
+1032 = {
+	plains = 385
+	climate = normal_winter
+	totalpixels = 453
+	mountain = 57
+}
+507 = {
+	mountain = 1488
+	climate = mild_winter
+	hills = 19
+	totalpixels = 1510
+	plains = 3
+	riverpixels = 41
+}
+504 = {
+	riverpixels = 74
+	plains = 58
+	hills = 1918
+	totalpixels = 2002
+	mountain = 26
+}
+505 = {
+	mountain = 42
+	climate = tropical
+	hills = 1414
+	totalpixels = 1522
+	plains = 40
+	woods = 26
+	riverpixels = 75
+}
+502 = {
+	plains = 256
+	totalpixels = 256
+}
+503 = {
+	riverpixels = 8
+	plains = 1233
+	hills = 20
+	totalpixels = 1253
+}
+500 = {
+	plains = 52
+	totalpixels = 52
+}
+402 = {
+	plains = 39
+	desert = 1500
+	totalpixels = 1539
+}
+630 = {
+	plains = 134
+	climate = tropical
+	jungle = 225
+	totalpixels = 359
+}
+631 = {
+	plains = 190
+	climate = tropical
+	jungle = 42
+	totalpixels = 232
+}
+632 = {
+	plains = 303
+	climate = tropical
+	jungle = 49
+	totalpixels = 352
+}
+633 = {
+	plains = 368
+	climate = tropical
+	jungle = 111
+	totalpixels = 479
+}
+1216 = {
+	riverpixels = 89
+	plains = 3845
+	climate = tropical
+	steppe = 45
+	totalpixels = 3890
+}
+401 = {
+	plains = 1483
+	desert = 20
+	totalpixels = 1507
+	mountain = 4
+}
+636 = {
+	plains = 664
+	climate = tropical
+	jungle = 3195
+	totalpixels = 3859
+}
+637 = {
+	plains = 652
+	climate = tropical
+	jungle = 1167
+	totalpixels = 1820
+}
+638 = {
+	plains = 756
+	climate = tropical
+	jungle = 3143
+	totalpixels = 3899
+}
+639 = {
+	plains = 734
+	climate = tropical
+	jungle = 3965
+	totalpixels = 4699
+}
+1218 = {
+	mountain = 2103
+	climate = tropical
+	totalpixels = 2123
+	plains = 20
+}
+1219 = {
+	plains = 5353
+	climate = tropical
+	desert = 8
+	totalpixels = 5397
+	steppe = 36
+}
+1728 = {
+	totalpixels = 38113
+}
+1729 = {
+	totalpixels = 53290
+}
+1454 = {
+	totalpixels = 19694
+}
+1455 = {
+	totalpixels = 25289
+}
+1456 = {
+	totalpixels = 8029
+}
+1105 = {
+	climate = severe_winter
+	hills = 1961
+	arctic = 1
+	plains = 69
+	woods = 565
+	totalpixels = 2596
+}
+1450 = {
+	totalpixels = 22761
+}
+1103 = {
+	plains = 105
+	totalpixels = 105
+}
+1452 = {
+	totalpixels = 24267
+}
+1453 = {
+	totalpixels = 30291
+}
+1458 = {
+	riverpixels = 6
+	totalpixels = 13927
+}
+1459 = {
+	totalpixels = 15238
+}
+1108 = {
+	mountain = 297
+	woods = 428
+	totalpixels = 2806
+	plains = 2081
+}
+1109 = {
+	plains = 1908
+	woods = 416
+	totalpixels = 2508
+	mountain = 184
+}
+1722 = {
+	totalpixels = 36423
+}
+1723 = {
+	totalpixels = 38924
+}
+216 = {
+	hills = 16
+	totalpixels = 1108
+	plains = 1070
+	woods = 16
+	riverpixels = 42
+	farmlands = 6
+}
+217 = {
+	hills = 50
+	riverpixels = 50
+	plains = 61
+	woods = 9
+	totalpixels = 1151
+	farmlands = 1031
+}
+214 = {
+	mountain = 5
+	totalpixels = 1325
+	plains = 803
+	woods = 35
+	riverpixels = 80
+	farmlands = 60
+	hills = 422
+}
+215 = {
+	hills = 42
+	totalpixels = 1213
+	plains = 1148
+	woods = 13
+	riverpixels = 48
+	farmlands = 10
+}
+212 = {
+	mountain = 767
+	climate = severe_winter
+	totalpixels = 868
+	plains = 92
+}
+213 = {
+	mountain = 117
+	totalpixels = 504
+	plains = 65
+	woods = 4
+	riverpixels = 1
+	farmlands = 318
+}
+210 = {
+	mountain = 400
+	climate = severe_winter
+	hills = 90
+	plains = 4
+	woods = 11
+	totalpixels = 505
+}
+211 = {
+	mountain = 911
+	climate = severe_winter
+	hills = 4
+	totalpixels = 935
+	plains = 18
+	woods = 2
+	riverpixels = 4
+}
+218 = {
+	riverpixels = 62
+	plains = 119
+	woods = 35
+	hills = 1098
+	totalpixels = 1252
+}
+219 = {
+	hills = 1264
+	totalpixels = 1308
+	plains = 15
+	woods = 19
+	riverpixels = 76
+	farmlands = 10
+}
+462 = {
+	mountain = 928
+	climate = severe_winter
+	hills = 138
+	plains = 69
+	woods = 654
+	steppe = 1028
+	totalpixels = 2817
+}
+4 = {
+	climate = normal_winter
+	totalpixels = 1018
+	plains = 46
+	forest = 621
+	riverpixels = 27
+	farmlands = 351
+}
+1858 = {
+	climate = normal_winter
+	totalpixels = 395
+	plains = 81
+	woods = 309
+	riverpixels = 25
+	farmlands = 5
+}
+1859 = {
+	climate = normal_winter
+	totalpixels = 495
+	plains = 143
+	woods = 289
+	riverpixels = 34
+	farmlands = 63
+}
+1850 = {
+	mountain = 73
+	climate = mild_winter
+	hills = 1654
+	plains = 1625
+	woods = 109
+	totalpixels = 3504
+	farmlands = 43
+}
+1851 = {
+	plains = 561
+	woods = 1
+	riverpixels = 14
+	totalpixels = 573
+	hills = 11
+}
+1852 = {
+	plains = 1124
+	farmlands = 9
+	forest = 153
+	totalpixels = 1317
+	mountain = 31
+}
+1853 = {
+	mountain = 325
+	hills = 164
+	totalpixels = 510
+	plains = 11
+}
+1854 = {
+	plains = 307
+	desert = 321
+	totalpixels = 628
+}
+1855 = {
+	plains = 389
+	hills = 11
+	totalpixels = 530
+	desert = 128
+}
+1856 = {
+	mountain = 24
+	climate = severe_winter
+	plains = 1
+	woods = 78
+	steppe = 1957
+	totalpixels = 2074
+}
+1857 = {
+	woods = 139
+	plains = 67
+	climate = normal_winter
+	farmlands = 41
+	totalpixels = 247
+}
+919 = {
+	totalpixels = 1701
+	plains = 618
+	woods = 1036
+	riverpixels = 45
+	farmlands = 11
+	hills = 36
+}
+918 = {
+	plains = 115
+	climate = mild_winter
+	woods = 1225
+	riverpixels = 76
+	totalpixels = 1340
+}
+915 = {
+	climate = normal_winter
+	totalpixels = 1836
+	plains = 286
+	woods = 1548
+	forest = 2
+	riverpixels = 63
+}
+914 = {
+	climate = normal_winter
+	totalpixels = 899
+	plains = 166
+	woods = 9
+	forest = 724
+	riverpixels = 9
+}
+917 = {
+	plains = 192
+	climate = mild_winter
+	woods = 1048
+	riverpixels = 47
+	totalpixels = 1240
+}
+916 = {
+	plains = 484
+	climate = mild_winter
+	woods = 1444
+	riverpixels = 47
+	totalpixels = 1928
+}
+911 = {
+	plains = 583
+	climate = severe_winter
+	forest = 726
+	totalpixels = 1309
+}
+910 = {
+	climate = severe_winter
+	hills = 19
+	totalpixels = 3090
+	plains = 518
+	forest = 2553
+	riverpixels = 34
+}
+913 = {
+	climate = normal_winter
+	totalpixels = 2231
+	plains = 275
+	woods = 1
+	forest = 1955
+	riverpixels = 93
+}
+912 = {
+	plains = 588
+	climate = severe_winter
+	riverpixels = 21
+	totalpixels = 2100
+	forest = 1512
+}
+516 = {
+	plains = 1215
+	totalpixels = 1215
+}
+1423 = {
+	totalpixels = 9990
+}
+1933 = {
+	totalpixels = 0
+}
+1932 = {
+	totalpixels = 0
+}
+1931 = {
+	totalpixels = 0
+}
+1930 = {
+	totalpixels = 0
+}
+1937 = {
+	totalpixels = 0
+}
+1936 = {
+	totalpixels = 0
+}
+1935 = {
+	totalpixels = 0
+}
+1934 = {
+	totalpixels = 0
+}
+1939 = {
+	totalpixels = 0
+}
+1938 = {
+	totalpixels = 0
+}
+847 = {
+	riverpixels = 10
+	plains = 51
+	jungle = 2173
+	totalpixels = 2224
+}
+846 = {
+	plains = 407
+	jungle = 1854
+	totalpixels = 2261
+}
+845 = {
+	riverpixels = 16
+	plains = 222
+	jungle = 1101
+	totalpixels = 1325
+	mountain = 2
+}
+844 = {
+	riverpixels = 24
+	plains = 28
+	jungle = 1674
+	totalpixels = 1714
+	mountain = 12
+}
+843 = {
+	plains = 195
+	jungle = 701
+	totalpixels = 896
+}
+842 = {
+	riverpixels = 35
+	mountain = 14
+	jungle = 68
+	totalpixels = 944
+	plains = 862
+}
+841 = {
+	mountain = 1408
+	hills = 6
+	totalpixels = 1489
+	plains = 10
+	jungle = 65
+	riverpixels = 14
+}
+840 = {
+	mountain = 8
+	hills = 104
+	jungle = 1
+	totalpixels = 1486
+	plains = 1373
+}
+849 = {
+	riverpixels = 63
+	plains = 1582
+	jungle = 323
+	totalpixels = 1907
+	mountain = 2
+}
+848 = {
+	plains = 848
+	riverpixels = 2
+	totalpixels = 872
+	jungle = 24
+}
+459 = {
+	mountain = 2432
+	climate = mild_winter
+	hills = 353
+	plains = 1565
+	steppe = 16
+	totalpixels = 4372
+	forest = 6
+}
+1587 = {
+	totalpixels = 17092
+}
+1739 = {
+	totalpixels = 36391
+}
+1738 = {
+	totalpixels = 31085
+}
+1731 = {
+	totalpixels = 47807
+}
+1730 = {
+	totalpixels = 32559
+}
+1733 = {
+	totalpixels = 50164
+}
+1732 = {
+	totalpixels = 36539
+}
+662 = {
+	mountain = 53
+	climate = normal_winter
+	totalpixels = 1630
+	plains = 201
+	jungle = 1376
+	riverpixels = 54
+}
+1734 = {
+	totalpixels = 71654
+}
+1737 = {
+	totalpixels = 28883
+}
+1736 = {
+	totalpixels = 32685
+}
+1039 = {
+	mountain = 1587
+	arctic = 7933
+	forest = 205
+	totalpixels = 9725
+	climate = severe_winter
+}
+753 = {
+	plains = 1170
+	hills = 12
+	totalpixels = 1182
+}
+752 = {
+	riverpixels = 19
+	jungle = 1755
+	totalpixels = 1922
+	hills = 167
+}
+751 = {
+	hills = 2366
+	totalpixels = 2402
+	plains = 29
+	jungle = 3
+	riverpixels = 56
+	farmlands = 4
+}
+750 = {
+	riverpixels = 71
+	plains = 334
+	jungle = 2953
+	totalpixels = 3291
+	hills = 4
+}
+757 = {
+	plains = 8
+	hills = 1377
+	totalpixels = 1385
+}
+756 = {
+	hills = 81
+	totalpixels = 1697
+	plains = 1463
+	jungle = 150
+	riverpixels = 75
+	farmlands = 3
+}
+755 = {
+	totalpixels = 1482
+	plains = 207
+	jungle = 1085
+	riverpixels = 11
+	farmlands = 15
+	hills = 175
+}
+754 = {
+	plains = 1334
+	farmlands = 5
+	hills = 21
+	totalpixels = 1388
+	jungle = 28
+}
+759 = {
+	riverpixels = 123
+	plains = 8
+	jungle = 571
+	totalpixels = 4766
+	hills = 4187
+}
+758 = {
+	plains = 5
+	jungle = 2270
+	totalpixels = 2391
+	hills = 116
+}
+1595 = {
+	totalpixels = 13435
+}
+506 = {
+	mountain = 61
+	climate = mild_winter
+	hills = 788
+	totalpixels = 899
+	plains = 50
+	riverpixels = 63
+}
+1597 = {
+	totalpixels = 22121
+}
+1596 = {
+	totalpixels = 23078
+}
+1591 = {
+	totalpixels = 24812
+}
+1590 = {
+	totalpixels = 20530
+}
+1593 = {
+	totalpixels = 31965
+}
+1033 = {
+	plains = 1635
+	climate = normal_winter
+	forest = 1955
+	totalpixels = 3698
+	mountain = 108
+}
+1599 = {
+	totalpixels = 29812
+}
+1030 = {
+	woods = 46
+	plains = 33
+	farmlands = 42
+	totalpixels = 161
+	mountain = 40
+}
+1025 = {
+	plains = 324
+	climate = mild_winter
+	woods = 83
+	forest = 142
+	totalpixels = 549
+}
+1024 = {
+	plains = 295
+	climate = mild_winter
+	totalpixels = 304
+}
+1027 = {
+	plains = 104
+	farmlands = 37
+	totalpixels = 141
+}
+1031 = {
+	plains = 405
+	farmlands = 44
+	forest = 114
+	totalpixels = 957
+	mountain = 394
+}
+1021 = {
+	plains = 61
+	farmlands = 26
+	totalpixels = 87
+}
+1020 = {
+	farmlands = 54
+	totalpixels = 54
+}
+1023 = {
+	mountain = 40
+	climate = mild_winter
+	plains = 62
+	woods = 11
+	forest = 11
+	totalpixels = 133
+	farmlands = 9
+}
+1022 = {
+	plains = 125
+	woods = 17
+	totalpixels = 142
+}
+1036 = {
+	arctic = 5005
+	climate = severe_winter
+	totalpixels = 5005
+}
+1029 = {
+	mountain = 149
+	plains = 122
+	woods = 54
+	forest = 4
+	totalpixels = 340
+	farmlands = 11
+}
+1028 = {
+	woods = 30
+	forest = 77
+	totalpixels = 172
+	farmlands = 65
+}
+1037 = {
+	arctic = 6889
+	climate = severe_winter
+	totalpixels = 6889
+}
+1034 = {
+	plains = 2869
+	arctic = 95
+	climate = severe_winter
+	totalpixels = 10479
+	mountain = 7508
+}
+501 = {
+	plains = 123
+	totalpixels = 123
+}
+605 = {
+	plains = 1342
+	climate = tropical
+	hills = 4
+	totalpixels = 1652
+	jungle = 303
+}
+604 = {
+	plains = 8
+	climate = tropical
+	jungle = 1297
+	totalpixels = 1317
+	hills = 12
+}
+607 = {
+	mountain = 170
+	climate = tropical
+	hills = 100
+	totalpixels = 1844
+	plains = 433
+	jungle = 1141
+	riverpixels = 19
+}
+606 = {
+	climate = tropical
+	totalpixels = 1559
+	plains = 268
+	jungle = 1278
+	riverpixels = 64
+	hills = 13
+}
+601 = {
+	plains = 2
+	climate = tropical
+	hills = 1172
+	totalpixels = 1201
+	jungle = 27
+}
+600 = {
+	plains = 9
+	climate = tropical
+	jungle = 886
+	totalpixels = 984
+	hills = 89
+}
+603 = {
+	plains = 62
+	climate = tropical
+	jungle = 842
+	totalpixels = 948
+	hills = 44
+}
+602 = {
+	mountain = 40
+	climate = tropical
+	hills = 958
+	totalpixels = 1010
+	plains = 11
+	jungle = 1
+	riverpixels = 12
+}
+1205 = {
+	climate = tropical
+	totalpixels = 2963
+	plains = 2954
+	riverpixels = 14
+	farmlands = 1
+	hills = 8
+}
+1204 = {
+	riverpixels = 73
+	plains = 3189
+	climate = tropical
+	hills = 3
+	totalpixels = 3192
+}
+1207 = {
+	mountain = 30
+	climate = tropical
+	hills = 2102
+	totalpixels = 2186
+	plains = 54
+	riverpixels = 103
+}
+1206 = {
+	plains = 3444
+	climate = tropical
+	totalpixels = 3446
+	mountain = 2
+}
+609 = {
+	plains = 17
+	climate = tropical
+	jungle = 1180
+	totalpixels = 1233
+	hills = 36
+}
+1210 = {
+	riverpixels = 21
+	mountain = 237
+	climate = tropical
+	hills = 1978
+	totalpixels = 2215
+}
+1203 = {
+	plains = 2164
+	climate = tropical
+	totalpixels = 2164
+}
+1202 = {
+	mountain = 529
+	climate = tropical
+	totalpixels = 2231
+	plains = 1702
+}
+1211 = {
+	mountain = 1616
+	climate = tropical
+	hills = 265
+	totalpixels = 1881
+}
+634 = {
+	plains = 219
+	climate = tropical
+	jungle = 68
+	totalpixels = 287
+}
+635 = {
+	plains = 510
+	climate = tropical
+	jungle = 259
+	totalpixels = 777
+}
+1214 = {
+	mountain = 1148
+	climate = tropical
+	hills = 125
+	totalpixels = 1414
+	plains = 141
+}
+1215 = {
+	plains = 2030
+	climate = tropical
+	hills = 12
+	totalpixels = 2052
+	mountain = 10
+}
+1111 = {
+	plains = 1955
+	climate = tropical
+	steppe = 54
+	totalpixels = 2025
+	desert = 15
+}
+1110 = {
+	plains = 3633
+	climate = tropical
+	desert = 26
+	totalpixels = 3659
+}
+1113 = {
+	plains = 1534
+	climate = tropical
+	steppe = 44
+	totalpixels = 1578
+}
+1112 = {
+	plains = 21
+	climate = tropical
+	steppe = 1837
+	totalpixels = 1858
+}
+1115 = {
+	plains = 3021
+	climate = tropical
+	steppe = 82
+	totalpixels = 3181
+	desert = 78
+}
+1114 = {
+	plains = 1976
+	climate = tropical
+	steppe = 1
+	totalpixels = 1987
+	jungle = 10
+}
+1117 = {
+	climate = tropical
+	hills = 20
+	totalpixels = 2025
+	plains = 1958
+	jungle = 17
+	riverpixels = 43
+	steppe = 30
+}
+1440 = {
+	totalpixels = 30028
+}
+1119 = {
+	climate = tropical
+	hills = 47
+	totalpixels = 2182
+	jungle = 2135
+}
+1118 = {
+	climate = tropical
+	totalpixels = 1940
+	plains = 1377
+	jungle = 431
+	riverpixels = 1
+	hills = 132
+}
+1351 = {
+	totalpixels = 7860
+}
+1449 = {
+	totalpixels = 9956
+}
+1448 = {
+	totalpixels = 13238
+}
+1350 = {
+	totalpixels = 7359
+}
+461 = {
+	mountain = 4252
+	climate = mild_winter
+	plains = 1530
+	woods = 131
+	steppe = 419
+	totalpixels = 6407
+	desert = 75
+}
+1356 = {
+	totalpixels = 7059
+}
+463 = {
+	mountain = 696
+	climate = severe_winter
+	hills = 1655
+	plains = 114
+	woods = 39
+	steppe = 170
+	totalpixels = 2674
+}
+489 = {
+	plains = 490
+	totalpixels = 490
+}
+488 = {
+	plains = 442
+	totalpixels = 442
+}
+487 = {
+	plains = 512
+	totalpixels = 514
+}
+486 = {
+	plains = 819
+	totalpixels = 819
+}
+485 = {
+	plains = 1034
+	totalpixels = 1034
+}
+1354 = {
+	totalpixels = 4764
+}
+483 = {
+	plains = 96
+	totalpixels = 96
+}
+482 = {
+	plains = 278
+	totalpixels = 288
+}
+481 = {
+	plains = 62
+	totalpixels = 62
+}
+480 = {
+	climate = normal_winter
+	totalpixels = 13485
+	plains = 2583
+	woods = 335
+	forest = 9571
+	riverpixels = 44
+	steppe = 996
+}
+199 = {
+	mountain = 1
+	climate = mild_winter
+	hills = 680
+	riverpixels = 50
+	plains = 9
+	woods = 36
+	marsh = 1
+	totalpixels = 734
+	farmlands = 5
+}
+198 = {
+	climate = mild_winter
+	hills = 7
+	plains = 26
+	woods = 18
+	totalpixels = 363
+	farmlands = 312
+}
+195 = {
+	climate = mild_winter
+	totalpixels = 779
+	plains = 712
+	woods = 27
+	riverpixels = 33
+	farmlands = 38
+	hills = 2
+}
+194 = {
+	climate = mild_winter
+	totalpixels = 909
+	plains = 881
+	riverpixels = 57
+	farmlands = 25
+	hills = 3
+}
+197 = {
+	mountain = 207
+	woods = 14
+	riverpixels = 7
+	totalpixels = 383
+	plains = 155
+}
+196 = {
+	mountain = 27
+	climate = mild_winter
+	hills = 620
+	totalpixels = 668
+	plains = 14
+	woods = 3
+	riverpixels = 33
+	farmlands = 4
+}
+191 = {
+	climate = mild_winter
+	hills = 495
+	totalpixels = 528
+	woods = 21
+	riverpixels = 32
+	farmlands = 12
+}
+190 = {
+	climate = mild_winter
+	hills = 479
+	totalpixels = 629
+	plains = 13
+	woods = 134
+	riverpixels = 22
+}
+193 = {
+	mountain = 38
+	climate = mild_winter
+	hills = 7
+	totalpixels = 620
+	plains = 6
+	woods = 569
+	riverpixels = 16
+}
+192 = {
+	climate = mild_winter
+	hills = 584
+	totalpixels = 618
+	plains = 13
+	woods = 13
+	riverpixels = 45
+	farmlands = 8
+}
+1106 = {
+	plains = 1817
+	woods = 497
+	totalpixels = 2399
+	mountain = 81
+}
+1107 = {
+	plains = 845
+	woods = 371
+	totalpixels = 1315
+	mountain = 99
+}
+1274 = {
+	totalpixels = 1768
+}
+1104 = {
+	plains = 962
+	climate = severe_winter
+	hills = 5
+	totalpixels = 967
+}
+1457 = {
+	riverpixels = 3
+	totalpixels = 8708
+}
+1102 = {
+	plains = 106
+	totalpixels = 106
+}
+1451 = {
+	totalpixels = 18721
+}
+1100 = {
+	plains = 178
+	totalpixels = 178
+}
+1101 = {
+	plains = 96
+	totalpixels = 96
+}
+902 = {
+	climate = normal_winter
+	hills = 46
+	totalpixels = 2299
+	plains = 442
+	woods = 1811
+	riverpixels = 18
+}
+903 = {
+	climate = severe_winter
+	totalpixels = 3466
+	plains = 1
+	woods = 9
+	steppe = 24
+	riverpixels = 110
+	hills = 3432
+}
+900 = {
+	plains = 412
+	climate = mild_winter
+	woods = 1471
+	riverpixels = 50
+	totalpixels = 1883
+}
+901 = {
+	climate = severe_winter
+	totalpixels = 2734
+	woods = 122
+	steppe = 124
+	riverpixels = 115
+	hills = 2488
+}
+906 = {
+	climate = severe_winter
+	woods = 56
+	hills = 2169
+	totalpixels = 2274
+	steppe = 49
+}
+907 = {
+	climate = severe_winter
+	hills = 2865
+	totalpixels = 2872
+	plains = 3
+	forest = 2
+	riverpixels = 54
+	steppe = 2
+}
+904 = {
+	climate = severe_winter
+	hills = 1506
+	totalpixels = 1633
+	plains = 44
+	forest = 83
+	riverpixels = 11
+}
+905 = {
+	climate = normal_winter
+	hills = 17
+	plains = 327
+	woods = 384
+	forest = 1234
+	totalpixels = 1962
+}
+1843 = {
+	plains = 44
+	woods = 130
+	forest = 151
+	totalpixels = 372
+	farmlands = 47
+}
+1842 = {
+	plains = 105
+	farmlands = 49
+	totalpixels = 154
+}
+908 = {
+	climate = severe_winter
+	hills = 113
+	totalpixels = 2995
+	plains = 144
+	steppe = 4
+	riverpixels = 12
+	forest = 2734
+}
+1840 = {
+	plains = 11
+	climate = mild_winter
+	hills = 1905
+	totalpixels = 1921
+	jungle = 5
+}
+1847 = {
+	plains = 447
+	farmlands = 1
+	forest = 139
+	totalpixels = 612
+	mountain = 25
+}
+1846 = {
+	plains = 886
+	climate = mild_winter
+	riverpixels = 51
+	totalpixels = 913
+	hills = 27
+}
+1845 = {
+	plains = 890
+	climate = mild_winter
+	woods = 38
+	hills = 5
+	totalpixels = 933
+}
+1844 = {
+	mountain = 792
+	climate = tropical
+	totalpixels = 918
+	plains = 80
+	jungle = 3
+	riverpixels = 22
+	hills = 43
+}
+1908 = {
+	totalpixels = 0
+}
+1909 = {
+	totalpixels = 0
+}
+1906 = {
+	totalpixels = 0
+}
+1907 = {
+	totalpixels = 0
+}
+1904 = {
+	totalpixels = 0
+}
+1905 = {
+	totalpixels = 0
+}
+1902 = {
+	totalpixels = 0
+}
+1903 = {
+	totalpixels = 0
+}
+1900 = {
+	totalpixels = 0
+}
+1901 = {
+	totalpixels = 0
+}
+854 = {
+	plains = 1681
+	mountain = 6
+	riverpixels = 59
+	totalpixels = 1921
+	jungle = 234
+}
+855 = {
+	plains = 1158
+	woods = 23
+	totalpixels = 1200
+	mountain = 19
+}
+856 = {
+	mountain = 2389
+	woods = 11
+	jungle = 13
+	totalpixels = 2422
+	plains = 9
+}
+857 = {
+	mountain = 1389
+	totalpixels = 1448
+	plains = 40
+	woods = 7
+	jungle = 12
+	riverpixels = 42
+}
+850 = {
+	riverpixels = 42
+	plains = 82
+	jungle = 163
+	totalpixels = 1013
+	mountain = 768
+}
+851 = {
+	riverpixels = 53
+	plains = 12
+	jungle = 2304
+	totalpixels = 2333
+	mountain = 17
+}
+852 = {
+	riverpixels = 25
+	mountain = 554
+	jungle = 46
+	totalpixels = 620
+	plains = 20
+}
+853 = {
+	mountain = 788
+	jungle = 7
+	totalpixels = 812
+	plains = 17
+}
+858 = {
+	plains = 2754
+	riverpixels = 34
+	totalpixels = 2767
+	mountain = 13
+}
+859 = {
+	plains = 56
+	woods = 2029
+	totalpixels = 2085
+}
+6 = {
+	plains = 221
+	climate = mild_winter
+	farmlands = 368
+	forest = 21
+	totalpixels = 610
+}
+425 = {
+	mountain = 1031
+	climate = mild_winter
+	hills = 789
+	plains = 94
+	steppe = 17
+	totalpixels = 1931
+}
+740 = {
+	mountain = 1365
+	climate = severe_winter
+	hills = 912
+	totalpixels = 2879
+	plains = 479
+	riverpixels = 58
+	desert = 123
+}
+741 = {
+	riverpixels = 5
+	plains = 1837
+	farmlands = 11
+	hills = 78
+	totalpixels = 1926
+}
+742 = {
+	riverpixels = 72
+	plains = 51
+	hills = 3613
+	totalpixels = 3850
+	jungle = 186
+}
+743 = {
+	riverpixels = 31
+	plains = 28
+	hills = 3055
+	totalpixels = 3509
+	jungle = 426
+}
+744 = {
+	plains = 274
+	climate = tropical
+	hills = 433
+	totalpixels = 1722
+	jungle = 1015
+}
+745 = {
+	plains = 357
+	climate = tropical
+	jungle = 1465
+	totalpixels = 1822
+}
+746 = {
+	plains = 303
+	climate = tropical
+	jungle = 1085
+	totalpixels = 1388
+}
+747 = {
+	plains = 301
+	climate = tropical
+	jungle = 1424
+	totalpixels = 1733
+	hills = 8
+}
+748 = {
+	riverpixels = 44
+	plains = 487
+	hills = 1624
+	totalpixels = 3540
+	jungle = 1428
+}
+749 = {
+	plains = 488
+	jungle = 1439
+	totalpixels = 1952
+	hills = 25
+}
+1050 = {
+	plains = 142
+	climate = normal_winter
+	hills = 1774
+	totalpixels = 1944
+	forest = 22
+}
+1051 = {
+	mountain = 4729
+	climate = severe_winter
+	hills = 316
+	totalpixels = 6989
+	plains = 355
+	forest = 1589
+	riverpixels = 145
+}
+1052 = {
+	mountain = 137
+	climate = severe_winter
+	hills = 6424
+	totalpixels = 13713
+	plains = 5101
+	woods = 1663
+	forest = 373
+	riverpixels = 49
+}
+1053 = {
+	climate = severe_winter
+	totalpixels = 5653
+	plains = 2839
+	woods = 108
+	riverpixels = 84
+	hills = 2706
+}
+1054 = {
+	mountain = 6402
+	climate = severe_winter
+	totalpixels = 8569
+	plains = 106
+	forest = 2061
+	riverpixels = 190
+}
+1055 = {
+	mountain = 3133
+	climate = severe_winter
+	hills = 454
+	totalpixels = 11510
+	plains = 3858
+	woods = 2241
+	forest = 1824
+	riverpixels = 102
+}
+1056 = {
+	plains = 3117
+	climate = normal_winter
+	woods = 4217
+	hills = 830
+	totalpixels = 8164
+}
+1057 = {
+	climate = normal_winter
+	hills = 1555
+	totalpixels = 5308
+	plains = 2546
+	woods = 1207
+	riverpixels = 10
+}
+1058 = {
+	climate = normal_winter
+	totalpixels = 4360
+	plains = 1416
+	woods = 2024
+	riverpixels = 91
+	hills = 920
+}
+1059 = {
+	riverpixels = 15
+	plains = 90
+	climate = severe_winter
+	forest = 11372
+	totalpixels = 11462
+}
+1696 = {
+	totalpixels = 36521
+}
+1697 = {
+	totalpixels = 23600
+}
+1694 = {
+	totalpixels = 25937
+}
+1695 = {
+	totalpixels = 21834
+}
+1692 = {
+	totalpixels = 39395
+}
+1693 = {
+	totalpixels = 32005
+}
+1690 = {
+	totalpixels = 42856
+}
+1691 = {
+	totalpixels = 51512
+}
+715 = {
+	climate = mild_winter
+	hills = 648
+	plains = 1830
+	woods = 2887
+	totalpixels = 5376
+	desert = 11
+}
+1698 = {
+	totalpixels = 28572
+}
+1699 = {
+	totalpixels = 40079
+}
+1278 = {
+	totalpixels = 1718
+}
+1279 = {
+	riverpixels = 1
+	totalpixels = 2439
+}
+618 = {
+	plains = 212
+	climate = tropical
+	jungle = 457
+	totalpixels = 670
+}
+619 = {
+	plains = 491
+	climate = tropical
+	jungle = 1156
+	totalpixels = 1648
+}
+1270 = {
+	riverpixels = 3
+	totalpixels = 1892
+}
+1271 = {
+	totalpixels = 1215
+}
+1272 = {
+	riverpixels = 3
+	totalpixels = 1728
+}
+611 = {
+	mountain = 52
+	climate = tropical
+	hills = 1075
+	totalpixels = 1178
+	plains = 21
+	jungle = 30
+	riverpixels = 66
+}
+616 = {
+	mountain = 831
+	climate = tropical
+	hills = 215
+	plains = 315
+	jungle = 50
+	totalpixels = 1411
+}
+617 = {
+	plains = 878
+	climate = tropical
+	totalpixels = 878
+}
+1276 = {
+	riverpixels = 4
+	totalpixels = 1447
+}
+615 = {
+	mountain = 909
+	climate = tropical
+	totalpixels = 943
+	plains = 5
+	jungle = 17
+	riverpixels = 32
+	hills = 12
+}
+711 = {
+	mountain = 176
+	climate = severe_winter
+	hills = 377
+	plains = 3096
+	totalpixels = 4150
+	desert = 501
+}
+710 = {
+	mountain = 6
+	climate = severe_winter
+	hills = 3574
+	plains = 5
+	totalpixels = 3587
+	desert = 2
+}
+1491 = {
+	totalpixels = 4895
+}
+1472 = {
+	totalpixels = 9305
+}
+1473 = {
+	totalpixels = 17116
+}
+1470 = {
+	totalpixels = 14430
+}
+1471 = {
+	totalpixels = 11899
+}
+1476 = {
+	totalpixels = 9711
+}
+1477 = {
+	totalpixels = 17150
+}
+1474 = {
+	totalpixels = 19621
+}
+1475 = {
+	totalpixels = 23864
+}
+1478 = {
+	totalpixels = 11765
+}
+1479 = {
+	totalpixels = 15280
+}
+1304 = {
+	totalpixels = 3750
+}
+1305 = {
+	totalpixels = 4037
+}
+1306 = {
+	totalpixels = 3736
+}
+1307 = {
+	totalpixels = 3169
+}
+1300 = {
+	totalpixels = 3666
+}
+1301 = {
+	totalpixels = 2318
+}
+1302 = {
+	totalpixels = 2345
+}
+1303 = {
+	totalpixels = 3160
+}
+1308 = {
+	totalpixels = 1660
+}
+1309 = {
+	totalpixels = 2740
+}
+498 = {
+	plains = 34
+	totalpixels = 34
+}
+499 = {
+	plains = 87
+	totalpixels = 90
+}
+494 = {
+	plains = 24
+	totalpixels = 24
+}
+495 = {
+	plains = 43
+	totalpixels = 43
+}
+496 = {
+	plains = 51
+	totalpixels = 51
+}
+497 = {
+	plains = 51
+	totalpixels = 51
+}
+490 = {
+	plains = 760
+	totalpixels = 760
+}
+491 = {
+	plains = 170
+	totalpixels = 174
+}
+492 = {
+	plains = 209
+	totalpixels = 249
+}
+493 = {
+	plains = 44
+	totalpixels = 44
+}
+24 = {
+	mountain = 18
+	climate = normal_winter
+	hills = 1134
+	plains = 162
+	forest = 86
+	totalpixels = 1401
+}
+25 = {
+	plains = 337
+	climate = normal_winter
+	totalpixels = 337
+}
+26 = {
+	plains = 183
+	climate = mild_winter
+	farmlands = 6
+	forest = 8
+	totalpixels = 197
+}
+27 = {
+	plains = 277
+	climate = normal_winter
+	farmlands = 1060
+	forest = 81
+	totalpixels = 1418
+}
+20 = {
+	mountain = 1939
+	climate = severe_winter
+	totalpixels = 1939
+}
+21 = {
+	mountain = 2640
+	arctic = 219
+	climate = severe_winter
+	totalpixels = 2966
+	plains = 107
+}
+22 = {
+	mountain = 1647
+	climate = normal_winter
+	totalpixels = 1714
+	plains = 14
+	forest = 53
+	riverpixels = 55
+}
+23 = {
+	mountain = 3178
+	climate = normal_winter
+	hills = 30
+	totalpixels = 3210
+	plains = 2
+	riverpixels = 49
+}
+28 = {
+	plains = 187
+	climate = normal_winter
+	farmlands = 811
+	forest = 8
+	totalpixels = 1006
+}
+29 = {
+	plains = 284
+	climate = normal_winter
+	farmlands = 18
+	forest = 1238
+	totalpixels = 1540
+}
+597 = {
+	plains = 480
+	climate = tropical
+	hills = 25
+	totalpixels = 506
+}
+7 = {
+	climate = normal_winter
+	totalpixels = 783
+	plains = 37
+	woods = 38
+	forest = 63
+	riverpixels = 18
+	farmlands = 642
+	hills = 3
+}
+446 = {
+	mountain = 112
+	climate = mild_winter
+	desert = 2749
+	totalpixels = 2922
+	plains = 61
+}
+591 = {
+	plains = 1
+	climate = tropical
+	hills = 787
+	totalpixels = 789
+}
+590 = {
+	climate = tropical
+	hills = 774
+	totalpixels = 821
+	plains = 28
+	jungle = 19
+	riverpixels = 37
+}
+593 = {
+	plains = 6
+	climate = tropical
+	hills = 1294
+	totalpixels = 1300
+}
+1876 = {
+	climate = normal_winter
+	totalpixels = 245
+	plains = 145
+	woods = 15
+	riverpixels = 9
+	farmlands = 85
+}
+1877 = {
+	riverpixels = 23
+	woods = 7
+	hills = 369
+	totalpixels = 376
+}
+1874 = {
+	climate = normal_winter
+	totalpixels = 314
+	plains = 280
+	woods = 1
+	riverpixels = 30
+	farmlands = 33
+}
+1875 = {
+	mountain = 20
+	climate = mild_winter
+	hills = 1
+	totalpixels = 362
+	woods = 4
+	riverpixels = 7
+	farmlands = 337
+}
+1872 = {
+	climate = severe_winter
+	hills = 102
+	plains = 147
+	woods = 12
+	totalpixels = 278
+	farmlands = 17
+}
+1873 = {
+	riverpixels = 16
+	mountain = 426
+	climate = severe_winter
+	hills = 1
+	totalpixels = 427
+}
+1870 = {
+	mountain = 343
+	climate = severe_winter
+	riverpixels = 18
+	totalpixels = 343
+}
+1871 = {
+	mountain = 251
+	climate = severe_winter
+	woods = 14
+	totalpixels = 286
+	farmlands = 21
+}
+595 = {
+	plains = 85
+	climate = tropical
+	jungle = 730
+	totalpixels = 822
+	hills = 7
+}
+1878 = {
+	woods = 211
+	climate = mild_winter
+	farmlands = 14
+	riverpixels = 22
+	totalpixels = 225
+}
+1879 = {
+	plains = 352
+	farmlands = 124
+	riverpixels = 19
+	totalpixels = 476
+}
+977 = {
+	plains = 3
+	arctic = 1876
+	forest = 29
+	totalpixels = 1908
+	climate = severe_winter
+}
+976 = {
+	mountain = 51
+	climate = severe_winter
+	arctic = 153
+	plains = 4875
+	forest = 158
+	totalpixels = 5237
+}
+975 = {
+	mountain = 421
+	climate = severe_winter
+	arctic = 15
+	plains = 1375
+	forest = 739
+	totalpixels = 2550
+}
+974 = {
+	plains = 958
+	climate = severe_winter
+	forest = 1453
+	totalpixels = 2411
+}
+973 = {
+	plains = 205
+	climate = normal_winter
+	forest = 1169
+	totalpixels = 1376
+	mountain = 2
+}
+972 = {
+	plains = 1292
+	climate = mild_winter
+	forest = 27
+	totalpixels = 1320
+	mountain = 1
+}
+971 = {
+	climate = normal_winter
+	hills = 104
+	plains = 819
+	woods = 136
+	forest = 2223
+	totalpixels = 3282
+}
+970 = {
+	climate = normal_winter
+	hills = 201
+	plains = 146
+	woods = 575
+	forest = 52
+	totalpixels = 974
+}
+596 = {
+	plains = 24
+	climate = tropical
+	hills = 314
+	totalpixels = 339
+	jungle = 1
+}
+979 = {
+	plains = 4814
+	arctic = 1709
+	climate = severe_winter
+	totalpixels = 6537
+	mountain = 12
+}
+978 = {
+	arctic = 2330
+	climate = severe_winter
+	totalpixels = 2330
+}
+182 = {
+	woods = 359
+	plains = 1
+	climate = mild_winter
+	farmlands = 21
+	totalpixels = 381
+}
+183 = {
+	climate = mild_winter
+	totalpixels = 532
+	plains = 8
+	woods = 8
+	riverpixels = 44
+	farmlands = 516
+}
+180 = {
+	climate = mild_winter
+	totalpixels = 972
+	plains = 19
+	woods = 23
+	riverpixels = 42
+	farmlands = 930
+}
+181 = {
+	climate = mild_winter
+	totalpixels = 307
+	plains = 286
+	woods = 14
+	riverpixels = 33
+	farmlands = 7
+}
+186 = {
+	climate = mild_winter
+	hills = 6
+	riverpixels = 28
+	plains = 14
+	woods = 2
+	totalpixels = 559
+	farmlands = 537
+}
+187 = {
+	climate = mild_winter
+	totalpixels = 570
+	plains = 516
+	woods = 39
+	riverpixels = 19
+	farmlands = 15
+}
+184 = {
+	climate = mild_winter
+	totalpixels = 676
+	plains = 651
+	woods = 8
+	riverpixels = 24
+	farmlands = 17
+}
+185 = {
+	climate = mild_winter
+	totalpixels = 552
+	plains = 4
+	woods = 5
+	riverpixels = 33
+	farmlands = 542
+	hills = 1
+}
+188 = {
+	woods = 12
+	plains = 307
+	climate = mild_winter
+	farmlands = 4
+	totalpixels = 323
+}
+189 = {
+	plains = 78
+	climate = mild_winter
+	woods = 190
+	totalpixels = 268
+}
+1919 = {
+	totalpixels = 0
+}
+1918 = {
+	totalpixels = 0
+}
+1911 = {
+	totalpixels = 0
+}
+1910 = {
+	totalpixels = 0
+}
+1913 = {
+	totalpixels = 0
+}
+1912 = {
+	totalpixels = 0
+}
+1915 = {
+	totalpixels = 0
+}
+1914 = {
+	totalpixels = 0
+}
+1917 = {
+	totalpixels = 0
+}
+1916 = {
+	totalpixels = 0
+}
+869 = {
+	plains = 1047
+	woods = 41
+	hills = 33
+	totalpixels = 1121
+}
+868 = {
+	plains = 1113
+	hills = 4
+	totalpixels = 1118
+	mountain = 1
+}
+861 = {
+	mountain = 59
+	woods = 4107
+	riverpixels = 13
+	totalpixels = 4816
+	plains = 650
+}
+860 = {
+	mountain = 2341
+	woods = 231
+	totalpixels = 2576
+	plains = 4
+}
+863 = {
+	mountain = 14
+	climate = mild_winter
+	totalpixels = 3975
+	plains = 571
+	woods = 3346
+	steppe = 44
+	riverpixels = 90
+}
+862 = {
+	plains = 3676
+	riverpixels = 21
+	totalpixels = 3676
+}
+865 = {
+	plains = 80
+	hills = 143
+	totalpixels = 2004
+	mountain = 1781
+}
+864 = {
+	plains = 30
+	woods = 210
+	riverpixels = 122
+	totalpixels = 2986
+	mountain = 2746
+}
+867 = {
+	mountain = 60
+	hills = 5
+	plains = 1829
+	woods = 4
+	totalpixels = 1950
+	desert = 52
+}
+866 = {
+	plains = 17
+	hills = 1612
+	totalpixels = 1743
+	mountain = 114
+}
+2024 = {
+	totalpixels = 0
+}
+2025 = {
+	totalpixels = 0
+}
+2026 = {
+	totalpixels = 0
+}
+2027 = {
+	totalpixels = 0
+}
+2020 = {
+	totalpixels = 0
+}
+2021 = {
+	totalpixels = 0
+}
+2022 = {
+	totalpixels = 0
+}
+2023 = {
+	totalpixels = 0
+}
+2028 = {
+	totalpixels = 0
+}
+2029 = {
+	totalpixels = 0
+}
+883 = {
+	plains = 3005
+	riverpixels = 79
+	totalpixels = 3005
+}
+882 = {
+	climate = mild_winter
+	totalpixels = 4261
+	plains = 4153
+	woods = 25
+	steppe = 83
+	riverpixels = 148
+}
+881 = {
+	riverpixels = 123
+	plains = 15
+	climate = normal_winter
+	steppe = 3829
+	totalpixels = 3844
+}
+880 = {
+	riverpixels = 9
+	climate = normal_winter
+	woods = 1
+	steppe = 1611
+	totalpixels = 1612
+}
+887 = {
+	plains = 2693
+	woods = 5
+	riverpixels = 45
+	totalpixels = 2698
+}
+886 = {
+	plains = 604
+	woods = 2502
+	riverpixels = 72
+	totalpixels = 3113
+	steppe = 7
+}
+885 = {
+	climate = mild_winter
+	totalpixels = 4621
+	plains = 60
+	woods = 291
+	steppe = 4270
+	riverpixels = 110
+}
+884 = {
+	plains = 3133
+	riverpixels = 97
+	totalpixels = 3133
+}
+889 = {
+	riverpixels = 32
+	climate = normal_winter
+	woods = 2
+	steppe = 1546
+	totalpixels = 1548
+}
+888 = {
+	plains = 640
+	woods = 558
+	totalpixels = 1201
+	farmlands = 3
+}
+775 = {
+	riverpixels = 112
+	plains = 2840
+	jungle = 1225
+	totalpixels = 4065
+}
+774 = {
+	riverpixels = 45
+	plains = 3726
+	jungle = 536
+	totalpixels = 4262
+}
+777 = {
+	plains = 2802
+	woods = 22
+	riverpixels = 121
+	totalpixels = 2853
+	farmlands = 29
+}
+776 = {
+	plains = 930
+	riverpixels = 134
+	totalpixels = 2643
+	jungle = 1713
+}
+771 = {
+	plains = 75
+	farmlands = 5
+	hills = 2183
+	totalpixels = 2263
+}
+770 = {
+	totalpixels = 4262
+	plains = 3353
+	jungle = 846
+	riverpixels = 63
+	farmlands = 44
+	hills = 19
+}
+773 = {
+	hills = 8
+	plains = 3612
+	woods = 18
+	jungle = 2
+	totalpixels = 3668
+	farmlands = 28
+}
+772 = {
+	plains = 1003
+	farmlands = 3
+	riverpixels = 77
+	totalpixels = 4240
+	jungle = 3234
+}
+779 = {
+	plains = 5204
+	woods = 21
+	hills = 214
+	totalpixels = 5484
+	farmlands = 45
+}
+778 = {
+	hills = 102
+	totalpixels = 2146
+	plains = 77
+	woods = 7
+	riverpixels = 29
+	farmlands = 1960
+}
+77 = {
+	woods = 49
+	climate = normal_winter
+	farmlands = 295
+	riverpixels = 33
+	totalpixels = 344
+}
+76 = {
+	riverpixels = 6
+	mountain = 378
+	climate = normal_winter
+	hills = 57
+	totalpixels = 435
+}
+75 = {
+	plains = 15
+	climate = normal_winter
+	woods = 359
+	totalpixels = 384
+	farmlands = 10
+}
+74 = {
+	climate = normal_winter
+	totalpixels = 395
+	plains = 14
+	woods = 368
+	riverpixels = 38
+	farmlands = 13
+}
+73 = {
+	mountain = 586
+	climate = severe_winter
+	riverpixels = 12
+	totalpixels = 586
+}
+72 = {
+	mountain = 26
+	climate = normal_winter
+	totalpixels = 431
+	plains = 63
+	woods = 342
+	riverpixels = 32
+}
+71 = {
+	climate = normal_winter
+	totalpixels = 469
+	plains = 133
+	woods = 14
+	riverpixels = 42
+	farmlands = 322
+}
+70 = {
+	climate = normal_winter
+	totalpixels = 507
+	plains = 475
+	woods = 30
+	riverpixels = 12
+	farmlands = 2
+}
+79 = {
+	climate = normal_winter
+	totalpixels = 398
+	plains = 360
+	woods = 18
+	riverpixels = 10
+	farmlands = 20
+}
+78 = {
+	plains = 10
+	climate = normal_winter
+	farmlands = 253
+	totalpixels = 263
+}
+1043 = {
+	mountain = 95
+	climate = severe_winter
+	hills = 2116
+	plains = 196
+	forest = 4895
+	totalpixels = 7302
+}
+1042 = {
+	mountain = 112
+	climate = severe_winter
+	totalpixels = 8743
+	arctic = 72
+	plains = 75
+	forest = 8484
+	riverpixels = 93
+}
+1041 = {
+	mountain = 110
+	climate = severe_winter
+	hills = 1145
+	arctic = 5575
+	plains = 1
+	forest = 1605
+	totalpixels = 8436
+}
+1040 = {
+	mountain = 4215
+	climate = severe_winter
+	arctic = 3124
+	plains = 2
+	forest = 1030
+	totalpixels = 8371
+}
+1047 = {
+	mountain = 128
+	climate = severe_winter
+	hills = 3462
+	plains = 412
+	woods = 500
+	forest = 1367
+	totalpixels = 5879
+}
+1046 = {
+	mountain = 653
+	climate = severe_winter
+	hills = 352
+	totalpixels = 5353
+	plains = 139
+	forest = 4209
+	riverpixels = 164
+}
+1045 = {
+	mountain = 2317
+	climate = severe_winter
+	totalpixels = 9319
+	arctic = 25
+	forest = 6977
+	riverpixels = 205
+}
+1044 = {
+	mountain = 2902
+	climate = severe_winter
+	hills = 1567
+	arctic = 881
+	plains = 5
+	forest = 848
+	totalpixels = 6203
+}
+1049 = {
+	climate = normal_winter
+	hills = 3150
+	totalpixels = 9320
+	plains = 5866
+	woods = 304
+	riverpixels = 168
+}
+1048 = {
+	climate = normal_winter
+	totalpixels = 5565
+	plains = 2676
+	woods = 1639
+	forest = 350
+	riverpixels = 32
+	hills = 815
+}
+1681 = {
+	totalpixels = 34137
+}
+1680 = {
+	totalpixels = 35274
+}
+1683 = {
+	totalpixels = 28700
+}
+1682 = {
+	totalpixels = 38746
+}
+1685 = {
+	totalpixels = 38980
+}
+1684 = {
+	totalpixels = 34362
+}
+1687 = {
+	totalpixels = 37820
+}
+1686 = {
+	totalpixels = 42813
+}
+1689 = {
+	totalpixels = 49129
+}
+1688 = {
+	totalpixels = 45682
+}
+1269 = {
+	riverpixels = 5
+	totalpixels = 2376
+}
+1268 = {
+	riverpixels = 5
+	totalpixels = 2522
+}
+669 = {
+	riverpixels = 40
+	plains = 46
+	woods = 11
+	hills = 1190
+	totalpixels = 1311
+}
+668 = {
+	plains = 77
+	totalpixels = 77
+}
+1263 = {
+	totalpixels = 17872
+}
+1262 = {
+	totalpixels = 294
+}
+665 = {
+	plains = 1460
+	hills = 16
+	totalpixels = 1476
+}
+664 = {
+	mountain = 27
+	climate = mild_winter
+	hills = 1787
+	plains = 123
+	jungle = 99
+	totalpixels = 2036
+}
+1267 = {
+	totalpixels = 3097
+}
+1266 = {
+	totalpixels = 8663
+}
+1265 = {
+	totalpixels = 19435
+}
+1264 = {
+	totalpixels = 13367
+}
+1469 = {
+	totalpixels = 16205
+}
+1468 = {
+	totalpixels = 15775
+}
+1465 = {
+	riverpixels = 2
+	totalpixels = 8138
+}
+1018 = {
+	woods = 20
+	plains = 43
+	climate = mild_winter
+	farmlands = 33
+	totalpixels = 96
+}
+1467 = {
+	totalpixels = 10576
+}
+1466 = {
+	riverpixels = 6
+	totalpixels = 13953
+}
+1461 = {
+	riverpixels = 7
+	totalpixels = 23029
+}
+1460 = {
+	totalpixels = 21761
+}
+1463 = {
+	riverpixels = 1
+	totalpixels = 16002
+}
+1019 = {
+	plains = 88
+	woods = 14
+	totalpixels = 117
+	farmlands = 15
+}
+1317 = {
+	riverpixels = 1
+	totalpixels = 2837
+}
+1316 = {
+	totalpixels = 4345
+}
+1315 = {
+	riverpixels = 6
+	totalpixels = 4075
+}
+1314 = {
+	totalpixels = 3824
+}
+1313 = {
+	totalpixels = 3614
+}
+1312 = {
+	totalpixels = 3811
+}
+1311 = {
+	totalpixels = 2142
+}
+1310 = {
+	totalpixels = 2105
+}
+1319 = {
+	totalpixels = 3889
+}
+1318 = {
+	riverpixels = 5
+	totalpixels = 4988
+}
+1010 = {
+	climate = severe_winter
+	totalpixels = 6954
+	plains = 2040
+	forest = 4912
+	riverpixels = 16
+	steppe = 1
+}
+1011 = {
+	climate = severe_winter
+	totalpixels = 6761
+	arctic = 2735
+	plains = 577
+	forest = 3449
+	riverpixels = 161
+}
+319 = {
+	mountain = 458
+	hills = 5
+	riverpixels = 48
+	totalpixels = 513
+	plains = 27
+}
+318 = {
+	riverpixels = 50
+	plains = 89
+	hills = 863
+	totalpixels = 1018
+	mountain = 57
+}
+313 = {
+	mountain = 3
+	climate = severe_winter
+	totalpixels = 7288
+	arctic = 5095
+	plains = 1914
+	forest = 276
+	riverpixels = 70
+}
+312 = {
+	riverpixels = 10
+	climate = severe_winter
+	forest = 1731
+	totalpixels = 1731
+}
+311 = {
+	climate = severe_winter
+	woods = 1
+	forest = 753
+	totalpixels = 754
+}
+310 = {
+	climate = severe_winter
+	totalpixels = 2507
+	plains = 49
+	woods = 3
+	forest = 2455
+	riverpixels = 39
+}
+317 = {
+	plains = 48
+	woods = 3
+	hills = 824
+	totalpixels = 982
+	mountain = 97
+}
+316 = {
+	mountain = 675
+	woods = 1
+	hills = 11
+	totalpixels = 739
+	plains = 7
+}
+315 = {
+	mountain = 214
+	arctic = 583
+	climate = severe_winter
+	totalpixels = 2502
+	plains = 1705
+}
+314 = {
+	riverpixels = 73
+	climate = severe_winter
+	forest = 1929
+	totalpixels = 1929
+}
+1520 = {
+	totalpixels = 4256
+}
+443 = {
+	climate = mild_winter
+	woods = 79
+	steppe = 3239
+	totalpixels = 3318
+}
+442 = {
+	climate = mild_winter
+	totalpixels = 2925
+	plains = 1120
+	woods = 184
+	steppe = 1509
+	riverpixels = 66
+	hills = 112
+}
+441 = {
+	climate = mild_winter
+	totalpixels = 2212
+	plains = 1748
+	woods = 65
+	steppe = 399
+	riverpixels = 102
+}
+440 = {
+	climate = mild_winter
+	totalpixels = 5260
+	plains = 1392
+	woods = 358
+	steppe = 3060
+	riverpixels = 69
+	desert = 450
+}
+420 = {
+	plains = 55
+	climate = mild_winter
+	hills = 1557
+	totalpixels = 1619
+	mountain = 7
+}
+447 = {
+	mountain = 33
+	climate = mild_winter
+	hills = 2793
+	plains = 65
+	totalpixels = 2930
+	desert = 39
+}
+1330 = {
+	totalpixels = 3642
+}
+445 = {
+	mountain = 990
+	climate = normal_winter
+	hills = 200
+	plains = 1097
+	woods = 6
+	totalpixels = 2298
+}
+444 = {
+	plains = 2254
+	climate = normal_winter
+	woods = 59
+	totalpixels = 2436
+	mountain = 122
+}
+403 = {
+	plains = 1669
+	climate = tropical
+	desert = 15
+	totalpixels = 1690
+	mountain = 6
+}
+1861 = {
+	climate = mild_winter
+	totalpixels = 359
+	woods = 165
+	riverpixels = 19
+	farmlands = 72
+	hills = 122
+}
+1860 = {
+	climate = mild_winter
+	hills = 448
+	plains = 9
+	woods = 14
+	totalpixels = 473
+	farmlands = 2
+}
+1863 = {
+	plains = 26
+	climate = normal_winter
+	woods = 315
+	hills = 74
+	totalpixels = 415
+}
+1862 = {
+	climate = mild_winter
+	totalpixels = 250
+	woods = 4
+	riverpixels = 5
+	farmlands = 231
+	hills = 15
+}
+1865 = {
+	woods = 25
+	plains = 92
+	climate = mild_winter
+	farmlands = 124
+	totalpixels = 241
+}
+1864 = {
+	climate = normal_winter
+	hills = 9
+	totalpixels = 713
+	plains = 620
+	woods = 59
+	steppe = 8
+	riverpixels = 33
+	farmlands = 17
+}
+1867 = {
+	mountain = 297
+	climate = severe_winter
+	riverpixels = 14
+	totalpixels = 309
+	plains = 12
+}
+1866 = {
+	woods = 1
+	plains = 71
+	climate = mild_winter
+	farmlands = 98
+	totalpixels = 170
+}
+1869 = {
+	mountain = 200
+	climate = severe_winter
+	woods = 2
+	riverpixels = 29
+	totalpixels = 202
+}
+1868 = {
+	riverpixels = 23
+	climate = severe_winter
+	farmlands = 29
+	hills = 327
+	totalpixels = 356
+}
+964 = {
+	climate = normal_winter
+	hills = 4
+	plains = 146
+	woods = 557
+	forest = 354
+	totalpixels = 1078
+	farmlands = 17
+}
+965 = {
+	climate = normal_winter
+	hills = 1
+	plains = 280
+	totalpixels = 288
+	coastal_desert = 1
+	farmlands = 6
+}
+966 = {
+	plains = 459
+	climate = normal_winter
+	hills = 10
+	totalpixels = 469
+}
+967 = {
+	plains = 300
+	climate = normal_winter
+	totalpixels = 300
+}
+960 = {
+	climate = normal_winter
+	totalpixels = 393
+	plains = 130
+	forest = 156
+	riverpixels = 7
+	hills = 107
+}
+961 = {
+	plains = 382
+	climate = normal_winter
+	forest = 19
+	totalpixels = 470
+	hills = 69
+}
+962 = {
+	climate = normal_winter
+	hills = 11
+	plains = 797
+	woods = 3
+	totalpixels = 813
+	farmlands = 2
+}
+963 = {
+	plains = 23
+	climate = normal_winter
+	woods = 9
+	hills = 841
+	totalpixels = 873
+}
+968 = {
+	plains = 1109
+	climate = normal_winter
+	woods = 51
+	hills = 17
+	totalpixels = 1177
+}
+969 = {
+	climate = normal_winter
+	hills = 594
+	plains = 130
+	woods = 127
+	steppe = 1
+	totalpixels = 944
+	forest = 92
+}
+286 = {
+	climate = mild_winter
+	totalpixels = 1168
+	plains = 923
+	woods = 72
+	steppe = 9
+	riverpixels = 15
+	farmlands = 164
+}
+1537 = {
+	riverpixels = 10
+	totalpixels = 12066
+}
+878 = {
+	mountain = 17
+	climate = normal_winter
+	totalpixels = 3329
+	woods = 1
+	steppe = 3310
+	riverpixels = 68
+	hills = 1
+}
+1240 = {
+	plains = 446
+	climate = tropical
+	totalpixels = 446
+}
+876 = {
+	plains = 271
+	mountain = 269
+	riverpixels = 154
+	totalpixels = 3527
+	desert = 2987
+}
+877 = {
+	mountain = 12
+	climate = mild_winter
+	totalpixels = 2789
+	plains = 369
+	steppe = 31
+	riverpixels = 40
+	desert = 2377
+}
+874 = {
+	riverpixels = 27
+	plains = 306
+	climate = normal_winter
+	forest = 1531
+	totalpixels = 1838
+}
+875 = {
+	mountain = 2276
+	climate = mild_winter
+	totalpixels = 2671
+	plains = 234
+	steppe = 39
+	riverpixels = 18
+	desert = 122
+}
+872 = {
+	mountain = 3
+	climate = mild_winter
+	hills = 68
+	plains = 79
+	forest = 1649
+	totalpixels = 1799
+}
+873 = {
+	plains = 60
+	climate = normal_winter
+	forest = 1132
+	totalpixels = 1195
+}
+870 = {
+	plains = 81
+	woods = 18
+	hills = 1580
+	totalpixels = 1701
+	mountain = 22
+}
+871 = {
+	mountain = 57
+	climate = mild_winter
+	hills = 8
+	plains = 139
+	woods = 1799
+	forest = 34
+	totalpixels = 2071
+}
+2037 = {
+	totalpixels = 0
+}
+2036 = {
+	totalpixels = 0
+}
+2035 = {
+	totalpixels = 0
+}
+1242 = {
+	plains = 284
+	climate = tropical
+	totalpixels = 301
+}
+2033 = {
+	totalpixels = 0
+}
+2032 = {
+	totalpixels = 0
+}
+2031 = {
+	totalpixels = 0
+}
+2030 = {
+	totalpixels = 0
+}
+9 = {
+	climate = normal_winter
+	totalpixels = 1268
+	plains = 126
+	forest = 1141
+	riverpixels = 44
+	farmlands = 1
+}
+1533 = {
+	totalpixels = 6050
+}
+2039 = {
+	totalpixels = 0
+}
+2038 = {
+	totalpixels = 0
+}
+890 = {
+	riverpixels = 81
+	climate = normal_winter
+	woods = 40
+	steppe = 2682
+	totalpixels = 2722
+}
+891 = {
+	climate = mild_winter
+	totalpixels = 2999
+	plains = 43
+	woods = 2833
+	steppe = 123
+	riverpixels = 59
+}
+892 = {
+	climate = mild_winter
+	totalpixels = 4298
+	plains = 3759
+	woods = 535
+	steppe = 4
+	riverpixels = 135
+}
+893 = {
+	totalpixels = 1500
+	plains = 1264
+	woods = 192
+	marsh = 19
+	riverpixels = 30
+	farmlands = 25
+}
+894 = {
+	plains = 1420
+	woods = 2
+	riverpixels = 103
+	totalpixels = 1422
+}
+895 = {
+	plains = 1887
+	riverpixels = 63
+	totalpixels = 1887
+}
+896 = {
+	climate = mild_winter
+	totalpixels = 2726
+	plains = 191
+	woods = 2480
+	steppe = 55
+	riverpixels = 99
+}
+897 = {
+	plains = 2973
+	woods = 46
+	riverpixels = 97
+	totalpixels = 3019
+}
+898 = {
+	climate = normal_winter
+	totalpixels = 5196
+	plains = 38
+	woods = 109
+	steppe = 4973
+	riverpixels = 107
+	hills = 76
+}
+899 = {
+	climate = mild_winter
+	totalpixels = 3089
+	plains = 319
+	woods = 2749
+	steppe = 21
+	riverpixels = 100
+}
+646 = {
+	plains = 72
+	climate = tropical
+	totalpixels = 72
+}
+649 = {
+	plains = 61
+	climate = tropical
+	jungle = 4
+	totalpixels = 65
+}
+1248 = {
+	plains = 112
+	totalpixels = 112
+}
+641 = {
+	plains = 525
+	climate = tropical
+	jungle = 549
+	totalpixels = 1074
+}
+1964 = {
+	totalpixels = 0
+}
+422 = {
+	mountain = 1284
+	climate = severe_winter
+	hills = 442
+	totalpixels = 1754
+	plains = 12
+}
+1965 = {
+	totalpixels = 0
+}
+1966 = {
+	totalpixels = 0
+}
+1788 = {
+	mountain = 105
+	climate = severe_winter
+	totalpixels = 1217
+	plains = 175
+	jungle = 578
+	riverpixels = 48
+	hills = 359
+}
+1789 = {
+	plains = 3388
+	climate = impassable
+	jungle = 5438
+	totalpixels = 12940
+	mountain = 4110
+}
+768 = {
+	totalpixels = 5348
+	plains = 5185
+	jungle = 79
+	riverpixels = 115
+	farmlands = 9
+	hills = 75
+}
+1967 = {
+	totalpixels = 0
+}
+265 = {
+	climate = normal_winter
+	hills = 23
+	plains = 2
+	woods = 5
+	totalpixels = 838
+	farmlands = 808
+}
+1780 = {
+	mountain = 1644
+	climate = impassable
+	totalpixels = 65846
+	arctic = 42215
+	plains = 20224
+	forest = 1763
+	riverpixels = 200
+}
+1612 = {
+	totalpixels = 5877
+}
+1782 = {
+	mountain = 1004
+	climate = impassable
+	totalpixels = 97619
+	arctic = 59433
+	plains = 774
+	forest = 36408
+	riverpixels = 594
+}
+1783 = {
+	mountain = 11632
+	climate = impassable
+	arctic = 28367
+	plains = 8791
+	forest = 1870
+	totalpixels = 50660
+}
+1784 = {
+	mountain = 727
+	climate = impassable
+	hills = 21
+	plains = 1411
+	woods = 132
+	totalpixels = 2386
+	desert = 95
+}
+1785 = {
+	plains = 374
+	climate = impassable
+	desert = 3678
+	totalpixels = 4071
+	mountain = 19
+}
+1786 = {
+	plains = 189
+	climate = impassable
+	desert = 7035
+	totalpixels = 7321
+	hills = 97
+}
+1787 = {
+	mountain = 2306
+	climate = impassable
+	hills = 7726
+	totalpixels = 10042
+	plains = 10
+	riverpixels = 134
+}
+1962 = {
+	totalpixels = 0
+}
+1963 = {
+	totalpixels = 0
+}
+1078 = {
+	plains = 134
+	climate = severe_winter
+	forest = 1841
+	totalpixels = 10914
+	mountain = 8939
+}
+1079 = {
+	riverpixels = 94
+	plains = 850
+	climate = severe_winter
+	forest = 10254
+	totalpixels = 11104
+}
+1076 = {
+	mountain = 1198
+	climate = severe_winter
+	hills = 1166
+	totalpixels = 7467
+	plains = 430
+	steppe = 2096
+	riverpixels = 134
+	forest = 2577
+}
+1077 = {
+	mountain = 738
+	climate = severe_winter
+	totalpixels = 9764
+	plains = 889
+	forest = 8137
+	riverpixels = 113
+}
+1074 = {
+	mountain = 109
+	climate = severe_winter
+	totalpixels = 12873
+	plains = 318
+	forest = 12446
+	riverpixels = 193
+}
+1075 = {
+	mountain = 57
+	climate = severe_winter
+	totalpixels = 4724
+	plains = 65
+	forest = 4602
+	riverpixels = 111
+}
+1072 = {
+	mountain = 6
+	climate = severe_winter
+	totalpixels = 25463
+	arctic = 20447
+	plains = 5010
+	riverpixels = 109
+}
+1073 = {
+	mountain = 2886
+	climate = severe_winter
+	totalpixels = 18143
+	arctic = 9003
+	plains = 49
+	forest = 6205
+	riverpixels = 332
+}
+1070 = {
+	climate = severe_winter
+	totalpixels = 10998
+	arctic = 946
+	plains = 31
+	forest = 10021
+	riverpixels = 117
+}
+1071 = {
+	riverpixels = 136
+	plains = 66
+	climate = severe_winter
+	forest = 11706
+	totalpixels = 11772
+}
+1678 = {
+	forest = 9
+	totalpixels = 38033
+}
+1679 = {
+	totalpixels = 36871
+}
+1674 = {
+	totalpixels = 33525
+}
+1675 = {
+	totalpixels = 33616
+}
+1676 = {
+	totalpixels = 41502
+}
+1677 = {
+	totalpixels = 21946
+}
+1670 = {
+	totalpixels = 47396
+}
+1671 = {
+	totalpixels = 35187
+}
+1672 = {
+	totalpixels = 43146
+}
+1673 = {
+	totalpixels = 40198
+}
+1094 = {
+	plains = 357
+	woods = 50
+	hills = 1073
+	totalpixels = 1480
+}
+1095 = {
+	plains = 492
+	totalpixels = 492
+}
+1096 = {
+	plains = 74
+	totalpixels = 74
+}
+1097 = {
+	plains = 47
+	totalpixels = 47
+}
+678 = {
+	mountain = 26
+	climate = severe_winter
+	hills = 47
+	totalpixels = 5006
+	plains = 4933
+	riverpixels = 162
+}
+679 = {
+	plains = 192
+	climate = normal_winter
+	hills = 2320
+	totalpixels = 2514
+	jungle = 2
+}
+1092 = {
+	plains = 440
+	woods = 1613
+	riverpixels = 10
+	totalpixels = 3962
+	hills = 1909
+}
+1093 = {
+	plains = 1463
+	woods = 29
+	hills = 95
+	totalpixels = 3241
+	farmlands = 1654
+}
+674 = {
+	plains = 126
+	climate = normal_winter
+	jungle = 1393
+	totalpixels = 1526
+	hills = 7
+}
+675 = {
+	climate = normal_winter
+	totalpixels = 2560
+	plains = 2534
+	jungle = 12
+	riverpixels = 117
+	hills = 14
+}
+676 = {
+	riverpixels = 157
+	mountain = 45
+	climate = severe_winter
+	hills = 6256
+	totalpixels = 6301
+}
+677 = {
+	mountain = 13
+	climate = severe_winter
+	hills = 6821
+	totalpixels = 6937
+	plains = 55
+	jungle = 48
+	riverpixels = 346
+}
+670 = {
+	plains = 27
+	hills = 1341
+	totalpixels = 1421
+	jungle = 53
+}
+671 = {
+	climate = mild_winter
+	hills = 96
+	totalpixels = 1971
+	plains = 16
+	woods = 1
+	jungle = 1858
+	riverpixels = 5
+}
+672 = {
+	climate = mild_winter
+	hills = 2032
+	totalpixels = 2131
+	plains = 58
+	woods = 8
+	jungle = 33
+	riverpixels = 60
+}
+673 = {
+	climate = mild_winter
+	hills = 77
+	totalpixels = 1824
+	plains = 1716
+	jungle = 31
+	riverpixels = 49
+}
+645 = {
+	plains = 171
+	climate = tropical
+	jungle = 61
+	totalpixels = 233
+}
+1418 = {
+	totalpixels = 16408
+}
+1419 = {
+	totalpixels = 9603
+}
+1410 = {
+	totalpixels = 10340
+}
+1411 = {
+	totalpixels = 15755
+}
+1412 = {
+	totalpixels = 9283
+}
+1413 = {
+	totalpixels = 10219
+}
+1414 = {
+	totalpixels = 4042
+}
+1415 = {
+	riverpixels = 1
+	totalpixels = 15110
+}
+1416 = {
+	totalpixels = 20276
+}
+1417 = {
+	totalpixels = 27002
+}
+1322 = {
+	riverpixels = 1
+	totalpixels = 1551
+}
+1323 = {
+	riverpixels = 1
+	totalpixels = 2022
+}
+1320 = {
+	riverpixels = 4
+	totalpixels = 1330
+}
+1321 = {
+	riverpixels = 3
+	totalpixels = 3205
+}
+1326 = {
+	riverpixels = 6
+	totalpixels = 14910
+}
+1327 = {
+	riverpixels = 5
+	totalpixels = 1045
+}
+1324 = {
+	riverpixels = 4
+	totalpixels = 5036
+}
+1325 = {
+	totalpixels = 80
+}
+1328 = {
+	totalpixels = 4880
+}
+1329 = {
+	totalpixels = 7065
+}
+1531 = {
+	totalpixels = 7944
+}
+1524 = {
+	totalpixels = 7225
+}
+1525 = {
+	totalpixels = 4287
+}
+1526 = {
+	totalpixels = 6337
+}
+1527 = {
+	totalpixels = 3173
+}
+1252 = {
+	riverpixels = 6
+	totalpixels = 2013
+}
+1521 = {
+	totalpixels = 4600
+}
+1522 = {
+	totalpixels = 4798
+}
+1523 = {
+	totalpixels = 4889
+}
+1528 = {
+	totalpixels = 3864
+}
+1529 = {
+	riverpixels = 2
+	totalpixels = 6178
+}
+1258 = {
+	riverpixels = 1
+	totalpixels = 2254
+}
+1259 = {
+	riverpixels = 2
+	totalpixels = 1920
+}
+308 = {
+	riverpixels = 51
+	climate = severe_winter
+	forest = 1176
+	totalpixels = 1176
+}
+309 = {
+	climate = severe_winter
+	totalpixels = 3332
+	arctic = 35
+	plains = 7
+	forest = 3290
+	riverpixels = 72
+}
+300 = {
+	riverpixels = 20
+	climate = severe_winter
+	forest = 1253
+	totalpixels = 1253
+}
+301 = {
+	riverpixels = 36
+	plains = 16
+	climate = severe_winter
+	forest = 990
+	totalpixels = 1006
+}
+302 = {
+	riverpixels = 56
+	climate = severe_winter
+	forest = 942
+	totalpixels = 1951
+	steppe = 1009
+}
+303 = {
+	climate = severe_winter
+	totalpixels = 2411
+	woods = 40
+	steppe = 2263
+	riverpixels = 61
+	forest = 108
+}
+304 = {
+	riverpixels = 162
+	climate = severe_winter
+	forest = 846
+	totalpixels = 3015
+	steppe = 2169
+}
+305 = {
+	mountain = 829
+	climate = severe_winter
+	totalpixels = 9876
+	plains = 891
+	forest = 8049
+	riverpixels = 131
+	farmlands = 8
+	steppe = 99
+}
+306 = {
+	riverpixels = 121
+	climate = severe_winter
+	forest = 2121
+	totalpixels = 2190
+	steppe = 69
+}
+307 = {
+	plains = 7
+	climate = severe_winter
+	forest = 1021
+	totalpixels = 1028
+}
+473 = {
+	riverpixels = 103
+	climate = normal_winter
+	steppe = 1942
+	totalpixels = 4442
+	forest = 2500
+}
+1898 = {
+	totalpixels = 0
+}
+1899 = {
+	totalpixels = 0
+}
+1894 = {
+	totalpixels = 0
+}
+1895 = {
+	totalpixels = 0
+}
+1896 = {
+	totalpixels = 0
+}
+1897 = {
+	totalpixels = 0
+}
+1890 = {
+	totalpixels = 0
+}
+1891 = {
+	totalpixels = 0
+}
+1892 = {
+	totalpixels = 0
+}
+1893 = {
+	totalpixels = 0
+}
+959 = {
+	climate = normal_winter
+	totalpixels = 376
+	plains = 89
+	woods = 1
+	forest = 119
+	riverpixels = 25
+	hills = 167
+}
+958 = {
+	climate = normal_winter
+	totalpixels = 615
+	plains = 184
+	woods = 26
+	forest = 353
+	riverpixels = 1
+	hills = 51
+}
+951 = {
+	mountain = 984
+	climate = normal_winter
+	totalpixels = 1359
+	plains = 178
+	woods = 41
+	riverpixels = 38
+	hills = 156
+}
+950 = {
+	plains = 1020
+	climate = mild_winter
+	farmlands = 1
+	hills = 46
+	totalpixels = 1067
+}
+953 = {
+	plains = 763
+	climate = mild_winter
+	woods = 2
+	hills = 45
+	totalpixels = 810
+}
+952 = {
+	plains = 17
+	climate = normal_winter
+	hills = 904
+	totalpixels = 921
+}
+955 = {
+	riverpixels = 29
+	plains = 21
+	climate = normal_winter
+	hills = 1511
+	totalpixels = 1532
+}
+954 = {
+	climate = normal_winter
+	hills = 767
+	totalpixels = 1294
+	plains = 184
+	woods = 343
+	riverpixels = 100
+}
+957 = {
+	plains = 595
+	climate = normal_winter
+	totalpixels = 597
+}
+956 = {
+	plains = 911
+	climate = normal_winter
+	hills = 60
+	totalpixels = 971
+}
+2002 = {
+	totalpixels = 0
+}
+2003 = {
+	totalpixels = 0
+}
+2000 = {
+	totalpixels = 0
+}
+2001 = {
+	totalpixels = 0
+}
+2006 = {
+	totalpixels = 0
+}
+2007 = {
+	totalpixels = 0
+}
+2004 = {
+	totalpixels = 0
+}
+2005 = {
+	totalpixels = 0
+}
+2008 = {
+	totalpixels = 0
+}
+2009 = {
+	totalpixels = 0
+}
+667 = {
+	plains = 57
+	hills = 2705
+	totalpixels = 2884
+	jungle = 47
+}
+666 = {
+	plains = 835
+	climate = tropical
+	totalpixels = 835
+}
+1261 = {
+	totalpixels = 986
+}
+1799 = {
+	mountain = 3321
+	climate = impassable
+	hills = 4365
+	totalpixels = 13316
+	plains = 5412
+	woods = 69
+	jungle = 14
+	riverpixels = 68
+	steppe = 135
+}
+1798 = {
+	mountain = 6042
+	climate = impassable
+	totalpixels = 24386
+	hills = 29
+	plains = 16434
+	woods = 11
+	jungle = 1168
+	riverpixels = 227
+	steppe = 702
+}
+719 = {
+	plains = 6272
+	climate = mild_winter
+	woods = 624
+	hills = 243
+	totalpixels = 7139
+}
+718 = {
+	plains = 4414
+	climate = mild_winter
+	woods = 250
+	hills = 3682
+	totalpixels = 8346
+}
+717 = {
+	mountain = 2
+	climate = mild_winter
+	hills = 2540
+	plains = 2701
+	woods = 1509
+	totalpixels = 7263
+	desert = 511
+}
+663 = {
+	mountain = 827
+	climate = mild_winter
+	hills = 44
+	totalpixels = 1960
+	plains = 207
+	jungle = 882
+	riverpixels = 29
+}
+1791 = {
+	climate = impassable
+	totalpixels = 59078
+	plains = 27929
+	woods = 8697
+	jungle = 138
+	riverpixels = 119
+	farmlands = 120
+	desert = 22193
+}
+1790 = {
+	climate = impassable
+	hills = 11560
+	plains = 34354
+	woods = 7290
+	jungle = 32
+	totalpixels = 81156
+	desert = 27920
+}
+713 = {
+	climate = mild_winter
+	hills = 4126
+	plains = 3017
+	forest = 286
+	totalpixels = 7590
+	desert = 161
+}
+712 = {
+	mountain = 52
+	climate = mild_winter
+	hills = 33
+	plains = 1395
+	woods = 30
+	forest = 1181
+	totalpixels = 3185
+	desert = 493
+}
+1795 = {
+	mountain = 42
+	climate = impassable
+	plains = 655
+	steppe = 253
+	totalpixels = 49845
+	desert = 48895
+}
+1794 = {
+	plains = 2212
+	climate = impassable
+	desert = 55170
+	totalpixels = 61902
+	mountain = 4520
+}
+661 = {
+	mountain = 155
+	climate = mild_winter
+	hills = 22
+	totalpixels = 3212
+	plains = 3007
+	jungle = 28
+	riverpixels = 190
+}
+716 = {
+	climate = normal_winter
+	totalpixels = 4989
+	plains = 2265
+	woods = 22
+	riverpixels = 10
+	hills = 2702
+}
+660 = {
+	mountain = 1077
+	climate = mild_winter
+	hills = 2
+	totalpixels = 2020
+	plains = 291
+	jungle = 650
+	riverpixels = 79
+}
+1069 = {
+	climate = severe_winter
+	totalpixels = 28318
+	arctic = 24576
+	plains = 108
+	forest = 3634
+	riverpixels = 205
+}
+1068 = {
+	riverpixels = 90
+	climate = severe_winter
+	arctic = 26
+	forest = 5674
+	totalpixels = 5700
+}
+1061 = {
+	riverpixels = 179
+	plains = 76
+	climate = severe_winter
+	forest = 14245
+	totalpixels = 14321
+}
+1060 = {
+	mountain = 268
+	climate = normal_winter
+	totalpixels = 9736
+	plains = 4128
+	woods = 890
+	forest = 1380
+	riverpixels = 124
+	hills = 3070
+}
+1063 = {
+	plains = 1079
+	climate = normal_winter
+	woods = 72
+	hills = 2665
+	totalpixels = 3816
+}
+1062 = {
+	climate = severe_winter
+	totalpixels = 10198
+	plains = 2819
+	woods = 2246
+	forest = 4941
+	riverpixels = 19
+	hills = 192
+}
+1065 = {
+	climate = normal_winter
+	totalpixels = 10867
+	plains = 3975
+	woods = 2375
+	forest = 1710
+	riverpixels = 180
+	hills = 2807
+}
+1064 = {
+	climate = severe_winter
+	totalpixels = 12949
+	plains = 235
+	woods = 204
+	forest = 12510
+	riverpixels = 209
+}
+1067 = {
+	climate = severe_winter
+	totalpixels = 7247
+	arctic = 4242
+	plains = 79
+	forest = 2926
+	riverpixels = 3
+}
+1066 = {
+	mountain = 464
+	climate = normal_winter
+	totalpixels = 11566
+	plains = 4544
+	woods = 895
+	steppe = 1051
+	riverpixels = 81
+	hills = 4612
+}
+1669 = {
+	totalpixels = 44214
+}
+1668 = {
+	totalpixels = 53095
+}
+1667 = {
+	totalpixels = 36525
+}
+1666 = {
+	totalpixels = 38457
+}
+1665 = {
+	riverpixels = 3
+	totalpixels = 3202
+}
+1664 = {
+	totalpixels = 192
+}
+1663 = {
+	totalpixels = 3778
+}
+1662 = {
+	totalpixels = 2294
+}
+1661 = {
+	totalpixels = 2517
+}
+1660 = {
+	totalpixels = 979
+}
+1087 = {
+	plains = 3411
+	woods = 1183
+	hills = 1189
+	totalpixels = 6179
+	farmlands = 396
+}
+1086 = {
+	plains = 2535
+	woods = 217
+	riverpixels = 127
+	totalpixels = 2752
+}
+1085 = {
+	plains = 1963
+	woods = 145
+	totalpixels = 2108
+}
+1084 = {
+	plains = 824
+	woods = 1934
+	hills = 173
+	totalpixels = 2931
+}
+1083 = {
+	climate = severe_winter
+	totalpixels = 2808
+	plains = 231
+	forest = 2576
+	riverpixels = 12
+	farmlands = 1
+}
+1082 = {
+	climate = severe_winter
+	totalpixels = 8649
+	plains = 78
+	forest = 8284
+	riverpixels = 233
+	farmlands = 15
+	steppe = 272
+}
+1081 = {
+	riverpixels = 93
+	climate = severe_winter
+	forest = 524
+	totalpixels = 2519
+	steppe = 1995
+}
+1080 = {
+	mountain = 7535
+	climate = severe_winter
+	forest = 1768
+	totalpixels = 9303
+}
+599 = {
+	plains = 74
+	climate = tropical
+	jungle = 678
+	totalpixels = 752
+}
+598 = {
+	plains = 3
+	climate = tropical
+	jungle = 94
+	totalpixels = 590
+	hills = 493
+}
+1089 = {
+	plains = 5226
+	woods = 754
+	hills = 19
+	totalpixels = 5999
+}
+1088 = {
+	plains = 5887
+	woods = 544
+	riverpixels = 120
+	totalpixels = 6431
+}
+714 = {
+	mountain = 324
+	climate = mild_winter
+	hills = 82
+	totalpixels = 6526
+	plains = 5838
+	woods = 282
+	riverpixels = 92
+}
+1409 = {
+	totalpixels = 8246
+}
+1408 = {
+	totalpixels = 4863
+}
+1403 = {
+	totalpixels = 14566
+}
+1402 = {
+	totalpixels = 11817
+}
+1401 = {
+	totalpixels = 10440
+}
+1400 = {
+	totalpixels = 6527
+}
+1407 = {
+	totalpixels = 14295
+}
+1406 = {
+	totalpixels = 17437
+}
+1405 = {
+	totalpixels = 10801
+}
+1404 = {
+	totalpixels = 11124
+}
+1546 = {
+	totalpixels = 11349
+}
+449 = {
+	mountain = 1570
+	climate = severe_winter
+	hills = 18
+	plains = 37
+	totalpixels = 1650
+	desert = 25
+}
+448 = {
+	mountain = 26
+	climate = severe_winter
+	hills = 1525
+	totalpixels = 1609
+	plains = 58
+}
+1339 = {
+	totalpixels = 7305
+}
+1338 = {
+	totalpixels = 4756
+}
+1547 = {
+	totalpixels = 8097
+}
+1335 = {
+	totalpixels = 4764
+}
+1334 = {
+	totalpixels = 4826
+}
+1337 = {
+	riverpixels = 8
+	totalpixels = 3288
+}
+1336 = {
+	riverpixels = 1
+	totalpixels = 6298
+}
+1331 = {
+	totalpixels = 6161
+}
+690 = {
+	plains = 26
+	woods = 1538
+	riverpixels = 40
+	totalpixels = 1564
+}
+1333 = {
+	totalpixels = 6498
+}
+1332 = {
+	totalpixels = 5402
+}
+691 = {
+	climate = mild_winter
+	hills = 610
+	totalpixels = 1449
+	plains = 682
+	woods = 157
+	riverpixels = 15
+}
+1542 = {
+	totalpixels = 10666
+}
+1631 = {
+	totalpixels = 37672
+}
+1543 = {
+	totalpixels = 6361
+}
+39 = {
+	plains = 621
+	climate = normal_winter
+	woods = 15
+	riverpixels = 5
+	totalpixels = 636
+}
+38 = {
+	climate = normal_winter
+	totalpixels = 167
+	plains = 159
+	woods = 2
+	marsh = 6
+	riverpixels = 10
+}
+1540 = {
+	totalpixels = 17270
+}
+33 = {
+	plains = 182
+	climate = severe_winter
+	riverpixels = 29
+	totalpixels = 268
+	forest = 86
+}
+32 = {
+	climate = severe_winter
+	arctic = 7
+	plains = 151
+	forest = 901
+	totalpixels = 1061
+	farmlands = 2
+}
+31 = {
+	plains = 332
+	arctic = 5
+	forest = 1114
+	totalpixels = 1451
+	climate = severe_winter
+}
+30 = {
+	plains = 55
+	climate = severe_winter
+	farmlands = 402
+	forest = 16
+	totalpixels = 473
+}
+37 = {
+	plains = 34
+	climate = normal_winter
+	marsh = 1036
+	forest = 4
+	totalpixels = 1074
+}
+36 = {
+	climate = normal_winter
+	plains = 768
+	woods = 1
+	marsh = 18
+	forest = 2
+	totalpixels = 789
+}
+35 = {
+	plains = 179
+	climate = normal_winter
+	marsh = 5
+	totalpixels = 184
+}
+34 = {
+	plains = 337
+	climate = normal_winter
+	forest = 20
+	totalpixels = 357
+}
+1241 = {
+	plains = 122
+	climate = tropical
+	totalpixels = 154
+}
+1536 = {
+	riverpixels = 1
+	totalpixels = 5663
+}
+1535 = {
+	totalpixels = 6630
+}
+1534 = {
+	totalpixels = 8769
+}
+1245 = {
+	plains = 1443
+	climate = tropical
+	jungle = 1253
+	totalpixels = 2700
+	mountain = 2
+}
+1532 = {
+	riverpixels = 2
+	totalpixels = 7636
+}
+1247 = {
+	plains = 219
+	woods = 26
+	hills = 29
+	totalpixels = 274
+}
+1530 = {
+	riverpixels = 3
+	totalpixels = 4307
+}
+1249 = {
+	mountain = 573
+	climate = tropical
+	totalpixels = 2023
+	plains = 564
+	steppe = 46
+	riverpixels = 46
+	hills = 840
+}
+648 = {
+	plains = 359
+	climate = tropical
+	jungle = 168
+	totalpixels = 527
+}
+1539 = {
+	totalpixels = 12573
+}
+1538 = {
+	totalpixels = 13480
+}
+339 = {
+	plains = 512
+	desert = 5
+	totalpixels = 1334
+	mountain = 817
+}
+338 = {
+	plains = 761
+	desert = 428
+	totalpixels = 2529
+	mountain = 1340
+}
+335 = {
+	plains = 92
+	totalpixels = 251
+	mountain = 159
+}
+334 = {
+	plains = 230
+	hills = 24
+	totalpixels = 257
+	mountain = 3
+}
+337 = {
+	plains = 221
+	totalpixels = 332
+	mountain = 111
+}
+336 = {
+	mountain = 892
+	desert = 1390
+	totalpixels = 2806
+	plains = 524
+}
+331 = {
+	mountain = 5
+	climate = mild_winter
+	hills = 1753
+	totalpixels = 1761
+	plains = 3
+	riverpixels = 21
+}
+330 = {
+	riverpixels = 7
+	mountain = 198
+	hills = 783
+	totalpixels = 1022
+	plains = 4
+}
+333 = {
+	plains = 167
+	totalpixels = 167
+}
+332 = {
+	riverpixels = 69
+	plains = 119
+	hills = 710
+	totalpixels = 2611
+	mountain = 1779
+}
+8 = {
+	riverpixels = 55
+	mountain = 329
+	climate = normal_winter
+	forest = 900
+	totalpixels = 1229
+}
+1464 = {
+	totalpixels = 9634
+}
+1353 = {
+	totalpixels = 4493
+}
+1636 = {
+	totalpixels = 41818
+}
+1462 = {
+	riverpixels = 2
+	totalpixels = 19847
+}
+1352 = {
+	totalpixels = 5554
+}
+1889 = {
+	totalpixels = 0
+}
+1888 = {
+	totalpixels = 0
+}
+1887 = {
+	totalpixels = 0
+}
+1886 = {
+	totalpixels = 0
+}
+1885 = {
+	totalpixels = 0
+}
+1884 = {
+	totalpixels = 0
+}
+1883 = {
+	totalpixels = 0
+}
+1882 = {
+	plains = 173
+	totalpixels = 268
+	mountain = 95
+}
+1881 = {
+	plains = 51
+	totalpixels = 51
+}
+1880 = {
+	mountain = 53
+	climate = mild_winter
+	woods = 280
+	totalpixels = 333
+}
+948 = {
+	mountain = 252
+	climate = mild_winter
+	hills = 100
+	totalpixels = 1446
+	plains = 198
+	woods = 896
+	riverpixels = 64
+}
+949 = {
+	mountain = 776
+	climate = normal_winter
+	hills = 21
+	totalpixels = 865
+	plains = 68
+	riverpixels = 49
+}
+946 = {
+	plains = 241
+	climate = normal_winter
+	woods = 780
+	riverpixels = 16
+	totalpixels = 1022
+}
+947 = {
+	mountain = 8
+	climate = normal_winter
+	totalpixels = 1405
+	plains = 172
+	woods = 900
+	riverpixels = 17
+	hills = 325
+}
+944 = {
+	plains = 641
+	climate = severe_winter
+	woods = 1077
+	forest = 615
+	totalpixels = 2333
+}
+945 = {
+	mountain = 1
+	climate = severe_winter
+	plains = 793
+	woods = 141
+	forest = 1061
+	totalpixels = 1998
+}
+942 = {
+	plains = 371
+	climate = mild_winter
+	woods = 1157
+	riverpixels = 74
+	totalpixels = 1528
+}
+943 = {
+	plains = 279
+	climate = normal_winter
+	woods = 1293
+	riverpixels = 22
+	totalpixels = 1572
+}
+940 = {
+	mountain = 4
+	climate = mild_winter
+	totalpixels = 1499
+	plains = 253
+	woods = 1242
+	riverpixels = 107
+}
+941 = {
+	mountain = 1396
+	climate = mild_winter
+	totalpixels = 1522
+	plains = 23
+	woods = 103
+	riverpixels = 23
+}
+133 = {
+	mountain = 47
+	climate = normal_winter
+	hills = 9
+	totalpixels = 563
+	woods = 507
+	riverpixels = 31
+}
+132 = {
+	mountain = 141
+	climate = mild_winter
+	woods = 336
+	hills = 23
+	totalpixels = 500
+}
+131 = {
+	hills = 1194
+	riverpixels = 30
+	plains = 125
+	woods = 41
+	totalpixels = 1361
+	farmlands = 1
+}
+130 = {
+	plains = 9
+	hills = 81
+	totalpixels = 90
+}
+137 = {
+	plains = 44
+	hills = 67
+	totalpixels = 113
+}
+136 = {
+	plains = 189
+	woods = 7
+	hills = 318
+	totalpixels = 516
+}
+135 = {
+	climate = normal_winter
+	hills = 32
+	totalpixels = 956
+	plains = 922
+	woods = 2
+	riverpixels = 36
+}
+134 = {
+	climate = normal_winter
+	woods = 107
+	riverpixels = 47
+	totalpixels = 553
+	hills = 446
+}
+139 = {
+	riverpixels = 32
+	climate = mild_winter
+	woods = 132
+	hills = 973
+	totalpixels = 1105
+}
+138 = {
+	plains = 68
+	hills = 272
+	totalpixels = 340
+}
+2019 = {
+	totalpixels = 0
+}
+2018 = {
+	totalpixels = 0
+}
+2015 = {
+	totalpixels = 0
+}
+2014 = {
+	totalpixels = 0
+}
+2017 = {
+	totalpixels = 0
+}
+2016 = {
+	totalpixels = 0
+}
+2011 = {
+	totalpixels = 0
+}
+2010 = {
+	totalpixels = 0
+}
+2013 = {
+	totalpixels = 0
+}
+2012 = {
+	totalpixels = 0
+}
+708 = {
+	mountain = 19
+	climate = normal_winter
+	hills = 1602
+	totalpixels = 1666
+	plains = 44
+	woods = 1
+	riverpixels = 9
+}
+709 = {
+	climate = normal_winter
+	hills = 2180
+	totalpixels = 6037
+	plains = 2938
+	woods = 919
+	riverpixels = 2
+}
+704 = {
+	plains = 834
+	climate = mild_winter
+	woods = 986
+	totalpixels = 1820
+}
+705 = {
+	mountain = 518
+	climate = severe_winter
+	hills = 3263
+	totalpixels = 5247
+	plains = 1466
+	riverpixels = 157
+}
+706 = {
+	mountain = 9037
+	climate = severe_winter
+	hills = 353
+	totalpixels = 10290
+	plains = 896
+	woods = 4
+	riverpixels = 185
+}
+707 = {
+	mountain = 29
+	climate = normal_winter
+	hills = 472
+	plains = 2958
+	woods = 30
+	totalpixels = 3489
+}
+700 = {
+	climate = normal_winter
+	hills = 52
+	totalpixels = 2279
+	plains = 2188
+	woods = 39
+	riverpixels = 3
+}
+701 = {
+	climate = mild_winter
+	hills = 2122
+	totalpixels = 2172
+	plains = 32
+	woods = 18
+	riverpixels = 94
+}
+702 = {
+	climate = mild_winter
+	hills = 3269
+	totalpixels = 3356
+	plains = 85
+	woods = 2
+	riverpixels = 45
+}
+703 = {
+	plains = 1809
+	climate = mild_winter
+	woods = 650
+	hills = 24
+	totalpixels = 2483
+}
+88 = {
+	woods = 11
+	plains = 245
+	climate = mild_winter
+	farmlands = 20
+	totalpixels = 276
+}
+89 = {
+	woods = 3
+	plains = 179
+	climate = mild_winter
+	farmlands = 12
+	totalpixels = 194
+}
+82 = {
+	climate = normal_winter
+	totalpixels = 452
+	plains = 426
+	woods = 11
+	riverpixels = 27
+	farmlands = 15
+}
+83 = {
+	climate = normal_winter
+	totalpixels = 235
+	plains = 225
+	woods = 2
+	riverpixels = 3
+	farmlands = 8
+}
+80 = {
+	climate = normal_winter
+	totalpixels = 228
+	plains = 7
+	woods = 140
+	riverpixels = 6
+	farmlands = 81
+}
+81 = {
+	plains = 150
+	climate = normal_winter
+	woods = 7
+	totalpixels = 157
+}
+86 = {
+	plains = 13
+	climate = normal_winter
+	woods = 314
+	totalpixels = 339
+	farmlands = 12
+}
+87 = {
+	plains = 88
+	climate = mild_winter
+	farmlands = 1
+	totalpixels = 89
+}
+84 = {
+	climate = normal_winter
+	totalpixels = 382
+	plains = 12
+	woods = 9
+	riverpixels = 5
+	farmlands = 361
+}
+85 = {
+	climate = normal_winter
+	totalpixels = 224
+	plains = 8
+	woods = 4
+	riverpixels = 24
+	farmlands = 212
+}
+762 = {
+	plains = 982
+	farmlands = 60
+	hills = 5
+	totalpixels = 1048
+	jungle = 1
+}
+1658 = {
+	totalpixels = 44
+}
+1659 = {
+	totalpixels = 773
+}
+1652 = {
+	riverpixels = 8
+	totalpixels = 3400
+}
+1653 = {
+	totalpixels = 1304
+}
+1650 = {
+	totalpixels = 1077
+}
+1651 = {
+	totalpixels = 661
+}
+1656 = {
+	totalpixels = 124
+}
+1657 = {
+	totalpixels = 176
+}
+1654 = {
+	totalpixels = 1640
+}
+1655 = {
+	riverpixels = 3
+	totalpixels = 186
+}
+586 = {
+	mountain = 19
+	climate = tropical
+	hills = 112
+	plains = 381
+	marsh = 835
+	jungle = 38
+	totalpixels = 1385
+}
+587 = {
+	mountain = 560
+	climate = tropical
+	hills = 121
+	totalpixels = 989
+	plains = 303
+	jungle = 5
+	riverpixels = 44
+}
+584 = {
+	mountain = 42
+	climate = tropical
+	hills = 926
+	plains = 12
+	jungle = 14
+	totalpixels = 994
+}
+585 = {
+	climate = tropical
+	totalpixels = 1156
+	plains = 4
+	marsh = 6
+	jungle = 9
+	riverpixels = 7
+	hills = 1137
+}
+763 = {
+	plains = 23
+	farmlands = 1291
+	hills = 26
+	totalpixels = 1340
+}
+583 = {
+	mountain = 1600
+	climate = tropical
+	riverpixels = 22
+	totalpixels = 1605
+	plains = 5
+}
+580 = {
+	mountain = 93
+	climate = tropical
+	hills = 6
+	totalpixels = 1057
+	plains = 3
+	jungle = 955
+	riverpixels = 11
+}
+581 = {
+	mountain = 1249
+	climate = tropical
+	hills = 4
+	totalpixels = 1416
+	plains = 26
+	jungle = 137
+	riverpixels = 59
+}
+1632 = {
+	totalpixels = 43135
+}
+588 = {
+	mountain = 885
+	climate = tropical
+	hills = 78
+	totalpixels = 986
+	plains = 23
+}
+589 = {
+	mountain = 1391
+	climate = tropical
+	hills = 224
+	totalpixels = 1676
+	plains = 28
+	jungle = 33
+	riverpixels = 72
+}
+1633 = {
+	totalpixels = 40229
+}
+1634 = {
+	totalpixels = 54922
+}
+1348 = {
+	totalpixels = 3791
+}
+1635 = {
+	totalpixels = 51121
+}
+1436 = {
+	totalpixels = 18756
+}
+1437 = {
+	totalpixels = 20611
+}
+1434 = {
+	totalpixels = 32134
+}
+1435 = {
+	totalpixels = 40231
+}
+1432 = {
+	totalpixels = 22096
+}
+1433 = {
+	totalpixels = 22671
+}
+1430 = {
+	totalpixels = 17835
+}
+1431 = {
+	totalpixels = 25504
+}
+1380 = {
+	totalpixels = 7601
+}
+1637 = {
+	totalpixels = 44670
+}
+1438 = {
+	totalpixels = 29723
+}
+1439 = {
+	totalpixels = 29210
+}
+1260 = {
+	riverpixels = 1
+	totalpixels = 115
+}
+1541 = {
+	totalpixels = 9402
+}
+458 = {
+	mountain = 1571
+	climate = severe_winter
+	hills = 147
+	totalpixels = 2888
+	plains = 1170
+	riverpixels = 24
+}
+1349 = {
+	totalpixels = 5637
+}
+450 = {
+	mountain = 2859
+	climate = normal_winter
+	hills = 13
+	totalpixels = 3039
+	plains = 165
+}
+451 = {
+	mountain = 27
+	climate = severe_winter
+	hills = 13
+	totalpixels = 1934
+	plains = 1894
+}
+452 = {
+	mountain = 3773
+	climate = severe_winter
+	hills = 16
+	totalpixels = 4210
+	plains = 380
+	riverpixels = 133
+	desert = 41
+}
+453 = {
+	mountain = 983
+	climate = normal_winter
+	totalpixels = 3431
+	plains = 1931
+	woods = 19
+	riverpixels = 129
+	hills = 495
+}
+454 = {
+	mountain = 567
+	climate = mild_winter
+	hills = 2262
+	plains = 415
+	woods = 56
+	steppe = 340
+	totalpixels = 3640
+}
+455 = {
+	climate = mild_winter
+	hills = 808
+	plains = 25
+	woods = 196
+	steppe = 2585
+	totalpixels = 3614
+}
+1346 = {
+	totalpixels = 8758
+}
+457 = {
+	mountain = 1307
+	climate = mild_winter
+	hills = 1723
+	plains = 791
+	steppe = 213
+	totalpixels = 4034
+}
+517 = {
+	plains = 732
+	riverpixels = 12
+	totalpixels = 741
+	mountain = 9
+}
+1502 = {
+	totalpixels = 6203
+}
+1503 = {
+	totalpixels = 3964
+}
+1500 = {
+	totalpixels = 5138
+}
+1501 = {
+	riverpixels = 3
+	totalpixels = 4715
+}
+1506 = {
+	riverpixels = 2
+	totalpixels = 3062
+}
+1507 = {
+	riverpixels = 2
+	totalpixels = 4737
+}
+1504 = {
+	totalpixels = 7789
+}
+1505 = {
+	totalpixels = 4516
+}
+1508 = {
+	riverpixels = 5
+	totalpixels = 6414
+}
+1509 = {
+	riverpixels = 3
+	totalpixels = 3927
+}
+658 = {
+	plains = 163
+	jungle = 607
+	totalpixels = 770
+}
+659 = {
+	plains = 41
+	climate = tropical
+	totalpixels = 41
+}
+1992 = {
+	totalpixels = 0
+}
+1292 = {
+	riverpixels = 4
+	totalpixels = 3682
+}
+1376 = {
+	plains = 24
+	totalpixels = 3467
+}
+322 = {
+	mountain = 16
+	climate = mild_winter
+	hills = 23
+	totalpixels = 1073
+	plains = 1033
+	woods = 1
+	riverpixels = 27
+}
+323 = {
+	mountain = 362
+	climate = mild_winter
+	hills = 216
+	totalpixels = 613
+	plains = 35
+	riverpixels = 24
+}
+320 = {
+	plains = 21
+	totalpixels = 101
+	mountain = 80
+}
+321 = {
+	plains = 420
+	totalpixels = 442
+	mountain = 22
+}
+326 = {
+	riverpixels = 29
+	plains = 905
+	climate = mild_winter
+	hills = 31
+	totalpixels = 936
+}
+327 = {
+	riverpixels = 60
+	plains = 955
+	hills = 95
+	totalpixels = 1060
+	mountain = 5
+}
+324 = {
+	riverpixels = 8
+	plains = 50
+	hills = 881
+	totalpixels = 936
+	mountain = 5
+}
+325 = {
+	riverpixels = 45
+	mountain = 82
+	hills = 1317
+	totalpixels = 1428
+	plains = 15
+}
+328 = {
+	riverpixels = 37
+	mountain = 698
+	hills = 153
+	totalpixels = 891
+	plains = 18
+}
+329 = {
+	mountain = 39
+	climate = mild_winter
+	hills = 1882
+	totalpixels = 1975
+	plains = 54
+	riverpixels = 119
+}
+1340 = {
+	totalpixels = 4782
+}
+1594 = {
+	totalpixels = 34809
+}
+1341 = {
+	riverpixels = 2
+	totalpixels = 4498
+}
+1995 = {
+	totalpixels = 0
+}
+1592 = {
+	totalpixels = 27896
+}
+1598 = {
+	totalpixels = 21195
+}
+995 = {
+	plains = 287
+	climate = severe_winter
+	hills = 3514
+	totalpixels = 3955
+	forest = 154
+}
+994 = {
+	mountain = 8
+	climate = severe_winter
+	totalpixels = 2381
+	plains = 533
+	forest = 1491
+	riverpixels = 37
+	farmlands = 2
+	hills = 295
+}
+997 = {
+	climate = severe_winter
+	totalpixels = 8444
+	arctic = 745
+	plains = 840
+	forest = 6852
+	riverpixels = 121
+}
+996 = {
+	plains = 1808
+	climate = severe_winter
+	forest = 3528
+	totalpixels = 5341
+}
+991 = {
+	riverpixels = 44
+	plains = 678
+	climate = severe_winter
+	forest = 1459
+	totalpixels = 2137
+}
+990 = {
+	climate = normal_winter
+	totalpixels = 1965
+	plains = 307
+	woods = 43
+	forest = 1559
+	riverpixels = 92
+	farmlands = 6
+	hills = 49
+}
+993 = {
+	climate = severe_winter
+	totalpixels = 1941
+	plains = 336
+	forest = 1601
+	riverpixels = 14
+	farmlands = 4
+}
+992 = {
+	riverpixels = 50
+	plains = 696
+	climate = severe_winter
+	forest = 2399
+	totalpixels = 3095
+}
+999 = {
+	climate = severe_winter
+	totalpixels = 9952
+	arctic = 6158
+	plains = 3243
+	forest = 550
+	riverpixels = 59
+}
+998 = {
+	climate = severe_winter
+	totalpixels = 5927
+	arctic = 5905
+	plains = 9
+	forest = 12
+	riverpixels = 37
+}
+120 = {
+	mountain = 652
+	woods = 6
+	hills = 15
+	totalpixels = 761
+	plains = 63
+}
+121 = {
+	plains = 650
+	woods = 4
+	hills = 23
+	totalpixels = 677
+}
+122 = {
+	plains = 295
+	woods = 4
+	hills = 733
+	totalpixels = 1032
+}
+1026 = {
+	plains = 842
+	climate = mild_winter
+	woods = 247
+	forest = 102
+	totalpixels = 1194
+}
+124 = {
+	plains = 229
+	hills = 228
+	totalpixels = 541
+	mountain = 82
+}
+125 = {
+	plains = 269
+	woods = 41
+	hills = 266
+	totalpixels = 581
+	mountain = 5
+}
+126 = {
+	plains = 28
+	woods = 30
+	totalpixels = 58
+}
+127 = {
+	plains = 625
+	woods = 82
+	hills = 44
+	totalpixels = 752
+}
+128 = {
+	mountain = 20
+	climate = mild_winter
+	woods = 338
+	totalpixels = 358
+}
+129 = {
+	riverpixels = 19
+	woods = 34
+	hills = 396
+	totalpixels = 430
+}
+722 = {
+	plains = 861
+	climate = mild_winter
+	woods = 244
+	hills = 1859
+	totalpixels = 2964
+}
+723 = {
+	plains = 2737
+	climate = mild_winter
+	woods = 175
+	hills = 23
+	totalpixels = 2935
+}
+1645 = {
+	totalpixels = 29415
+}
+1644 = {
+	totalpixels = 13098
+}
+1647 = {
+	totalpixels = 40258
+}
+1646 = {
+	totalpixels = 38758
+}
+1641 = {
+	totalpixels = 14034
+}
+1640 = {
+	totalpixels = 25999
+}
+1643 = {
+	totalpixels = 16939
+}
+1642 = {
+	totalpixels = 15427
+}
+1649 = {
+	totalpixels = 1505
+}
+1648 = {
+	plains = 1
+	riverpixels = 2
+	totalpixels = 549
+}
+728 = {
+	climate = mild_winter
+	totalpixels = 2228
+	plains = 2088
+	woods = 75
+	riverpixels = 19
+	hills = 65
+}
+729 = {
+	plains = 2188
+	climate = mild_winter
+	woods = 137
+	hills = 3963
+	totalpixels = 6316
+}
+579 = {
+	mountain = 672
+	climate = tropical
+	hills = 33
+	totalpixels = 985
+	plains = 263
+	marsh = 10
+	jungle = 7
+	riverpixels = 28
+}
+578 = {
+	plains = 197
+	climate = severe_winter
+	hills = 97
+	totalpixels = 2417
+	mountain = 2123
+}
+573 = {
+	plains = 181
+	woods = 1
+	hills = 572
+	totalpixels = 754
+}
+572 = {
+	plains = 602
+	totalpixels = 602
+}
+571 = {
+	mountain = 107
+	climate = mild_winter
+	hills = 164
+	totalpixels = 1095
+	plains = 92
+	jungle = 732
+	riverpixels = 15
+}
+570 = {
+	plains = 6
+	climate = tropical
+	jungle = 521
+	totalpixels = 558
+	mountain = 31
+}
+577 = {
+	plains = 243
+	climate = mild_winter
+	hills = 167
+	totalpixels = 3117
+	mountain = 2707
+}
+576 = {
+	mountain = 2063
+	hills = 389
+	totalpixels = 2458
+	plains = 6
+}
+575 = {
+	plains = 338
+	hills = 5
+	desert = 220
+	totalpixels = 2208
+	mountain = 1645
+}
+574 = {
+	plains = 202
+	climate = tropical
+	totalpixels = 202
+}
+1209 = {
+	mountain = 2477
+	climate = tropical
+	hills = 18
+	plains = 475
+	jungle = 1
+	totalpixels = 2971
+}
+1208 = {
+	plains = 352
+	climate = tropical
+	hills = 2492
+	totalpixels = 2868
+	mountain = 24
+}
+1421 = {
+	totalpixels = 14356
+}
+1420 = {
+	totalpixels = 8442
+}
+1997 = {
+	totalpixels = 0
+}
+1422 = {
+	totalpixels = 30778
+}
+1425 = {
+	totalpixels = 11403
+}
+1424 = {
+	totalpixels = 15567
+}
+1427 = {
+	totalpixels = 19180
+}
+1426 = {
+	totalpixels = 24160
+}
+1429 = {
+	totalpixels = 21788
+}
+1428 = {
+	totalpixels = 23314
+}
+731 = {
+	plains = 3944
+	climate = mild_winter
+	woods = 122
+	totalpixels = 4066
+}
+730 = {
+	plains = 1657
+	climate = mild_winter
+	woods = 444
+	totalpixels = 2101
+}
+733 = {
+	woods = 2
+	plains = 814
+	climate = mild_winter
+	farmlands = 2
+	totalpixels = 818
+}
+732 = {
+	plains = 295
+	climate = mild_winter
+	woods = 1745
+	hills = 21
+	totalpixels = 2061
+}
+735 = {
+	woods = 331
+	plains = 377
+	climate = mild_winter
+	farmlands = 291
+	totalpixels = 999
+}
+734 = {
+	plains = 135
+	climate = mild_winter
+	woods = 620
+	totalpixels = 761
+	farmlands = 6
+}
+737 = {
+	plains = 653
+	climate = mild_winter
+	totalpixels = 654
+}
+736 = {
+	plains = 509
+	climate = mild_winter
+	woods = 21
+	totalpixels = 540
+	farmlands = 10
+}
+739 = {
+	mountain = 48
+	climate = severe_winter
+	hills = 44
+	plains = 207
+	totalpixels = 4379
+	desert = 4080
+}
+738 = {
+	plains = 671
+	totalpixels = 671
+}
+1359 = {
+	totalpixels = 4790
+}
+1358 = {
+	totalpixels = 7050
+}
+469 = {
+	climate = normal_winter
+	woods = 166
+	steppe = 2041
+	totalpixels = 2207
+}
+468 = {
+	climate = normal_winter
+	totalpixels = 3688
+	plains = 4
+	woods = 976
+	steppe = 2708
+	riverpixels = 50
+}
+465 = {
+	climate = normal_winter
+	totalpixels = 4252
+	plains = 383
+	woods = 439
+	steppe = 3362
+	riverpixels = 115
+	desert = 68
+}
+464 = {
+	mountain = 123
+	climate = mild_winter
+	totalpixels = 4974
+	plains = 908
+	woods = 873
+	steppe = 2560
+	riverpixels = 84
+	desert = 362
+	hills = 148
+}
+467 = {
+	climate = normal_winter
+	totalpixels = 2649
+	woods = 788
+	steppe = 1795
+	riverpixels = 109
+	forest = 66
+}
+466 = {
+	climate = normal_winter
+	totalpixels = 4446
+	plains = 74
+	woods = 884
+	steppe = 3488
+	riverpixels = 146
+}
+1357 = {
+	totalpixels = 7627
+}
+460 = {
+	mountain = 43
+	climate = severe_winter
+	desert = 5
+	totalpixels = 2664
+	plains = 2616
+}
+1355 = {
+	totalpixels = 6747
+}
+1200 = {
+	mountain = 383
+	climate = tropical
+	hills = 8
+	plains = 1189
+	totalpixels = 1581
+	farmlands = 1
+}
+1273 = {
+	totalpixels = 2012
+}
+1519 = {
+	totalpixels = 1777
+}
+1518 = {
+	totalpixels = 6218
+}
+1515 = {
+	totalpixels = 5870
+}
+1514 = {
+	riverpixels = 4
+	totalpixels = 4748
+}
+1517 = {
+	totalpixels = 5122
+}
+1516 = {
+	totalpixels = 3525
+}
+1511 = {
+	totalpixels = 7834
+}
+1510 = {
+	riverpixels = 4
+	totalpixels = 4120
+}
+1513 = {
+	totalpixels = 4218
+}
+1512 = {
+	totalpixels = 4704
+}
+281 = {
+	climate = normal_winter
+	totalpixels = 1578
+	plains = 610
+	woods = 583
+	riverpixels = 69
+	farmlands = 385
+}
+1735 = {
+	totalpixels = 29143
+}
+1275 = {
+	riverpixels = 6
+	totalpixels = 1523
+}
+280 = {
+	climate = normal_winter
+	totalpixels = 1658
+	plains = 449
+	woods = 297
+	marsh = 823
+	forest = 77
+	riverpixels = 82
+	farmlands = 12
+}
+582 = {
+	mountain = 2162
+	climate = mild_winter
+	totalpixels = 2248
+	plains = 34
+	jungle = 24
+	riverpixels = 60
+	hills = 28
+}
+357 = {
+	plains = 4341
+	desert = 14
+	totalpixels = 4355
+}
+356 = {
+	plains = 3295
+	woods = 1
+	desert = 18
+	totalpixels = 3369
+	mountain = 12
+}
+355 = {
+	plains = 3298
+	desert = 2
+	totalpixels = 3301
+}
+354 = {
+	plains = 4071
+	desert = 4
+	totalpixels = 4075
+}
+353 = {
+	plains = 1614
+	totalpixels = 1614
+}
+352 = {
+	plains = 284
+	climate = tropical
+	desert = 3044
+	totalpixels = 3328
+}
+351 = {
+	plains = 129
+	climate = tropical
+	desert = 1771
+	totalpixels = 1900
+}
+350 = {
+	climate = tropical
+	desert = 3204
+	totalpixels = 3204
+}
+359 = {
+	climate = tropical
+	totalpixels = 922
+	plains = 886
+	riverpixels = 29
+	farmlands = 29
+	desert = 7
+}
+358 = {
+	plains = 1071
+	farmlands = 4
+	totalpixels = 1075
+}
+43 = {
+	climate = normal_winter
+	totalpixels = 202
+	plains = 34
+	woods = 121
+	riverpixels = 11
+	farmlands = 47
+}
+1447 = {
+	riverpixels = 2
+	totalpixels = 16475
+}
+1446 = {
+	totalpixels = 9662
+}
+1445 = {
+	totalpixels = 32877
+}
+484 = {
+	plains = 688
+	totalpixels = 688
+}
+289 = {
+	climate = normal_winter
+	totalpixels = 2118
+	plains = 110
+	marsh = 6
+	forest = 2002
+	riverpixels = 108
+}
+288 = {
+	climate = normal_winter
+	totalpixels = 2593
+	plains = 436
+	woods = 470
+	steppe = 1525
+	riverpixels = 89
+	farmlands = 119
+	forest = 43
+}
+1444 = {
+	totalpixels = 32337
+}
+1793 = {
+	climate = impassable
+	totalpixels = 17316
+	plains = 157
+	steppe = 9
+	riverpixels = 13
+	desert = 17150
+}
+5 = {
+	mountain = 10
+	climate = normal_winter
+	totalpixels = 1306
+	plains = 57
+	forest = 883
+	riverpixels = 36
+	farmlands = 356
+}
+283 = {
+	climate = normal_winter
+	totalpixels = 3151
+	plains = 2187
+	woods = 746
+	steppe = 8
+	riverpixels = 91
+	farmlands = 210
+}
+282 = {
+	climate = mild_winter
+	totalpixels = 1443
+	plains = 1046
+	woods = 165
+	steppe = 5
+	riverpixels = 76
+	farmlands = 227
+}
+285 = {
+	mountain = 141
+	climate = mild_winter
+	plains = 176
+	steppe = 135
+	totalpixels = 500
+	farmlands = 3
+}
+284 = {
+	mountain = 109
+	climate = mild_winter
+	totalpixels = 1450
+	plains = 1005
+	woods = 269
+	steppe = 62
+	riverpixels = 4
+}
+287 = {
+	climate = mild_winter
+	totalpixels = 2114
+	plains = 94
+	woods = 61
+	steppe = 1946
+	riverpixels = 35
+	farmlands = 13
+}
+1442 = {
+	totalpixels = 30412
+}
+1441 = {
+	totalpixels = 22243
+}
+1116 = {
+	plains = 1256
+	climate = tropical
+	steppe = 102
+	totalpixels = 1358
+}
+263 = {
+	climate = normal_winter
+	totalpixels = 628
+	plains = 13
+	woods = 3
+	riverpixels = 10
+	farmlands = 612
+}
+262 = {
+	mountain = 32
+	climate = normal_winter
+	hills = 140
+	totalpixels = 592
+	plains = 106
+	woods = 314
+	riverpixels = 34
+}
+261 = {
+	climate = normal_winter
+	totalpixels = 1226
+	plains = 21
+	woods = 1124
+	riverpixels = 3
+	farmlands = 81
+}
+260 = {
+	climate = normal_winter
+	totalpixels = 985
+	plains = 335
+	woods = 633
+	riverpixels = 43
+	farmlands = 17
+}
+267 = {
+	climate = normal_winter
+	hills = 571
+	plains = 6
+	woods = 57
+	totalpixels = 676
+	farmlands = 42
+}
+266 = {
+	climate = normal_winter
+	hills = 148
+	totalpixels = 921
+	plains = 4
+	woods = 339
+	riverpixels = 16
+	farmlands = 430
+}
+1792 = {
+	mountain = 4347
+	climate = tropical
+	hills = 33
+	totalpixels = 4384
+	plains = 4
+}
+264 = {
+	climate = normal_winter
+	totalpixels = 681
+	plains = 666
+	woods = 8
+	riverpixels = 49
+	farmlands = 7
+}
+269 = {
+	plains = 488
+	climate = normal_winter
+	farmlands = 1
+	riverpixels = 24
+	totalpixels = 489
+}
+268 = {
+	climate = mild_winter
+	totalpixels = 1172
+	plains = 479
+	woods = 692
+	riverpixels = 51
+	farmlands = 1
+}
+1290 = {
+	totalpixels = 5607
+}
+1291 = {
+	riverpixels = 3
+	totalpixels = 5018
+}
+1296 = {
+	riverpixels = 2
+	totalpixels = 1869
+}
+1297 = {
+	totalpixels = 1816
+}
+1294 = {
+	totalpixels = 2349
+}
+1295 = {
+	riverpixels = 1
+	totalpixels = 2323
+}
+988 = {
+	mountain = 1
+	climate = severe_winter
+	plains = 758
+	woods = 1
+	forest = 504
+	totalpixels = 1264
+}
+989 = {
+	climate = normal_winter
+	totalpixels = 1659
+	plains = 422
+	forest = 1183
+	riverpixels = 52
+	farmlands = 54
+}
+982 = {
+	climate = normal_winter
+	forest = 405
+	totalpixels = 405
+}
+983 = {
+	plains = 2
+	climate = normal_winter
+	forest = 241
+	totalpixels = 243
+}
+980 = {
+	plains = 5
+	climate = normal_winter
+	forest = 1541
+	totalpixels = 1546
+}
+981 = {
+	plains = 1
+	climate = normal_winter
+	forest = 2565
+	totalpixels = 2567
+}
+986 = {
+	mountain = 20
+	climate = severe_winter
+	hills = 1115
+	plains = 710
+	forest = 195
+	totalpixels = 2057
+}
+987 = {
+	plains = 319
+	climate = severe_winter
+	woods = 3
+	forest = 545
+	totalpixels = 867
+}
+984 = {
+	plains = 44
+	climate = normal_winter
+	forest = 1609
+	totalpixels = 1656
+	mountain = 3
+}
+985 = {
+	plains = 1067
+	climate = normal_winter
+	forest = 2380
+	totalpixels = 3479
+	mountain = 32
+}
+115 = {
+	mountain = 4
+	hills = 100
+	plains = 7
+	woods = 202
+	totalpixels = 314
+	farmlands = 1
+}
+114 = {
+	mountain = 28
+	hills = 3
+	plains = 54
+	woods = 3
+	totalpixels = 312
+	farmlands = 224
+}
+117 = {
+	plains = 23
+	woods = 121
+	hills = 207
+	totalpixels = 354
+	mountain = 3
+}
+116 = {
+	mountain = 394
+	hills = 32
+	riverpixels = 1
+	plains = 1
+	woods = 5
+	totalpixels = 505
+	farmlands = 73
+}
+111 = {
+	mountain = 306
+	climate = mild_winter
+	hills = 13
+	totalpixels = 341
+	plains = 20
+	woods = 2
+	riverpixels = 2
+}
+110 = {
+	mountain = 273
+	climate = severe_winter
+	farmlands = 10
+	hills = 5
+	totalpixels = 288
+}
+113 = {
+	hills = 4
+	totalpixels = 250
+	plains = 63
+	woods = 12
+	riverpixels = 4
+	farmlands = 171
+}
+112 = {
+	plains = 103
+	totalpixels = 103
+}
+119 = {
+	mountain = 472
+	totalpixels = 557
+	plains = 82
+	riverpixels = 21
+	farmlands = 1
+	hills = 2
+}
+118 = {
+	mountain = 28
+	hills = 659
+	totalpixels = 903
+	plains = 214
+	riverpixels = 44
+	farmlands = 2
+}
+1797 = {
+	climate = impassable
+	hills = 3566
+	totalpixels = 39860
+	plains = 2191
+	jungle = 34103
+	riverpixels = 1021
+}
+1388 = {
+	totalpixels = 10041
+}
+1796 = {
+	mountain = 5
+	climate = impassable
+	totalpixels = 44849
+	jungle = 2
+	plains = 2281
+	steppe = 42556
+	riverpixels = 600
+	hills = 5
+}
+1035 = {
+	plains = 392
+	arctic = 6343
+	climate = severe_winter
+	totalpixels = 7904
+	mountain = 1169
+}
+1389 = {
+	totalpixels = 7280
+}
+1986 = {
+	totalpixels = 0
+}
+1987 = {
+	totalpixels = 0
+}
+1984 = {
+	totalpixels = 0
+}
+1985 = {
+	totalpixels = 0
+}
+1982 = {
+	totalpixels = 0
+}
+1983 = {
+	totalpixels = 0
+}
+1980 = {
+	totalpixels = 0
+}
+1981 = {
+	totalpixels = 0
+}
+1638 = {
+	totalpixels = 51300
+}
+1639 = {
+	totalpixels = 21566
+}
+1988 = {
+	totalpixels = 0
+}
+1989 = {
+	totalpixels = 0
+}
+568 = {
+	plains = 87
+	jungle = 4
+	totalpixels = 883
+	mountain = 792
+}
+569 = {
+	mountain = 83
+	climate = tropical
+	jungle = 642
+	totalpixels = 725
+}
+560 = {
+	plains = 1017
+	climate = tropical
+	farmlands = 18
+	jungle = 26
+	totalpixels = 1061
+}
+561 = {
+	mountain = 45
+	totalpixels = 1536
+	plains = 201
+	jungle = 1264
+	riverpixels = 36
+	farmlands = 26
+}
+562 = {
+	mountain = 1173
+	climate = mild_winter
+	hills = 11
+	totalpixels = 1271
+	plains = 30
+	jungle = 57
+	riverpixels = 53
+}
+563 = {
+	riverpixels = 48
+	plains = 92
+	farmlands = 1
+	jungle = 514
+	totalpixels = 607
+}
+564 = {
+	mountain = 2
+	totalpixels = 1029
+	plains = 987
+	jungle = 26
+	riverpixels = 15
+	farmlands = 12
+}
+565 = {
+	mountain = 938
+	climate = severe_winter
+	hills = 26
+	totalpixels = 1034
+	plains = 33
+	jungle = 37
+	riverpixels = 8
+}
+566 = {
+	mountain = 5
+	climate = mild_winter
+	totalpixels = 1109
+	plains = 86
+	jungle = 452
+	riverpixels = 40
+	hills = 566
+}
+567 = {
+	mountain = 501
+	climate = tropical
+	hills = 56
+	plains = 112
+	jungle = 140
+	totalpixels = 809
+}
+1188 = {
+	mountain = 892
+	climate = tropical
+	hills = 119
+	totalpixels = 1022
+	plains = 11
+	riverpixels = 19
+}
+1189 = {
+	mountain = 1446
+	climate = tropical
+	hills = 21
+	totalpixels = 1569
+	plains = 89
+	riverpixels = 40
+	farmlands = 13
+}
+1186 = {
+	mountain = 150
+	climate = tropical
+	hills = 17
+	totalpixels = 1665
+	plains = 1498
+	riverpixels = 44
+}
+1187 = {
+	mountain = 11
+	climate = tropical
+	hills = 2197
+	totalpixels = 2246
+	plains = 38
+	riverpixels = 120
+}
+1184 = {
+	mountain = 323
+	climate = tropical
+	hills = 22
+	plains = 1635
+	totalpixels = 1988
+	farmlands = 8
+}
+1185 = {
+	mountain = 1573
+	climate = tropical
+	hills = 29
+	totalpixels = 1607
+	plains = 5
+	riverpixels = 21
+}
+1182 = {
+	riverpixels = 29
+	plains = 1047
+	climate = tropical
+	hills = 34
+	totalpixels = 1081
+}
+1183 = {
+	plains = 1450
+	climate = tropical
+	hills = 2
+	totalpixels = 1452
+}
+1180 = {
+	mountain = 873
+	plains = 334
+	riverpixels = 48
+	totalpixels = 2496
+	hills = 1289
+}
+1181 = {
+	mountain = 342
+	plains = 374
+	riverpixels = 5
+	totalpixels = 3251
+	hills = 2535
+}
+726 = {
+	plains = 1981
+	climate = mild_winter
+	woods = 190
+	totalpixels = 2171
+}
+727 = {
+	plains = 5204
+	climate = normal_winter
+	woods = 2572
+	riverpixels = 164
+	totalpixels = 7776
+}
+724 = {
+	climate = normal_winter
+	totalpixels = 7656
+	plains = 4451
+	woods = 2083
+	riverpixels = 88
+	hills = 1122
+}
+725 = {
+	plains = 3353
+	climate = mild_winter
+	woods = 182
+	totalpixels = 3535
+}
+1748 = {
+	plains = 1145
+	woods = 74
+	riverpixels = 94
+	totalpixels = 1251
+	hills = 32
+}
+1749 = {
+	plains = 43
+	riverpixels = 31
+	totalpixels = 330
+	mountain = 287
+}
+720 = {
+	mountain = 57
+	climate = mild_winter
+	hills = 1702
+	riverpixels = 15
+	plains = 5345
+	woods = 505
+	steppe = 137
+	totalpixels = 7746
+}
+721 = {
+	climate = mild_winter
+	hills = 704
+	totalpixels = 6348
+	plains = 4713
+	woods = 929
+	steppe = 2
+	riverpixels = 88
+}
+1744 = {
+	climate = mild_winter
+	totalpixels = 224
+	plains = 23
+	woods = 200
+	riverpixels = 12
+	farmlands = 1
+}
+1745 = {
+	plains = 480
+	climate = mild_winter
+	hills = 7
+	totalpixels = 487
+}
+1746 = {
+	riverpixels = 60
+	plains = 33
+	woods = 14
+	hills = 888
+	totalpixels = 935
+}
+1747 = {
+	totalpixels = 899
+	plains = 867
+	woods = 10
+	riverpixels = 73
+	farmlands = 9
+	hills = 13
+}
+1740 = {
+	totalpixels = 40214
+}
+1741 = {
+	totalpixels = 27556
+}
+1742 = {
+	climate = mild_winter
+	woods = 7
+	riverpixels = 11
+	totalpixels = 226
+	farmlands = 219
+}
+1743 = {
+	woods = 296
+	plains = 4
+	climate = mild_winter
+	farmlands = 14
+	totalpixels = 314
+}
+1164 = {
+	climate = tropical
+	totalpixels = 2016
+	plains = 88
+	jungle = 1697
+	riverpixels = 65
+	hills = 231
+}
+1165 = {
+	plains = 410
+	climate = tropical
+	hills = 193
+	totalpixels = 1965
+	jungle = 1362
+}
+1166 = {
+	climate = tropical
+	hills = 190
+	totalpixels = 967
+	plains = 395
+	jungle = 382
+	riverpixels = 22
+}
+1167 = {
+	plains = 1114
+	climate = tropical
+	jungle = 40
+	totalpixels = 1154
+}
+1160 = {
+	mountain = 223
+	climate = tropical
+	hills = 205
+	totalpixels = 3635
+	plains = 3154
+	steppe = 13
+	riverpixels = 20
+	jungle = 40
+}
+1161 = {
+	plains = 1727
+	climate = tropical
+	riverpixels = 41
+	totalpixels = 1731
+	hills = 4
+}
+640 = {
+	plains = 642
+	climate = tropical
+	jungle = 1748
+	totalpixels = 2390
+}
+1163 = {
+	mountain = 320
+	climate = tropical
+	hills = 251
+	plains = 510
+	steppe = 29
+	totalpixels = 1135
+	jungle = 25
+}
+1168 = {
+	plains = 1058
+	climate = tropical
+	jungle = 147
+	totalpixels = 1205
+}
+1169 = {
+	climate = tropical
+	hills = 264
+	totalpixels = 2209
+	plains = 962
+	jungle = 983
+	riverpixels = 83
+}
+1366 = {
+	riverpixels = 1
+	totalpixels = 3762
+}
+48 = {
+	plains = 71
+	climate = normal_winter
+	woods = 417
+	totalpixels = 488
+}
+49 = {
+	climate = normal_winter
+	totalpixels = 536
+	plains = 453
+	woods = 68
+	riverpixels = 25
+	farmlands = 15
+}
+46 = {
+	plains = 26
+	climate = normal_winter
+	woods = 390
+	totalpixels = 418
+	farmlands = 2
+}
+47 = {
+	woods = 13
+	plains = 105
+	climate = normal_winter
+	farmlands = 158
+	totalpixels = 276
+}
+44 = {
+	plains = 29
+	climate = mild_winter
+	farmlands = 85
+	riverpixels = 8
+	totalpixels = 114
+}
+45 = {
+	plains = 37
+	climate = normal_winter
+	woods = 97
+	totalpixels = 134
+}
+42 = {
+	plains = 737
+	climate = normal_winter
+	woods = 38
+	totalpixels = 808
+	farmlands = 33
+}
+2034 = {
+	totalpixels = 0
+}
+40 = {
+	plains = 2
+	climate = normal_winter
+	woods = 170
+	totalpixels = 172
+}
+41 = {
+	climate = normal_winter
+	totalpixels = 1162
+	plains = 955
+	woods = 199
+	riverpixels = 30
+	farmlands = 8
+}
+1568 = {
+	totalpixels = 23562
+}
+1569 = {
+	totalpixels = 24640
+}
+1298 = {
+	totalpixels = 2505
+}
+1299 = {
+	totalpixels = 3093
+}
+1560 = {
+	totalpixels = 9690
+}
+1561 = {
+	totalpixels = 8962
+}
+1562 = {
+	totalpixels = 3989
+}
+1563 = {
+	totalpixels = 27872
+}
+1564 = {
+	totalpixels = 31338
+}
+1565 = {
+	totalpixels = 28409
+}
+1566 = {
+	totalpixels = 29429
+}
+1567 = {
+	totalpixels = 29845
+}
+1713 = {
+	totalpixels = 41210
+}
+1360 = {
+	totalpixels = 7385
+}
+1712 = {
+	totalpixels = 36954
+}
+1361 = {
+	totalpixels = 5309
+}
+1711 = {
+	totalpixels = 33265
+}
+1381 = {
+	totalpixels = 8720
+}
+1710 = {
+	totalpixels = 36337
+}
+1717 = {
+	totalpixels = 29493
+}
+1716 = {
+	totalpixels = 33534
+}
+1715 = {
+	totalpixels = 25964
+}
+1201 = {
+	plains = 51
+	climate = tropical
+	hills = 1
+	totalpixels = 52
+}
+1714 = {
+	totalpixels = 23740
+}
+472 = {
+	mountain = 63
+	climate = normal_winter
+	hills = 319
+	totalpixels = 11763
+	plains = 294
+	woods = 146
+	steppe = 9411
+	riverpixels = 119
+	forest = 1530
+}
+1367 = {
+	totalpixels = 9590
+}
+470 = {
+	climate = normal_winter
+	totalpixels = 5618
+	plains = 149
+	woods = 1457
+	steppe = 3862
+	riverpixels = 33
+	desert = 150
+}
+471 = {
+	climate = normal_winter
+	totalpixels = 13708
+	plains = 122
+	woods = 1941
+	steppe = 10870
+	riverpixels = 20
+	desert = 775
+}
+476 = {
+	climate = normal_winter
+	totalpixels = 13142
+	woods = 234
+	steppe = 11378
+	riverpixels = 92
+	hills = 1530
+}
+477 = {
+	mountain = 602
+	climate = normal_winter
+	hills = 5601
+	riverpixels = 63
+	plains = 76
+	woods = 2584
+	steppe = 5915
+	totalpixels = 14778
+}
+474 = {
+	climate = normal_winter
+	totalpixels = 5276
+	plains = 49
+	woods = 1468
+	steppe = 3084
+	riverpixels = 72
+	forest = 675
+}
+475 = {
+	mountain = 208
+	climate = normal_winter
+	totalpixels = 7188
+	plains = 241
+	woods = 16
+	steppe = 3352
+	riverpixels = 51
+	forest = 3371
+}
+478 = {
+	mountain = 2774
+	climate = normal_winter
+	hills = 1753
+	totalpixels = 18360
+	plains = 321
+	woods = 3678
+	forest = 1055
+	riverpixels = 193
+	steppe = 8779
+}
+479 = {
+	climate = normal_winter
+	totalpixels = 10319
+	hills = 184
+	plains = 39
+	woods = 63
+	steppe = 4554
+	riverpixels = 260
+	forest = 5479
+}
+1368 = {
+	totalpixels = 5659
+}
+1369 = {
+	totalpixels = 5387
+}

@@ -1,0 +1,325 @@
+establish_golden_fleece = {
+  name = golden_fleece
+}
+create_the_compagnies_ordonnance = {
+  name = compagnies_ordonnance
+}  
+reestablish_the_theme_system = {
+  name = the_theme_system
+}
+licensing_of_the_press_act = {
+  name = the_licensing_of_the_press_act
+}
+tenures_abolition_act = {
+  name = the_tenures_abolition_act
+}
+dissolution_act = {
+  name = the_dissolution_act
+}
+statue_in_restraint_of_appeals = {
+  name = the_statue_in_restraint_of_appeals
+}
+witchcraft_act = {
+  name = the_witchcraft_act
+}
+education_act = {
+  name = the_education_act
+}
+abolish_slavery_act = {
+  name = the_abolish_slavery_act
+}
+judiciary_act = {
+  name = the_judiciary_act
+}
+combination_act = {
+  name = the_combination_act
+}
+school_establishment_act = {
+  name = the_school_establishment_act
+}
+
+revoke_restraint_of_appeals = {
+    remove_country_modifier = the_statue_in_restraint_of_appeals
+    name = revocation_of_restraint_of_appeals
+}
+
+benign_neglect = {
+  name = beneficial_neglect
+}
+colonial_expansion = {
+  name = colonial_expansions
+}
+house_of_trade = {
+  name = the_house_of_trade
+}
+colonial_restrictions = {
+  name = restrictions_for_colonies
+}
+adopt_vornedskab = {
+  name = vornedskab
+}
+sign_den_danske_lov = {
+  name = den_danske_lov
+}
+establish_bank_of_amsterdam = {
+  name = bank_of_amsterdam
+}
+found_voc = {
+  name = dutch_india_trade_co
+}
+liquor_act = {
+  name = the_liquor_act
+}
+joint_stock_companies_act = {
+  name = the_joint_stock_companies_act
+}
+merchant_shipping_act = {
+  name = the_merchant_shipping_act
+}
+court_of_wards_and_liveries = {
+  name = the_court_of_wards_and_liveries
+}
+agricultural_cultivation = {
+  name = agricultural_cultivations
+}
+importation_act = {
+  name = the_importation_act
+}
+mining_act = {
+  name = the_mining_act
+}
+implement_gold_standard = {
+  name = gold_standard
+}
+establish_british_merchant_navy = {
+  name = british_merchant_navy
+}
+acknowledge_britanna_rules_the_waves = {
+  name = britanna_rules_the_waves
+}
+establish_the_wooden_wall = {
+  name = the_wooden_wall
+}
+enact_edict_de_nantes = {
+  name = edict_de_nantes
+}
+revoke_edict_de_nantes = {
+    remove_country_modifier = edict_de_nantes
+}
+say_the_state_is_me = {
+  name = the_state_is_me
+}
+formalize_separation_of_powers = {
+  name = separation_of_powers
+}
+go_cult_of_reason = {
+  name = cult_of_reason
+}
+establish_habsburg_dominance = {
+  name = habsburg_dominance
+}
+allow_fuggers = {
+  name = fugger_banks
+}
+establish_hofkriegsrat = {
+  name = hofkriegsrat
+}
+indian_trade_company = {
+  name = india_trade_co
+}
+gods_kingdom = {
+  name = kingdom_of_god
+}
+found_hall_of_worthies = {
+  name = hall_of_worthies
+}
+create_green_standard_army = {
+  name = green_standard_army
+}
+create_eight_banners = {
+  name = eight_banners
+}
+naval_recruiting_act = {
+  name = the_recruiting_act
+}
+militia_act = {
+  name = the_military_act
+}
+navigation_act = {
+  name = the_navigation_act
+}
+enlist_privateers = {
+  name = hire_privateers
+}
+naval_convoy_system = {
+  name = convoy_system
+}
+anti_piracy_act = {
+  name = the_anti_piracy_act
+}
+land_recruiting_act = {
+  name = the_land_recruiting_act
+}
+expand_bureaucracy = {
+    name = expanded_bureaucracy
+}
+formalize_measures = {
+    name = formalized_measures
+}
+enact_ottoman_tolerance = {
+  name = ottoman_tolerance
+}
+provincial_system = {
+  name = the_provincial_system
+}
+rely_on_polish_hussars = {
+  name = polish_hussars
+}
+establish_afonsine_ordinances = {
+  name = afonsine_ordinances
+}
+remember_the_navigator = {
+  name = legacy_of_the_navigator
+}
+enact_prussian_military_reforms = {
+  name = prussian_military_reforms
+}
+advancement_of_true_religion_act = {
+  name = the_advancement_of_true_religion_act
+}
+blasphemy_act = {
+  name = the_blasphemy_act
+}
+act_of_uniformity = {
+  name = the_act_of_uniformity
+}
+suffragan_bishop_act = {
+  name = the_suffragan_bishop_act
+}
+church_tax = {
+  name = church_taxes
+}
+sunday_school = {
+  name = sunday_schools
+}
+conventicle_act = {
+  name = the_conventicle_act
+}
+declaration_of_indulgence = {
+  name = the_declaration_of_indulgence
+}
+de_heretico_comburendo_act = {
+  name = de_heretico_comburendo
+}
+superintendents = {
+  name = superintendent_office
+}
+test_act = {
+  name = the_test_act
+}
+dissolution_of_the_monasteries = {
+  name = the_dissolution_of_the_monasteries
+}
+popery_act = {
+  name = the_popery_act
+}
+sheikh_ul_islam = {
+  name = the_sheikh_ul_islam
+}
+the_khalifah = {
+  name = khalifah
+}
+denouncement_of_sect_practices = {
+  name = sect_practices
+}
+islamic_centre_of_scholarly = {
+  name = islamic_scholarly_centre
+}
+jizya_tax = {
+  name = per_capita_tax
+}
+monastic_education = {
+  name = monastic_education_system
+}
+anti_christian_edict = {
+  name = the_anti_christian_edict
+}
+promote_neo_confucianism = {
+  name = neo_confucianism
+}
+reject_taoism = {
+  name = denounce_taoism
+}
+ibadat_khana = {
+  name = house_of_worship
+}
+din_i_illahi = {
+  name = divine_faith
+}
+anti_muslim_edict = {
+  name = muslim_resistance
+}
+acceptance_of_religious_sects = {
+  name = religious_sect_tolerance
+}
+haridasa_movement = {
+  name = the_haridasa_movement
+}
+advaita_movement = {
+  name = the_advaita_movement
+}
+divination = {
+  name = godly_inspiration
+}
+religious_sacrifice = {
+  name = religious_sacrifices
+}
+vision_quest = {
+  name = rite_of_passage
+}
+iconoclasm = {
+  name = austere_religious_tradition
+}
+establish_russian_patriarchate = {
+  name = russian_patriarchate
+}
+establish_spanish_inquisition = {
+  name = spanish_inquisition
+}
+commission_gold_fleet = {
+  name = gold_fleet
+}
+create_indelningsverket = {
+  name = indelningsverket
+}
+institute_the_absolutism = {
+  name = the_absolutism
+}
+use_finnish_cavalry = {
+  name = finnish_cavalry
+}
+use_swedish_steel = {
+  name = swedish_steel
+}
+commission_adler_von_lubeck = {
+  name = adler_von_lubeck
+}
+statute_of_monopolies = {
+  name = the_statute_of_monopolies
+}
+close_foreign_trade = {
+  name = condemn_western_influences
+}
+expand_venetian_arsenal = {
+  name = venetian_arsenal
+}
+promote_printing_industry = {
+  name = printing_industry
+}  
+enact_stato_da_mar = {
+    name = stato_da_mar
+}
+confirm_thalassocracy = {
+  name = thalassocracy
+}
+

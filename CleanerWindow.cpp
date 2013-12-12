@@ -1740,7 +1740,10 @@ void WorkerThread::clearVicOwners () {
     (*g)->unsetValue("core");
     (*g)->unsetValue("controller");
     (*g)->unsetValue("crime");
-    (*g)->unsetValue("creditor"); 
+    (*g)->unsetValue("creditor");
+    (*g)->unsetValue("railroad");
+    (*g)->unsetValue("military_construction");
+    (*g)->unsetValue("building_construction");    
     objvec states = (*g)->getValue("state");
     for (objiter state = states.begin(); state != states.end(); ++state) {
       objvec facs = (*state)->getValue("state_buildings");
@@ -2591,7 +2594,6 @@ bool WorkerThread::redistPops () {
 void WorkerThread::reassignProvinces () {
   for (objiter vicprov = vicProvinces.begin(); vicprov != vicProvinces.end(); ++vicprov) {
     (*vicprov)->unsetValue("core");
-    (*vicprov)->unsetValue("military_construction");
     Object* rgo = (*vicprov)->safeGetObject("rgo");
     if (rgo) {
       rgo->unsetValue("last_income");
@@ -5563,7 +5565,6 @@ void WorkerThread::convertArmies () {
 
 void WorkerThread::navalBases () {
   for (objiter vp = vicProvinces.begin(); vp != vicProvinces.end(); ++vp) {
-    (*vp)->unsetValue("naval_base");
     (*vp)->unsetValue("fort");
 
     int fortlevel = 0; 
@@ -5581,6 +5582,7 @@ void WorkerThread::navalBases () {
     }
     
     if (!heuristicVicIsCoastal(*vp)) continue;
+    (*vp)->unsetValue("naval_base");    
     Object* eu3prov = vicProvinceToEu3ProvincesMap[*vp][0];
     if (!eu3prov) continue;
     
@@ -5601,7 +5603,6 @@ void WorkerThread::navalBases () {
 	(*vp)->setValue(vfort);
       }
     }
-    
   }
 }
 
@@ -6667,7 +6668,7 @@ void WorkerThread::convert () {
 
     string filename = "history\\provinces\\" + historyFile + ".txt";
     
-    if (targetVersion == ".\\AHD\\") {
+    if ((targetVersion == ".\\AHD\\") || (targetVersion == ".\\HoD\\")) {
       for (objiter currDirectory = provdirs.begin(); currDirectory != provdirs.end(); ++currDirectory) {
 	filename = "history\\provinces\\" + remQuotes((*currDirectory)->getLeaf()) + "\\" + historyFile + ".txt";
 	ifstream checkFile((targetVersion + filename).c_str());
