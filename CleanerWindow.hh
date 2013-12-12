@@ -228,6 +228,7 @@ private:
   void resetCulture (Object* pop, Object* eu3prov, string& minority, bool needsClear = false);
   void initialise ();
   bool hasBuildingOrBetter (string building, Object* dat);
+  void moveRgosWithList ();     
   int getTechLevel (Object* eu3country, string techtype);  
   double calculateReligionBadness(string provReligion, string stateReligion, string government);
   Object* addUnitToHigher (string vickey, string victype, int& numRegiments, Object* army, Object* vicCountry, string eu3Name, double vicStr);
@@ -261,7 +262,7 @@ private:
   void mergePops ();
   void moveCapitals ();  
   void moveFactories ();
-  void moveRgos (); 
+  void moveRgos ();
   void movePops ();
   void nationalValues ();
   void navalBases ();  
@@ -315,7 +316,8 @@ private:
   objvec provdirs;
   Object* vicTechs;
   map<string, double> goodsToRedistribute;
-  Object* eu3ContinentObject; 
+  Object* eu3ContinentObject;
+  Object* rgoList; // Redistribution object, containing province switch assignments. 
 }; 
 
 

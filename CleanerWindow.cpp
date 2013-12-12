@@ -1701,6 +1701,8 @@ void WorkerThread::configure () {
 
   Object* priceFile = loadTextFile(targetVersion + "Prices.txt");
   goods = priceFile->getLeaves();
+
+  rgoList = loadTextFile(targetVersion + "redist.txt");
 }
 
 Object* WorkerThread::getEu3ProvInfoFromEu3Province (Object* eu3prov) {
@@ -2594,15 +2596,15 @@ void WorkerThread::reassignProvinces () {
     if (rgo) {
       rgo->unsetValue("last_income");
       Object* emp = rgo->safeGetObject("employment");
-      //Logger::logStream(Logger::Debug) << (*vicprov)->getKey() << " RGO\n";
+      Logger::logStream(Logger::Debug) << (*vicprov)->getKey() << " RGO\n";
       if (emp) {
-	//Logger::logStream(Logger::Debug) << (*vicprov)->getKey() << " emp\n";
+	Logger::logStream(Logger::Debug) << (*vicprov)->getKey() << " emp\n";
 	Object* empsObj = emp->safeGetObject("employees");
 	if (empsObj) {
 	  objvec emps = empsObj->getLeaves();
-	  //Logger::logStream(Logger::Debug) << (*vicprov)->getKey() << " emps " << (int) emps.size() << "\n";
+	  Logger::logStream(Logger::Debug) << (*vicprov)->getKey() << " emps " << (int) emps.size() << "\n";
 	  if (0 < emps.size()) rgo->setLeaf("vanillaCount", max(emps[0]->safeGetInt("count"), 40000));
-	  //Logger::logStream(Logger::Debug) << "Vanilla count " << (*vicprov)->getKey() << emps[0]->safeGetString("count") << "\n";
+	  Logger::logStream(Logger::Debug) << "Vanilla count " << (*vicprov)->getKey() << " " << emps[0]->safeGetString("count") << "\n";
 	  emp->unsetValue("employees");
 	}
 	/*objvec leaves = emp->getLeaves();
@@ -3008,15 +3010,62 @@ void WorkerThread::moveFactories () {
     recipient->resetLeaf("industrialStrength", 0.50*recipient->safeGetFloat("industrialStrength"));
     addFactory(recipient, (*vf)); 
   }
+}
 
 
+void swapRgos (Object* oneProv, Object* twoProv) {
+  Object* rgo1 = oneProv->safeGetObject("rgo");
+  Object* rgo2 = twoProv->safeGetObject("rgo");
+  oneProv->unsetValue("rgo");
+  twoProv->unsetValue("rgo");
+  oneProv->setValue(rgo2);
+  twoProv->setValue(rgo1);
+  string oneFarmers = oneProv->safeGetString("canHaveFarmers", "no");
+  oneProv->resetLeaf("canHaveFarmers", twoProv->safeGetString("canHaveFarmers", "no"));
+  twoProv->resetLeaf("canHaveFarmers", oneFarmers);
+
+  Object* emp = rgo1->safeGetObject("employment");
+  if (emp) {
+    emp->resetLeaf("province_id", twoProv->getKey());
+    emp->unsetValue("employees"); // Provinces brought in from EU3 wasteland will still have their employees set. 
+  }
+  emp = rgo2->safeGetObject("employment");
+  if (emp) {
+    emp->resetLeaf("province_id", oneProv->getKey());
+    emp->unsetValue("employees"); 
+  }
+}
+
+void WorkerThread::moveRgosWithList () {
+  if (!rgoList) return;
+  objvec leaves = rgoList->getLeaves();
+  //int counter = 0; 
+  for (objiter leaf = leaves.begin(); leaf != leaves.end(); ++leaf) {
+    Object* oneProv = vicGame->safeGetObject((*leaf)->getKey());
+    Object* twoProv = vicGame->safeGetObject((*leaf)->getLeaf());
+    if (oneProv == twoProv) continue; 
+    if ((!oneProv) || (!twoProv)) {
+      Logger::logStream(Logger::Warning) << "Warning: Could not perform switch " << (*leaf)->getKey() <<  " <-> " << (*leaf)->getLeaf() << "\n";
+      continue;
+    }
+    //if (21 < counter) break; 
+    //counter++;
+    //Logger::logStream(Logger::Game) << "Swapped " << (*leaf)->getKey() <<  " <-> " << (*leaf)->getLeaf() << "\n";
+    
+    swapRgos(oneProv, twoProv); 
+  }
 }
 
 void WorkerThread::moveRgos () {
-  // Redistribute RGO goods within regions.
   string regionType = configObject->safeGetString("rgoRedist", "none");
   if (regionType == "none") return;
 
+  if (regionType == "list") {
+    moveRgosWithList();
+    return; 
+  }
+
+  // Redistribute RGO goods within regions.  
   map<string, objvec> regionMap;
   for (objiter vp = vicProvinces.begin(); vp != vicProvinces.end(); ++vp) regionMap[(*vp)->safeGetString(regionType)].push_back(*vp);
 
@@ -3035,13 +3084,8 @@ void WorkerThread::moveRgos () {
 
     oldOrder = (*region).second;
     for (unsigned int i = 0; i < oldOrder.size(); ++i) {
-      if (oldOrder[i] == newOrder[i]) continue; 
-      Object* oldRgo = oldOrder[i]->safeGetObject("rgo");
-      Object* newRgo = newOrder[i]->safeGetObject("rgo");
-      oldOrder[i]->unsetValue("rgo");
-      newOrder[i]->unsetValue("rgo");
-      oldOrder[i]->setValue(newRgo);
-      newOrder[i]->setValue(oldRgo);      
+      if (oldOrder[i] == newOrder[i]) continue;
+      swapRgos(oldOrder[i], newOrder[i]);
     }
   }
 }
@@ -5687,6 +5731,7 @@ void WorkerThread::mergePops () {
     if (!rgo) continue;
     Object* emp = rgo->safeGetObject("employment");
     if (!emp) continue;
+    emp->resetLeaf("province_id", (*prov)->getKey()); 
     Object* employees = new Object("employees");
     emp->setValue(employees);
 
