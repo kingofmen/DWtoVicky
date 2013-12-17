@@ -418,8 +418,9 @@ string unitType (string regtype) {
   else if (regtype == "scottish_highlander") return "infantry";
   else if (regtype == "ottoman_nizami_cedid") return "infantry";
   else if (regtype == "british_redcoat") return "infantry";
-  //else if (regtype == "") return "infantry";
-  //else if (regtype == "") return "infantry";
+  else if (regtype == "napoleonic_square") return "infantry";
+  else if (regtype == "mixed_order_infantry") return "infantry";
+  else if (regtype == "french_bluecoat") return "infantry";
   //else if (regtype == "") return "infantry";
   else if (regtype == "chambered_demi_cannon") return "artillery";
   else if (regtype == "large_cast_bronze_mortar") return "artillery";
@@ -429,7 +430,7 @@ string unitType (string regtype) {
   else if (regtype == "coehorn_mortar") return "artillery";
   else if (regtype == "swivel_cannon") return "artillery";
   else if (regtype == "royal_mortar") return "artillery";
-  //else if (regtype == "") return "artillery";
+  else if (regtype == "flying_battery") return "artillery";
   //else if (regtype == "") return "artillery";
   //else if (regtype == "") return "artillery";
   else if (regtype == "qizilbash_cavalry") return "cavalry";
@@ -450,9 +451,9 @@ string unitType (string regtype) {
   else if (regtype == "austrian_hussar") return "cavalry";
   else if (regtype == "swedish_arme_blanche") return "cavalry";  
   else if (regtype == "swedish_galoop") return "cavalry";
-  //else if (regtype == "") return "cavalry";
-  //else if (regtype == "") return "cavalry";
-  //else if (regtype == "") return "cavalry";
+  else if (regtype == "open_order_cavalry") return "cavalry";
+  else if (regtype == "napoleonic_lancers") return "cavalry";
+  else if (regtype == "french_cuirassier") return "cavalry";
   //else if (regtype == "") return "cavalry";
   //else if (regtype == "") return "cavalry";
   else if (regtype == "caravel") return "big_ship";
@@ -465,13 +466,13 @@ string unitType (string regtype) {
   else if (regtype == "frigate") return "light_ship";
   else if (regtype == "early_frigate") return "light_ship";
   else if (regtype == "barque") return "light_ship";
-  //else if (regtype == "") return "light_ship";
+  else if (regtype == "heavy_frigate") return "light_ship";
   //else if (regtype == "") return "light_ship";
   //else if (regtype == "") return "light_ship";  
   else if (regtype == "galley") return "galley";
   else if (regtype == "galleass") return "galley";
   else if (regtype == "chebeck") return "galley";
-  //else if (regtype == "") return "galley";
+  else if (regtype == "archipelago_frigate") return "galley";
   //else if (regtype == "") return "galley";
   //else if (regtype == "") return "galley";
   //else if (regtype == "") return "galley";
@@ -479,7 +480,7 @@ string unitType (string regtype) {
   else if (regtype == "merchantman") return "transport";
   else if (regtype == "flute") return "transport";
   else if (regtype == "cog") return "transport";
-  //else if (regtype == "") return "transport";
+  else if (regtype == "eastindiaman") return "transport";
   //else if (regtype == "") return "transport";
   //else if (regtype == "") return "transport";
   //else if (regtype == "") return "transport";
