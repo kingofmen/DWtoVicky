@@ -3363,6 +3363,7 @@ void WorkerThread::diplomacy () {
       Object* vic = findVicCountryByEu3Country(eu3);
       if (!vic) continue;
       if (find(vicDef.begin(), vicDef.end(), vic) != vicDef.end()) continue;
+      if (find(vicAtt.begin(), vicAtt.end(), vic) != vicAtt.end()) continue; // Nobody at war with themselves, please...
       vicDef.push_back(vic);
     }
 
