@@ -1,7 +1,9 @@
 debug = yes  
 popdebug = yes   
-# Acceptable values: AHD, HoD. 
-moddir = .\HoD\
+# Acceptable values: Vanilla, AHD, HoD. 
+targetVersion = .\HoD\
+# Can only be DW. 
+sourceVersion = .\DW\
 mapWidth = 5616 
 redistPops = yes 
 hugePops = no 

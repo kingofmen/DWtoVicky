@@ -180,7 +180,8 @@ string remQuotes (string tag) {
 }
 
 WorkerThread::WorkerThread (string fn, int aTask)
-  : targetVersion(".\\DW\\")
+  : targetVersion(".\\HoD\\")
+  , sourceVersion(".\\DW\\")
   , fname(fn)
   , eu3Game(0)
   , vicGame(0)
@@ -1475,76 +1476,16 @@ void WorkerThread::messWithSize () {
     Object* original = loadTextFile(targetVersion + "history\\provinces\\" + historyFile + ".txt");
     original = original; 
   }
-
-  
-  /*
-  
-  Object* sizeInfo = loadTextFile(targetVersion + "v2terrain.txt");
-  if (!sizeInfo) {
-    Logger::logStream(Logger::Error) << "Couldn't find v2terrain.txt.\n";
-    return; 
-  }
-  Object* posInfo = loadTextFile(targetVersion + "v2positions.txt"); 
-  if (!posInfo) {
-    Logger::logStream(Logger::Error) << "Couldn't find v2positions.txt.\n";
-    return; 
-  }
-  map<string, Object*> posMap; 
-  objvec poses = posInfo->getLeaves();
-  for (objiter p = poses.begin(); p != poses.end(); ++p) {
-    posMap[(*p)->getKey()] = (*p); 
-  }
-  
-  
-  vicGame = loadTextFile(targetVersion + "input.v2");
-  objvec provs = sizeInfo->getLeaves(); 
-  for (objiter p = provs.begin(); p != provs.end(); ++p) {
-    Object* gameProv = vicGame->safeGetObject((*p)->getKey());
-    if (!gameProv) continue;
-    Object* rgo = gameProv->safeGetObject("rgo");
-    if (0 == rgo) continue;
-    int size = 0;
-    objvec labs = gameProv->getValue("labourers");
-    for (objiter l = labs.begin(); l != labs.end(); ++l) {
-      size += (*l)->safeGetInt("size");
-    }
-    objvec farms = gameProv->getValue("farmers");
-    for (objiter l = farms.begin(); l != farms.end(); ++l) {
-      size += (*l)->safeGetInt("size");
-    }
-
-    (*p)->resetLeaf("population", size);
-    (*p)->resetLeaf("life_rating", gameProv->safeGetString("life_rating", "35"));
-    (*p)->resetLeaf("product", rgo->safeGetString("goods_type", "nothing"));
-
-    Object* unitpos = posMap[gameProv->getKey()]->safeGetObject("unit");
-    if (!unitpos) unitpos = posMap[gameProv->getKey()]->safeGetObject("text_position");
-    if (!unitpos) unitpos = posMap[gameProv->getKey()]->safeGetObject("factory");
-    if (unitpos) (*p)->resetLeaf("latitude", unitpos->safeGetString("y"));
-    else {
-      (*p)->resetLeaf("latitude", "1080");
-      Logger::logStream(Logger::Game) << "Could not find latitude for "
-				      << gameProv->getKey()
-				      << "\n"; 
-    }
-  }
-  ofstream writer;
-  writer.open("newV2Terrain.txt");
-  Parser::topLevel = sizeInfo; 
-  writer << (*sizeInfo);
-  writer.close();
-
-  Logger::logStream(Logger::Game) << "Wrote file newV2Terrain.txt, done.\n";
-  */
 }
 
 void WorkerThread::configure () {
   configObject = loadTextFile("config.txt");
   srand(configObject->safeGetInt("randseed")); 
-  targetVersion = configObject->safeGetString("moddir", ".\\DW\\");
+  targetVersion = configObject->safeGetString("targetVersion", ".\\HoD\\");
+  sourceVersion = configObject->safeGetString("sourceVersion", ".\\DW\\");  
   customObject = loadTextFile(targetVersion + "Custom.txt");
   
-  if (targetVersion == ".\\AHD\\") {
+  if ((targetVersion == ".\\AHD\\") || (targetVersion == ".\\HoD\\")) {
     Object* provdirlist = configObject->safeGetObject("provdirs");
     provdirs = provdirlist->getValue("dir");
     vicTechs = loadTextFile(targetVersion + "victechs.txt");
@@ -1581,33 +1522,33 @@ void WorkerThread::configure () {
   Object* valuesObject = loadTextFile(targetVersion + "natvalues.txt");
   natValues = valuesObject->getValue("value"); 
   
-  Object* tmods = loadTextFile(targetVersion + "triggered_modifiers.txt");
+  Object* tmods = loadTextFile(sourceVersion + "triggered_modifiers.txt");
   objvec tm = tmods->getLeaves();
   for (objiter t = tm.begin(); t != tm.end(); ++t) {
     trigMods[(*t)->getKey()] = (*t);
   } 
   
-  Object* decisions = loadTextFile(targetVersion + "decisions.txt");
+  Object* decisions = loadTextFile(sourceVersion + "decisions.txt");
   objvec decs = decisions->getLeaves();
   for (objiter dec = decs.begin(); dec != decs.end(); ++dec) {
     nameToDecisionMap[(*dec)->getKey()] = (*dec); 
   }
 
-  Object* modifiers = loadTextFile(targetVersion + "event_modifiers.txt");
+  Object* modifiers = loadTextFile(sourceVersion + "event_modifiers.txt");
   objvec mods = modifiers->getLeaves();
   for (objiter mod = mods.begin(); mod != mods.end(); ++mod) {
     nameToModifierMap[(*mod)->getKey()] = (*mod); 
   }
 
-  eu3ContinentObject = loadTextFile(targetVersion + "eu3Continents.txt");
+  eu3ContinentObject = loadTextFile(sourceVersion + "eu3Continents.txt");
   
-  Object* buildings = loadTextFile(targetVersion + "buildings.txt");
+  Object* buildings = loadTextFile(sourceVersion + "buildings.txt");
   buildingTypes = buildings->getLeaves();
   //for (objiter b = buildingTypes.begin(); b != buildingTypes.end(); ++b) {
   //Logger::logStream(Logger::Debug) << (*b) << "\n"; 
   //}
 
-  Object* technology = loadTextFile(targetVersion + "techs.txt");
+  Object* technology = loadTextFile(sourceVersion + "techs.txt");
   techs = technology->getLeaves();
 
   productionEfficiencies.resize(100); 
@@ -1662,7 +1603,7 @@ void WorkerThread::configure () {
     tagToPartiesMap[(*tag)->getKey()] = loadTextFile(currPartyFile); 
   }
 
-  Object* pinfoObj = loadTextFile(targetVersion + "positions.txt");
+  Object* pinfoObj = loadTextFile(sourceVersion + "positions.txt");
   objvec pinfos = pinfoObj->getLeaves();
   for (objiter pinfo = pinfos.begin(); pinfo != pinfos.end(); ++pinfo) {
     eu3ProvNumToEu3ProvInfoMap[(*pinfo)->getKey()] = (*pinfo); 
@@ -1674,7 +1615,7 @@ void WorkerThread::configure () {
     vicProvNumToVicProvInfoMap[(*pinfo)->getKey()] = (*pinfo); 
   }
 
-  Object* religionFile = loadTextFile(targetVersion + "religion.txt");
+  Object* religionFile = loadTextFile(sourceVersion + "religion.txt");
   objvec relGroups = religionFile->getLeaves();
   for (objiter group = relGroups.begin(); group != relGroups.end(); ++group) {
     objvec religions = (*group)->getLeaves();
@@ -1684,13 +1625,13 @@ void WorkerThread::configure () {
     }
   }
   
-  Object* governmentFile = loadTextFile(targetVersion + "governments.txt");
+  Object* governmentFile = loadTextFile(sourceVersion + "governments.txt");
   objvec govs = governmentFile->getLeaves();
   for (objiter gov = govs.begin(); gov != govs.end(); ++gov) {
     governmentMap[(*gov)->getKey()] = (*gov); 
   }
 
-  Object* ideasFile = loadTextFile(targetVersion + "ideas.txt");
+  Object* ideasFile = loadTextFile(sourceVersion + "ideas.txt");
   objvec ideaGroups = ideasFile->getLeaves();
   for (objiter ideaGroup = ideaGroups.begin(); ideaGroup != ideaGroups.end(); ++ideaGroup) {
     objvec ideas = (*ideaGroup)->getLeaves(); 
@@ -1700,7 +1641,7 @@ void WorkerThread::configure () {
     }
   }
 
-  Object* priceFile = loadTextFile(targetVersion + "Prices.txt");
+  Object* priceFile = loadTextFile(sourceVersion + "Prices.txt");
   goods = priceFile->getLeaves();
 
   rgoList = loadTextFile(targetVersion + "redist.txt");
@@ -4950,7 +4891,7 @@ void WorkerThread::techLevels () {
     }
     vicCountry->resetLeaf("schools", school); 
 
-    if (targetVersion == ".\\AHD\\") {
+    if ((targetVersion == ".\\AHD\\") || (targetVersion == ".\\HoD\\")) {
       Object* countryCustom = customObject->safeGetObject(eu3Country->getKey());
       if ((!countryCustom) || (0 == countryCustom->safeGetObject("research"))) countryCustom = customObject->safeGetObject("DUMMY");
       assert(countryCustom);

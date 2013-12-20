@@ -1,0 +1,375 @@
+government_tech = {
+technology = { id = 0   average_year = 1300      tribal_despotism = yes 	tribal_federation = yes tribal_democracy = yes     }
+technology = { id = 1   average_year = 1360          				     }
+technology = { id = 2   average_year = 1380      despotic_monarchy = yes	imperial_government = yes	    					     }
+technology = { id = 3   average_year = 1400          				     }
+technology = { id = 4   average_year = 1410		temple = yes	allowed_ideas = 1    				     }
+technology = { id = 5   average_year = 1420          				     }
+technology = { id = 6   average_year = 1430     embassy = yes     				     }
+technology = { id = 7   average_year = 1440          				     }
+technology = { id = 8   average_year = 1450     feudal_monarchy = yes	courthouse = yes			     }
+technology = { id = 9   average_year = 1455     allowed_ideas = 2	 	            }
+technology = { id = 10  average_year = 1470          			noble_republic = yes   		    }
+technology = { id = 11  average_year = 1485     allowed_ideas = 3  			          	    }
+technology = { id = 12  average_year = 1495		spy_agency = yes }
+technology = { id = 13  average_year = 1497     theocratic_government = yes                 }
+technology = { id = 14  average_year = 1498                       }
+technology = { id = 15  average_year = 1502 }
+technology = { id = 16  average_year = 1508     university = yes                 }
+technology = { id = 17  average_year = 1518      allowed_ideas = 4                }
+technology = { id = 18  average_year = 1530				administrative_monarchy = yes            }
+technology = { id = 19  average_year = 1540     administrative_republic = yes	town_hall = yes            }
+technology = { id = 20  average_year = 1545     }
+technology = { id = 21  average_year = 1550     fine_arts_academy = yes                 }
+technology = { id = 22  average_year = 1565	allowed_ideas = 5                     }
+technology = { id = 23  average_year = 1585     college = yes                 }
+technology = { id = 24  average_year = 1600               }
+technology = { id = 25  average_year = 1610     allowed_ideas = 6                 }
+technology = { id = 26  average_year = 1620                      }
+technology = { id = 27  average_year = 1625          			absolute_monarchy = yes cathedral = yes glorious_monument = yes          }
+technology = { id = 28  average_year = 1636          			republican_dictatorship = yes            }
+technology = { id = 29  average_year = 1644     war_college = yes                 }
+technology = { id = 30  average_year = 1655     allowed_ideas = 7                 }
+technology = { id = 31  average_year = 1660     tax_assessor = yes                 }
+technology = { id = 32  average_year = 1675     constitutional_monarchy = yes royal_palace = yes           }
+technology = { id = 33  average_year = 1690     allowed_ideas = 8                 }
+technology = { id = 34  average_year = 1700                      }
+technology = { id = 35  average_year = 1709    }
+technology = { id = 36  average_year = 1714                      }
+technology = { id = 37  average_year = 1719                      }
+technology = { id = 38  average_year = 1723                      }
+technology = { id = 39  average_year = 1725                      }
+technology = { id = 40  average_year = 1727                      }
+technology = { id = 41  average_year = 1730     allowed_ideas = 9                 }
+technology = { id = 42  average_year = 1732                      }
+technology = { id = 43  average_year = 1735                      }
+technology = { id = 44  average_year = 1737                      }
+technology = { id = 45  average_year = 1743                      }
+technology = { id = 46  average_year = 1747                      }
+technology = { id = 47  average_year = 1750     			constitutional_republic = yes            }
+technology = { id = 48  average_year = 1755                      }
+technology = { id = 49  average_year = 1760                      }
+technology = { id = 50  average_year = 1765    	allowed_ideas = 10                 }
+technology = { id = 51  average_year = 1770     			enlightened_despotism = yes              }
+technology = { id = 52  average_year = 1775                      }
+technology = { id = 53  average_year = 1780                      }
+technology = { id = 54  average_year = 1785                      }
+technology = { id = 55  average_year = 1790     			bureaucratic_despotism = yes            }
+technology = { id = 56  average_year = 1791                      }
+technology = { id = 57  average_year = 1792                      	revolutionary_republic = yes		}
+technology = { id = 58  average_year = 1795                      }
+technology = { id = 59  average_year = 1798                      }
+technology = { id = 60  average_year = 1801                      }
+technology = { id = 61  average_year = 1803    	allowed_ideas = 11	revolutionary_empire = yes              }
+technology = { id = 62  average_year = 1805                     }
+technology = { id = 63  average_year = 1807                      }
+technology = { id = 64  average_year = 1809                      }
+technology = { id = 65  average_year = 1811    allowed_ideas = 12                  }
+technology = { id = 66  average_year = 1813                      }
+technology = { id = 67  average_year = 1815                      }
+technology = { id = 68  average_year = 1820                      }
+technology = { id = 69  average_year = 1830                      }
+technology = { id = 70  average_year = 1840                      }
+technology = { id = 71  average_year = 1850                      }
+technology = { id = 72  average_year = 1880                      }
+}               
+land_tech = {              
+technology = { id = 0   average_year = 1300   military_tactics = 0.5	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.25	cavalry_shock = 	0.8	artillery_shock = 	0.044    sprite_level = 1 enable = south_american_spearmen		enable = native_indian_archer		enable = native_clubmen		enable = african_spearmen	enable = african_clubmen	enable = indian_archers	}
+technology = { id = 1   average_year = 1360   military_tactics = 0.5	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.30	cavalry_shock = 	0.8	artillery_shock = 	0.044    enable = halberd_infantry	enable = chevauchee enable = western_medieval_knights	enable = bardiche_infantry	enable = muslim_cavalry_archers	enable = western_medieval_infantry enable = eastern_medieval_infantry enable = ottoman_yaya enable = chinese_longspear		enable = japanese_archer enable = persian_footsoldier	enable = east_asian_spearmen	enable = mongolian_bow		enable = indian_footsoldier	enable = rajput_hill_fighters	enable = eastern_bow	enable = persian_cavalry_charge		}
+technology = { id = 2   average_year = 1380   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.35	cavalry_shock = 	0.8	artillery_shock = 	0.044     enable = eastern_knights 	enable = druzhina_cavalry	enable = ottoman_musellem	enable = mamluk_archer	enable = mamluk_cavalry_charge	enable = mongol_swarm	}
+technology = { id = 3   average_year = 1400   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.40	cavalry_shock = 	0.8	artillery_shock = 	0.044    fort1 = yes 	enable = mongol_bow		}
+technology = { id = 4   average_year = 1410   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.42	cavalry_shock = 	0.8	artillery_shock = 	0.044    armory = yes 	enable = mongol_steppe	}
+technology = { id = 5   average_year = 1420   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.44	cavalry_shock = 	0.90	artillery_shock = 	0.044    enable = western_men_at_arms	enable = western_longbow	enable = south_american_warfare		enable = aztec_tribal_warfare	enable = maya_tribal_warfare	enable = zapotec_tribal_warfare		enable = songhai_tribal_warfare		enable = niger_kongolese_tribal_warfare		enable = bantu_tribal_warfare	enable = mali_tribal_warfare	enable = pueblo_ambush	enable = native_indian_tribal_warfare		  		}
+technology = { id = 6   average_year = 1430   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.46	cavalry_shock = 	0.95	artillery_shock = 	0.044    enable = ottoman_azab	}
+technology = { id = 7   average_year = 1440   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.48	cavalry_shock = 	1.0	artillery_shock = 	0.044     enable = chinese_footsoldier		enable = japanese_footsoldier		}
+technology = { id = 8   average_year = 1450   military_tactics = 1	supply_limit = 0.00  	land_morale = 	0    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.5	cavalry_shock = 	1.1	artillery_shock = 	0.044     	training_fields = yes					}
+technology = { id = 9   average_year = 1465   military_tactics = 1	supply_limit = 0.05	land_morale = 	0.05   	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.5	cavalry_shock = 	1.2	artillery_shock = 	0.045                    }
+technology = { id = 10  average_year = 1475   military_tactics = 1	supply_limit = 0.10  	land_morale = 	0.1   	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.7	cavalry_shock = 	1.4	artillery_shock = 	0.046    enable = slavic_stradioti	enable = ottoman_timariot march = yes     }
+technology = { id = 11  average_year = 1485   military_tactics = 1	supply_limit = 0.15	land_morale = 	0.15  	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.8	cavalry_shock = 	1.6	artillery_shock = 	0.048    enable = gaelic_galloglaigh	enable = eastern_militia	enable = shaybani	enable = mamluk_duel  enable = chinese_steppe		enable = japanese_samurai	}
+technology = { id = 12  average_year = 1495   military_tactics = 1	supply_limit = 0.20  	land_morale = 	0.2    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.9	cavalry_shock = 	1.8	artillery_shock = 	0.05     enable = large_cast_bronze_mortar enable = houfnice barracks = yes	}
+technology = { id = 13  average_year = 1497   military_tactics = 1	supply_limit = 0.25	land_morale = 	0.2    	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	0.9	cavalry_shock = 	1.8	artillery_shock = 	0.05     enable = italian_condotta 		enable = swiss_landsknechten		enable = gaelic_mercenary	enable = ottoman_janissary	enable = hungarian_hussar	enable = ottoman_spahi		enable = persian_shamshir      enable = inca_mountain_warfare	enable = aztec_hill_warfare	enable = maya_forest_warfare	enable = zapotec_plains_warfare		enable = bantu_plains_warfare	enable = niger_kongolese_forest_warfare		enable = african_hill_warfare	enable = ethiopian_mountain_warfare	enable = algonkin_tomahawk_charge	enable = native_indian_horsemen		enable = culverin		enable = pedrero enable = germanized_pike}
+technology = { id = 14  average_year = 1498   military_tactics = 1	supply_limit = 0.30  	land_morale = 	0.2	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.05	infantry_shock = 	1	cavalry_shock = 	2	artillery_shock = 	0.05     }
+technology = { id = 15  average_year = 1502   military_tactics = 1	supply_limit = 0.35	land_morale = 	0.25   	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.1	infantry_shock = 	1	cavalry_shock = 	2	artillery_shock = 	0.05     weapons = yes		enable = qizilbash_cavalry	enable = small_cast_iron_bombard	enable = large_cast_iron_bombard enable = mughal_musketeer enable = south_american_gunpowder_warfare		enable = aztec_gunpowder_warfare		enable = maya_gunpowder_warfare	enable = zapotec_gunpowder_warfare	enable = bantu_gunpowder_warfare	enable = niger_kongolese_gunpowder_warfare	enable = adal_gunpowder_warfare		enable = ethiopian_gunpowder_warfare	enable = huron_arquebusier	 enable = creek_arquebusier	enable = indian_shock_cavalry	enable = tofongchis_musketeer	enable = south_indian_musketeer	enable = zulu_chest_and_horns	}
+technology = { id = 16  average_year = 1508   military_tactics = 1	supply_limit = 0.40  	land_morale = 	0.5   	infantry_fire = 	0.05	cavalry_fire = 	0	artillery_fire = 	0.2	infantry_shock = 	1	cavalry_shock = 	2	artillery_shock = 	0.05     fort2 = yes	enable = east_mongolian_steppe }
+technology = { id = 17  average_year = 1518   military_tactics = 1	supply_limit = 0.45	land_morale = 	0.75   	infantry_fire = 	0.05	cavalry_fire = 	0.01	artillery_fire = 	0.5	infantry_shock = 	1	cavalry_shock = 	2	artillery_shock = 	0.1                }
+technology = { id = 18  average_year = 1530   military_tactics = 2	supply_limit = 0.50  	land_morale = 	0.75   	infantry_fire = 	0.05	cavalry_fire = 	0.02	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	2.1	artillery_shock = 	0.15     sprite_level = 2 enable = rajput_musketeer	enable = spanish_tercio	enable = dutch_maurician	enable = gaelic_free_shooter	enable = asian_arquebusier	enable = indian_arquebusier	enable = ottoman_sekban enable = han_banner	enable = reformed_mughal_musketeer	enable = native_indian_mountain_warfare	enable = asian_mass_infantry enable = polish_musketeer enable = muscovite_musketeer}
+technology = { id = 19  average_year = 1540   military_tactics = 2	supply_limit = 0.55	land_morale = 	1       infantry_fire = 	0.05	cavalry_fire = 	0.05	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	2.1	artillery_shock = 	0.15      regimental_camp = yes              }
+technology = { id = 20  average_year = 1545   military_tactics = 2	supply_limit = 0.60  	land_morale = 	1	infantry_fire = 	0.1	cavalry_fire = 	0.1	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	2.2	artillery_shock = 	0.15     enable = mughal_mansabdar    enable = westernized_south_american	enable = westernized_aztec	enable = westernized_mayan	enable = westernized_zapotec	enable = westernized_bantu	enable = westernized_niger_kongolese	enable = westernized_adal	enable = westernized_ethiopian	enable = iroquis_rifle_scout}
+technology = { id = 21  average_year = 1550   military_tactics = 2	supply_limit = 0.65	land_morale = 	1	infantry_fire = 	0.2	cavalry_fire = 	0.2	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	2.5	artillery_shock = 	0.15     enable = chambered_demi_cannon }
+technology = { id = 22  average_year = 1565   military_tactics = 2	supply_limit = 0.70  	land_morale = 	1.5	infantry_fire = 	0.5	cavalry_fire = 	0.2	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	3	artillery_shock = 	0.15     enable = french_caracolle               }
+technology = { id = 23  average_year = 1585   military_tactics = 2	supply_limit = 0.75	land_morale = 	1.5	infantry_fire = 	0.6	cavalry_fire = 	0.2	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	3.2	artillery_shock = 	0.15  	enable = topchis_artillery	enable = indian_elephant	enable = asian_charge_cavalry 	enable = irish_charge arsenal = yes	}
+technology = { id = 24  average_year = 1600   military_tactics = 2	supply_limit = 0.80  	land_morale = 	1.5	infantry_fire = 	0.75	cavalry_fire = 	0.3	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	3.5	artillery_shock = 	0.15				}
+technology = { id = 25  average_year = 1610   military_tactics = 2	supply_limit = 0.85	land_morale = 	1.5     infantry_fire = 	0.8	cavalry_fire = 	0.3	artillery_fire = 	1	infantry_shock = 	1	cavalry_shock = 	3.6	artillery_shock = 	0.15     fort3 = yes               }
+technology = { id = 26  average_year = 1620   military_tactics = 2	supply_limit = 0.90  	land_morale = 	1.75	infantry_fire = 	0.9	cavalry_fire = 	0.3	artillery_fire = 	1.25	infantry_shock = 	1	cavalry_shock = 	3.8	artillery_shock = 	0.175    enable = polish_hussar	enable = muscovite_caracolle	enable = zaporoghian_cossack	enable = leather_cannon	}
+technology = { id = 27  average_year = 1625   military_tactics = 2	supply_limit = 0.95	land_morale = 	1.75	infantry_fire = 	1	cavalry_fire = 	0.3	artillery_fire = 	1.25	infantry_shock = 	1	cavalry_shock = 	4	artillery_shock = 	0.175    enable = swedish_galoop	enable = muscovite_soldaty	enable = polish_tercio	enable = asian_musketeer	conscription_center = yes	}
+technology = { id = 28  average_year = 1636   military_tactics = 2	supply_limit = 1.00  	land_morale = 	1.75	infantry_fire = 	1	cavalry_fire = 	0.3	artillery_fire = 	1.25	infantry_shock = 	1	cavalry_shock = 	4	artillery_shock = 	0.175    enable = austrian_tercio   enable = swedish_gustavian	enable = ottoman_reformed_spahi		enable = scottish_highlander	enable = ottoman_reformed_janissary	enable = russian_petrine	enable = saxon_infantry		enable = sikh_hit_and_run}
+technology = { id = 29  average_year = 1644   military_tactics = 2	supply_limit = 1.05	land_morale = 	2	infantry_fire = 	1.1	cavalry_fire = 	0.35	artillery_fire = 	1.5	infantry_shock = 	1.1	cavalry_shock = 	4	artillery_shock = 	0.2      enable = manchu_banner	    enable = peruvian_guerilla_warfare	enable = mexican_guerilla_warfare	enable = maya_guerilla_warfare	enable = american_western_franchise_warfare	enable = african_western_franchise_warfare	enable = niger_kongolese_guerilla_warfare	enable = adal_guerilla_warfare	enable = ethiopian_guerilla_warfare	enable = apache_guerilla                    	}
+technology = { id = 30  average_year = 1655   military_tactics = 2	supply_limit = 1.10  	land_morale = 	2	infantry_fire = 	1.1	cavalry_fire = 	0.35	artillery_fire = 	1.5	infantry_shock = 	1.1	cavalry_shock = 	4	artillery_shock = 	0.2     enable = reformed_mughal_mansabdar	enable = swivel_cannon	enable = bhonsle_infantry	enable = afsharid_reformed_infantry}
+technology = { id = 31  average_year = 1660   military_tactics = 2	supply_limit = 1.15	land_morale = 	2       infantry_fire = 	1.1	cavalry_fire = 	0.35	artillery_fire = 	1.75	infantry_shock = 	1.1	cavalry_shock = 	4	artillery_shock = 	0.225    fort4 = yes               }
+technology = { id = 32  average_year = 1675   military_tactics = 2	supply_limit = 1.20  	land_morale = 	2	infantry_fire = 	1.1	cavalry_fire = 	0.35	artillery_fire = 	1.75	infantry_shock = 	1.1	cavalry_shock = 	4	artillery_shock = 	0.25     enable = polish_winged_hussar	enable = muscovite_cossack	}
+technology = { id = 33  average_year = 1690   military_tactics = 2	supply_limit = 1.25	land_morale = 	2       infantry_fire = 	1.1	cavalry_fire = 	0.35	artillery_fire = 	2	infantry_shock = 	1.1	cavalry_shock = 	4	artillery_shock = 	0.3      enable = maharathan_guerilla_warfare	enable = maharathan_cavalry	enable = coehorn_mortar		}
+technology = { id = 34  average_year = 1700   military_tactics = 3	supply_limit = 1.30  	land_morale = 	2.1 	infantry_fire = 	1.2	cavalry_fire = 	0.4	artillery_fire = 	2.5	infantry_shock = 	1.25	cavalry_shock = 	4	artillery_shock = 	0.35     sprite_level = 3  enable = austrian_grenzer	enable = swedish_caroline 	enable = anglofrench_line	enable = commanche_swarm	enable = mamluk_musket_charge      	enable = reformed_asian_musketeer	enable = muslim_mass_infantry	enable = indian_rifle}
+technology = { id = 35  average_year = 1709   military_tactics = 3	supply_limit = 1.35	land_morale = 	2.1	infantry_fire = 	1.2	cavalry_fire = 	0.4	artillery_fire = 	3	infantry_shock = 	1.25	cavalry_shock = 	4	artillery_shock = 	0.35     enable = chinese_dragoon	}
+technology = { id = 36  average_year = 1714   military_tactics = 3	supply_limit = 1.40  	land_morale = 	2.1	infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	3	infantry_shock = 	1.25	cavalry_shock = 	4	artillery_shock = 	0.375    enable = swedish_arme_blanche	enable = french_dragoon		enable = austrian_hussar	enable = ottoman_toprakli_hit_and_run		enable = durrani_rifled_musketeer	enable = ottoman_nizami_cedid}
+technology = { id = 37  average_year = 1719   military_tactics = 3	supply_limit = 1.45	land_morale = 	2.1     infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	3.5	infantry_shock = 	1.25	cavalry_shock = 	4	artillery_shock = 	0.4                     }                                                  
+technology = { id = 38  average_year = 1723   military_tactics = 3	supply_limit = 1.50  	land_morale = 	2.1	infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	3.5	infantry_shock = 	1.25	cavalry_shock = 	4	artillery_shock = 	0.4	enable = bhonsle_cavalry	enable = reformed_asian_cavalry		}
+technology = { id = 39  average_year = 1725   military_tactics = 3	supply_limit = 1.55	land_morale = 	2.25	infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	4	infantry_shock = 	1.3	cavalry_shock = 	4.2	artillery_shock = 	0.45     enable = russian_lancer		enable = tartar_cossack		}
+technology = { id = 40  average_year = 1727   military_tactics = 3	supply_limit = 1.60  	land_morale = 	2.25    infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	4	infantry_shock = 	1.3	cavalry_shock = 	4.2	artillery_shock = 	0.45     fort5 = yes               }
+technology = { id = 41  average_year = 1730   military_tactics = 3	supply_limit = 1.65	land_morale = 	2.25    infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	4	infantry_shock = 	1.3	cavalry_shock = 	4.2	artillery_shock = 	0.45                    }
+technology = { id = 42  average_year = 1732   military_tactics = 3	supply_limit = 1.70  	land_morale = 	2.25    infantry_fire = 	1.25	cavalry_fire = 	0.4	artillery_fire = 	4	infantry_shock = 	1.3	cavalry_shock = 	4.2	artillery_shock = 	0.45                    }
+technology = { id = 43  average_year = 1735   military_tactics = 3	supply_limit = 1.75	land_morale = 	2.5	infantry_fire = 	1.3	cavalry_fire = 	0.45	artillery_fire = 	4	infantry_shock = 	1.4	cavalry_shock = 	4.2	artillery_shock = 	0.475    enable = austrian_white_coat	enable = french_bluecoat	enable = british_redcoat	enable = prussian_frederickian    enable = russian_green_coat	enable = persian_rifle	enable = ali_bey_reformed_infantry	enable = eastern_carabinier	 enable = ottoman_new_model}
+technology = { id = 44  average_year = 1737   military_tactics = 3	supply_limit = 1.80  	land_morale = 	2.5	infantry_fire = 	1.3	cavalry_fire = 	0.45	artillery_fire = 	4	infantry_shock = 	1.4	cavalry_shock = 	4.2	artillery_shock = 	0.475    enable = afsharid_reformed	}
+technology = { id = 45  average_year = 1743   military_tactics = 3	supply_limit = 1.85	land_morale = 	2.5	infantry_fire = 	1.3	cavalry_fire = 	0.45	artillery_fire = 	4	infantry_shock = 	1.4	cavalry_shock = 	4.2	artillery_shock = 	0.475	enable = muslim_dragoon		}
+technology = { id = 46  average_year = 1747   military_tactics = 3	supply_limit = 1.90  	land_morale = 	2.5	infantry_fire = 	1.3	cavalry_fire = 	0.45	artillery_fire = 	4	infantry_shock = 	1.4	cavalry_shock = 	4.2	artillery_shock = 	0.475    enable = ottoman_toprakli_dragoon	enable = sikh_rifle	}
+technology = { id = 47  average_year = 1750   military_tactics = 3	supply_limit = 1.95	land_morale = 	2.5	infantry_fire = 	1.4	cavalry_fire = 	0.45	artillery_fire = 	4	infantry_shock = 	1.4	cavalry_shock = 	4.2	artillery_shock = 	0.475    enable = durrani_swivel	enable = royal_mortar		}
+technology = { id = 48  average_year = 1755   military_tactics = 3	supply_limit = 2.00  	land_morale = 	2.5	infantry_fire = 	1.4	cavalry_fire = 	0.45	artillery_fire = 	4.5	infantry_shock = 	1.4	cavalry_shock = 	4.2	artillery_shock = 	0.525    enable = russian_cuirassier	enable = russian_cossack		}
+technology = { id = 49  average_year = 1760   military_tactics = 3	supply_limit = 2.05	land_morale = 	3	infantry_fire = 	1.45	cavalry_fire = 	0.5	artillery_fire = 	4.5	infantry_shock = 	1.45	cavalry_shock = 	4.5	artillery_shock = 	0.525	enable = sioux_dragoon	                     }
+technology = { id = 50  average_year = 1765   military_tactics = 3	supply_limit = 2.10  	land_morale = 	3       infantry_fire = 	1.45	cavalry_fire = 	0.5	artillery_fire = 	4.5	infantry_shock = 	1.45	cavalry_shock = 	4.5	artillery_shock = 	0.525    fort6 = yes	enable = eastern_skirmisher	enable = eastern_uhlan enable = ottoman_lancer enable = reformed_manchu_rifle}
+technology = { id = 51  average_year = 1770   military_tactics = 3	supply_limit = 2.15	land_morale = 	3	infantry_fire = 	1.45	cavalry_fire = 	0.5	artillery_fire = 	4.5	infantry_shock = 	1.5	cavalry_shock = 	4.5	artillery_shock = 	0.525    enable = tipu_sultan_rocket	}
+technology = { id = 52  average_year = 1775   military_tactics = 3	supply_limit = 2.20  	land_morale = 	3	infantry_fire = 	1.45	cavalry_fire = 	0.5	artillery_fire = 	5	infantry_shock = 	1.5	cavalry_shock = 	4.5	artillery_shock = 	0.575    enable = french_cuirassier	enable = durrani_dragoon                 }
+technology = { id = 53  average_year = 1780   military_tactics = 3	supply_limit = 2.25	land_morale = 	3	infantry_fire = 	1.5	cavalry_fire = 	0.5	artillery_fire = 	5.5	infantry_shock = 	1.5	cavalry_shock = 	4.5	artillery_shock = 	0.625    enable = french_carabinier 	enable = prussian_uhlan 	enable = british_hussar	enable = flying_battery                    }
+technology = { id = 54  average_year = 1785   military_tactics = 3	supply_limit = 2.30  	land_morale = 	3       infantry_fire = 	1.5	cavalry_fire = 	0.5	artillery_fire = 	5.5	infantry_shock = 	1.5	cavalry_shock = 	4.5	artillery_shock = 	0.625                   }
+technology = { id = 55  average_year = 1790   military_tactics = 3	supply_limit = 2.35	land_morale = 	3    	infantry_fire = 	1.5	cavalry_fire = 	0.5	artillery_fire = 	5.5	infantry_shock = 	1.5	cavalry_shock = 	4.5	artillery_shock = 	0.625    enable = french_impulse		enable = british_square                  }
+technology = { id = 56  average_year = 1791   military_tactics = 3	supply_limit = 2.40  	land_morale = 	3	infantry_fire = 	1.5	cavalry_fire = 	0.5	artillery_fire = 	5.5	infantry_shock = 	1.75	cavalry_shock = 	4.5	artillery_shock = 	0.625    enable = prussian_drill		enable = austrian_jaeger                 }
+technology = { id = 57  average_year = 1792   military_tactics = 3	supply_limit = 2.45	land_morale = 	3	infantry_fire = 	1.75	cavalry_fire = 	0.5	artillery_fire = 	5.5	infantry_shock = 	1.75	cavalry_shock = 	4.5	artillery_shock = 	0.65     enable = russian_mass                      }
+technology = { id = 58  average_year = 1795   military_tactics = 4	supply_limit = 2.50  	land_morale = 	3       infantry_fire = 	1.9	cavalry_fire = 	0.55	artillery_fire = 	5.5	infantry_shock = 	1.75	cavalry_shock = 	4.5	artillery_shock = 	0.65     sprite_level = 4	enable = mixed_order_infantry	enable = open_order_cavalry              }
+technology = { id = 59  average_year = 1798   military_tactics = 4	supply_limit = 2.55	land_morale = 	3.5     infantry_fire = 	2	cavalry_fire = 	0.55	artillery_fire = 	6	infantry_shock = 	1.75	cavalry_shock = 	4.5	artillery_shock = 	0.65     enable = napoleonic_lancers	enable = napoleonic_square               }
+technology = { id = 60  average_year = 1801   military_tactics = 4	supply_limit = 2.60  	land_morale = 	3.5	infantry_fire = 	2	cavalry_fire = 	0.55	artillery_fire = 	6	infantry_shock = 	1.9	cavalry_shock = 	4.5	artillery_shock = 	0.65	}
+technology = { id = 61  average_year = 1803   military_tactics = 4	supply_limit = 2.65	land_morale = 	3.5     infantry_fire = 	2.25	cavalry_fire = 	0.55	artillery_fire = 	8	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.675                   }
+technology = { id = 62  average_year = 1805   military_tactics = 4	supply_limit = 2.70  	land_morale = 	3.5	infantry_fire = 	2.25	cavalry_fire = 	0.55	artillery_fire = 	8	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.675}
+technology = { id = 63  average_year = 1807   military_tactics = 4	supply_limit = 2.75	land_morale = 	3.5     infantry_fire = 	2.5	cavalry_fire = 	0.6	artillery_fire = 	8	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.675                   }
+technology = { id = 64  average_year = 1809   military_tactics = 4	supply_limit = 2.80  	land_morale = 	3.5     infantry_fire = 	2.5	cavalry_fire = 	0.6	artillery_fire = 	8	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.7                     }
+technology = { id = 65  average_year = 1811   military_tactics = 4	supply_limit = 2.85	land_morale = 	3.5     infantry_fire = 	2.5	cavalry_fire = 	0.6	artillery_fire = 	8	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.9                     }
+technology = { id = 66  average_year = 1813   military_tactics = 4	supply_limit = 2.90  	land_morale = 	4.0     infantry_fire = 	2.5	cavalry_fire = 	0.6	artillery_fire = 	8.1	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.925                   }
+technology = { id = 67  average_year = 1815   military_tactics = 4	supply_limit = 2.95	land_morale = 	4.0     infantry_fire = 	2.75	cavalry_fire = 	0.6	artillery_fire = 	8.2	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.95                   }
+technology = { id = 68  average_year = 1820   military_tactics = 4	supply_limit = 3.00  	land_morale = 	4.0     infantry_fire = 	2.75	cavalry_fire = 	0.6	artillery_fire = 	8.3	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	0.975                   }
+technology = { id = 69  average_year = 1830   military_tactics = 4	supply_limit = 3.05	land_morale = 	4.0     infantry_fire = 	2.75	cavalry_fire = 	0.6	artillery_fire = 	8.4	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	1.0                     }
+technology = { id = 70  average_year = 1840   military_tactics = 4	supply_limit = 3.10  	land_morale = 	4.0     infantry_fire = 	2.75	cavalry_fire = 	0.6	artillery_fire = 	8.5	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	1.1                     }
+technology = { id = 71  average_year = 1850   military_tactics = 4	supply_limit = 3.15	land_morale = 	4.0     infantry_fire = 	2.75	cavalry_fire = 	0.6	artillery_fire = 	8.6	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	1.2                   }
+technology = { id = 72  average_year = 1880   military_tactics = 4	supply_limit = 3.20  	land_morale = 	4.0     infantry_fire = 	2.75	cavalry_fire = 	0.6	artillery_fire = 	8.7	infantry_shock = 	2	cavalry_shock = 	4.5	artillery_shock = 	1.2                   }
+}
+naval_tech = {              
+technology = { id = 0   average_year = 1300   	range = 100 	naval_maintenance = 0.15	naval_morale = 	0  	bigship_fire = 	0.25	lightship_fire = 	0.25	galley_fire = 	0.25		transport_fire = 	0.25	bigship_shock = 	0.25	lightship_shock = 	0.5	galley_shock = 	0.5  	transport_shock = 	0.0     }
+technology = { id = 1   average_year = 1360    range = 105 	naval_maintenance = 0.20	naval_morale = 	0  	bigship_fire = 	0.25	lightship_fire = 	0.25	galley_fire = 	0.25		transport_fire = 	0.25	bigship_shock = 	0.25	lightship_shock = 	0.5	galley_shock = 	0.5  	transport_shock = 	0.5     enable = cog    }
+technology = { id = 2   average_year = 1380    range = 110 	naval_maintenance = 0.20	naval_morale = 	0  	bigship_fire = 	0.25	lightship_fire = 	0.25	galley_fire = 	0.25		transport_fire = 	0.25	bigship_shock = 	0.25	lightship_shock = 	0.5	galley_shock = 	0.6  	transport_shock = 	0.5     enable = galley   }
+technology = { id = 3   average_year = 1400    range = 115 	naval_maintenance = 0.25	naval_morale = 	0  	bigship_fire = 	0.25	lightship_fire = 	0.25	galley_fire = 	0.25		transport_fire = 	0.25	bigship_shock = 	0.25	lightship_shock = 	0.5	galley_shock = 	0.7  	transport_shock = 	0.5     enable = carrack   }
+technology = { id = 4   average_year = 1410   	range = 120 	naval_maintenance = 0.25	naval_morale = 	0  	bigship_fire = 	0.30	lightship_fire = 	0.30	galley_fire = 	0.30		transport_fire = 	0.30	bigship_shock = 	0.30	lightship_shock = 	0.5	galley_shock = 	0.8  	transport_shock = 	0.5     dock = yes   }
+technology = { id = 5   average_year = 1420    range = 125 	naval_maintenance = 0.30	naval_morale = 	0  	bigship_fire = 	0.35	lightship_fire = 	0.35	galley_fire = 	0.35		transport_fire = 	0.35	bigship_shock = 	0.35	lightship_shock = 	0.5	galley_shock = 	0.9 	transport_shock = 	0.5        }
+technology = { id = 6   average_year = 1430    range = 130 	naval_maintenance = 0.30	naval_morale = 	0  	bigship_fire = 	0.40	lightship_fire = 	0.40	galley_fire = 	0.40		transport_fire = 	0.40	bigship_shock = 	0.40	lightship_shock = 	0.5	galley_shock = 	1  	transport_shock = 	0.5        }
+technology = { id = 7   average_year = 1440    range = 135 	naval_maintenance = 0.35	naval_morale = 	0  	bigship_fire = 	0.45	lightship_fire = 	0.45	galley_fire = 	0.45		transport_fire = 	0.45	bigship_shock = 	0.45	lightship_shock = 	0.5	galley_shock = 	1  	transport_shock = 	0.5        }
+technology = { id = 8   average_year = 1450    range = 140 	naval_maintenance = 0.35	naval_morale = 	0  	bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	bigship_shock = 	0.5	lightship_shock = 	0.5	galley_shock = 	1  	transport_shock = 	0.5    drydock = yes    }
+technology = { id = 9   average_year = 1465    range = 145 	naval_maintenance = 0.40	naval_morale = 	0.1     bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	bigship_shock = 	0.5	lightship_shock = 	0.5	galley_shock = 	1  	transport_shock = 	0.5     blockade = yes               }
+technology = { id = 10  average_year = 1475   	range = 150 	naval_maintenance = 0.40	naval_morale = 	0.15    bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	bigship_shock = 	0.5	lightship_shock = 	0.5	galley_shock = 	1  	transport_shock = 	0.5     enable = barque               }
+technology = { id = 11  average_year = 1485   	range = 160 	naval_maintenance = 0.45	naval_morale = 	0.2     bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	bigship_shock = 	0.5	lightship_shock = 	0.5	galley_shock = 	1  	transport_shock = 	0.5     enable = caravel               }
+technology = { id = 12  average_year = 1495   	range = 170 	naval_maintenance = 0.50	naval_morale = 	0.2     bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	bigship_shock = 	0.5	lightship_shock = 	0.5	galley_shock = 	1       transport_shock = 	0.5    shipyard = yes           }
+technology = { id = 13  average_year = 1497   	range = 180 	naval_maintenance = 0.55	naval_morale = 	0.2     bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	  bigship_shock = 	0.5	lightship_shock = 	0.5	galley_shock = 	1       transport_shock = 	0.5               }
+technology = { id = 14  average_year = 1498   	range = 190 	naval_maintenance = 0.60	naval_morale = 	0.2     bigship_fire = 	0.5	lightship_fire = 	0.5	galley_fire = 	0.5		transport_fire = 	0.5	  bigship_shock = 	0.7	lightship_shock = 	0.7	galley_shock = 	1       transport_shock = 	0.7     enable = flute          }
+technology = { id = 15  average_year = 1502   	range = 210 	naval_maintenance = 0.65	naval_morale = 	0.25    bigship_fire = 	0.6	lightship_fire = 	0.6	galley_fire = 	0.6		transport_fire = 	0.6	  bigship_shock = 	0.7	lightship_shock = 	0.7	galley_shock = 	1  	transport_shock = 	0.7     wharf = yes              }
+technology = { id = 16  average_year = 1508   	range = 230 	naval_maintenance = 0.70	naval_morale = 	0.25    bigship_fire = 	0.7	lightship_fire = 	0.7	galley_fire = 	0.7		transport_fire = 	0.7	  bigship_shock = 	0.7	lightship_shock = 	0.7	galley_shock = 	1       transport_shock = 	0.7               }
+technology = { id = 17  average_year = 1518   	range = 250 	naval_maintenance = 0.75	naval_morale = 	0.75    bigship_fire = 	0.8	lightship_fire = 	0.8	galley_fire = 	0.8		transport_fire = 	0.8	  bigship_shock = 	0.7	lightship_shock = 	0.7	galley_shock = 	1       transport_shock = 	0.7               }
+technology = { id = 18  average_year = 1530   	range = 270 	naval_maintenance = 0.80	naval_morale = 	0.75    bigship_fire = 	0.9	lightship_fire = 	0.9	galley_fire = 	0.9		transport_fire = 	0.9	  bigship_shock = 	0.7	lightship_shock = 	0.7	galley_shock = 	1       transport_shock = 	0.7               }
+technology = { id = 19  average_year = 1540   	range = 290 	naval_maintenance = 0.85	naval_morale = 	1       bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	0.8	lightship_shock = 	0.8	galley_shock = 	1       transport_shock = 	0.8     grand_shipyard = yes          }
+technology = { id = 20  average_year = 1545   	range = 310 	naval_maintenance = 0.90	naval_morale = 	1       bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	0.8	lightship_shock = 	0.8	galley_shock = 	1       transport_shock = 	0.8               }
+technology = { id = 21  average_year = 1550   	range = 330 	naval_maintenance = 0.95	naval_morale = 	1       bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	0.8	lightship_shock = 	0.8	galley_shock = 	1 	transport_shock = 	0.8      enable = galleass               }
+technology = { id = 22  average_year = 1565   	range = 340 	naval_maintenance = 1.00	naval_morale = 	1.5     bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	0.8	lightship_shock = 	0.8	galley_shock = 	1  	transport_shock = 	0.8     enable = galleon               }
+technology = { id = 23  average_year = 1585   	range = 350 	naval_maintenance = 1.05	naval_morale = 	1.5     bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	0.8	lightship_shock = 	0.8	galley_shock = 	1  	transport_shock = 	0.8     enable = early_frigate    naval_arsenal = yes           }
+technology = { id = 24  average_year = 1600   	range = 360 	naval_maintenance = 1.10	naval_morale = 	1.5     bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	0.8	lightship_shock = 	0.8	galley_shock = 	1 	transport_shock = 	0.8    }
+technology = { id = 25  average_year = 1610   	range = 370 	naval_maintenance = 1.15	naval_morale = 	1.5     bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1       transport_shock = 	1	enable = merchantman          }
+technology = { id = 26  average_year = 1620   	range = 380 	naval_maintenance = 1.20	naval_morale = 	1.75    bigship_fire = 	1	lightship_fire = 	1	galley_fire = 	1		transport_fire = 	1	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1  	transport_shock = 	1	enable = wargalleon               }
+technology = { id = 27  average_year = 1625    range = 390 	naval_maintenance = 1.25	naval_morale = 	1.75    bigship_fire = 	1.1	lightship_fire = 	1.1	galley_fire = 	1.1		transport_fire = 	1.1	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1 	transport_shock = 	1	 enable = frigate    naval_base = yes           }
+technology = { id = 28  average_year = 1636    range = 400 	naval_maintenance = 1.30	naval_morale = 	1.75    bigship_fire = 	1.1	lightship_fire = 	1.1	galley_fire = 	1.1		transport_fire = 	1.1	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1       transport_shock = 	1	reduced_naval_attrition = yes         }
+technology = { id = 29  average_year = 1644    range = 410 	naval_maintenance = 1.35	naval_morale = 	2       bigship_fire = 	1.1	lightship_fire = 	1.1	galley_fire = 	1.1		transport_fire = 	1.1	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1  	transport_shock = 	1	admiralty = yes               }
+technology = { id = 30  average_year = 1655   	range = 420 	naval_maintenance = 1.40	naval_morale = 	2       bigship_fire = 	1.1	lightship_fire = 	1.1	galley_fire = 	1.1		transport_fire = 	1.1	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1       transport_shock = 	1	          }
+technology = { id = 31  average_year = 1660   	range = 430 	naval_maintenance = 1.45	naval_morale = 	2       bigship_fire = 	1.3	lightship_fire = 	1.3	galley_fire = 	1.3		transport_fire = 	1.3	  bigship_shock = 	1	lightship_shock = 	1	galley_shock = 	1  	transport_shock = 	1	enable = chebeck               }
+technology = { id = 32  average_year = 1675    range = 440 	naval_maintenance = 1.50	naval_morale = 	2       bigship_fire = 	1.4	lightship_fire = 	1.4	galley_fire = 	1.4		transport_fire = 	1.4	  bigship_shock = 	1.1	lightship_shock = 	1.1	galley_shock = 	1.1	transport_shock = 	1.1     enable = twodecker               }
+technology = { id = 33  average_year = 1690   	range = 450 	naval_maintenance = 1.55	naval_morale = 	2       bigship_fire = 	1.5	lightship_fire = 	1.5	galley_fire = 	1.5		transport_fire = 	1.5	  bigship_shock = 	1.1	lightship_shock = 	1.1	galley_shock = 	1.1	transport_shock = 	1.1     enable = heavy_frigate               }
+technology = { id = 34  average_year = 1700    range = 460 	naval_maintenance = 1.60	naval_morale = 	2.1     bigship_fire = 	1.75	lightship_fire = 	1.75	galley_fire = 	1.75		transport_fire = 	1.75	  bigship_shock = 	1.1	lightship_shock = 	1.1	galley_shock = 	1.1     transport_shock = 	1.1               }
+technology = { id = 35  average_year = 1709    range = 470 	naval_maintenance = 1.65	naval_morale = 	2.1     bigship_fire = 	1.75	lightship_fire = 	1.75	galley_fire = 	1.75		transport_fire = 	1.75	  bigship_shock = 	1.1	lightship_shock = 	1.1	galley_shock = 	1.1     transport_shock = 	1.1     enable = eastindiaman          }
+technology = { id = 36  average_year = 1714    range = 480 	naval_maintenance = 1.70	naval_morale = 	2.1     bigship_fire = 	1.75	lightship_fire = 	1.75	galley_fire = 	1.75		transport_fire = 	1.75	  bigship_shock = 	1.2	lightship_shock = 	1.2	galley_shock = 	1.2     transport_shock = 	1.2               }
+technology = { id = 37  average_year = 1719    range = 490 	naval_maintenance = 1.75	naval_morale = 	2.1     bigship_fire = 	1.9	lightship_fire = 	1.9	galley_fire = 	1.9		transport_fire = 	1.9	  bigship_shock = 	1.2	lightship_shock = 	1.2	galley_shock = 	1.2	transport_shock = 	1.2     enable = archipelago_frigate               }
+technology = { id = 38  average_year = 1723    range = 500 	naval_maintenance = 1.80	naval_morale = 	2.1     bigship_fire = 	1.9	lightship_fire = 	1.9	galley_fire = 	1.9		transport_fire = 	1.9	  bigship_shock = 	1.2	lightship_shock = 	1.2	galley_shock = 	1.2	transport_shock = 	1.2     enable = threedecker               }
+technology = { id = 39  average_year = 1725    range = 510 	naval_maintenance = 1.85	naval_morale = 	2.25    bigship_fire = 	1.9	lightship_fire = 	1.9	galley_fire = 	1.9		transport_fire = 	1.9	  bigship_shock = 	1.5	lightship_shock = 	1.5	galley_shock = 	1.5     transport_shock = 	1.5               }
+technology = { id = 40  average_year = 1727    range = 520 	naval_maintenance = 1.90	naval_morale = 	2.25    bigship_fire = 	2	lightship_fire = 	2	galley_fire = 	2		transport_fire = 	2	  bigship_shock = 	1.5	lightship_shock = 	1.5	galley_shock = 	1.5     transport_shock = 	1.5               }
+technology = { id = 41  average_year = 1730    range = 530 	naval_maintenance = 2.00	naval_morale = 	2.25    bigship_fire = 	2	lightship_fire = 	2	galley_fire = 	2		transport_fire = 	2	  bigship_shock = 	1.75	lightship_shock = 	1.75	galley_shock = 	1.6     transport_shock = 	1.7               }
+technology = { id = 42  average_year = 1732    range = 540 	naval_maintenance = 2.10	naval_morale = 	2.25    bigship_fire = 	2.2	lightship_fire = 	2.2	galley_fire = 	2.2		transport_fire = 	2.2	  bigship_shock = 	1.75	lightship_shock = 	1.75	galley_shock = 	1.6     transport_shock = 	1.7               }
+technology = { id = 43  average_year = 1735    range = 550 	naval_maintenance = 2.20	naval_morale = 	2.5     bigship_fire = 	2.2	lightship_fire = 	2.2	galley_fire = 	2.2		transport_fire = 	2.2	  bigship_shock = 	1.8	lightship_shock = 	1.8	galley_shock = 	1.7     transport_shock = 	1.8               }
+technology = { id = 44  average_year = 1737    range = 560 	naval_maintenance = 3.30	naval_morale = 	2.5     bigship_fire = 	2.3	lightship_fire = 	2.3	galley_fire = 	2.3		transport_fire = 	2.3	  bigship_shock = 	1.9	lightship_shock = 	1.9	galley_shock = 	1.7     transport_shock = 	1.9               }
+technology = { id = 45  average_year = 1743    range = 570 	naval_maintenance = 3.40	naval_morale = 	2.5     bigship_fire = 	2.3	lightship_fire = 	2.3	galley_fire = 	2.3		transport_fire = 	2.3	  bigship_shock = 	1.9	lightship_shock = 	1.9	galley_shock = 	1.7     transport_shock = 	1.9               }
+technology = { id = 46  average_year = 1747    range = 580 	naval_maintenance = 3.50	naval_morale = 	2.5     bigship_fire = 	2.3	lightship_fire = 	2.3	galley_fire = 	2.3		transport_fire = 	2.3	  bigship_shock = 	1.9	lightship_shock = 	1.9	galley_shock = 	1.7     transport_shock = 	1.9               }
+technology = { id = 47  average_year = 1750    range = 590 	naval_maintenance = 3.60	naval_morale = 	2.5     bigship_fire = 	2.4	lightship_fire = 	2.4	galley_fire = 	2.4		transport_fire = 	2.4	  bigship_shock = 	1.9	lightship_shock = 	1.9	galley_shock = 	1.7     transport_shock = 	1.9               }
+technology = { id = 48  average_year = 1755    range = 600 	naval_maintenance = 3.70	naval_morale = 	2.5     bigship_fire = 	2.4	lightship_fire = 	2.4	galley_fire = 	2.4		transport_fire = 	2.4	  bigship_shock = 	1.9	lightship_shock = 	1.9	galley_shock = 	1.7     transport_shock = 	1.9               }
+technology = { id = 49  average_year = 1760    range = 610 	naval_maintenance = 3.80	naval_morale = 	3       bigship_fire = 	2.4	lightship_fire = 	2.4	galley_fire = 	2.4		transport_fire = 	2.4	  bigship_shock = 	2	lightship_shock = 	2	galley_shock = 	1.7     transport_shock = 	2	          }
+technology = { id = 50  average_year = 1765   	range = 620 	naval_maintenance = 3.90	naval_morale = 	3       bigship_fire = 	2.5	lightship_fire = 	2.5	galley_fire = 	2.5		transport_fire = 	2.5	  bigship_shock = 	2	lightship_shock = 	2	galley_shock = 	1.7     transport_shock = 	2	          }
+technology = { id = 51  average_year = 1770   	range = 630 	naval_maintenance = 3.00	naval_morale = 	3       bigship_fire = 	2.5	lightship_fire = 	2.5	galley_fire = 	2.5		transport_fire = 	2.5	  bigship_shock = 	2	lightship_shock = 	2	galley_shock = 	1.7     transport_shock = 	2	          }
+technology = { id = 52  average_year = 1775   	range = 640 	naval_maintenance = 3.20	naval_morale = 	3       bigship_fire = 	2.5	lightship_fire = 	2.5	galley_fire = 	2.5		transport_fire = 	2.5	  bigship_shock = 	2	lightship_shock = 	2	galley_shock = 	1.7     transport_shock = 	2	          }
+technology = { id = 53  average_year = 1780    range = 650 	naval_maintenance = 3.40	naval_morale = 	3       bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2	lightship_shock = 	2	galley_shock = 	1.7     transport_shock = 	2	          }
+technology = { id = 54  average_year = 1785    range = 660 	naval_maintenance = 3.60	naval_morale = 	3       bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2	lightship_shock = 	2	galley_shock = 	1.7     transport_shock = 	2	          }
+technology = { id = 55  average_year = 1790    range = 670 	naval_maintenance = 3.80	naval_morale = 	3       bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.2	lightship_shock = 	2.2	galley_shock = 	1.7     transport_shock = 	2.2               }
+technology = { id = 56  average_year = 1791    range = 680 	naval_maintenance = 4.00	naval_morale = 	3       bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 57  average_year = 1792    range = 690 	naval_maintenance = 4.25	naval_morale = 	3       bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 58  average_year = 1795   	range = 700 	naval_maintenance = 4.50	naval_morale = 	3       bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 59  average_year = 1798   	range = 710 	naval_maintenance = 4.75	naval_morale = 	3.5     bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 60  average_year = 1801   	range = 720 	naval_maintenance = 5.00	naval_morale = 	3.5     bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 61  average_year = 1803   	range = 730 	naval_maintenance = 5.00	naval_morale = 	3.5     bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 62  average_year = 1805   	range = 740 	naval_maintenance = 5.00	naval_morale = 	3.5     bigship_fire = 	2.6	lightship_fire = 	2.6	galley_fire = 	2.6		transport_fire = 	2.6	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 63  average_year = 1807   	range = 750 	naval_maintenance = 5.00	naval_morale = 	3.5     bigship_fire = 	2.7	lightship_fire = 	2.7	galley_fire = 	2.7		transport_fire = 	2.7	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 64  average_year = 1809   	range = 760 	naval_maintenance = 5.00	naval_morale = 	3.5     bigship_fire = 	2.7	lightship_fire = 	2.7	galley_fire = 	2.7		transport_fire = 	2.7	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 65  average_year = 1811   	range = 770 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	2.7	lightship_fire = 	2.7	galley_fire = 	2.7		transport_fire = 	2.7	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 66  average_year = 1813   	range = 780 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	2.8	lightship_fire = 	2.8	galley_fire = 	2.8		transport_fire = 	2.8	  bigship_shock = 	2.3	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 67  average_year = 1815   	range = 790 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	2.8	lightship_fire = 	2.8	galley_fire = 	2.8		transport_fire = 	2.8	  bigship_shock = 	2.4	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 68  average_year = 1820   	range = 800 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	2.9	lightship_fire = 	2.9	galley_fire = 	2.9		transport_fire = 	2.9	  bigship_shock = 	2.5	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 69  average_year = 1830   	range = 810 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	2.9	lightship_fire = 	2.9	galley_fire = 	2.9		transport_fire = 	2.9	  bigship_shock = 	2.6	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 70  average_year = 1840   	range = 820 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	3.0	lightship_fire = 	3.0	galley_fire = 	3.0		transport_fire = 	3.0	  bigship_shock = 	2.7	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 71  average_year = 1850   	range = 830 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	3.0	lightship_fire = 	3.0	galley_fire = 	3.0		transport_fire = 	3.0	  bigship_shock = 	2.8	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+technology = { id = 72  average_year = 1880   	range = 840 	naval_maintenance = 5.00	naval_morale = 	4.0     bigship_fire = 	3.0	lightship_fire = 	3.0	galley_fire = 	3.0		transport_fire = 	3.0	  bigship_shock = 	2.9	lightship_shock = 	2.3	galley_shock = 	1.7     transport_shock = 	2.3               }
+}
+production_tech = {               
+technology = { id = 0   average_year = 1300          production_efficiency = 0.10            }
+technology = { id = 1   average_year = 1360          production_efficiency = 0.20            }
+technology = { id = 2   average_year = 1380          production_efficiency = 0.25            }
+technology = { id = 3   average_year = 1400          production_efficiency = 0.26            }
+technology = { id = 4   average_year = 1410          production_efficiency = 0.27  constable = yes           }
+technology = { id = 5   average_year = 1420          production_efficiency = 0.28            }
+technology = { id = 6   average_year = 1430          production_efficiency = 0.29            }
+technology = { id = 7   average_year = 1440          production_efficiency = 0.30            }
+technology = { id = 8   average_year = 1450          production_efficiency = 0.31   workshop = yes          }
+technology = { id = 9   average_year = 1465          production_efficiency = 0.32            }
+technology = { id = 10  average_year = 1475          production_efficiency = 0.34            }
+technology = { id = 11  average_year = 1485          production_efficiency = 0.36            }
+technology = { id = 12  average_year = 1495          production_efficiency = 0.38            }
+technology = { id = 13  average_year = 1497          production_efficiency = 0.40   counting_house = yes         }
+technology = { id = 14  average_year = 1498          production_efficiency = 0.42   textile = yes         }
+technology = { id = 15  average_year = 1502          production_efficiency = 0.44            }
+technology = { id = 16  average_year = 1508          production_efficiency = 0.46            }
+technology = { id = 17  average_year = 1518          production_efficiency = 0.48            }
+technology = { id = 18  average_year = 1530          production_efficiency = 0.50            }
+technology = { id = 19  average_year = 1540          production_efficiency = 0.51 treasury_office = yes           }
+technology = { id = 20  average_year = 1545          production_efficiency = 0.52            }
+technology = { id = 21  average_year = 1550          production_efficiency = 0.53            }
+technology = { id = 22  average_year = 1565          production_efficiency = 0.54            }
+technology = { id = 23  average_year = 1585          production_efficiency = 0.55 mint = yes           }
+technology = { id = 24  average_year = 1600          production_efficiency = 0.56            }
+technology = { id = 25  average_year = 1610          production_efficiency = 0.57            }
+technology = { id = 26  average_year = 1620          production_efficiency = 0.58            }
+technology = { id = 27  average_year = 1625          production_efficiency = 0.59 stock_exchange = yes           }
+technology = { id = 28  average_year = 1636          production_efficiency = 0.60            }
+technology = { id = 29  average_year = 1644          production_efficiency = 0.61            }
+technology = { id = 30  average_year = 1655          production_efficiency = 0.62            }
+technology = { id = 31  average_year = 1660          production_efficiency = 0.63 grain_depot = yes           }
+technology = { id = 32  average_year = 1675          production_efficiency = 0.64            }
+technology = { id = 33  average_year = 1690          production_efficiency = 0.65            }
+technology = { id = 34  average_year = 1700          production_efficiency = 0.66            }
+technology = { id = 35  average_year = 1709          production_efficiency = 0.67            }
+technology = { id = 36  average_year = 1714          production_efficiency = 0.68            }
+technology = { id = 37  average_year = 1719          production_efficiency = 0.69            }
+technology = { id = 38  average_year = 1723          production_efficiency = 0.70            }
+technology = { id = 39  average_year = 1725          production_efficiency = 0.71            }
+technology = { id = 40  average_year = 1727          production_efficiency = 0.72            }
+technology = { id = 41  average_year = 1730          production_efficiency = 0.73            }
+technology = { id = 42  average_year = 1732          production_efficiency = 0.74            }
+technology = { id = 43  average_year = 1735          production_efficiency = 0.75            }
+technology = { id = 44  average_year = 1737          production_efficiency = 0.76            }
+technology = { id = 45  average_year = 1743          production_efficiency = 0.77            }
+technology = { id = 46  average_year = 1747          production_efficiency = 0.78            }
+technology = { id = 47  average_year = 1750          production_efficiency = 0.79            }
+technology = { id = 48  average_year = 1755          production_efficiency = 0.80            }
+technology = { id = 49  average_year = 1760          production_efficiency = 0.81            }
+technology = { id = 50  average_year = 1765          production_efficiency = 0.82            }
+technology = { id = 51  average_year = 1770          production_efficiency = 0.83            }
+technology = { id = 52  average_year = 1775          production_efficiency = 0.84            }
+technology = { id = 53  average_year = 1780          production_efficiency = 0.85            }
+technology = { id = 54  average_year = 1785          production_efficiency = 0.86            }
+technology = { id = 55  average_year = 1790          production_efficiency = 0.87            }
+technology = { id = 56  average_year = 1791          production_efficiency = 0.88            }
+technology = { id = 57  average_year = 1792          production_efficiency = 0.89            }
+technology = { id = 58  average_year = 1795          production_efficiency = 0.90            }
+technology = { id = 59  average_year = 1798          production_efficiency = 0.91            }
+technology = { id = 60  average_year = 1801          production_efficiency = 0.92            }
+technology = { id = 61  average_year = 1803          production_efficiency = 0.93            }
+technology = { id = 62  average_year = 1805          production_efficiency = 0.94            }
+technology = { id = 63  average_year = 1807          production_efficiency = 0.95            }
+technology = { id = 64  average_year = 1809          production_efficiency = 0.96            }
+technology = { id = 65  average_year = 1811          production_efficiency = 0.97            }
+technology = { id = 66  average_year = 1813          production_efficiency = 0.98            }
+technology = { id = 67  average_year = 1815          production_efficiency = 0.99            }
+technology = { id = 68  average_year = 1820          production_efficiency = 1.00            }
+technology = { id = 69  average_year = 1830          production_efficiency = 1.01            }
+technology = { id = 70  average_year = 1840          production_efficiency = 1.02            }
+technology = { id = 71  average_year = 1850          production_efficiency = 1.03            }
+technology = { id = 72  average_year = 1880          production_efficiency = 1.04            }
+}               
+trade_tech = {               
+technology = { id = 0   average_year = 1300  trade_range = 100     trade_efficiency = 0.10               }
+technology = { id = 1   average_year = 1360  trade_range = 105     trade_efficiency = 0.20               }
+technology = { id = 2   average_year = 1380  trade_range = 110     trade_efficiency = 0.25  merchants = yes             }
+technology = { id = 3   average_year = 1400  trade_range = 140     trade_efficiency = 0.26               }
+technology = { id = 4   average_year = 1410  trade_range = 170     trade_efficiency = 0.27 marketplace = yes              }
+technology = { id = 5   average_year = 1420  trade_range = 200     trade_efficiency = 0.28               }
+technology = { id = 6   average_year = 1430  trade_range = 230     trade_efficiency = 0.29               }
+technology = { id = 7   average_year = 1440  trade_range = 260     trade_efficiency = 0.30               }
+technology = { id = 8   average_year = 1450  trade_range = 290     trade_efficiency = 0.31 trade_depot = yes              }
+technology = { id = 9   average_year = 1455  trade_range = 320     trade_efficiency = 0.32               }
+technology = { id = 10  average_year = 1460  trade_range = 350     trade_efficiency = 0.34               }
+technology = { id = 11  average_year = 1470  trade_range = 380     trade_efficiency = 0.36               }
+technology = { id = 12  average_year = 1480  trade_range = 410     trade_efficiency = 0.38  canal = yes             }
+technology = { id = 13  average_year = 1490  trade_range = 440     trade_efficiency = 0.40               }
+technology = { id = 14  average_year = 1495  trade_range = 470     trade_efficiency = 0.42   refinery = yes            }
+technology = { id = 15  average_year = 1500  trade_range = 500     trade_efficiency = 0.44   monopoly = yes            }
+technology = { id = 16  average_year = 1510  trade_range = 530     trade_efficiency = 0.46               }
+technology = { id = 17  average_year = 1520  trade_range = 560     trade_efficiency = 0.48               }
+technology = { id = 18  average_year = 1530  trade_range = 590     trade_efficiency = 0.50               }
+technology = { id = 19  average_year = 1540  trade_range = 620     trade_efficiency = 0.51 road_network = yes              }
+technology = { id = 20  average_year = 1545  trade_range = 650     trade_efficiency = 0.52               }
+technology = { id = 21  average_year = 1550  trade_range = 680     trade_efficiency = 0.53               }
+technology = { id = 22  average_year = 1565  trade_range = 710     trade_efficiency = 0.54               }
+technology = { id = 23  average_year = 1585  trade_range = 740     trade_efficiency = 0.55 post_office = yes              }
+technology = { id = 24  average_year = 1600  trade_range = 770     trade_efficiency = 0.56               }
+technology = { id = 25  average_year = 1610  trade_range = 800     trade_efficiency = 0.57               }
+technology = { id = 26  average_year = 1620  trade_range = 830     trade_efficiency = 0.58               }
+technology = { id = 27  average_year = 1625  trade_range = 860     trade_efficiency = 0.59 customs_house = yes              }
+technology = { id = 28  average_year = 1636  trade_range = 890     trade_efficiency = 0.60               }
+technology = { id = 29  average_year = 1644  trade_range = 920     trade_efficiency = 0.61               }
+technology = { id = 30  average_year = 1655  trade_range = 950     trade_efficiency = 0.62               }
+technology = { id = 31  average_year = 1660  trade_range = 980     trade_efficiency = 0.63               }
+technology = { id = 32  average_year = 1675  trade_range = 1010     trade_efficiency = 0.64               }
+technology = { id = 33  average_year = 1690  trade_range = 1040     trade_efficiency = 0.65               }
+technology = { id = 34  average_year = 1700  trade_range = 1070     trade_efficiency = 0.66               }
+technology = { id = 35  average_year = 1709  trade_range = 1100     trade_efficiency = 0.67               }
+technology = { id = 36  average_year = 1714  trade_range = 1130     trade_efficiency = 0.68               }
+technology = { id = 37  average_year = 1719  trade_range = 1160     trade_efficiency = 0.69               }
+technology = { id = 38  average_year = 1723  trade_range = 1190     trade_efficiency = 0.70               }
+technology = { id = 39  average_year = 1725  trade_range = 1220     trade_efficiency = 0.71               }
+technology = { id = 40  average_year = 1727  trade_range = 1250     trade_efficiency = 0.72               }
+technology = { id = 41  average_year = 1730  trade_range = 1280     trade_efficiency = 0.73               }
+technology = { id = 42  average_year = 1732  trade_range = 1310     trade_efficiency = 0.74               }
+technology = { id = 43  average_year = 1735  trade_range = 1340     trade_efficiency = 0.75               }
+technology = { id = 44  average_year = 1737  trade_range = 1370     trade_efficiency = 0.76               }
+technology = { id = 45  average_year = 1743  trade_range = 1400     trade_efficiency = 0.77               }
+technology = { id = 46  average_year = 1747  trade_range = 1430     trade_efficiency = 0.78               }
+technology = { id = 47  average_year = 1750  trade_range = 1460     trade_efficiency = 0.79               }
+technology = { id = 48  average_year = 1755  trade_range = 1490     trade_efficiency = 0.80               }
+technology = { id = 49  average_year = 1760  trade_range = 1520     trade_efficiency = 0.81               }
+technology = { id = 50  average_year = 1765  trade_range = 1550     trade_efficiency = 0.82               }
+technology = { id = 51  average_year = 1770  trade_range = 1580     trade_efficiency = 0.83               }
+technology = { id = 52  average_year = 1775  trade_range = 1610     trade_efficiency = 0.84               }
+technology = { id = 53  average_year = 1780  trade_range = 1640     trade_efficiency = 0.85               }
+technology = { id = 54  average_year = 1785  trade_range = 1670     trade_efficiency = 0.86               }
+technology = { id = 55  average_year = 1790  trade_range = 1700     trade_efficiency = 0.87               }
+technology = { id = 56  average_year = 1791  trade_range = 1730     trade_efficiency = 0.88               }
+technology = { id = 57  average_year = 1792  trade_range = 1760     trade_efficiency = 0.89               }
+technology = { id = 58  average_year = 1795  trade_range = 1790     trade_efficiency = 0.90               }
+technology = { id = 59  average_year = 1798  trade_range = 1820     trade_efficiency = 0.91               }
+technology = { id = 60  average_year = 1801  trade_range = 1850     trade_efficiency = 0.92            }
+technology = { id = 61  average_year = 1803  trade_range = 1880     trade_efficiency = 0.93            }
+technology = { id = 62  average_year = 1805  trade_range = 1910     trade_efficiency = 0.94            }
+technology = { id = 63  average_year = 1807  trade_range = 1940     trade_efficiency = 0.95            }
+technology = { id = 64  average_year = 1809  trade_range = 1970     trade_efficiency = 0.96            }
+technology = { id = 65  average_year = 1811  trade_range = 2000     trade_efficiency = 0.97            }
+technology = { id = 66  average_year = 1813  trade_range = 2030     trade_efficiency = 0.98            }
+technology = { id = 67  average_year = 1815  trade_range = 2060     trade_efficiency = 0.99            }
+technology = { id = 68  average_year = 1820  trade_range = 2090     trade_efficiency = 1.00            }
+technology = { id = 69  average_year = 1830  trade_range = 2120     trade_efficiency = 1.01            }
+technology = { id = 70  average_year = 1840  trade_range = 2150     trade_efficiency = 1.02            }
+technology = { id = 71  average_year = 1850  trade_range = 2180     trade_efficiency = 1.03            }
+technology = { id = 72  average_year = 1880  trade_range = 2210     trade_efficiency = 1.04            }
+                                                         }

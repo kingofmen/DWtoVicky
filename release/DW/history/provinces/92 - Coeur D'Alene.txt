@@ -1,6 +1,0 @@
-owner = USA
-controller = USA
-add_core = USA
-trade_goods = timber
-colony = yes
-life_rating = 35

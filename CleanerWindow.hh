@@ -178,7 +178,8 @@ private:
   }; 
  
   // Misc globals 
-  string targetVersion; 
+  string targetVersion;
+  string sourceVersion;   
   string fname; 
   Object* eu3Game;
   Object* vicGame;
