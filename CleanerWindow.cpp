@@ -3247,6 +3247,7 @@ void WorkerThread::diplomacy () {
     if (eu3->safeGetString("isVassal", "no") == "yes") continue;
     if (find(greatPowers.begin(), greatPowers.end(), (*vic)) != greatPowers.end()) continue; 
     greatPowers.push_back(*vic);
+    (*vic)->resetLeaf("last_greatness_date", "1836.1.1"); 
     Logger::logStream(Logger::Debug) << (*vic)->getKey() << " ("
 				     << (*vic)->safeGetFloat("powerScore") << " "
 				     << (*vic)->safeGetFloat("prestige") << " "
@@ -4821,6 +4822,7 @@ void WorkerThread::techLevels () {
   for (map<Object*, objvec>::iterator i = vicCountryToEu3CountriesMap.begin(); i != vicCountryToEu3CountriesMap.end(); ++i) {
     Object* vicCountry = (*i).first;
     vicCountry->resetLeaf("civilized", "no");
+    vicCountry->unsetValue("last_greatness_date"); 
     Object* vicTech = vicCountry->safeGetObject("technology");
     if (!vicTech) {
       vicTech = new Object("technology");
@@ -5905,7 +5907,7 @@ void WorkerThread::createParties () {
     }
 
     if (0 == vicCountryToEu3CountriesMap[vicCountry].size()) {
-      partyId += partyList->getValue("party").size();
+      //partyId += partyList->getValue("party").size();
       continue; 
     }
     
@@ -5988,7 +5990,6 @@ void WorkerThread::createParties () {
     assignedEu3[(*pa)->eu3Country] = true;
     
     Object* currCountryObject = countryToFileMap[(*pa)->eu3Country]; 
-    Object* vicCountry = findVicCountryByEu3Country((*pa)->eu3Country);
 
     Logger::logStream(Logger::Debug) << (*pa)->eu3Country->getKey() << " has "
 				     << (*pa)->score << " points for "
@@ -5998,489 +5999,48 @@ void WorkerThread::createParties () {
     for (objiter p = bestPartyList.begin(); p != bestPartyList.end(); ++p) {
       Object* party = new Object(*p);
       currCountryObject->setValue(party);
-      //sprintf(strbuffer, "\"Party number %i\"", partyId); 
-      //party->resetLeaf("name", strbuffer); 
-      if (days(party->safeGetString("start_date")) <= days(remQuotes(vicGame->safeGetString("start_date", "\"1836.1.1\"")))) {
-	if (vicCountry->safeGetString("ruling_party", "none") == "none") vicCountry->resetLeaf("ruling_party", partyId);
-	vicCountry->setLeaf("active_party", partyId);	
-      }
-      partyId++; // Not actually listed in party object! Derived from position in file. 
+      //sprintf(strbuffer, "\"Party %s %s\"", vicCountry->getKey().c_str(), party->safeGetString("ideology").c_str()); 
+      //party->resetLeaf("name", strbuffer);
     }    
   }
 
-
-#ifdef BLAH
-  objvec ideas = ideologies->getLeaves(); 
-  vector<string> areas;
-  areas.push_back("economic_policy");
-  areas.push_back("trade_policy");
-  areas.push_back("religious_policy");
-  areas.push_back("citizenship_policy");
-  areas.push_back("war_policy");
- 
-  map<string, map<string, map<string, double> > > ideologyToPositionsMap; // Party, area, then position.
-  for (vector<pair<string, Object*> >::iterator v = tagToPartiesMap.begin(); v != tagToPartiesMap.end(); ++v) {
-    Object* partyList = (*v).second; 
-    if (!partyList) continue; 
-    objvec parties = partyList->getValue("party");
-    for (objiter p = parties.begin(); p != parties.end(); ++p) {
-      string ideology = (*p)->safeGetString("ideology");
-      for (vector<string>::iterator a = areas.begin(); a != areas.end(); ++a) {
-	ideologyToPositionsMap[ideology][*a][(*p)->safeGetString(*a)]++;
-	ideologyToPositionsMap[ideology][*a]["total"]++; 
-      }
-    }
-  }
-
-  // Calculate total number of modding points to distribute; it's equal to the amount it
-  // would take to create all the vanilla parties. 
-  double totalModPoints = 0;
-  for (vector<pair<string, Object*> >::iterator v = tagToPartiesMap.begin(); v != tagToPartiesMap.end(); ++v) {
-    Object* partyList = (*v).second; 
-    if (!partyList) continue; 
-    if (!partyList) continue; 
-    objvec parties = partyList->getValue("party");
-    for (objiter p = parties.begin(); p != parties.end(); ++p) {
-      string ideology = (*p)->safeGetString("ideology");
-      for (vector<string>::iterator a = areas.begin(); a != areas.end(); ++a) {
-	totalModPoints -= log(ideologyToPositionsMap[ideology][*a][(*p)->safeGetString(*a)] / ideologyToPositionsMap[ideology][*a]["total"]);
-      }
-    }
-  }
-  
-  Logger::logStream(Logger::Game) << "Total modding points: " << totalModPoints << "\n";
-  Logger::logStream(Logger::Game) << "Ideology distributions: \n"; 
-  for (objiter i = ideas.begin(); i != ideas.end(); ++i) {
-    string curr = (*i)->getKey(); 
-    Logger::logStream(Logger::Game) << curr << " : \n";
-    for (map<string, map<string, double> >::iterator j = ideologyToPositionsMap[curr].begin(); j != ideologyToPositionsMap[curr].end(); ++j) {
-      Logger::logStream(Logger::Game) << "  " << (*j).first << " : \n";
-      for (map<string, double>::iterator k = (*j).second.begin(); k != (*j).second.end(); ++k) {
-	Logger::logStream(Logger::Game) << "    " << (*k).first << " : " << (*k).second << "\n";
-      }
-    }
-  }
-
-  map<Object*, Object*> countryToFileMap; 
-  int partyId = 1;
-  //for (map<Object*, objvec>::iterator v = vicCountryToEu3CountriesMap.begin(); v != vicCountryToEu3CountriesMap.end(); ++v) {
-  for (vector<pair<string, Object*> >::iterator v = tagToPartiesMap.begin(); v != tagToPartiesMap.end(); ++v) {
-    string vtag = (*v).first;
-    if (vtag == "REB") continue; 
+  objvec taglist = countryPointers->getLeaves();
+  for (objiter tag = taglist.begin(); tag != taglist.end(); ++tag) {
+    string vtag = (*tag)->getKey();
+    if (vtag == "REB") continue;
     Object* vicCountry = findVicCountryByTag(vtag);
-    Object* partyList = (*v).second;
-    if (!partyList) {
-      Logger::logStream(Logger::Debug) << "Did not find parties for " << vtag << "\n"; 
+    Object* parties = tagToPartiesMap[vtag];
+    objvec partyList = parties->getValue("party"); 
+    if ((!vicCountry) || (0 == vicCountryToEu3CountriesMap[vicCountry].size())) {
+      partyId += partyList.size();
       continue;
     }
-
-    if (0 == vicCountryToEu3CountriesMap[vicCountry].size()) {
-      partyId += partyList->getValue("party").size();
-      continue; 
-    }
-    
+      
     Object* eu3Country = vicCountryToEu3CountriesMap[vicCountry][0];
-    string fileName("countries/");
-    
-    fileName += vtag; 
-    fileName += ".txt";
-    countryPointers->resetLeaf(vicCountry->getKey(), addQuotes(fileName));
-    vicCountry->unsetValue("active_party");
-    vicCountry->unsetValue("ruling_party"); 
-    
-    Object* currCountryObject = new Object("someCountry");
-    countryToFileMap[eu3Country] = currCountryObject; 
-    Object* colours = partyList->safeGetObject("color");
-    if (!colours) {
-      colours = new Object("color");
-      colours->setObjList(true);
-      colours->addToList("111");
-      colours->addToList("88");
-      colours->addToList("87");
-    }
-    currCountryObject->setValue(colours);
-    string graphs = partyList->safeGetString("graphical_culture", "EuropeanGC");
-    currCountryObject->setLeaf("graphical_culture", graphs); 
-
-    map<string, Object*> localPartiesMap; 
-    for (objiter idea = ideas.begin(); idea != ideas.end(); ++idea) {
-      Object* party = new Object("party");
-      currCountryObject->setValue(party);
-      party->setLeaf("name", addQuotes(vtag + "_" + (*idea)->getKey()));
-      party->setLeaf("start_date", (*idea)->safeGetString("start_date", "1830.1.1"));
-      party->setLeaf("end_date", "2000.1.1");
-      party->setLeaf("ideology", (*idea)->getKey());
-      localPartiesMap[(*idea)->getKey()] = party; 
-
-      for (vector<string>::iterator a = areas.begin(); a != areas.end(); ++a) {
-	map<string, double> weights;
-	for (map<string, double>::iterator h = ideologyToPositionsMap[(*idea)->getKey()][*a].begin(); h != ideologyToPositionsMap[(*idea)->getKey()][*a].end(); ++h) {
-	  weights[(*h).first] = (*h).second * partyModifier((*idea)->getKey(), (*a), (*h).first, eu3Country, ideologies, localPartiesMap);
-	}
-	
-	double totalWeights = 0; 
-	for (map<string, double>::iterator w = weights.begin(); w != weights.end(); ++w) {
-	  if ((*w).first == "total") continue;
-	  totalWeights += (*w).second;
-	}
-	
-	double choice = rand();
-	choice /= RAND_MAX;
-	choice *= totalWeights;
-	totalWeights = 0; 
-	for (map<string, double>::iterator w = weights.begin(); w != weights.end(); ++w) {
-	  if ((*w).first == "total") continue;
-	  totalWeights += (*w).second;
-	  if (choice > totalWeights) continue;
-	  party->setLeaf((*a), (*w).first); 
-	  break; 
-	}
-      }
-
-      //party->resetLeaf("partyid", partyId); 
-      if (days(party->safeGetString("start_date")) <= days(remQuotes(vicGame->safeGetString("start_date", "\"1836.1.1\"")))) {
-	if ((*idea)->safeGetString("start_ruling", "no") == "yes") vicCountry->setLeaf("ruling_party", partyId);
-	vicCountry->setLeaf("active_party", partyId);	
-      }
-      partyId++;
-    }
-  }
- 
-  if (customObject) {
-   
-    // Auction for party customisations. In each iteration, the country with the most
-    // remaining modding points gets to make the highest-priority customisation it can
-    // afford. If it can't afford anything, it is removed from the customisation list.
-    // The process continues until all customisations have been made or nobody can afford
-    // any more customisations.
-
-    Object* extraGoods = configObject->safeGetObject("extraGoods");
-    if (!extraGoods) {
-      extraGoods = new Object("extraGoods");
-      configObject->setValue(extraGoods); 
-    }
-
-    
-    // Calculate modding points from government buildings
-    for (objiter prov = eu3Provinces.begin(); prov != eu3Provinces.end(); ++prov) {
-      Object* owner = findEu3CountryByTag((*prov)->safeGetString("owner"));
-      if (!owner) continue;
-      owner->resetLeaf("provsForModding", 1 + owner->safeGetInt("provsForModding")); 
-      for (objiter b = buildingTypes.begin(); b != buildingTypes.end(); ++b) {
-	int customPoints = (*b)->safeGetInt("customPoints");
-	if (0 == customPoints) continue;
-	if (!hasBuildingOrBetter((*b)->getKey(), (*prov))) continue;
-	owner->resetLeaf("customPoints", owner->safeGetInt("customPoints") + customPoints);
-      }
-    }
-
-    objvec customs = customObject->getLeaves();
-    objvec bidders;
-    double totalBidderPoints = 0; 
-    for (objiter custom = customs.begin(); custom != customs.end(); ++custom) {
-      string eu3Tag = (*custom)->getKey(); 
-      Object* eu3Country = eu3TagToEu3CountryMap[eu3Tag];
-      if (!eu3Country) continue;
-      if (((*custom)->getLeaves().size() == 1) && ((*custom)->safeGetObject("research"))) continue; 
-      bidders.push_back(eu3Country);
-      double currFrac = eu3Country->safeGetFloat("customPoints") / max(1, eu3Country->safeGetInt("provsForModding"));
-      eu3Country->resetLeaf("moddingFraction", currFrac);
-      totalBidderPoints += currFrac; 
-    }
-
-    totalModPoints *= configObject->safeGetFloat("modPointMultiplier", 1); 
-    
-    for (objiter b = bidders.begin(); b != bidders.end(); ++b) {
-      (*b)->resetLeaf("customPoints", (totalModPoints / totalBidderPoints) * (*b)->safeGetFloat("moddingFraction")); 
-      Logger::logStream(Logger::Game) << "EU3 nation "
-				      << (*b)->getKey()
-				      << " entering party bidding with "
-				      << (*b)->safeGetString("customPoints")
-				      << " points.\n"; 
-    }
-    
-    ObjectAscendingSorter pointSorter("customPoints"); 
-    while (0 < bidders.size()) {
-      sort(bidders.begin(), bidders.end(), pointSorter);
-      Object* highestBidder = bidders.back();
-      Object* fileObject = countryToFileMap[highestBidder];
-      if (!fileObject) {
-	// This should never happen.
-	Logger::logStream(Logger::Error) << "Error: Could not find parties for EU3 country "
-					 << highestBidder->getKey()
-					 << ", removing from customisation list.\n";
-	bidders.pop_back();
-	continue; 
-      }
-      
-      objvec cParties = fileObject->getLeaves();
-      map<string, Object*> pMap; 
-      for (objiter p = cParties.begin(); p != cParties.end(); ++p) {
-	string id = (*p)->safeGetString("ideology", "NONE");
-	if (id == "NONE") continue;
-	pMap[id] = (*p); 
-      }
-      
-      double modPoints = highestBidder->safeGetFloat("customPoints");
-      Object* bidObject = customObject->safeGetObject(highestBidder->getKey());
-      assert(bidObject); 
-      objvec bids = bidObject->getLeaves();
-      if ((0 == bids.size()) || (1 == bids.size() && bids[0]->getKey() == "research")) {
-	// Ran out of bids, this is ok.
-	Logger::logStream(Logger::Game) << "EU3 country "
-					<< highestBidder->getKey()
-					<< " has no more bids, reserve "
-					<< modPoints
-					<< ".\n"; 
-	bidders.pop_back();
-	continue; 
-      }
-
-      Object* vicCountry = findVicCountryByEu3Country(highestBidder);
-      assert(vicCountry); 
-      
-      for (objiter bid = bids.begin(); bid != bids.end(); ++bid) {
-	if ((*bid)->getKey() == "research") continue; // Save for later. 
-	
-	// Whether it succeeds or not, it's gone. 
-	bidObject->removeObject(*bid);
-
-	int priorBids = highestBidder->safeGetInt("numSuccessfulBids") + 1;	
-	string idToChange = (*bid)->getKey();
-	if (idToChange == "resource") {
-	  string which = (*bid)->safeGetString("which"); 
-	  double existing = goodsToRedistribute[which];
-	  if (1 > existing) existing = 1;
-	  double cost = existing / goodsToRedistribute["total"];
-	  cost = -log(cost);
-	  double amount = (*bid)->safeGetFloat("amount");
-	  cost *= 0.1; 
-	  cost *= amount;
-	  cost *= sqrt(priorBids);
-	  if (cost < priorBids) cost = priorBids; 
-	  if (cost > modPoints) {
-	    double remainder = (*bid)->safeGetFloat("useRemainder", -1);
-	    if (remainder > 0) {
-	      cost /= amount; // This is cost per unit
-	      amount = (modPoints * remainder / cost); // New number of units to buy
-	      cost *= amount;  // New total cost 
-	    }
-	    else {
-	      Logger::logStream(Logger::Game) << "EU3 nation "
-					      << highestBidder->getKey()
-					      << " does not have enough points to buy "
-					      << amount << " "
-					      << which
-					      << " which costs "
-					      << cost
-					      << ".\n";
-	      continue;
-	    }
-	  }
-	  modPoints -= cost; 
-	  highestBidder->resetLeaf("customPoints", modPoints);				   
-	  highestBidder->resetLeaf("numSuccessfulBids", priorBids);	  
-	  Logger::logStream(Logger::Game) << "EU3 nation "
-					  << highestBidder->getKey()
-					  << " buys "
-					  << amount << " "
-					  << which 
-					  << " at price "
-					  << cost
-					  << ".\n";
-	  extraGoods->resetLeaf(which, extraGoods->safeGetFloat(which) + 0.5*amount);
-	  Object* stockpile = vicCountry->safeGetObject("stockpile");
-	  if (!stockpile) {
-	    stockpile = new Object("stockpile");
-	    vicCountry->setValue(stockpile); 
-	  }
-	  stockpile->resetLeaf(which, amount + stockpile->safeGetFloat(which));
-	  break; 
-	}
-	else if (idToChange == "nationalValue") {
-	  string current = vicCountry->safeGetString("nationalvalue");
-	  if (current == (*bid)->getLeaf()) {
-	    Logger::logStream(Logger::Game) << "EU3 nation "
-					    << highestBidder->getKey()
-					    << " already has national value "
-					    << current 
-					    << ".\n";
-	    continue; 
-	  }
-	  double curCost = vicCountry->safeGetFloat(remQuotes(current), 1);
-	  double bidCost = vicCountry->safeGetFloat((*bid)->getLeaf(), 1);
-	  if (bidCost < 0) {
-	    curCost -= bidCost;
-	    bidCost = 0.01; 
-	  }
-	  double cost = log(curCost) - log(bidCost);
-	  cost *= sqrt(priorBids);
-	  if (cost < priorBids) cost = priorBids;
-	  if (cost > modPoints) {
-	    Logger::logStream(Logger::Game) << "EU3 nation "
-					    << highestBidder->getKey()
-					    << " cannot afford national value "
-					    << (*bid)->getLeaf()
-					    << ".\n";
-	    continue; 
-	  }
-
-	  Logger::logStream(Logger::Game) << "EU3 nation "
-					  << highestBidder->getKey()
-					  << " buys national value "
-					  << (*bid)->getLeaf()
-					  << " at cost "
-					  << cost 
-					  << ".\n";
-	  
-	  modPoints -= cost; 
-	  highestBidder->resetLeaf("customPoints", modPoints);				   
-	  highestBidder->resetLeaf("numSuccessfulBids", priorBids);
-	  vicCountry->resetLeaf("nationalvalue", addQuotes((*bid)->getLeaf()));
-	  break; 
-	}
-	
-	Object* partyToChange = pMap[idToChange];
-	if (!partyToChange) {
-	  Logger::logStream(Logger::Warning) << "Warning: Could not find party "
-					     << idToChange
-					     << " for EU3 nation "
-					     << highestBidder->getKey()
-					     << ".\n"; 
-	  continue; 
-	}
-
-	string area = (*bid)->safeGetString("area", "NONE");
-	if (area == "NONE") {
-	  Logger::logStream(Logger::Warning) << "Warning: Could not find area to change in bid "
-					     << (*bid) 
-					     << " for EU3 nation "
-					     << highestBidder->getKey()
-					     << ".\n"; 
-	  continue; 
-	}
-	if (find(areas.begin(), areas.end(), area) == areas.end()) {
-	  Logger::logStream(Logger::Warning) << "Warning: Area "
-					     << area
-					     << " in bid "
-					     << (*bid) 
-					     << " for EU3 nation "
-					     << highestBidder->getKey()
-					     << " is not valid.\n"; 
-	  continue; 
-	}
-	
-	string position = (*bid)->safeGetString("position", "NONE");
-	if (position == "NONE") {
-	  Logger::logStream(Logger::Warning) << "Warning: Could not find position for area "
-					     << area 
-					     << " in bid "
-					     << (*bid) 
-					     << " for EU3 nation "
-					     << highestBidder->getKey()
-					     << ".\n"; 
-	  continue; 
-	}
-	map<string, map<string, double> >::iterator areaMap = ideologyToPositionsMap[(*bid)->getKey()].find(area);
-        if (areaMap == ideologyToPositionsMap[(*bid)->getKey()].end()) {
-	  Logger::logStream(Logger::Warning) << "Warning: Position "
-					     << position << " in area "
-					     << area 
-					     << " in bid "
-					     << (*bid) 
-					     << " for EU3 nation "
-					     << highestBidder->getKey()
-					     << " does not seem to be valid.\n"; 
-	  continue; 
-	}
-
-	string oldPosition = partyToChange->safeGetString(area);
-	
-	if (position == oldPosition) {
-	  Logger::logStream(Logger::Game) << idToChange 
-					  << " already has "
-					  << position << " in area "
-					  << area 
-					  << " for EU3 nation "
-					  << highestBidder->getKey()
-					  << ", ignoring bid.\n"; 	  
-	  continue;
-	}
-	if ((*bid)->safeGetString("unless", "BAHNOTHING") == oldPosition) { 
-	  Logger::logStream(Logger::Game) << idToChange 
-					  << " has "
-					  << (*bid)->safeGetString("unless", "BAHNOTHING") << " in area "
-					  << area 
-					  << " for EU3 nation "
-					  << highestBidder->getKey() 
-					  << ", ignoring bid due to unless clause.\n"; 	  
-	  continue;
-	}
-
-	
-	
-	double currentWeight = ideologyToPositionsMap[idToChange][area][partyToChange->safeGetString(area)]*partyModifier(idToChange,
-															  area,
-															  oldPosition,
-															  highestBidder,
-															  ideologies,
-															  pMap);
-	double changedWeight = ideologyToPositionsMap[idToChange][area][position]*partyModifier(idToChange,
-												area,
-												position,
-												highestBidder,
-												ideologies,
-												pMap);
-	if (currentWeight < 0.01) currentWeight = 0.01;
-	changedWeight /= currentWeight;
-	if (changedWeight < 0.001) changedWeight = 0.001;
-	double cost = -log(changedWeight) * sqrt(priorBids);
-	if (cost < priorBids) cost = priorBids; 
-	if (modPoints < cost) {
-	  Logger::logStream(Logger::Game) << "EU3 nation "
-					  << highestBidder->getKey()
-					  << " does not have enough points for modification "
-					  << (*bid)
-					  << ", which costs "
-					  << cost
-					  << " and reserve is "
-					  << modPoints
-					  << ".\n";
-	  continue; 
-	}
-	modPoints -= cost;
-	highestBidder->resetLeaf("customPoints", modPoints);
-	partyToChange->resetLeaf(area, position);
-	Logger::logStream(Logger::Game) << "Party " << idToChange
-					<< " for nation "
-					<< highestBidder->getKey()
-					<< " reset to "
-					<< area << " = " << position
-					<< " at cost "
-					<< cost
-					<< " leaving reserve "
-					<< highestBidder->safeGetString("customPoints")
-					<< ".\n";
-	highestBidder->resetLeaf("numSuccessfulBids", priorBids);
-	break; 
-      }
-    }
-  }
-
-#endif
-	 
-  for (map<Object*, objvec>::iterator v = vicCountryToEu3CountriesMap.begin(); v != vicCountryToEu3CountriesMap.end(); ++v) {
-    Object* vicCountry = (*v).first;
-    if (0 == (*v).second.size()) continue;
-    if (vicCountry->getKey() == "REB") continue; 
-    Object* currCountryObject = countryToFileMap[(*v).second[0]];
+    Object* currCountryObject = countryToFileMap[eu3Country];
     if (!currCountryObject) {
       Logger::logStream(Logger::Error) << "Error: Could not find file for Vic country "
-				       << vicCountry->getKey()
+				       << vtag 
 				       << "\n";
       continue; 
     }
 
+    partyList = currCountryObject->getValue("party");
+    string desiredIdeology = "conservative";
+    if      (vicCountry->safeGetString("government") == "proletarian_dictatorship") desiredIdeology = "communist";
+    else if (vicCountry->safeGetString("government") == "presidential_dictatorship") desiredIdeology = "reactionary";
+    else if (vicCountry->safeGetString("government") == "bourgeois_dictatorship")   desiredIdeology = "anarcho_liberal";
+    else if (vicCountry->safeGetString("government") == "fascist_dictatorship")     desiredIdeology = "fascist";
+    
+    for (objiter p = partyList.begin(); p != partyList.end(); ++p) {
+      if (days((*p)->safeGetString("start_date")) <= days(remQuotes(vicGame->safeGetString("start_date", "\"1836.1.1\"")))) {
+	if (((vicCountry->safeGetString("ruling_party", "none") == "none") || ((*p)->safeGetString("ideology") == desiredIdeology)))
+	  vicCountry->resetLeaf("ruling_party", partyId);
+	vicCountry->setLeaf("active_party", partyId);	
+      }
+      partyId++; // Not actually listed in party object! Derived from position in file. 
+    }
+    
     string fileName("./Output/common/countries/");
     fileName += vicCountry->getKey(); 
     fileName += ".txt";
