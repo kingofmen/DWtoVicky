@@ -99,6 +99,3 @@ party = {
 	war_policy = jingoism
 }
 
-unit_names = {
-	#inherit
-}

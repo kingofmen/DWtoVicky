@@ -99,32 +99,3 @@ party = {
 	war_policy = jingoism
 }
 
-unit_names = {
-	dreadnought = {
-		"Mieszko I" "Boleslaw I Chrobry" "Kazimierz II Wielki" "Wladyslaw II Jagiello" "Henryk Walezy" "Stefan Batory" "Jan III Sobieski" "Stanislaw I Leszczynski" "Stanislaw II Poniatowski"
-	}
-	ironclad = {
-		 Rzeczpospolita "Krolestwo Polskie" "Wielke Ksiestwo Litewskie" "Jan Zamoyski" "Zlota Wolnosc" Konfedercja "Ksiestwo Warszawskie" "Piotr Wysocki" 
-	}
-	manowar = {
-		
-	}
-	cruiser = {
-		"Józef Pilsudski" "Józef Chlopicki" "Michal Gedeon Radziwill" Miedzymorze "Adam Czartoryski" "Wladyslaw Czartoryski" "Aleksander Waszkowski" "Konstanty Kalinowski"
-	}
-	frigate = {
-		Mindaugas Butigeidis Vytenis Gediminas Algirdas Kestutis Jogaila "Vytautas Didysis" "Zygimantas Kestutaitis"
-	}
-	monitor = {
-		"Anna Jagiellonka" "Tadeusz Kosciuszko"
-	}
-	clipper_transport = {
-		
-	}
-	steam_transport = {
-		
-	}
-	commerce_raider = {
-		 Wisla Odra Windawa Bartów Neman Dniprer Prypec
-	}
-}

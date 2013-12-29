@@ -99,30 +99,3 @@ party = {
 	war_policy = jingoism
 }
 
-unit_names = {
-	dreadnought = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-	ironclad = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-	manowar = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-	cruiser = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-	frigate = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-	monitor = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-	clipper_transport = {
-	}
-	steam_transport = { 
-	}
-	commerce_raider = {
-		"Jan" "Mayern" "Jan Mayern" "Fisk"
-	}
-}

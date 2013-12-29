@@ -1599,6 +1599,7 @@ void WorkerThread::configure () {
   objvec taglist = countryPointers->getLeaves();
 
   for (objiter tag = taglist.begin(); tag != taglist.end(); ++tag) {
+    if ((*tag)->getKey() == "dynamic_tags") continue;
     string currPartyFile = targetVersion + remQuotes((*tag)->getLeaf());
     tagToPartiesMap[(*tag)->getKey()] = loadTextFile(currPartyFile); 
   }
@@ -5889,7 +5890,8 @@ void WorkerThread::createParties () {
   objvec tagdefs = ideologies->getLeaves(); // Objects defining resemblances for purposes of choosing which vanilla party-package to use. 
   map<string, Object*> referenceParties;
   for (map<string, Object*>::iterator p = tagToPartiesMap.begin(); p != tagToPartiesMap.end(); ++p) {
-    if ((*p).first == "REB") continue; 
+    if ((*p).first == "REB") continue;
+    if ((*p).first == "dynamic_tags") continue;
     referenceParties[(*p).first] = new Object((*p).second); 
   }
 
@@ -5898,7 +5900,7 @@ void WorkerThread::createParties () {
   vector<PartyAssignment*> scores; 
   for (map<string, Object*>::iterator v = tagToPartiesMap.begin(); v != tagToPartiesMap.end(); ++v) {
     string vtag = (*v).first;
-    if (vtag == "REB") continue; 
+    if (vtag == "REB") continue;    
     Object* vicCountry = findVicCountryByTag(vtag);
     Object* partyList = (*v).second;
     if (!partyList) {
@@ -6008,6 +6010,7 @@ void WorkerThread::createParties () {
   for (objiter tag = taglist.begin(); tag != taglist.end(); ++tag) {
     string vtag = (*tag)->getKey();
     if (vtag == "REB") continue;
+    if (vtag == "dynamic_tags") continue;    
     Object* vicCountry = findVicCountryByTag(vtag);
     Object* parties = tagToPartiesMap[vtag];
     objvec partyList = parties->getValue("party"); 
@@ -6093,7 +6096,7 @@ void WorkerThread::convert () {
   moveCapitals();
   calculateCustomPoints(); 
   reassignProvinces();
-  convertCores();  
+  convertCores();
   moveRgos(); 
   moveFactories(); 
   movePops();
@@ -6107,10 +6110,11 @@ void WorkerThread::convert () {
   createParties();
   leaders(); 
   redistributeGoods(); 
-  
+
   Object* oldHistory = loadTextFile(targetVersion + "history\\pops\\pophistory.txt"); 
 
   ofstream writer;
+
   objvec vicObjects = vicGame->getLeaves(); 
   for (objiter vp = vicObjects.begin(); vp != vicObjects.end(); ++vp) {
     (*vp)->unsetValue("factory");
@@ -6281,7 +6285,7 @@ void WorkerThread::convert () {
       facs[0]->resetLeaf("level", requiredLevels + facs[0]->safeGetInt("level")); 
     }
   }
-  
+
   Logger::logStream(Logger::Game) << "Done with conversion, writing to file.\n"; 
   writer.open(".\\Output\\converted.v2");
   Parser::topLevel = vicGame;

@@ -170,4 +170,3 @@ party = {
 	citizenship_policy = residency
 	war_policy = jingoism
 }
-
