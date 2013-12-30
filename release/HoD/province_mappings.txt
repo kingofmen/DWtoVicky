@@ -290,7 +290,7 @@ link = { eu3 = 983 vic = 70 }	# Epekwik -> Prince Edward Island
 link = { eu3 = 984 vic = 71 vic = 72 }	# Acadia -> Halifax, Truro
 link = { eu3 = 985 vic = 68 vic = 69 }	# Micmac -> Fredericton, Bathurst
 link = { eu3 = 980 vic = 74 }	# Beothuk -> Saint Johns
-link = { eu3 = 981 vic = 75 }	# Taqamkuk -> Millertown
+link = { eu3 = 981 vic = 75 vic = 77 }	# Taqamkuk -> Millertown, St Pierre
 link = { eu3 = 997 vic = 76 vic = 2625 }	# Labrador -> Hopedale, Port Hope Simpson
 
 # Quebec
@@ -1460,10 +1460,10 @@ link = { eu3 = 1777 vic = 982 vic = 2587 vic = 983 } # Kola
 link = { eu3 = 1776 vic = 984 } # Karelia
 
 # Iceland, Greenland #
-link = { eu3 = 1104 vic = 2591 }							# Eiriksfjord -> Holsteinborg 
-link = { eu3 = 1105  vic = 2636 }	# Vestbygden ->  Egedesminde
-link = { eu3 = 370 vic = 252 }				# Reykjavik -> Reykjavik 
-link = { eu3 = 371 vic = 253 }				# Akureyri -> Faroe Islands
+link = { eu3 = 1104 vic = 2591 }	  # Eiriksfjord -> Holsteinborg 
+link = { eu3 = 1105  vic = 2636 }	  # Vestbygden ->  Egedesminde
+link = { eu3 = 370 vic = 252 vic = 3246 } # Reykjavik -> Reykjavik and Jan Mayen
+link = { eu3 = 371 vic = 253 }		  # Akureyri -> Faroe Islands
 
 # Spain, Gibraltar and Islands 29 Provinces to 45 Provinces
 
