@@ -18,6 +18,7 @@ public:
   Logger& operator<< (std::string dat);
   Logger& operator<< (QString dat);
   Logger& operator<< (int dat);
+  Logger& operator<< (unsigned int dat);  
   Logger& operator<< (double dat);
   Logger& operator<< (char dat);
   Logger& operator<< (char* dat);

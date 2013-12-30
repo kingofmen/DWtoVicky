@@ -16,6 +16,9 @@ extraGoods = {
   
 } 
 
+hodBaseOne = 0.99
+hodBaseTwo = 1.75
+
 extraInterest = {
   # List of countries that are interesting for statistics even though
   # not human.

@@ -76,6 +76,12 @@ Logger& Logger::operator<< (const char* dat) {
   return ((*this) << std::string(dat)); 
 }
 
+Logger& Logger::operator<< (unsigned int dat) {
+  if (!active) return *this;
+  buffer.append(QString("%1").arg(dat)); 
+  return *this; 
+}
+
 Logger& Logger::operator<< (QString dat) {
   if (!active) return *this;
   int linebreak = dat.indexOf('\n');

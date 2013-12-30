@@ -20,6 +20,7 @@
 
 bool fullPopWeightDebug = false; 
 Object* debugObject = 0; 
+const string HODSTRING = ".\\HoD\\"; 
 
 using namespace std; 
 
@@ -180,7 +181,7 @@ string remQuotes (string tag) {
 }
 
 WorkerThread::WorkerThread (string fn, int aTask)
-  : targetVersion(".\\HoD\\")
+  : targetVersion(HODSTRING)
   , sourceVersion(".\\DW\\")
   , fname(fn)
   , eu3Game(0)
@@ -1481,11 +1482,11 @@ void WorkerThread::messWithSize () {
 void WorkerThread::configure () {
   configObject = loadTextFile("config.txt");
   srand(configObject->safeGetInt("randseed")); 
-  targetVersion = configObject->safeGetString("targetVersion", ".\\HoD\\");
+  targetVersion = configObject->safeGetString("targetVersion", HODSTRING);
   sourceVersion = configObject->safeGetString("sourceVersion", ".\\DW\\");  
   customObject = loadTextFile(targetVersion + "Custom.txt");
   
-  if ((targetVersion == ".\\AHD\\") || (targetVersion == ".\\HoD\\")) {
+  if ((targetVersion == ".\\AHD\\") || (targetVersion == HODSTRING)) {
     Object* provdirlist = configObject->safeGetObject("provdirs");
     provdirs = provdirlist->getValue("dir");
     vicTechs = loadTextFile(targetVersion + "victechs.txt");
@@ -4894,7 +4895,7 @@ void WorkerThread::techLevels () {
     }
     vicCountry->resetLeaf("schools", school); 
 
-    if ((targetVersion == ".\\AHD\\") || (targetVersion == ".\\HoD\\")) {
+    if ((targetVersion == ".\\AHD\\") || (targetVersion == HODSTRING)) {
       Object* countryCustom = customObject->safeGetObject(eu3Country->getKey());
       if ((!countryCustom) || (0 == countryCustom->safeGetObject("research"))) countryCustom = customObject->safeGetObject("DUMMY");
       assert(countryCustom);
@@ -5534,20 +5535,68 @@ void WorkerThread::navalBases () {
     
     if (eu3prov->safeGetString("doneNavalBase", "no") != "yes") {
       eu3prov->resetLeaf("doneNavalBase", "yes");
-      if (eu3prov->safeGetString("naval_base", "no") == "yes") {
-	Object* vfort = new Object("naval_base");
-	vfort->setObjList(true);
-	vfort->addToList("2.000");
-	vfort->addToList("2.000");
-	(*vp)->setValue(vfort);
+      string level = "none";
+      if (eu3prov->safeGetString("naval_base", "no") == "yes") level = "2.000";
+      else if (eu3prov->safeGetString("naval_arsenal", "no") == "yes") level = "1.000";
+      if (level == "none") continue;
+      Object* vfort = new Object("naval_base");
+      vfort->setObjList(true);
+      vfort->addToList(level);
+      vfort->addToList(level);
+      (*vp)->setValue(vfort);
+      //Logger::logStream(Logger::Debug) << "Created naval base level " << level << " in " << (*vp)->getKey() << ".\n"; 
+    }
+  }
+
+  if (HODSTRING != targetVersion) return;
+  // Enforce maximum of one naval base per state.
+
+  double levelOne = configObject->safeGetFloat("hodBaseOne", 0.99);
+  double levelTwo = configObject->safeGetFloat("hodBaseTwo", 1.75);
+  
+  objvec allVicObjects = vicGame->getLeaves();
+  for (objiter g = allVicObjects.begin(); g != allVicObjects.end(); ++g) {
+    objvec states = (*g)->getValue("state");
+    if (0 == states.size()) continue;
+    for (objiter state = states.begin(); state != states.end(); ++state) {
+      Object* provs = (*state)->safeGetObject("provinces");
+      Object* target = 0;
+      set<Object*> coastals;
+      double numCoastals = 0; 
+      double totalBases = 0;
+      Logger::logStream(Logger::Debug) << "State naval bases: ";
+      for (int p = 0; p < provs->numTokens(); ++p) {
+	string provid = provs->getToken(p);
+	Logger::logStream(Logger::Debug) << provid << " ";
+	Object* province = vicGame->safeGetObject(provid);
+	if (!province) continue;
+	for (objiter eu3 = vicProvinceToEu3ProvincesMap[province].begin(); eu3 != vicProvinceToEu3ProvincesMap[province].end(); ++eu3) {
+	  if (!heuristicIsCoastal(*eu3)) continue;
+	  if (coastals.find(*eu3) != coastals.end()) continue;
+	  coastals.insert(*eu3);
+	  numCoastals += (1.0 / eu3ProvinceToVicProvincesMap[*eu3].size()); 
+	}
+	if (!heuristicVicIsCoastal(province)) continue;	
+	Object* base = province->safeGetObject("naval_base");
+	if (!base) continue;	
+	if (!target) target = province;
+	totalBases += base->tokenAsFloat(0); 
+	province->unsetValue("naval_base"); 
       }
-      else if (eu3prov->safeGetString("naval_arsenal", "no") == "yes") {
-	Object* vfort = new Object("naval_base");
-	vfort->setObjList(true);
-	vfort->addToList("1.000");
-	vfort->addToList("1.000");
-	(*vp)->setValue(vfort);
-      }
+      Logger::logStream(Logger::Debug) << numCoastals << " " << totalBases << " " << (target ? target->getKey() : "no target\n") << " ";
+      if (0 == coastals.size()) continue;
+      if (0.1 > totalBases) continue;
+      if (!target) continue;
+      totalBases /= numCoastals; 
+      if (totalBases < levelOne) continue;
+      string level = "1.000";
+      if (totalBases >= levelTwo) level = "2.000";
+      Logger::logStream(Logger::Debug) << totalBases << " " << level << " " << levelOne << " " << levelTwo << "\n"; 
+      Object* base = new Object("naval_base");
+      base->setObjList(true);
+      base->addToList(level);
+      base->addToList(level);
+      target->setValue(base);
     }
   }
 }
@@ -6175,7 +6224,7 @@ void WorkerThread::convert () {
 
     string filename = "history\\provinces\\" + historyFile + ".txt";
     
-    if ((targetVersion == ".\\AHD\\") || (targetVersion == ".\\HoD\\")) {
+    if ((targetVersion == ".\\AHD\\") || (targetVersion == HODSTRING)) {
       for (objiter currDirectory = provdirs.begin(); currDirectory != provdirs.end(); ++currDirectory) {
 	filename = "history\\provinces\\" + remQuotes((*currDirectory)->getLeaf()) + "\\" + historyFile + ".txt";
 	ifstream checkFile((targetVersion + filename).c_str());
