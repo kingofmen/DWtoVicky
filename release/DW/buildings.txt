@@ -20,75 +20,75 @@ temple = {
   modifier = {
     stability_cost = -4 
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
   category = 1
-  moddingPoints = 1
+  customPoints = 1
 }
 
 courthouse = {
   previous = temple
-  cost = 50
+  cost = 75
   time = 12
   modifier = {
     local_revolt_risk = -1
   }
-  destroy_on_conquest = yes
-  literacy = 1
-  moddingPoints = 1
+  spare_on_core = yes
+  customPoints = 1
 }
 
 spy_agency = {
   previous = courthouse
-  cost = 50
+  cost = 100
   time = 12
   modifier = {
-    local_spy_defence = 0.25
+    local_spy_defence = 0.50
+    stability_cost = -2
   }
   destroy_on_conquest = yes
-  moddingPoints = 1
+  spare_on_core = yes
+  customPoints = 1
 }
 
 town_hall = {
   previous = spy_agency
-  cost = 50
+  cost = 150
   time = 12
   modifier = {
-    local_spy_defence = 0.25
-    stability_cost = -2 
+    local_tax_modifier = 0.25
   }
   destroy_on_conquest = yes
-  literacy = 1
-  bureaucrats = 0.05
-  moddingPoints = 1
+  spare_on_core = yes
 }
 
 college = {
   previous = town_hall
-  cost = 100
+  cost = 200
   time = 24
   modifier = {
-    local_revolt_risk = -1
     local_spy_defence = 0.25
+    spies = 0.05
+    officials = 0.05
   }
   destroy_on_conquest = yes
   literacy = 1
-  moddingPoints = 1
+  customPoints = 1
 }
 
 cathedral = {
   previous = college
-  cost = 100
+  cost = 300
   time = 24
   modifier = {
     stability_investment = 10
     local_spy_defence = 0.25
     local_missionary_placement_chance = 0.01
+    missionaries = 0.05
   }
   destroy_on_conquest = yes
   category = 1
-  bureaucrats = 0.50 
-  clergymen = 0.05 
-  moddingPoints = 2 
+  bureaucrats = 1.0
+  clergymen = 1.0
+  customPoints = 2
 }
 
 armory = {
@@ -97,82 +97,72 @@ armory = {
   modifier = {
     regiment_recruit_speed = -0.1
     local_regiment_cost = -0.05
-    local_manpower = 0.25
+    local_manpower = 0.05
   }
-  destroy_on_conquest = yes
   category = 2
+  spare_on_core = yes
 }
 
 training_fields = {
   previous = armory
-  cost = 50
+  cost = 75
   time = 12
   modifier = {
     regiment_recruit_speed = -0.1
     local_regiment_cost = -0.05
-    local_manpower = 0.25
+    local_manpower = 0.05
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 barracks = {
   previous = training_fields
-  cost = 50
+  cost = 100
   time = 12
   modifier = {
     local_regiment_cost = -0.1
-    local_manpower = 1
+    local_manpower = 0.25
   }
   destroy_on_conquest = yes
-}
-
-drydock = {
-  previous = dock
-  cost = 50
-  time = 12
-  modifier = {
-    ship_recruit_speed = -0.1
-    naval_forcelimit = 1
-  }
-  destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 regimental_camp = {
   previous = barracks
-  cost = 50
-  time = 24
+  cost = 150
+  time = 12
   modifier = {
     local_manpower_modifier = 0.2
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 arsenal = {
   previous = regimental_camp
-  cost = 100
+  cost = 200
   time = 24
   modifier = {
     regiment_recruit_speed = -0.3
-    local_manpower_modifier = 0.3
+    local_manpower_modifier = 0.25
   }
   destroy_on_conquest = yes
 }
 
 conscription_center = {
   previous = arsenal
-  cost = 100
+  cost = 300
   time = 24
   modifier = {
-    local_manpower = 5
-    land_forcelimit = 5
+    local_manpower_modifier = 0.25
+    land_forcelimit = 2
   }
   destroy_on_conquest = yes
   category = 2
   soldiers = 0.5 
-  farmers = -0.025
-  labourers = -0.025 
+  farmers = -0.05
+  labourers = -0.05 
 }
-
 
 dock = {
   cost = 50
@@ -184,13 +174,24 @@ dock = {
     local_ship_repair = 0.25
     local_production_efficiency = 0.25
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
   category = 3
+}
+
+drydock = {
+  previous = dock
+  cost = 75
+  time = 12
+  modifier = {
+    ship_recruit_speed = -0.1
+    naval_forcelimit = 1
+  }
+  spare_on_core = yes
 }
 
 shipyard = {
   previous = drydock
-  cost = 50
+  cost = 100
   time = 12
   modifier = {
     local_ship_cost = -0.1
@@ -198,90 +199,93 @@ shipyard = {
 
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 grand_shipyard = {
    previous = shipyard
-  cost = 50
+  cost = 150
   time = 12
   modifier = {
     local_ship_cost = -0.1
     ship_recruit_speed = -0.1
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 naval_arsenal = {
-   previous = grand_shipyard
-  cost = 100
+  previous = grand_shipyard
+  cost = 200
   time = 24
   modifier = {
     local_ship_cost = -0.2
     ship_recruit_speed = -0.2
-    naval_forcelimit = 5
+    naval_forcelimit = 2
   }
   destroy_on_conquest = yes
-        artisans = 0.33 
+  artisans = 1.0 
 }
 
 naval_base = {
-   previous = naval_arsenal
-  cost = 100
+  previous = naval_arsenal
+  cost = 300
   time = 24
   modifier = {
     local_ship_cost = -0.2
     ship_recruit_speed = -0.2
-    naval_forcelimit = 5
+    naval_forcelimit = 2
   }
   destroy_on_conquest = yes
   category = 3
 }
 
+
 constable = {
-  
   cost = 50
   time = 12
   modifier = {
     direct_tax_percentage = 0.25    
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
   category = 5
 }
 
 workshop = {
   previous = constable
-  cost = 50
+  cost = 75
   time = 12
   modifier = {
     tax_income = 1  
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 counting_house = {
   previous = workshop
-  cost = 50
+  cost = 100
   time = 12
   modifier = {
     local_production_efficiency = 0.25
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 treasury_office = {
   previous = counting_house
-  cost = 50
+  cost = 150
   time = 12
   modifier = {
-    local_tax_modifier = 0.25
     direct_tax_percentage = 0.25    
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 mint = {
   previous = treasury_office
-  cost = 100
+  cost = 200
   time = 24
   modifier = {
     local_tax_modifier = 0.5
@@ -291,13 +295,14 @@ mint = {
 
 stock_exchange = {
   previous = mint
-  cost = 100
+  cost = 300
   time = 24
   modifier = {
     tax_income = 5  
   }
   destroy_on_conquest = yes
-  artisans = 0.5 
+  artisans = 1.0
+  capitalists = 1.0
 }
 
 marketplace = {
@@ -306,60 +311,63 @@ marketplace = {
   modifier = {
     local_trade_income_modifier = 0.10
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
   category = 6
 }
 
 trade_depot = {
   previous = marketplace
-  cost = 50
+  cost = 75
   time = 12
   modifier = {
     trade_income = 1
   }
-  destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 canal = {
   previous = trade_depot
-  cost = 50
+  cost = 100
   time = 12
   modifier = {
     local_trade_income_modifier = 0.10
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 road_network = {
   previous = canal
-  cost = 50
+  cost = 150
   time = 12
   modifier = {
     trade_income = 1
     local_movement_speed = 0.1
   }
   destroy_on_conquest = yes
+  spare_on_core = yes
 }
 
 post_office = {
   previous = road_network
-  cost = 100
+  cost = 200
   time = 24
   modifier = {
     global_trade_income_modifier = 0.01
   }
   destroy_on_conquest = yes
+  customPoints = 1 
 }
 
 customs_house = {
   previous = post_office
-  cost = 100
+  cost = 300
   time = 24
   modifier = {
     trade_efficiency = 0.01
   }
   destroy_on_conquest = yes
-        capitalists = 0.5 
+  capitalists = 1.0
 }
 
 fort1 = {
@@ -376,7 +384,7 @@ fort1 = {
 
 fort2 = {
   previous = fort1
-  cost = 50
+  cost = 75
   time = 12
   modifier = {
     fort_level = 1
@@ -388,7 +396,7 @@ fort2 = {
 
 fort3 = {
   previous = fort2
-  cost = 50
+  cost = 100
   time = 12
   modifier = {
     fort_level = 1
@@ -400,7 +408,7 @@ fort3 = {
 
 fort4 = {
   previous = fort3
-  cost = 50
+  cost = 150
   time = 12
   modifier = {
     fort_level = 1
@@ -408,11 +416,12 @@ fort4 = {
     supply_limit = 0.5
   }
   destroy_on_conquest = no
+  customPoints = 0.25
 }
 
 fort5 = {
   previous = fort4
-  cost = 100
+  cost = 200
   time = 24
   modifier = {
     fort_level = 1
@@ -425,7 +434,7 @@ fort5 = {
 
 fort6 = {
   previous = fort5
-  cost = 100
+  cost = 300
   time = 24
   modifier = {
     fort_level = 1
@@ -434,8 +443,8 @@ fort6 = {
     supply_limit = 1
   }
   destroy_on_conquest = yes
-        officers = 0.5 
 }
+
 
 tax_assessor = {
   cost = 1000
@@ -452,7 +461,7 @@ tax_assessor = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-        bureaucrats = 0.66 
+  bureaucrats = 1.0
 }
 
 embassy = {
@@ -484,7 +493,7 @@ glorious_monument = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-        officers = 0.66
+  officers = 1.0
 }
 
 march = {
@@ -503,14 +512,14 @@ march = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-        soldiers = 0.66 
+  soldiers = 0.66 
 }
 
 grain_depot = {
   cost = 1000
   time = 12
   trigger = {
-      is_core = yes
+      is_core = THIS
       trade_goods = grain
     }
   modifier = {
@@ -520,8 +529,8 @@ grain_depot = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-        farmers = 0.50 
-        labourers = 0.50 
+  farmers = 0.50 
+  labourers = 0.50 
 }
 
 royal_palace = {
@@ -537,7 +546,7 @@ royal_palace = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-        aristocrats = 0.66 
+  aristocrats = 0.66 
 }
 
 war_college = {
@@ -549,7 +558,7 @@ war_college = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-        officers = 0.66 
+  officers = 1.0
 }
 
 admiralty = {
@@ -564,7 +573,7 @@ admiralty = {
   destroy_on_conquest = yes
   one_per_country = yes
   category = 8
-  officers = 0.66 
+  officers = 1.0
 }
 
 refinery = {
@@ -637,6 +646,5 @@ university = {
   }
   onmap = yes
   category = 7
-  literacy = 5 
+  literacy = 5
 }
-

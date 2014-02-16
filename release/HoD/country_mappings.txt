@@ -31,7 +31,7 @@ link = { eu3 = ARK eu3 = ASS eu3 = SST eu3 = TAU eu3 = MLB eu3 = PEG vic = BUR }
 link = { eu3 = CAN eu3 = ENG vic = CAN } 				#Canada <= Canada 
 link = { eu3 = CAT eu3 = ARA vic = CAT } 				#checked		Catalonia <= Aragon
 link = { eu3 = CHE eu3 = SHA eu3 = CRE eu3 = HUR eu3 = IRO vic = CHE } 			#checked		Cherokee <= Shawnee, Creek, Huron
-link = { eu3 = MNG eu3 = WUU eu3 = XIA vic = CHI } 			#China <= Ming, Wu, Xia
+link = { eu3 = MNG eu3 = WUU eu3 = XIA vic = SXI } 			#China <= Ming, Wu, Xia
 link = { eu3 = CHL vic = CHL } 				#checked		Chile <= Chile
 link = { eu3 = COL vic = CLM } 				#checked		Columbia
 link = { eu3 = THU eu3 = LAU vic = COB } 				#checked		Saxe-Coburg-Gotha <= Thuringia
@@ -67,7 +67,7 @@ link = { eu3 = SHL vic = HOL } 				#checked		Holstein <= Holstein
 link = { eu3 = NED eu3 = HOL eu3 = FRI eu3 = UTR eu3 = GEL vic = NET } 			#Netherlands <= Friesland, Utrecht, Geldria, 
 link = { eu3 = HUN vic = HUN } 
 link = { eu3 = HYD eu3 = BAH eu3 = BIJ eu3 = GOC vic = HYD } 			#Hyderabad <= Deccan, Bijapur, Golcanda
-link = { eu3 = DLH eu3 = BAS eu3 = HIN vic = IND } 				#Indore <= Delhi, Ahmadnagar 
+link = { eu3 = DLH eu3 = BAS eu3 = HIN vic = HND } 				#Indore <= Delhi, Ahmadnagar 
 link = { eu3 = CEP vic = ION } 
 link = { eu3 = IRE eu3 = MNS eu3 = TYR eu3 = CNN eu3 = LEI vic = IRE } 		#Ireland <= IRE_Munster, Tyrone, Connacht, Leinster
 link = { eu3 = ITA vic = ITA } 
@@ -101,7 +101,7 @@ link = { eu3 = BRR vic = NAG } 				#Nagpur <= Berar
 link = { eu3 = MAI eu3 = TRI eu3 = KOL vic = NAS } 			#Nassau <= Mainz, Trier, Kologne
 link = { eu3 = NAJ eu3 = SHR vic = NEJ } 				#Nejd <= Najd, Sharjah
 link = { eu3 = NPL vic = NEP } 				#Nepal <= Nepal
-link = { eu3 = WES eu3 = BAV vic = NGF } 				#North German Fed <= Westfalia
+link = { eu3 = WES vic = NGF } 				#North German Fed <= Westfalia
 link = { eu3 = JAP eu3 = MIN eu3 = TAC eu3 = TAI eu3 = FUJ eu3 = RYU vic = JAP } 				#checked		Japan <= Japan, Ryuku
 link = { eu3 = NOR vic = NOR } 				#Norway <= Norway
 link = { eu3 = OLD eu3 = AAC vic = OLD } 				#Oldenburg <= Oldenburg
@@ -130,7 +130,7 @@ link = { eu3 = KHM vic = CAM }
 link = { eu3 = SIC eu3 = NAP vic = SIC } 				#checked		Two eu3 = Sicilies <= Sicily
 link = { eu3 = TRA vic = SIE } 				#checked		Siebenbürgen <= Transylvania
 link = { eu3 = SND vic = SIN } 				#checked		Sind <= Sind
-link = { eu3 = SOK eu3 = SON eu3 = MAL eu3 = OYO eu3 = SOF eu3 = HAU eu3 = KBO eu3 = LOA eu3 = BEN vic = SOK } 	
+link = { eu3 = SOK eu3 = SON eu3 = MAL eu3 = OYO eu3 = SOF eu3 = HAU eu3 = KBO eu3 = LOA vic = SOK } 	
 link = { eu3 = KON vic = CNG } 	
 link = { eu3 = SPA eu3 = CAS eu3 = GAL eu3 = NAV vic = SPA } 			#Spain <= Spain, Castille, Galicia, Navarre
 link = { eu3 = SUL vic = PHI }				#checked		Philippines <= Sulu
@@ -139,7 +139,7 @@ link = { eu3 = SWI vic = SWI } 				#Switzerland <= Schweiz
 link = { eu3 = TIB vic = TIB } 				#Tibet <= Tibet
 link = { eu3 = TRV eu3 = MAD eu3 = MLD eu3 = VIJ eu3 = KRK eu3 = KTH vic = TRA } 		#Travancore <= Travanacore, Madurai, Maldive, Vijaynagara, Karnatic, Ceylon
 link = { eu3 = TRP vic = TRI } 				#Tripoli <= Tripoli
-link = { eu3 = ZIM vic = RHO } 				#checked		Southern Rhodesia <= Mutapa
+link = { eu3 = ZIM eu3 = BEN vic = RHO } 		#checked		Southern Rhodesia <= Mutapa
 link = { eu3 = TUN vic = TUN } 				#checked		Tunis <= Tunisia
 link = { eu3 = TUR eu3 = CND eu3 = DUL eu3 = KAR eu3 = AYD eu3 = SRU eu3 = MEN eu3 = RAM vic = TUR } 	#Ottoman eu3 = Empire <= Syria, Ottomans, Candar, Dulkadir, Karaman, Aydin, Saruhan, Mentese, Ramazan
 link = { eu3 = TUS eu3 = SIE eu3 = PIS eu3 = ETR vic = TUS } 		#checked		Tuscany <= Tuscany, Siena, Pisa, Etruria
@@ -147,7 +147,7 @@ link = { eu3 = TUS eu3 = SIE eu3 = PIS eu3 = ETR vic = TUS } 		#checked		Tuscany
 #link = { eu3 = SYR vic = U10 } 				#Syria <= Syria
 link = { eu3 = IRQ eu3 = AKK vic = IRQ } 	#checked		Iraq <= Akkoyunlu 
 link = { eu3 = OIR vic = XIN } 				#checked		Xinjiang <= Oirat eu3 = Horde
-link = { eu3 = QIN vic = SXI } 				#checked		Shanxi <= Qin
+link = { eu3 = QIN vic = CHI } 				#checked		Shanxi <= Qin
 link = { eu3 = MCH vic = MCK } 				#checked		Manchukuo <= Manchuria
 link = { eu3 = KHA eu3 = NOG vic = MGL } 				#checked		Mongolia <= Mongol eu3 = Khanate, Nogai eu3 = Horde
 link = { eu3 = CAM vic = UCA } 				#United eu3 = States eu3 = of eu3 = Central eu3 = America<=United eu3 = States eu3 = of eu3 = Central eu3 = America
@@ -156,7 +156,6 @@ link = { eu3 = UKR eu3 = ZAZ vic = UKR } 				#Ukraine <= Ukraine, Zaporozhie
 <= USA
 link = { eu3 = USA vic = CAL } 
 link = { eu3 = VEN eu3 = AQU vic = VEN } 			#Venice <= Venice, Mantua, Aquileia
-link = { eu3 = VIE vic = VIE } 				#Wiang eu3 = Chhan <= Vientiane
 link = { eu3 = VNZ vic = VNZ } 				#Venezuela <= Venezuela
 link = { eu3 = WAL vic = WAL } 				#Wallachia <= Wallachia
 link = { eu3 = MAG vic = WEI } 				#Saxe-Weimar <= Magdeburg

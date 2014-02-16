@@ -316,6 +316,7 @@ private:
   Object* traitObject;
   objvec provdirs;
   Object* vicTechs;
+  Object* vicInventions; 
   map<string, double> goodsToRedistribute;
   Object* eu3ContinentObject;
   Object* rgoList; // Redistribution object, containing province switch assignments. 

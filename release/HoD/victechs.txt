@@ -530,7 +530,6 @@ point_defense_system = {
 			is_greater_power = yes
 		}
 	}
-
 }
 deep_defense_system = {
 	area = army_doctrine
@@ -608,7 +607,6 @@ infiltration = {
 			is_greater_power = yes
 		}
 	}
-
 }
 modern_army_doctrine = {
 	area = army_doctrine
@@ -729,7 +727,6 @@ machine_guns = {
 			is_greater_power = yes
 		}
 	}
-	
 }
 bolt_action_rifles = {
 	area = light_armament
@@ -1122,7 +1119,7 @@ military_directionism = {
 			factor = 100
 			is_greater_power = yes
 		}
-	}	
+	}
 }
 aeronautics = {
 	area = military_science

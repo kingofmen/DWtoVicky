@@ -219,11 +219,18 @@ void WorkerThread::run () {
 }
 
 int WorkerThread::level (Object* building) {
+  int cache = building->safeGetInt("building_level", -1);
+  if (cache >= 0) return cache;
   string prev = building->safeGetString("previous", "bah");
-  if (prev == "bah") return 1;
+  if (prev == "bah") {
+    building->resetLeaf("building_level", 1);
+    return 1;
+  }
   for (objiter b = buildingTypes.begin(); b != buildingTypes.end(); ++b) {
     if ((*b)->getKey() != prev) continue;
-    return 1 + level(*b);
+    int value = 1 + level(*b);
+    building->resetLeaf("building_level", value);
+    return value;
   }
   assert(false); 
   return 0; 
@@ -400,6 +407,7 @@ string unitType (string regtype) {
   else if (regtype == "western_medieval_infantry") return "infantry";  
   else if (regtype == "bardiche_infantry") return "infantry";
   else if (regtype == "western_men_at_arms") return "infantry";
+  else if (regtype == "western_longbow") return "infantry";
   else if (regtype == "swiss_landsknechten") return "infantry";
   else if (regtype == "halberd_infantry") return "infantry";
   else if (regtype == "ottoman_yaya") return "infantry";
@@ -410,6 +418,9 @@ string unitType (string regtype) {
   else if (regtype == "mongol_bow") return "infantry"; 
   else if (regtype == "muscovite_musketeer") return "infantry";
   else if (regtype == "native_indian_archer") return "infantry";
+  else if (regtype == "persian_rifle") return "infantry";
+  else if (regtype == "indian_footsoldier") return "infantry";
+  else if (regtype == "indian_archers") return "infantry";
   else if (regtype == "mamluk_duel") return "infantry";
   else if (regtype == "chinese_longspear") return "infantry";
   else if (regtype == "ottoman_sekban") return "infantry";
@@ -420,9 +431,32 @@ string unitType (string regtype) {
   else if (regtype == "scottish_highlander") return "infantry";
   else if (regtype == "ottoman_nizami_cedid") return "infantry";
   else if (regtype == "british_redcoat") return "infantry";
+  else if (regtype == "british_square") return "infantry";
   else if (regtype == "napoleonic_square") return "infantry";
   else if (regtype == "mixed_order_infantry") return "infantry";
   else if (regtype == "french_bluecoat") return "infantry";
+  else if (regtype == "durrani_rifled_musketeer") return "infantry";
+  else if (regtype == "ali_bey_reformed_infantry") return "infantry";
+  else if (regtype == "prussian_drill") return "infantry";
+  else if (regtype == "french_impulse") return "infantry";
+  else if (regtype == "muslim_mass_infantry") return "infantry";
+  else if (regtype == "ottoman_azab") return "infantry";
+  else if (regtype == "persian_shamshir") return "infantry";
+  else if (regtype == "saxon_infantry") return "infantry";
+  else if (regtype == "east_asian_spearmen") return "infantry";
+  else if (regtype == "eastern_bow") return "infantry";
+  else if (regtype == "african_spearmen") return "infantry";
+  else if (regtype == "south_american_spearmen") return "infantry";
+  else if (regtype == "gaelic_galloglaigh") return "infantry";
+  else if (regtype == "gaelic_mercenary") return "infantry";
+  else if (regtype == "italian_condotta") return "infantry";
+  else if (regtype == "ottoman_janissary") return "infantry";
+  else if (regtype == "ottoman_reformed_janissary") return "infantry";
+  else if (regtype == "muscovite_soldaty") return "infantry";
+  else if (regtype == "afsharid_reformed_infantry") return "infantry";
+  else if (regtype == "prussian_frederickian") return "infantry";
+  else if (regtype == "ottoman_new_model") return "infantry";
+  else if (regtype == "austrian_jaeger") return "infantry";
   //else if (regtype == "") return "infantry";
   else if (regtype == "chambered_demi_cannon") return "artillery";
   else if (regtype == "large_cast_bronze_mortar") return "artillery";
@@ -433,7 +467,7 @@ string unitType (string regtype) {
   else if (regtype == "swivel_cannon") return "artillery";
   else if (regtype == "royal_mortar") return "artillery";
   else if (regtype == "flying_battery") return "artillery";
-  //else if (regtype == "") return "artillery";
+  else if (regtype == "leather_cannon") return "artillery";
   //else if (regtype == "") return "artillery";
   else if (regtype == "qizilbash_cavalry") return "cavalry";
   else if (regtype == "french_caracolle") return "cavalry";
@@ -449,6 +483,7 @@ string unitType (string regtype) {
   else if (regtype == "shaybani") return "cavalry";
   else if (regtype == "rajput_hill_fighters") return "cavalry";
   else if (regtype == "ottoman_spahi") return "cavalry";
+  else if (regtype == "ottoman_timariot") return "cavalry";
   else if (regtype == "ottoman_reformed_spahi") return "cavalry";
   else if (regtype == "austrian_hussar") return "cavalry";
   else if (regtype == "swedish_arme_blanche") return "cavalry";  
@@ -456,7 +491,14 @@ string unitType (string regtype) {
   else if (regtype == "open_order_cavalry") return "cavalry";
   else if (regtype == "napoleonic_lancers") return "cavalry";
   else if (regtype == "french_cuirassier") return "cavalry";
-  //else if (regtype == "") return "cavalry";
+  else if (regtype == "mamluk_musket_charge") return "cavalry";
+  else if (regtype == "zaporoghian_cossack") return "cavalry";
+  else if (regtype == "mongol_swarm") return "cavalry";
+  else if (regtype == "ottoman_toprakli_hit_and_run") return "cavalry";
+  else if (regtype == "ottoman_toprakli_dragoon") return "cavalry";
+  else if (regtype == "prussian_uhlan") return "cavalry";
+  else if (regtype == "french_carabinier") return "cavalry";
+  else if (regtype == "british_hussar") return "cavalry";
   //else if (regtype == "") return "cavalry";
   else if (regtype == "caravel") return "big_ship";
   else if (regtype == "wargalleon") return "big_ship";
@@ -1320,13 +1362,13 @@ void WorkerThread::ProvinceGroup::redistribute (int& popid) {
       boss->resetCulture(pop, eu3prov, minority);
       (*vprov)->setValue(pop);
       sizeMap[(*vprov)->safeGetString("owner", "NONE")].second += size;
-      if (minority != "") {
+      if ((minority != "") && (minority != "NONE")) {
 	Object* natives = new Object((*poptype)->ptype);
 	natives->setLeaf("id", popid++);
 	natives->setLeaf("size", (int) floor(size * 0.1 + 0.5));
 	pop->resetLeaf("size", (int) floor(size * 0.9 + 0.5));
 	natives->setLeaf("native", "yes"); 
-	string rel = eu3prov->safeGetString("religion"); 
+	string rel = eu3prov->safeGetString("religion");
 	natives->setLeaf(boss->eu3CultureToVicCulture(minority), boss->eu3CultureToVicCulture(rel));
 	(*vprov)->setValue(natives); 
       }
@@ -1492,6 +1534,7 @@ void WorkerThread::configure () {
     vicTechs = loadTextFile(targetVersion + "victechs.txt");
     assert(vicTechs);
     assert(vicTechs->getLeaves().size());
+    vicInventions = loadTextFile(targetVersion + "vicInventions.txt"); 
   }
   
   Logger::logStream(Logger::Debug).setActive(false);
@@ -1708,6 +1751,7 @@ void WorkerThread::clearVicOwners () {
     if ((*g)->safeGetString("unemployment_subsidies", "NOREFORM") != "NOREFORM") (*g)->resetLeaf("unemployment_subsidies", "no_subsidies");
     if ((*g)->safeGetString("pensions",               "NOREFORM") != "NOREFORM") (*g)->resetLeaf("pensions",               "no_pensions");
     if ((*g)->safeGetString("health_care",            "NOREFORM") != "NOREFORM") (*g)->resetLeaf("health_care",            "no_health_care");
+    if ((*g)->safeGetString("school_reforms",         "NOREFORM") != "NOREFORM") (*g)->resetLeaf("school_reforms",         "no_schools");   
   }
 }
 
@@ -1793,6 +1837,9 @@ void WorkerThread::createProvinceMappings () {
 	dprov->resetLeaf("continent", vicprov->safeGetString("continent", "europe")); 
 	eu3ProvinceToVicProvincesMap[dprov].push_back(vicprov);
       }
+      for (objiter vic = eu3ProvinceToVicProvincesMap[eu3prov].begin(); vic != eu3ProvinceToVicProvincesMap[eu3prov].end(); ++vic) {
+	Logger::logStream(Logger::Debug) << "  " << nameAndNumber(*vic) << "\n"; 
+      }
     }
     if (pgroup) pgroup->addEu3Province(eu3prov);
   }
@@ -1875,7 +1922,6 @@ void WorkerThread::createCountryMappings () {
     // None of the other countries should be vassals of any other power.
     // If they are, absorb them into their overlord.
     
-    
     for (objiter eu3 = (*m).second.begin()+1; eu3 != (*m).second.end(); ++eu3) {
       for (objiter v = vassals.begin(); v != vassals.end(); ++v) {
 	Object* currentVassal = findEu3CountryByTag((*v)->safeGetString("second", "\"NONE\""));
@@ -1883,6 +1929,9 @@ void WorkerThread::createCountryMappings () {
 	Object* currentBoss = findEu3CountryByTag((*v)->safeGetString("first", "\"NONE\""));
 	if (currentBoss == eu3main) continue;
 	eu3CountryToVicCountryMap[currentVassal] = eu3CountryToVicCountryMap[currentBoss];
+	Logger::logStream(Logger::Debug) << "Absorbing " << currentVassal->getKey()
+					 << " into " << currentBoss->getKey()
+					 << ".\n"; 
       }
     }
   }
@@ -2238,7 +2287,9 @@ double WorkerThread::calculateReligionBadness (string provReligion, string state
 }
 
 double WorkerThread::getPopWeight (Object* eu3prov, string poptype) {
- 
+  static double buildingUnitCost    = configObject->safeGetFloat("buildingUnitCost", 500);
+  static double buildingMinimumCost = configObject->safeGetFloat("buildingMinimumCost", 100);
+  
   if (fullPopWeightDebug) {
     Object* popWeights = eu3prov->safeGetObject("popWeights");
     if (popWeights) {
@@ -2419,7 +2470,7 @@ double WorkerThread::getPopWeight (Object* eu3prov, string poptype) {
       if (firstDay > gameDays) fraction = 1.5; // Built before its time - maximum bonus 
       else fraction = min(1.5, buildingDays[*b] / (gameDays - firstDay));
       eu3prov->resetLeaf((*b)->getKey() + "_fraction", fraction); 
-      fraction *= sqrt((*b)->safeGetFloat("cost", 50) / 1000);
+      fraction *= sqrt(min(buildingMinimumCost, (*b)->safeGetFloat("cost", 50)) / buildingUnitCost);
       fraction += 1; 
       fraction *= (*b)->safeGetFloat("officials", 1);
 
@@ -2427,7 +2478,7 @@ double WorkerThread::getPopWeight (Object* eu3prov, string poptype) {
 	popTypeBonuses[(*p).first] += (*b)->safeGetFloat((*p).first) * (buildingDays[*b] / totalDays); 
       }
     }
-    buildingDays[*b] = min(sqrt(fraction), 10.0); 
+    buildingDays[*b] = min(sqrt(fraction), 25.0); 
   }
   
   ret *= (1 - 0.9*foreignOccupationDays);
@@ -2624,7 +2675,10 @@ void WorkerThread::reassignProvinces () {
       provs->addToList(prov->getKey());
       
       bool colony = true; 	
-      if (!isOverseasVicProvinces(prov, vicGame->safeGetObject(owner->safeGetString("capital", "-1")))) colony = false;
+      if (!isOverseasVicProvinces(prov, vicGame->safeGetObject(owner->safeGetString("capital", "-1")))) {
+	colony = false;
+	prov->unsetValue("colonial"); 
+      }
       else {
 	double ownedSinceForever = 0; 
 	for (objiter eu3prov = vicProvinceToEu3ProvincesMap[prov].begin(); eu3prov != vicProvinceToEu3ProvincesMap[prov].end(); ++eu3prov) {
@@ -2664,13 +2718,26 @@ void WorkerThread::reassignProvinces () {
 	  
 	  if (ownerDays > required*ownedDays) ownedSinceForever++;
 	}
-	if (0.66 <= ownedSinceForever / vicProvinceToEu3ProvincesMap[prov].size()) colony = false; 
+	if (0.66 <= ownedSinceForever / vicProvinceToEu3ProvincesMap[prov].size()) colony = false;
       }
       if (colony) ownerToStateMap[owner]->resetLeaf("colonies", 1 + ownerToStateMap[owner]->safeGetInt("colonies", 0));
       ownerToStateMap[owner]->resetLeaf("total", 1 + ownerToStateMap[owner]->safeGetInt("total", 0));
     }
     for (map<Object*, Object*>::iterator state = ownerToStateMap.begin(); state != ownerToStateMap.end(); ++state) {
-      if (0.5 < (*state).second->safeGetFloat("colonies") / (*state).second->safeGetFloat("total")) (*state).second->resetLeaf("is_colonial", "yes");
+      bool markColony = false;      
+      if (0.5 < (*state).second->safeGetFloat("colonies") / (*state).second->safeGetFloat("total")) {
+	(*state).second->resetLeaf("is_colonial", "yes");
+	if (HODSTRING == targetVersion) markColony = true;
+      }
+      // Mark provinces as colonies or otherwise
+      Object* provs = (*state).second->safeGetObject("provinces");
+      for (int i = 0; i < provs->numTokens(); ++i) {
+	Object* vicprov = vicGame->safeGetObject(provs->getToken(i));
+	if (!vicprov) continue;
+	if (!markColony) vicprov->unsetValue("colonial");
+	else vicprov->resetLeaf("colonial", "1"); 
+      }
+      
       (*state).second->unsetValue("total");
       (*state).second->unsetValue("colonies"); 
     }
@@ -3216,6 +3283,7 @@ void WorkerThread::diplomacy () {
     vicGame->setValue(vdip); 
   }
   vdip->unsetValue("vassal");
+  vdip->unsetValue("substate");  
   vdip->unsetValue("alliance");
   
   Object* edip = eu3Game->safeGetObject("diplomacy");
@@ -3674,7 +3742,9 @@ void WorkerThread::initialise () {
     (*vo)->unsetValue("navy");
     (*vo)->unsetValue("primary_culture");
     (*vo)->unsetValue("culture");
-    (*vo)->unsetValue("religion"); 
+    (*vo)->unsetValue("religion");
+    Object* active = (*vo)->safeGetObject("active_inventions");
+    if (active) active->clear(); 
   }
   
   string gamedate = remQuotes(eu3Game->safeGetString("date"));
@@ -4043,10 +4113,10 @@ void WorkerThread::initialise () {
 
     // Look for inconsistent history: Owner, culture or religion in history doesn't match final.
     string currReligion   = (*eu3prov)->safeGetString("religion", "NONE");
-    string currCulture    = (*eu3prov)->safeGetString("culture", "NONE");    
+    string currCulture    = (*eu3prov)->safeGetString("culture", "NONE");
     string histOwnerTag   = hist->safeGetString("owner", "NONE");
     string histReligion   = hist->safeGetString("religion", "NONE");
-    string histCulture    = hist->safeGetString("culture", "NONE");    
+    string histCulture    = hist->safeGetString("culture", "NONE"); 
     objvec evts = hist->getLeaves();
     for (objiter event = evts.begin(); event != evts.end(); ++event) {
       histReligion = (*event)->safeGetString("religion", histReligion);
@@ -4821,6 +4891,22 @@ void WorkerThread::techLevels () {
   // Bonus from custom points and trade level. 
   // Establishment from most-advanced group. 
 
+  map<string, objvec> techToInventionsMap; 
+  objvec inventions = vicInventions->getLeaves();
+  int invIdx = 0;
+  for (objiter inv = inventions.begin(); inv != inventions.end(); ++inv) {
+    (*inv)->resetLeaf("number", ++invIdx);
+    Object* limit = (*inv)->safeGetObject("limit");
+    if (!limit) continue;
+    objvec limits = limit->getLeaves();
+    for (objiter l = limits.begin(); l != limits.end(); ++l) {
+      if ((*l)->getKey() == "year") continue;
+      techToInventionsMap[(*l)->getKey()].push_back(*inv);
+      Logger::logStream(Logger::Debug) << "Invention " << (*inv)->getKey() << ", number " << invIdx << ", linked to " << (*l)->getKey() << ".\n"; 
+    }
+  }
+
+  
   for (map<Object*, objvec>::iterator i = vicCountryToEu3CountriesMap.begin(); i != vicCountryToEu3CountriesMap.end(); ++i) {
     Object* vicCountry = (*i).first;
     vicCountry->resetLeaf("civilized", "no");
@@ -4830,7 +4916,12 @@ void WorkerThread::techLevels () {
       vicTech = new Object("technology");
       vicCountry->setValue(vicTech); 
     }
-    vicTech->clear(); 
+    vicTech->clear();
+    Object* activeInventions = vicCountry->getNeededObject("active_inventions");
+    activeInventions->clear();
+    Object* possibleInventions = vicCountry->getNeededObject("possible_inventions");
+    possibleInventions->clear();
+    Object* illegalInventions = vicCountry->getNeededObject("illegal_inventions"); 
     Object* eu3Country = (*i).second[0];
     Object* eu3Tech = eu3Country->safeGetObject("technology");
     if (!eu3Tech) continue;  // Uncivilised and unteched...
@@ -4878,7 +4969,7 @@ void WorkerThread::techLevels () {
     Logger::logStream(Logger::Game) << eu3Country->getKey()
 				    << " RPs (base, trade bonus, custom) : "
 				    << techPoints << " "
-				    << techPoints*eu3Country->safeGetFloat("totalTrade") * configObject->safeGetFloat("tradeResearchBonus")
+				    << techPoints*eu3Country->safeGetFloat("totalTrade") * configObject->safeGetFloat("tradeResearchBonus") << " " 
 				    << eu3Country->safeGetFloat("customPoints") * currCustom->safeGetFloat("rp") * configObject->safeGetFloat("rpPerCustom", 10)
 				    << ".\n"; 
     
@@ -4950,8 +5041,7 @@ void WorkerThread::techLevels () {
 					   << " with bonus "
 					   << bonus
 					   << " from "
-					   << school << " "
-					   << (int) techSchool
+					   << school 
 					   << ") for country "
 					   << vicCountry->getKey()
 					   << ".\n"; 
@@ -4982,7 +5072,14 @@ void WorkerThread::techLevels () {
 	vlist->setObjList(true);
 	vlist->addToList("1");
 	vlist->addToList("0.000");
-	vicTech->setValue(vlist); 
+	vicTech->setValue(vlist);
+
+	for (objiter invention = techToInventionsMap[techname].begin(); invention != techToInventionsMap[techname].end(); ++invention) {
+	  string invId = (*invention)->safeGetString("number"); 
+	  //if ((*invention)->safeGetString("notImmediate", "no") != "yes") activeInventions->addToList(invId);
+	  illegalInventions->remToken(invId);
+	  possibleInventions->addToList(invId); 
+	}
       }
 
       if (0 < retries.size()) {
@@ -5040,7 +5137,6 @@ void WorkerThread::tradeStats () {
   sliders.push_back("land_naval");
   sliders.push_back("quality_quantity");
   sliders.push_back("serfdom_freesubjects");
-
 
   Object* prices = new Object("prices"); 
   for (int i = 0; i < fileList.size(); ++i) {
@@ -6136,6 +6232,8 @@ void WorkerThread::convert () {
   vicGame = loadTextFile(targetVersion + "input.v2");
   Logger::logStream(Logger::Game) << "Done loading.\n";
   vicGame->unsetValue("active_war");
+  vicGame->unsetValue("previous_war");
+  vicGame->unsetValue("region"); 
   Object* combats = vicGame->safeGetObject("combat");
   combats->clear();
   initialise(); 
@@ -6261,9 +6359,6 @@ void WorkerThread::convert () {
     for (objiter v = natValues.begin(); v != natValues.end(); ++v) {
       (*vic)->unsetValue(remQuotes((*v)->safeGetString("name")));
     }
-    Object* active = (*vic)->safeGetObject("active_inventions");
-    if (active) active->clear(); 
-
     
     double plurality = 1;
     Object* plur = configObject->safeGetObject("plurality");

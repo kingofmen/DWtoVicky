@@ -199,12 +199,12 @@ link = { eu3 = 1173 vic = 2079 }				# Damaraland -> Swakopmund
 
 # China #
 
-link = { eu3 = 703 vic = 1616 }				# Chengde -> Chengde, Shuntian
-link = { eu3 = 723 vic = 1613 }				# Xilin Gol -> Chengde
+link = { eu3 = 703 vic = 1612 }				# Chengde -> Beijing
+link = { eu3 = 723 vic = 1534 }				# Xilin Gol -> Ulaan Chab Chuulghan
 link = { eu3 = 696 vic = 1618 }				# Xuan Fu -> Zhongding
 link = { eu3 = 697 vic = 1576 }				# Datong -> Datong
-link = { eu3 = 695 vic = 1617 vic = 1615 }		# Hejian -> Tianjin, Jizhou
-link = { eu3 = 1816 vic = 1612 }		# Beijing -> Beijing
+link = { eu3 = 695 vic = 1615 }				# Hejian -> Beijing, Jizhou
+link = { eu3 = 1816 vic = 1617 }		# Beijing -> Tianjin
 link = { eu3 = 692 vic = 1614 }			# Handan -> Daming
 link = { eu3 = 691 vic = 1563 vic = 1568 vic = 1564 vic = 1570 }			# Jinan -> Jinan, Taian, Caozhou, Wuding
 link = { eu3 = 690 vic = 1567 vic = 1571 vic = 1565 vic = 1566 vic = 1569 }	# Shandong Bandao -> Yizhou, Qingzhou, Laizhou, Qingdao, Weihaiwei
@@ -276,8 +276,8 @@ link = { eu3 = 722 vic = 1534 }				# Chahar -> Ulaan Chab Chuulghan
 
 link = { eu3 = 731 eu3 = 728 vic = 1554 }	# Ninguta, Sanxing -> Ninguta
 link = { eu3 = 730 vic = 1555 }				# Haixi -> Jilin
-link = { eu3 = 726 vic = 1479 vic = 1481 }	# Liaodong -> Mukden, Port Arthur
-link = { eu3 = 704 vic = 1480 }				# Liaoxi -> Jinzhou 
+link = { eu3 = 726 vic = 1479 vic = 1480 vic = 1481 }	# Liaodong -> Mukden,Port Arthur, Jinzhou
+link = { eu3 = 704 vic = 1613 vic = 1616 }     	    	# Liaoxi -> Chengde, Tangshan
 link = { eu3 = 725 vic = 1533 }				# Hinggan -> Jirim Chuulgan
 link = { eu3 = 724 vic = 1002 }				# Yakesa -> Manzhouli
 link = { eu3 = 727 vic = 1552 vic = 1553 }	# Heilongjiang -> Qiqihar, Aigun
@@ -864,7 +864,7 @@ link = { eu3 = 387 vic = 1179 }				# Mocha -> Hodeida
 link = { eu3 = 388 vic = 1412 }				# Aden -> Aden 
 
 # Turkey #
-link = { eu3 = 316 vic = 862 }										# Bithynia -> Izmit 
+link = { eu3 = 316 vic = 861 vic = 862 }   # Bithynia -> Izmit, Uskudar
 link = { eu3 = 317 vic = 863 vic = 864 vic = 865 vic = 844 }		# Bursa -> Bursa, Balikesir, Canakkale, Myteline
 link = { eu3 = 318 vic = 869 vic = 870 vic = 871 vic = 843 }		# Smyrna -> Izmir, Manisa, Denizli, Chios
 link = { eu3 = 319 vic = 875 vic = 872 }							# Antalya -> Antalya, Mugla 
@@ -1016,9 +1016,9 @@ link = { eu3 = 1191 vic = 2053 vic = 2066 }				# Sena -> Sena, Zomba
 link = { eu3 = 1190 vic = 2056 vic = 2054 }				# Zumbo -> Zumbo, Tete
 link = { eu3 = 1187 vic = 2012 vic = 2015 }			# D Urungwe -> Lusaka, Monzo
 link = { eu3 = 1188 vic = 2055 vic = 2635 }				# Masapa/Tete -> Songo, Kariba
-link = { eu3 = 1186 vic = 2057 vic = 2052 }				# Sofala -> Sofala, Massekisse
+link = { eu3 = 1186 vic = 2057 }				# Sofala -> Sofala
 link = { eu3 = 1189 vic = 2070 vic = 2068 vic = 2058 }				# Barwe -> Mutare, Harare, Mossurize
-link = { eu3 = 1185 vic = 2073 vic = 2069 }				# Uteve -> Masvingo, Gweru
+link = { eu3 = 1185 vic = 2073 vic = 2069 vic = 2052 }				# Uteve -> Masvingo, Gweru, Massekisse
 link = { eu3 = 1184 vic = 2071 vic = 2072 }				# Zimbabwe -> Bulawayo, Hwange
 link = { eu3 = 1183 vic = 2051 }				# Inhambane -> Inhambane 		
 link = { eu3 = 1182 vic = 2050 vic = 2049 vic = 2110 }	# Delagoa Bay -> Chaimate, Matupo, Thohoyandu
@@ -1034,7 +1034,7 @@ link = { eu3 = 1180 vic = 2111 vic = 2112 vic = 2104 }									# Transkei -> Dur
 link = { eu3 = 1181 vic = 2113 vic = 2114 }	# D Natal -> Ulundi, Mbabane
 
 # Greece, Crete, Cyprus, Albania, Montenegro #
-link = { eu3 = 151 vic = 860 vic = 861 vic = 858 }				# Thrace -> Istanbul, Uskudar, Kirklareli
+link = { eu3 = 151 vic = 860 vic = 858 }					# Thrace -> Istanbul, Kirklareli
 link = { eu3 = 149 vic = 828 vic = 859 vic = 830 vic = 829 vic = 815 }		# Erdine -> Edirne, Gallipoli, Dedeagatch, Xanthe, Plovdiv
 link = { eu3 = 148 vic = 805 vic = 822 vic = 806 vic = 807 vic = 823 vic = 821 }		# Macedonia -> Salonika, Polygyros, Skopje, Bitola, Kavala, Edessa
 link = { eu3 = 143 vic = 849 vic = 852 vic = 851 vic = 850 }			# Albania -> Tirana, Vlore, Durres, Shkoder
@@ -1258,14 +1258,14 @@ link = { eu3 = 272 vic = 360 vic = 361 vic = 363 }				# Lithuania/Vilna -> Vitin
 link = { eu3 = 270 vic = 362 }						# Troki/Trakai -> Marijampole
 
 # East Prussia #	
-link = { eu3 = 43 vic = 690 vic = 691 vic = 692 }				# Danzig => Danzig, Tuchel, Deutsch Krone
-link = { eu3 = 42 vic = 696 }				# Warmia -> Allenstein
-link = { eu3 = 1859 vic = 693 vic = 694 }				# Torun -> Torun, Elbing
-link = { eu3 = 41 vic = 695 vic = 697 }					# Ostpreussen -> Kongisberhg, Gumbinnen
+link = { eu3 = 43 vic = 690 }					# Danzig => Danzig
+link = { eu3 = 42 vic = 693 vic = 696 }				# Warmia -> Elbing, Allenstein
+link = { eu3 = 1859 vic = 694 }					# Torun -> Torun 
+link = { eu3 = 41 vic = 695 vic = 697 }					# Ostpreussen -> Kongisberg, Gumbinnen
 link = { eu3 = 40 vic = 698 }						# Memel -> Memel				
 		
 # Pommerania #
-link = { eu3 = 48 vic = 679 vic = 680 }				# Hinterpommern -> Kolberg, Koslin
+link = { eu3 = 48 vic = 679 vic = 680 vic = 691 vic = 692 }	# Hinterpommern -> Kolberg, Koslin, Tuchel, Deutsch Krone
 link = { eu3 = 1858 vic = 546 }				# Stettin -> Stettin
 link = { eu3 = 47 vic = 547 vic = 545 vic = 548 }				# Vorpommern -> Swinemunde, Stralsand, Neustrelitz
 link = { eu3 = 46 vic = 544 }						# Mecklenburg -> Schwerin 
@@ -1304,7 +1304,7 @@ link = { eu3 = 1869 vic = 603 }						# Zurich -> Zurich
 link = { eu3 = 1870 vic = 606 }						# St Gallen -> Lucerne
 link = { eu3 = 1873 vic = 611 }						# Chur -> Chur				
 link = { eu3 = 1867 vic = 607 vic = 608 }			# Freiburg -> Geneva, Neuchatel
-link = { eu3 = 1871 vic = 609 }						# Wallis -> Sitten
+link = { eu3 = 1871 vic = 609 vic = 721 } # Wallis -> Sitten, Aosta
 
 # Italy #
 link = { eu3 = 111 vic = 733 }                                          # Friuli -> Udine
@@ -1316,7 +1316,7 @@ link = { eu3 = 109 vic = 728 }                                          # Mantua
 link = { eu3 = 104 eu3 = 1862 vic = 726 }                               # Lombardia, Cremona -> Milan
 link = { eu3 = 103 vic = 720 }                     						# Piedmont -> Turin
 link = { eu3 = 1875 vic = 723 vic = 722 }                            	# Cuneo -> Alessandria, Novara
-link = { eu3 = 205 vic = 466 vic = 465 vic = 721 }                     	# Savoie -> Chambery, Annecy, Aosta
+link = { eu3 = 205 vic = 466 vic = 465  }				# Savoie -> Chambery, Annecy
 link = { eu3 = 102 vic = 472 }                                          # Nice -> Nice
 link = { eu3 = 101 vic = 724 vic = 725 }                                # Liguria -> Genoa, Savonna
 link = { eu3 = 105 vic = 738 }                                          # Parma -> Parma

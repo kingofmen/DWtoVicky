@@ -68,38 +68,6 @@ showing the effect of sliders. Notice that these are percentage
 bonuses to the literacy weight, not direct modifiers to the literacy;
 note also that they are not integrated over time. 
 
-Sliders also affect the customisation of parties. Each party type in
-the ideologies field of config.txt has an entry for each attitude, and
-each such entry (for example, for jingoism) has a sliders section. The
-numbers are to be read as percentage modifiers to the base weight
-that the party in question will have that attitude. Thus, for example,
-consider the entry for conservatives:
-
-\begin{verbatim}
-conservative = {
-  start_date = 1830.1.1 
-  jingoism = {
-    ideas = {
-      national_conscripts = 1.25  
-      battlefield_commissions = 1.25
-      military_drill = 1.25
-      deus_vult = 1.1
-    }
-    sliders = {
-      land_naval = -0.03 
-    }
-  }
-}
-\end{verbatim}
-
-There is some base weight for conservatives to be jingoist, which is
-equal to the fraction of vanilla conservative parties that are
-jingoist. It is modified by slider positions; in this case, each click
-towards naval decreases the base weight by 3\%. 
-The \emph{probability} that they are jingoist is equal to this modified
-weight, divided by the sum of the modified weights for jingoism, pacifism,
-anti-military, and pro-military. 
-
 In addition to the effect on parties, sliders can affect reforms. 
 Government forms which require some voting to exist get the landed
 voting reform; others get nothing. For the other political reform
@@ -149,7 +117,6 @@ nations which have abolished slavery do not get the ``Slavery
 Allowed'' political reform, however far they are towards serfdom or
 however many cotton, slave, tobacco and sugar provinces they have. 
 
-
 Sliders also affect national values as shown in natvalues.txt. The
 numbers here are to be read as weights which each click along the
 slider gives to the value in question; the highest weight wins. 
@@ -158,6 +125,72 @@ slider gives to the value in question; the highest weight wins.
 
 These affect literacy, political parties, reforms, and national values
 basically in the same way as sliders. 
+
+\section{Parties}
+
+Each nation gets a ``historical'' packet of parties, that is, one
+belonging to a nation in vanilla; for example, you may get the
+Prussian parties, the English parties, and so on. You get the parties
+of that historical nation which you most resemble, unless someone else
+resembles it even more; in that case you get the
+second-most-resemblant tag's parties, and so on. ``Resemblance'' is
+based on sliders, decisions, ideas, and kustom; the resemblance
+objects can be found in config.txt. For example:
+
+
+\begin{verbatim}
+SWE = {
+  ideas = {
+    church_attendance_duty = 1
+    humanist_tolerance = 1
+    ecumenism = 1
+  }
+  sliders = {
+    quality_quantity = -0.25
+  }
+  modifiers = {
+    swedish_steel = 1
+    indelningsverket = 1
+    sunday_schools = 1
+    finnish_cavalry = 1
+  }
+}
+\end{verbatim}
+
+So, a nation with the three listed ideas, the four listed modifiers,
+and full Quality (ie, -5 Quality) would get 8.25 resemblance points
+for Sweden, plus whatever it added by kustom. Here's an example of how
+it works: Let there be three EU3 nations being converted, FIC, UTO,
+and ATL; and three Vicky nations listed in config.txt for them to
+resemble, say SWE, RUS, and FRA. Further, let's have:
+
+\begin{verbatim}
+FIC resembles 
+  SWE = 11
+  RUS = 12
+  FRA = 4
+UTO resembles
+  SWE = 12
+  RUS = 20
+  FRA = 1
+ATL resembles
+  SWE = 9
+  RUS = 2
+  FRA = 7
+\end{verbatim}
+
+The highest resemblance here is UTO's 20 for RUS, so the first
+assignment is UTO to RUS. The next highest resemblance is FIC for RUS,
+with 12 - but RUS is already taken, so this is ignored. Next is FIC's
+resemblance for SWE, with 11 points, so this is assigned. Finally ATL
+gets FRA as the only remaining option. If ATL had used its 1000 kustom
+points to increase its resemblance to SWE, with a \verb|SWE=1.0| entry in
+its kustom, that resemblance would have been 19 (ie, 0.01 resemblance
+points per custom point - this is set in config.txt, by the field
+\verb|partyPointsPerCustom|)
+and it would have beaten out FIC for the Swedish parties. On the other hand, had it
+instead put \verb|RUS=1.0|, its weight would only have been 12, and the
+kustom points would have been lost to no effect. 
 
 \section{Technology}
 
@@ -176,80 +209,39 @@ bonus to RPs.
 
 \section{Customisation}
 
-Parties and national stockpiles may be customised. Additionally, for
-AHD, the initial techs are customisable. 
-
-Initially parties are generated randomly as outlined in the section on
-sliders. However, they may then be customised. Each country gets a
-number of customisation points, calculated as follows. Government
-buildings have a 'moddingPoints' entry; the total modding points of
-a nation, divided by its provinces, is its modding fraction; 
-customisation points are distributed in proportion to the modding
-fractions. Example: England has 1 temple giving a single modding
-point, and two provinces; its modding fraction is 0.5. Germany has two
-temples and three provinces, giving a modding fraction of
-0.66. England will get $0.5/(0.5+0.66)=43\%$ of the total
-customisation points. 
-
-The customisation points are calculated thus: Every time a political
-party is randomly generated, there was some probability that it would
-end up as it did, based on the frequencies of the vanilla parties. For
-example, suppose that 80\% of vanilla conservatives are jingoist, and
-the rest are pro-military; then a pro-military conservative party has
-a 20\% probability, multiplied by the similar probabilities from the
-other fields. The negative log of this probability is that party's contribution
-to the customisation pool. 
-
-Now, players may customise their nations, in this format:
+Parties and initial techs are somewhat customisable; in addition,
+nations may spend customisation points on increasing their starting
+RPs or cash. By default, every nation uses all its custom points
+(which are acquired through having buildings that have a
+\verb|customPoints| entry in \verb|buildings.txt|) on RPs, and uses
+those initial RPs to buy techs in the order listed in the DUMMY field
+of Custom.txt. However, each nation may supply a custom object, thus:
 \begin{verbatim}
-KHA = {
-  liberal = {
-    area = trade_policy
-    position = free_trade 
-  }
-  resource = {
-    which = iron
-    amount = 2
-  } 
+FIC = {
+  # FIC has 100 custom points
+  rp = 0.75        # Use 75 of them to get 750 extra RPs
+  money = 0.15     # Use 15 to get 1500 extra cash
+  USA = 0.1        # Use 10 to increase weight for the USA set of parties by 0.1
   research = {
-    tech = late_enlightenment_philosophy
-    tech = freedom_of_trade
+    tech = late_enlightenment_philosophy  # First tech to buy
+    tech = freedom_of_trade               # Next tech
     tech = private_banks
+    tech = tanks                          # This will not in fact happen - date after 1840. 
     tech = water_wheel_power
+    tech = practical_steam_engine
+    tech = high_n_low_pressure_steam_engines
+    tech = experimental_railroad
+    tech = flintlock_rifles
   }
 }
 \end{verbatim}
-This says that the Khanate wants liberals who are in favour of Free
-Trade. (If it wanted to specify liberal positions on other points, it
-should make another 'liberals' entry.) Each country will attempt to
-buy the listed customisations in the order given; if it can't afford
-one, that entry is skipped. The cost of a customisation is equal to
-the negative log of its probability ratio, times the number of
-previously successful bids plus one. For example, suppose I want
-pro-military conservatives, probability 20\%, but I got
-randomly-generated jingoists, probability 80\%. (If they were randomly
-generated as pro-military, obviously, the customisation is skipped.)
-Then the cost of the customisation is $-\log(0.2/0.8)=1.38$, times
-however many previous bids I had. The minimum cost is the number of
-prior successful bids, plus one; customisations that ``go with the
-flow'', ie in the direction of higher probability, will generally have
-the minimum cost. On the other hand, laissez-faire communists are
-going to be highly expensive. 
+The entries \texttt{rp}, \texttt{money}, and \texttt{NNN} (ie, a Vicky
+tag) indicate what fraction of custom points the nation would like to
+use for RPs, money, or to increase its resemblance to the Vicky tag
+for purposes of getting parties; the rates of conversion are all
+configurable. 
 
-An `unless' clause may be added to a bid, in which case the bid will
-only be used if the party in question has a position other than the
-one indicated by the unless. 
 
-The 'resource' bid says that the nation would like its stockpile
-increased by 20 iron. Only resources which exist in some nation's
-stockpile at game start can be bid on in this way. The cost is equal
-to the negative logarithm of that resource's fraction of the world
-stockpile, times the number of units, times the number of previous
-successful bids plus one. 
-
-The research entry is not a bid, but just a list of the order in which
-the nation would like to use its research points to buy initial
-techs. 
 
 \section{Miscellanea} 
 

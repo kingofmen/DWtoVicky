@@ -9,13 +9,15 @@ redistPops = yes
 hugePops = no 
 debugProvSize = no 
 tradeResearchBonus = 1.0 
-randseed = 42 
+randseed = 43 
 rgoSizeModifier = 1.0 
 modPointMultiplier = 0.1 
 extraGoods = {
   
 } 
 
+buildingUnitCost = 1500 # Smaller numbers mean buildings are more important
+buildingMinimumCost = 100
 hodBaseOne = 0.99
 hodBaseTwo = 1.75
 
